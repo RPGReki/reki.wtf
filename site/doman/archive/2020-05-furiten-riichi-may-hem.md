@@ -39,7 +39,7 @@ seo_title_fix: 1
 }
 </script>
 
-![Furiten]({{ "/doman/images/furiten.jpg" | prepend: site.staticUrl | absolute_url }})
+![Furiten]({{ "/doman/images/furiten.jpg" | prepend: site.static_url | absolute_url }})
 
 I wasn't planning on having another tournament till 2020 Q3.
 But since most of us are at home let's have another tournament!

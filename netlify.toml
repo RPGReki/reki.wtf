@@ -1,8 +1,8 @@
 [build]
 base = ""
-publish = "doc"
+publish = "docs"
 command = "make"
 
 [dev]
 framework = "#static"
-publish = "doc"
+publish = "docs"

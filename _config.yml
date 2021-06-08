@@ -2,10 +2,10 @@
 title: "0xReki's Adventures by Night"
 description: "Creative Writing, Mahjong and more!"
 source: site
-destination: doc
+destination: docs
 
 url: "https://0xreki.de"
-staticUrl: "https://static.0xreki.de"
+static_url: "https://static.0xreki.de"
 shorturl:
   -
     url: "https://amau.ga/"

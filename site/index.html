@@ -59,13 +59,13 @@ Here you can find my Creavtive Writing, by <a href="/blog/">Blog</a> and other P
     <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <a href="{{ post.url | absolute_url }}">
       <img itemprop="url"
-        src="{{ post.image | prepend: site.staticUrl | absolute_url }}" 
+        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
       </a>
     </div>
     {% else %}
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.staticUrl | absolute_url }}">
+      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.static_url | absolute_url }}">
     </div>
     {% endif %}
     <div class="entry-summary">
@@ -91,40 +91,40 @@ Here you can find my Creavtive Writing, by <a href="/blog/">Blog</a> and other P
 <h2>0xReki on other Platforms</h2>
 <p class="social icons">
   <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
-    <img src="{{ "/assets/images/discord.png" | prepend: site.staticUrl | absolute_url }}" alt="Discord">
+    <img src="{{ "/assets/images/discord.png" | prepend: site.static_url | absolute_url }}" alt="Discord">
   </a>
   <a href="https://twitter.com/0xReki">
-    <img src="{{ "/assets/images/twitter.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitter">
+    <img src="{{ "/assets/images/twitter.png" | prepend: site.static_url | absolute_url }}" alt="Twitter">
   </a>
   <a href="https://fb.com/0xReki">
-    <img src="{{ "/assets/images/facebook.png" | prepend: site.staticUrl | absolute_url }}" alt="Facebook">
+    <img src="{{ "/assets/images/facebook.png" | prepend: site.static_url | absolute_url }}" alt="Facebook">
   </a>
   <a href="https://instagram.com/oxreki">
-    <img src="{{ "/assets/images/instagram.png" | prepend: site.staticUrl | absolute_url }}" alt="Instagram">
+    <img src="{{ "/assets/images/instagram.png" | prepend: site.static_url | absolute_url }}" alt="Instagram">
   </a>
   <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img src="{{ "/assets/images/scribblehub.png" | prepend: site.staticUrl | absolute_url }}" alt="ScribbleHub">
+    <img src="{{ "/assets/images/scribblehub.png" | prepend: site.static_url | absolute_url }}" alt="ScribbleHub">
   </a>
   <a href="https://twitch.tv/RPGReki">
-    <img src="{{ "/assets/images/twitch.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitch">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" alt="Twitch">
   </a>
   <a href="https://twitch.tv/RiichiReki">
-    <img src="{{ "/assets/images/twitch.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitch">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" alt="Twitch">
   </a>
   <a href="https://github.com/0xReki">
-    <img src="{{ "/assets/images/github.png" | prepend: site.staticUrl | absolute_url }}" alt="GitHub">
+    <img src="{{ "/assets/images/github.png" | prepend: site.static_url | absolute_url }}" alt="GitHub">
   </a>
   <a href="https://gitlab.com/0xReki">
-    <img src="{{ "/assets/images/gitlab.png" | prepend: site.staticUrl | absolute_url }}" alt="GitLab">
+    <img src="{{ "/assets/images/gitlab.png" | prepend: site.static_url | absolute_url }}" alt="GitLab">
   </a>
   <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img src="{{ "/assets/images/patreon.png" | prepend: site.staticUrl | absolute_url }}" class="patreon" alt="Patreon">
+    <img src="{{ "/assets/images/patreon.png" | prepend: site.static_url | absolute_url }}" class="patreon" alt="Patreon">
   </a>
   <a href="https://linkedin.com/in/q-thai-chung">
-    <img src="{{ "/assets/images/linkedin.png" | prepend: site.staticUrl | absolute_url }}" alt="LinkedIn">
+    <img src="{{ "/assets/images/linkedin.png" | prepend: site.static_url | absolute_url }}" alt="LinkedIn">
   </a>
   <a href="https://www.xing.com/profile/Thai_Chung">
-    <img src="{{ "/assets/images/xing.png" | prepend: site.staticUrl | absolute_url }}" alt="XING">
+    <img src="{{ "/assets/images/xing.png" | prepend: site.static_url | absolute_url }}" alt="XING">
   </a>
 </p>
 
@@ -139,7 +139,7 @@ If I'm more productive, there'll be more updates.
 <div class="row">
   <div class="col-12 col-sm-6 col-lg-3">
     <a href="{{ "/amauga/"| absolute_url }}">
-      <img src="{{ "/amauga/thumbnail.png" | prepend: site.staticUrl | absolute_url }}"
+      <img src="{{ "/amauga/thumbnail.png" | prepend: site.static_url | absolute_url }}"
            alt="Amauga Cover: ">
     </a>
    </div>
@@ -203,7 +203,7 @@ The planet seems like any other underdeveloped planet, but something is differen
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
     <div itemprop="image" itemscope itemtype="https://schema.org/URL">
-      <meta itemprop="url" content="{{ "/amauga/-og.png"| prepend: staticUrl | absolute_url }}">
+      <meta itemprop="url" content="{{ "/amauga/-og.png"| prepend: static_url | absolute_url }}">
     </div>
     <div class="entry-summary">
     {{ post.content | markdownify }}

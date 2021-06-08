@@ -12,7 +12,7 @@ feed: /blog.xml
   <a rel="alternate" type="application/atom+xml"
    href="{{ page.feed | absolute_url }}"
    title="{{ site.title }} Personal Blog Atom Feed">
-    <img src="{{ '/assets/images/feed.png' | prepend: site.staticUrl | absolute_url }}" alt="Atom Feed">
+    <img src="{{ '/assets/images/feed.png' | prepend: site.static_url | absolute_url }}" alt="Atom Feed">
   </a>
   {% endif %}
 </p>
@@ -47,13 +47,13 @@ feed: /blog.xml
     <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <a href="{{ post.url | absolute_url }}">
       <img itemprop="url"
-        src="{{ post.image | prepend: site.staticUrl | absolute_url }}" 
+        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
       </a>
     </div>
     {% else %}
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.staticUrl | absolute_url }}">
+      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.static_url | absolute_url }}">
     </div>
     {% endif %}
     {% unless post.long %}

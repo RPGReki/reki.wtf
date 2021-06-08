@@ -52,7 +52,7 @@ sheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRdG2tiFL5ZhVZNDZWzEd
 }
 </script>
 
-![FFXIV Heavensturn Ox Event]({{ "/doman/images/2021-ox.jpg" | prepend: site.staticUrl | absolute_url }})
+![FFXIV Heavensturn Ox Event]({{ "/doman/images/2021-ox.jpg" | prepend: site.static_url | absolute_url }})
 
 A new year, a new tournament!
 This time, it's on the weekend of the Lunar New Year!
