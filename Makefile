@@ -3,19 +3,16 @@ GIT_ROOT = $(shell git rev-parse --show-toplevel)
 default: production
 
 testing: posts
-	bash $(GIT_ROOT)/scripts/buildTesting.sh
-
-serve-testing: posts
-	bash $(GIT_ROOT)/scripts/runTesting.sh
+	bash $(GIT_ROOT)/scripts/serve.sh testing
 
 staging: posts
-	bash $(GIT_ROOT)/scripts/buildStaging.sh
+	bash $(GIT_ROOT)/scripts/serve.sh staging
 
-serve-staging: posts
-	bash $(GIT_ROOT)/scripts/runStaging.sh
+staging-live: posts
+	bash $(GIT_ROOT)/scripts/serve.sh staging --live
 
 production: posts comments polls
-	bash $(GIT_ROOT)/scripts/buildProduction.sh
+	bash $(GIT_ROOT)/scripts/build.sh production
 
 deploy: production
 	netlify deploy -p
@@ -29,8 +26,8 @@ comments:
 polls:
 	gulp get-poll-referral
 
-overview:
-	bash $(GIT_ROOT)/scripts/createOverview.sh
+create-tables:
+	bash $(GIT_ROOT)/scripts/createTables.sh
 
-diff:
-	bash $(GIT_ROOT)/scripts/diffOverview.sh
+diff-tables:
+	bash $(GIT_ROOT)/scripts/diffTables.sh
