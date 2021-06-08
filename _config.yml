@@ -154,7 +154,7 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /:year/:month-:day-:title
+      permalink: /:year/:month-:day-:title/
   - # /_posts/amauga
     scope:
       path: "_posts/amauga"
@@ -170,7 +170,7 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /amauga/blog/:year/:month-:day-:title
+      permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/crystaldown
     scope:
       path: "_posts/crystaldown"
@@ -186,7 +186,7 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /crystaldown/blog/:year/:month-:day-:title
+      permalink: /crystaldown/blog/:year/:month-:day-:title/
   - # /_posts/scions
     scope:
       path: "_posts/scions"
@@ -202,7 +202,7 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /amauga/blog/:year/:month-:day-:title
+      permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/reincarnated-as-cat
     scope:
       path: "_posts/reincarnated-as-cat"
@@ -218,7 +218,7 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /amauga/blog/:year/:month-:day-:title
+      permalink: /amauga/blog/:year/:month-:day-:title/
   - # /crystaldown/01-life-in-avan-forest
     scope:
       path: "crystaldown/01-life-in-avan-forest"
