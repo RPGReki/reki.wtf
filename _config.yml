@@ -204,7 +204,7 @@ defaults:
     scope:
       path: "_posts/reincarnated-as-cat"
     values:
-      category: amauga
+      category: reincarnated-as-cat
       layout: 2020/post
       type: post
       lang: "en-CA"

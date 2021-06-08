@@ -7,24 +7,8 @@
 Session.vim
 .netrwhist
 *~
-tags
 [._]*.un~
 
-### Jekyll ###
-_site*
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-/docs/
-/site/_drafts
-
-## Netlify
-.env
-/site/_data/comments.json
-/site/_data/polls/
-
-## VSCode
-/.vscode
 
 ## aspell
 **.pws
@@ -32,13 +16,18 @@ _site*
 ## Git
 .git-metadata
 
-## Node
-node_modules
-
 ## local Environment
-.env
-/site/proxy/
+/.env
+/.PID
+/.netlify
+/.vscode
+/docs/
+/site/_drafts
 /site/_posts/
-
-# Local Netlify folder
-.netlify
+/site/_data/comments.json
+/site/_data/polls/
+/site/proxy/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+node_modules
