@@ -1,0 +1,221 @@
+---
+type: home
+layout: 2020/home
+title: "0xReki's Adventures by Night"
+pagination:
+  enabled: true
+excerpt: |
+  Welcome to the 0xReki's Adventures by Night.
+  Here you can find my Creavtive Writing, my Blog and my other Projects.
+
+---
+
+<h1>0xReki's Adventures by Night</h1>
+
+<p>
+Welcome to the 0xReki's Adventures by Night.
+Here you can find my Creavtive Writing, by <a href="/blog/">Blog</a> and other Projects.
+</p>
+
+<h2>Latest Personal Blog Post on 0xReki's Adventures by Night</h2>
+{% assign p = site.posts| where: "series", "status" %}
+{% for post in p %}
+  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
+    <h3 itemprop="name" id="{{ post.title | slugify }}">
+      {% unless post.long %}
+      <a
+        href="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+        {{ post.title }}
+      </a>
+      {% else %}
+      <a
+        href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+      {% endunless %}
+    </h3>
+    <meta itemprop="headline" content="{{ post.title }}">
+    {% assign author = site.data.staff | where: "id", page.author | last %}
+    <div itemprop="author" class="my-0" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ author.name }}">
+      <meta itemprop="url" content="{{ author.url }}">
+    </div>
+    <div itemprop="publisher" class="my-0" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ author.name }}">
+      <meta itemprop="url" content="{{ author.url }}">
+    </div>
+      {% unless post.long %}
+    <meta itemprop="url" content="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+      {% else %}
+    <meta itemprop="url" content="{{ post.url | absolute_url }}">
+    <meta itemprop="mainEntityOfPage" content="{{ post.url | absolute_url }}">
+      {% endunless %}
+    <p class="float-left"><small>
+      published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </small></p>
+    <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
+    <div class="clearfix"></div>
+    {% if post.image != "/assets/images/site-og.png" %}  
+    <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <a href="{{ post.url | absolute_url }}">
+      <img itemprop="url"
+        src="{{ post.image | prepend: site.staticUrl | absolute_url }}" 
+        alt="{{ post.title }}">
+      </a>
+    </div>
+    {% else %}
+    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.staticUrl | absolute_url }}">
+    </div>
+    {% endif %}
+    <div class="entry-summary">
+    {% unless post.long %}
+      {{ post.content | markdownify }}
+    {% else %}
+      <p>{{ post.excerpt | quads |markdownify | strip_html | truncatewords: 50, "…" }}</p>
+      <p><a href="{{ post.url | absolute_url }}" class="btn btn-block btn-primary btn-lg">{{ post.title }}</a>
+    {% endunless %}
+    </div>
+  </div>
+{% break %}
+{% endfor %}
+
+<p>
+  <a
+    href="{{ "/blog/" | absolute_url }}"
+    class="btn btn-block btn-primary btn-lg">
+    See all Personal Blog Posts
+  </a>
+</p>
+
+<h2>0xReki on other Platforms</h2>
+<p class="social icons">
+  <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
+    <img src="{{ "/assets/images/discord.png" | prepend: site.staticUrl | absolute_url }}" alt="Discord">
+  </a>
+  <a href="https://twitter.com/0xReki">
+    <img src="{{ "/assets/images/twitter.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitter">
+  </a>
+  <a href="https://fb.com/0xReki">
+    <img src="{{ "/assets/images/facebook.png" | prepend: site.staticUrl | absolute_url }}" alt="Facebook">
+  </a>
+  <a href="https://instagram.com/oxreki">
+    <img src="{{ "/assets/images/instagram.png" | prepend: site.staticUrl | absolute_url }}" alt="Instagram">
+  </a>
+  <a href="https://www.scribblehub.com/profile/19792/0xreki/">
+    <img src="{{ "/assets/images/scribblehub.png" | prepend: site.staticUrl | absolute_url }}" alt="ScribbleHub">
+  </a>
+  <a href="https://twitch.tv/RPGReki">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitch">
+  </a>
+  <a href="https://twitch.tv/RiichiReki">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.staticUrl | absolute_url }}" alt="Twitch">
+  </a>
+  <a href="https://github.com/0xReki">
+    <img src="{{ "/assets/images/github.png" | prepend: site.staticUrl | absolute_url }}" alt="GitHub">
+  </a>
+  <a href="https://gitlab.com/0xReki">
+    <img src="{{ "/assets/images/gitlab.png" | prepend: site.staticUrl | absolute_url }}" alt="GitLab">
+  </a>
+  <a href="https://www.patreon.com/bePatron?u=27792463">
+    <img src="{{ "/assets/images/patreon.png" | prepend: site.staticUrl | absolute_url }}" class="patreon" alt="Patreon">
+  </a>
+  <a href="https://linkedin.com/in/q-thai-chung">
+    <img src="{{ "/assets/images/linkedin.png" | prepend: site.staticUrl | absolute_url }}" alt="LinkedIn">
+  </a>
+  <a href="https://www.xing.com/profile/Thai_Chung">
+    <img src="{{ "/assets/images/xing.png" | prepend: site.staticUrl | absolute_url }}" alt="XING">
+  </a>
+</p>
+
+<h2>Creative Writing Schedule</h2>
+
+<p>
+<a href="{{ "/amauga/" | absolute_url }}">Amauga</a> updates on Wednesday, if I manage to write a chapter for it.
+If I'm more productive, there'll be more updates.
+</p>
+
+<h2><a href="{{ "/amauga/" | absolute_url }}">Amauga</a></h2>
+<div class="row">
+  <div class="col-12 col-sm-6 col-lg-3">
+    <a href="{{ "/amauga/"| absolute_url }}">
+      <img src="{{ "/amauga/thumbnail.png" | prepend: site.staticUrl | absolute_url }}"
+           alt="Amauga Cover: ">
+    </a>
+   </div>
+   <div class="col-12 col-sm-6 col-lg-9">
+    <p>Amauga is an ongoing Fantasy Web Novel / Web Fiction / Web Serial.</p>
+  <h3 data-nosnippet>Synopsis</h3>
+  <p data-nosnippet>
+Space: the final frontier.
+These are the voyages of the shuttle Speeding Kitten.
+Well, it would be more space voyages if its Hyperdrive didn't malfunction.
+Its pilot, Aster Kayden, is now stranded on an underdeveloped planet.
+So much about him enjoying his first real vacation.
+Luckily, Aster has his AI companion in his shuttle to help him out.
+The planet seems like any other underdeveloped planet, but something is different…
+  </p>
+  </div>
+  <div class="col-12">
+    <h3 class="mt-3">Reading Amauga</h3>
+    <p>
+      Are you new to the story? <br>
+      <a class="btn btn-primary btn-lg my-1 mx-1" href="{{ "/amauga/01-far-from-any-semblance-of-modern-civilization/001-quick-starting-my-summer-break/" | absolute_url }}">Start with the first Chapter of Amauga</a>
+    </p>
+
+    <p>
+      Are you returning reader? <br>
+      <a class="btn btn-primary btn-lg mt-1 mx-1" href="{{ "/amauga/latest/" | absolute_url }}">
+        <span class="unicode-icon">🆕</span> Read the latest chapter of Amauga
+      </a> or
+      <a class="btn btn-primary btn-lg mt-1 mx-1" href="{{ "/amauga/" | absolute_url }}">
+        <span class="unicode-icon">📕</span> List Amauga Chapters
+      </a>
+    </p>
+  </div>
+</div>
+
+<h3 class="mt-3">Latest Post on Amauga</h3>
+{% assign p = site.posts| where: "series", "amauga" %}
+{% for post in p %}
+  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
+    <h3 itemprop="name" id="{{ post.title | slugify }}">
+      <a
+        href="{{ post.series | prepend: '/' | absolute_url }}/blog/#{{ post.title | slugify }}">
+        {{ post.title }}
+      </a>
+    </h3>
+    <meta itemprop="headline" content="{{ post.title }}">
+    {% assign author = site.data.staff | where: "id", page.author | last %}
+    <div itemprop="author" class="my-0" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ author.name }}">
+      <meta itemprop="url" content="{{ author.url }}">
+    </div>
+    {% assign publisher = site.data.staff | where: "id", page.publisher | last %}
+    <div itemprop="publisher" class="my-0" itemscope itemtype="https://schema.org/Person">
+      <meta itemprop="name" content="{{ publisher.name }}">
+      <meta itemprop="url" content="{{ publisher.url }}">
+    </div>
+    <meta itemprop="url" content="{{ post.series | prepend: '/' | absolute_url }}/blog/#{{ post.title | slugify }}">
+    <p class="float-left"><small>
+      published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</span>
+    </small></p>
+    <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
+    <div class="clearfix"></div>
+    <div itemprop="image" itemscope itemtype="https://schema.org/URL">
+      <meta itemprop="url" content="{{ "/amauga/-og.png"| prepend: staticUrl | absolute_url }}">
+    </div>
+    <div class="entry-summary">
+    {{ post.content | markdownify }}
+    </div>
+  </div>
+{% break %}
+{% endfor %}
+
+<p>
+  <a
+    href="{{ "/amauga/blog/" | absolute_url }}"
+    class="btn btn-block btn-primary btn-lg">
+    See all Amauga Posts
+  </a>
+</p>

@@ -1,0 +1,114 @@
+---
+layout: null
+sitemap: false
+permalink: /_redirects
+---
+# Static URLs for better caching
+https://static.0xreki.de/assets/*                  {{ "/assets/" | absolute_url }}:splat               200
+https://static.0xreki.de/crystaldown/thumbnail.jpg {{ "/crystaldown/thumbnail.jpg" | absolute_url }}   200
+https://static.0xreki.de/scions/thumbnail.png      {{ "/scions/thumbnail.jpg" | absolute_url }}        200
+https://static.0xreki.de/amauga/thumbnail.png      {{ "/amauga/thumbnail.png" | absolute_url }}        200
+
+https://static.0xreki.de/blog/images/*             {{ "/blog/images/" | absolute_url }}:splat          200
+https://static.0xreki.de/doman/images/*            {{ "/doman/images/" | absolute_url }}:splat         200
+
+# Proxy URLs for better privacy
+
+https://static.0xreki.de/proxy/gravatar/:i/:s/avatar.jpg  https://secure.gravatar.com/avatar/:i?s=:s&d=identicon&r=pg 200
+
+https://static.0xreki.de/proxy/cloudflare/*               https://static.cloudflareinsights.com/:splat                200
+
+https://static.0xreki.de/proxy/shields/:t/:l/shield.svg   https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=0072ed 200
+
+https://static.crystaldown.de/*                    https://static.0xreki.de/:splat                     301!
+https://static.0xreki.de/*                         {{ "/" | absolute_url }}:splat                      301!
+https://crystaldown.de/*                           {{ "/" | absolute_url }}:splat                      301!
+
+https://amau.ga/sh      https://www.scribblehub.com/series/215253/amauga-far-away-from-modern-civilization/
+https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
+
+/discord                https://discord.gg/8DCZWGc
+
+# Latest URLs
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down" | sort: "chapter" %}/crystaldown/latest/*    {{ pages.last.url }}    302
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down: Scions" | sort: "chapter" %}/scions/latest/*    {{ pages.last.url }}    302
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Amauga" | sort: "chapter" %}/amauga/latest/*    {{ pages.last.url }}    302
+
+# Per Page rules, with fixes do preserve pre-release access key
+
+{% assign pages = site.pages | where_exp: "redirect_from", "redirect_from" %}{% for page in pages %}{% for from in page.redirect_from %}
+{{ from }}*    {{ page.url | absolute_url }}{% endfor %}{% endfor %}
+
+{% assign pages = site.pages | where_exp: "shortlink", "shortlink" %}{% for p in pages %}{% for from in p.shortlink %}{% if p.published == true %}
+
+{{ from }}*    {{ p.url | absolute_url }}
+
+{{ p.url }}     p=:p    {{ p.url | absolute_url }}?bugfix 302! {% elsif p.published == "external" %}
+
+{{ from }}*     p=:p    {{ p.external }}?bugfix 302!
+
+{{ from }}*    {{ p.external }} 302!
+
+{{ p.url }}*    p=:p    {{ p.external }}?bugfix 302!
+
+{{ p.url }}*    {{ p.external }} 302!
+
+{% elsif p.published == "private" %}
+{{ from }}*    p={{ p.token }}    {{ p.url }}    200
+{{ from }}*    /401.html    401
+
+{% elsif p.published == "sponsors" or p.published == "pre-sponsors" %}
+{% if p.chapter %}
+{% assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus %}
+{% else %}
+{% assign token = '000000' %}
+{% endif %}
+{{ from }}*    p={{ token }}    {{ p.url }}    200
+{{ from }}*    p=:p             /401.html      401
+{{ from }}*                     /402.html      402
+
+{% else %}
+{{ from }}*    {{ p.url }}
+{% endif %}
+
+{% endfor %}{% endfor %}
+
+# Protective URLs
+/crystaldown/01-life-in-avan-forest/                      /crystaldown/#volume01-lifeinavanforest
+/crystaldown/02-vampire-aide-and-exodus/                  /crystaldown/#volume02vampire-aideandexodus
+/cd/1/                                                    /crystaldown/#volume01-lifeinavanforest
+/cd/2/                                                    /crystaldown/#volume02vampire-aideandexodus
+
+/scions/01-children-of-light-and-darkness/                /scions/#volume-01-children-of-light-and-darkness
+/s/1/                                                     /scions/#volume-01-children-of-light-and-darkness
+
+/amauga/01-far-from-any-semblance-of-modern-civilization/ /amauga/#volume01-farfromanysemblanceofmoderncivilization
+/a/1/                                                     /amauga/#volume01-farfromanysemblanceofmoderncivilization
+
+# Legacy URLs
+/01-life-in-avan-forest/                                  /crystaldown/#volume01-lifeinavanforest
+/01-life-in-avan-forest/*                                 /crystaldown/01-life-in-avan-forest/:splat
+
+/02-vampire-aide-and-exodus/                              /crystaldown/#volume02vampire-aideandexodus
+/02-vampire-aide-and-exodus/*                             /crystaldown/02-vampire-aide-and-exodus/:splat
+
+/elemental-children/*                                     /scions/:splat
+
+# Short URLs
+https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
+
+https://cd-ht.ml/2/*      {{ "/cd/2" | absolute_url }}:splat   301!
+
+https://cd-ht.ml/s/1/*    {{ "/s/1/" | absolute_url }}:splat   301!
+
+https://cd-ht.ml/*        {{ "/" | absolute_url }}:splat       301!
+
+https://www.cd-ht.ml/*    {{ "/" | absolute_url }}:splat       301!
+
+https://amau.ga/1/*      {{ "/a/1/" | absolute_url }}:splat    301!
+
+https://amau.ga/*        {{ "/" | absolute_url }}:splat        301!
+
+https://www.amau.ga/*    {{ "/" | absolute_url }}:splat        301!
+
+# vim: set textwidth=0:

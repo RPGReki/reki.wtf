@@ -1,0 +1,33 @@
+---
+title: "Contact Form"
+layout: 2020/base
+sitemap: false
+robots: noindex
+comments: false
+permalink: /contact/
+---
+<h1>Contact Form</h1>
+<form name="Contact" method="POST" action="/thanks-for-the-message/" id="contactform" class="form-horizontal" data-netlify="true" netlify-honeypot="captcha">
+  <fieldset id="contact">
+    <div>
+      <label for="name">Name </label>
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <label for="email">Email</span></label>
+      <input type="email" name="email" id="email" placeholder="name@domain.tld" />
+      <label for="url">Website</label>
+      <input type="text" name="url" id="url" placeholder="https://domain.tld" />
+    </div>
+    <div>
+      <label for="message">Message*</label>
+      <textarea name="message" id="message" placeholder="Leave a message."></textarea>
+    </div>
+    <div class="d-none">
+      <input name="slug" type="hidden" value="{{ slug }}">
+      <label for="captcha">Captcha</label>
+      <input name="captcha" type="text">
+    </div>
+    <div>
+      <button type="sumbit" id="messagebutton" class="btn btn-primary btn-block">Submit</button>
+    </div>
+  </fieldset>
+</form>

@@ -1,0 +1,8 @@
+[build]
+base = ""
+publish = "site/_site"
+command = "make"
+
+[dev]
+framework = "#static"
+publish = "site/_site"

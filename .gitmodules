@@ -13,3 +13,6 @@
 [submodule "theme"]
 	path = theme
 	url = git@github.com:0xReki/crystaldown-theme.git
+[submodule "0xReki"]
+	path = 0xReki
+	url = git@github.com:0xReki/0xReki.git

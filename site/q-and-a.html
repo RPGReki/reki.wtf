@@ -1,0 +1,105 @@
+---
+title: Questions and Answers
+layout: 2020/base
+date: 2021-06-05
+redirect_from:
+  - "/faq/"
+comments: false
+excerpt: |
+  When is the next chapter coming?
+  Why can't I hide the banner without accepting it?
+  Why don't you use Facebook Comments or disqus like everyone else?
+  Why do you host on Netlify?
+  Why isn't “Return to Last Read Chapter” working for me?
+  I have suggestion!
+
+seo_meta_fix: 2
+---
+<h1>{{ page.title }}</h1>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+  {% assign author = site.data.staff | where: id, page.author | last %}
+  <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{{ author.name }}">
+    <meta itemprop="url" content="{{ author.url }}">
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="banner" itemprop="name">
+      Why can't I hide the banner without accepting it?
+    </h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        If the setting is not saved the banner would just come back on the next page.
+        But to save the setting at all a cookie needs to be stored.
+        But without consent I shouldn't be storing cookies at all.
+        That's not how other pages handle it, but I believe this is how it should be handled.
+      </div>
+      <meta itemprop="url" content="{{ page.url | absolute_url }}#banner">
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="comments" itemprop="name">
+      Why don't you use Facebook Comments or disqus like everyone else?
+    </h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        I used to use disqus.
+        It had only one advantage: it's not Facebook.
+        But it has quite a big downside: it's slow as molasses.
+        The script is served quite awful: it redirects several times.
+        If I were to autoload it, it would weigh down all Page Speed rankings by at least 20%.
+        <strike>There would be some other faster solutions to self host but I want to concentrate on writing the web novel and not <strike>waste time</strike> spend time setting up some other software and keep the needed servers running.</strike>&ensp;
+        Now I'm using a Netlify construction. Sometimes, technology sucks.
+      </div>
+      <meta itemprop="url" content="{{ page.url | absolute_url }}#comments">
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="hosting" itemprop="name">
+      Why do you host on Netlify?
+    </h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        Again, I want to concentrate on writing the novel, not fix stuff myself.
+        Plus, I'm using markdown anyway so any place that handles markdown was just the place to go.
+        I used to use GitHub Pages, but GitHub is missing a lot of features both on the repository side as well as on the hosting side.
+        GitLab happens to be better with the repository side and Netlify happens to be the only place that supports setting custom HTTP headers and proper 30x redirects.
+      </div>
+      <meta itemprop="url" content="{{ page.url | absolute_url }}#hosting">
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="suggestion" itemprop="name">
+      I have suggestion!</h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        Hit me up
+        <a href="https://m.me/CrystalDownWN" target="_blank" rel="noopener nofollow">on Facebook</a>,
+        <a href="https://twitter.com/0xReki" target="_blank" rel="noopener">on Twitter</a>,
+        or even better <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow">on Discord</a>!
+      </div>
+      <meta itemprop="url" content="{{ page.url | absolute_url }}#suggestion">
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h2 id="other" itemprop="name">
+      My Question isn't here!
+    </h2>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        Hit me up
+        <a href="https://m.me/CrystalDownWN" target="_blank" rel="noopener nofollow">on Facebook</a>,
+        <a href="https://twitter.com/0xReki" target="_blank" rel="noopener">on Twitter</a>,
+        or even better <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow">on Discord</a>
+        and ask your questions there.
+        Answers will be coming… eventually…
+      </div>
+      <meta itemprop="url" content="{{ page.url | absolute_url }}#other">
+    </div>
+  </div>
+</div>

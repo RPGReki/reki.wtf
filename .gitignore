@@ -1,0 +1,42 @@
+### Vim ###
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+### Jekyll ###
+_site*
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+## Netlify
+.env
+/site/_data/comments.json
+/site/_data/polls/
+
+## VSCode
+/.vscode
+
+## aspell
+**.pws
+
+## Git
+.git-metadata
+
+## Node
+node_modules
+
+## local Environment
+.env
+/site/proxy/
+/site/_posts/
+
+# Local Netlify folder
+.netlify

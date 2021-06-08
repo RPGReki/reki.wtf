@@ -1,0 +1,325 @@
+## Basic Configuration
+title: "0xReki's Adventures by Night"
+description: "Creative Writing, Mahjong and more!"
+source: site
+destination: site/_site
+
+url: "https://0xreki.de"
+staticUrl: "https://static.0xreki.de"
+shorturl:
+  -
+    url: "https://amau.ga/"
+    prefix: "/a/"
+  -
+    url: "https://cd-ht.ml/"
+    prefix: "/cd/"
+
+excerpt_separator: "<!--more-->"
+feed: /feeds/chapters.xml
+exclude:
+  - "build.sh"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE.md"
+  - "README.md"
+  - "**/*.xcf"
+  - "**/.*"
+  - "**/.map"
+  - "_theme"
+  - "**/Makefile"
+include:
+  - "_headers"
+  - "_redirects"
+permalink: pretty
+future: true
+
+### Copyright
+copyright:
+  license: <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+  name: Thai “0xReki” Chung
+  url: https://0xreki.de/about-me/
+
+
+### SASS
+sass:
+  style: compressed
+  cache: false
+
+### Plugins
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-regex-replace
+  - jekyll-include-cache
+  - jekyll-liquify
+  - jekyll-criticmarkup
+  - jekyll-wns
+
+## SEO
+twitter:
+  username: 0xReki
+  creator: 0xReki
+  card: summary
+facebook:
+  app_id: 1161469024012899
+  publisher: 372546986661616
+google_analytics: UA-143950814-4
+patreon:
+  title: Become a Patron to get early access to new chapters
+  url: https://www.patreon.com/RWNS
+webmaster_verifications:
+  - name: seobility
+    key: efc87fbbcdcf8f61c070bbcc23dab8b1
+  - name: "flattr:id"
+    key: ol39pw
+  - name: yandex-verification
+    key: 323210d55347b761
+
+# Optimizations
+compress_html:
+  clippings: []
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+preload:
+  fonts:
+  - /assets/fonts/Cardo-Regular.woff2
+  - /assets/fonts/Cardo-Bold.woff2
+  - /assets/fonts/Source-Sans-Pro-Regular.woff2
+  - /assets/fonts/Source-Sans-Pro-Bold.woff2
+
+about:
+  type: Person
+  links:
+    - https://twitter.com/0xReki
+    - https://facebook.com/0xReki
+    - https://twitch.tv/RPGReki
+    - https://twitch.tv/RiichiReki
+    - https://github.com/0xReki
+    - https://instagram.com/oxreki
+    - https://www.linkedin.com/in/q-thai-chung
+    - https://www.xing.com/profile/Thai_Chung
+    - https://amazon.com/author/0xreki
+    - http://mahjong-europe.org/ranking/Players/05100170.htm
+    - https://www.patreon.com/RWNS
+    - https://www.scribblehub.com/profile/19792/0xreki/
+
+liquid:
+  error_mode: warn
+
+wns:
+  quads: true
+  abbreviations: true
+
+token:
+  max: 2147483647
+  mod:  899998
+  plus: 100000
+
+# Syntax
+markdown: kramdown
+
+# Comments
+comments:
+  action: /thanks-for-commenting/
+
+## Defaults
+defaults:
+  - # /
+    scope:
+      path: ""
+    values:
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      comments: false
+      image: /assets/images/site-og.png
+  - # /_posts/personal
+    scope:
+      path: "_posts/personal"
+    values:
+      category: personal
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /:year/:month-:day-:title
+  - # /_posts/amauga
+    scope:
+      path: "_posts/amauga"
+    values:
+      category: amauga
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /amauga/blog/:year/:month-:day-:title
+  - # /_posts/crystaldown
+    scope:
+      path: "_posts/crystaldown"
+    values:
+      category: crystaldown
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /crystaldown/blog/:year/:month-:day-:title
+  - # /01-life-in-avan-forest
+    scope:
+      path: "crystaldown/01-life-in-avan-forest"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: true
+      termbase: /crystaldown
+      book:
+        number: 1
+        series: Crystal Down
+        copyrightYear: 2019-2020
+        title: "Life in Avan Forest"
+        url: "/crystaldown/#volume01-lifeinavanforest"
+        genres:
+          - Comedy
+          - Fantasy
+          - Isekai
+          - LitRPG
+          - Slice of Life
+      image: /assets/images/site-og.png
+  - # /02-vampire-aide-and-exodus
+    scope:
+      path: "crystaldown/02-vampire-aide-and-exodus"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: true
+      termbase: /crystaldown
+      book:
+        number: 2
+        series: Crystal Down
+        copyrightYear: 2020-2021
+        title: "Vampire Aide and Exodus"
+        url: "/crystaldown/#volume02-vampireaideandexodus"
+        genres:
+          - Comedy
+          - Fantasy
+          - Isekai
+          - LitRPG
+          - Slice of Life
+      image: /assets/images/site-og.png
+  - # /elemental-children/01-children-of-light-and-darkness
+    scope:
+      path: "scions/01-children-of-light-and-darkness"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: true
+      termbase: /crystaldown
+      book:
+        number: 1
+        series: "Crystal Down: Scions"
+        copyrightYear: 2020
+        title: "Children of Light and Darkness"
+        url: "/scions/#volume-01-children-of-light-and-darkness"
+        genres:
+          - Adventure
+          - Fantasy
+          - LitRPG
+          - Slice of Life
+      image: /assets/images/site-og.png
+  - # /amauga/01
+    scope:
+      path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: true
+      termbase: /amauga
+      book:
+        number: 1
+        series: Amauga
+        copyrightYear: 2021
+        title: "Far From Any Semblance of Modern Civilization"
+        url: "/amauga/#volume01-farfromanysemblanceofmoderncivilization"
+        genres:
+          - Adventure
+          - Fantasy
+          - Slice of Life
+        audio_mirror: 
+          - "https://amauga.s3.us-east-2.amazonaws.com/"
+      image: /amauga/-og.png
+  - # /reincarnated-as-cat/01
+    scope:
+      path: "reincarnated-as-cat/01/"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: true
+      termbase: /reincarnated-as-cat/
+      book:
+        number: 1
+        series: That Time I Got Reincarnated as a Cat
+        copyrightYear: 2022
+        title: That Time I Got Reincarnated as a Cat
+        url: "/reincarnated-as-cat/#volume01"
+        genres:
+          - Adventure
+          - Fantasy
+          - Slice of Life
+      image: /assets/images/site-og.png
+  - # /private
+    scope:
+      path: "private"
+    values:
+      layout: base
+      sitemap: false
+      image: /assets/images/site-og.png

@@ -1,0 +1,82 @@
+---
+layout: null
+sitemap: false
+permalink: /_headers
+---
+/*
+  Content-Security-Policy: upgrade-insecure-requests;default-src 'self' 0xreki.de static.0xreki.de; base-uri 'self'; media-src 'self' 0xreki.de static.0xreki.de amauga.s3.us-east-2.amazonaws.com; script-src 'self' 'unsafe-inline' 0xreki.de static.0xreki.de *.netlify.app; script-src-elem 'self' 'sha256-0x8+KctX5w3DwyXg14J1w5wIgB1Asxhd0pasYrI9TKg=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' 'sha256-XTQGBEvsZC6c6kRyIXY9+oXg1Inv41JnlOnSbdA4dpk=' 'sha256-4Amo8MXCWfkrOHD6HrolTcZjIyciljwHajQRyeNI9II=' 'sha256-A4JZnFCGjbho2ITgxvzKTBse/cJesrRa3yg9S8aEKEc=' 'sha256-B75kuj4XBwqTynjEBPY0crnnQrCH3Uckwy8CeNtR5Mg=' 'sha256-h/VhtJ/dejlggs4c099UMIOFXHbY7GShgW9ib/S3fYY=' 'sha256-jt0fluv+2kfDRP7lqettjyHx8MocFVb7Knqy4uxo7Ps=' 0xreki.de static.0xreki.de *.netlify.app; script-src-attr 'self' 'unsafe-hashes' 'sha256-MQU1BH4wD3u64AS6Cy/nWfH/f02mnGU0CkcWkax+FLo=' 'sha256-6EslD/JK6DRtZhCSSJeYErR4KqZrUh9v2JDxUbYRE9s=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-fSqLOr3szT8xi3iYGmDBfK9fVPTqCKDrB+wtoUs/3rs=' 'sha256-FIbEe8NyuozKHmqjyymJtVB+RlgJHrq5bEHfUaeSVks=' 'sha256-mKENJbUttTA1eG1zHsOaKvsqA+eWGYqqtGyLB+2ooMs='; style-src 'self' 'unsafe-inline' 0xreki.de static.0xreki.de; font-src 'self' data: 0xreki.de static.0xreki.de; img-src 'self' data: 0xreki.de static.0xreki.de https://img.youtube.com; frame-src 'self' www.youtube-nocookie.com www.google.com; form-action 0xreki.de *.netlify.app amau.ga cd-ht.ml;
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Access-Control-Allow-Origin: *
+  Access-Control-Max-Age: 86400
+
+/.private/slides/*
+  Content-Security-Policy: upgrade-insecure-requests;default-src 'self' 0xreki.de static.0xreki.de; base-uri 'self'; media-src 'self' 0xreki.de static.0xreki.de amauga.s3.us-east-2.amazonaws.com; script-src 'self' 'unsafe-inline' 0xreki.de static.0xreki.de *.netlify.app; script-src-elem 'self' 'sha256-0x8+KctX5w3DwyXg14J1w5wIgB1Asxhd0pasYrI9TKg=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' 'sha256-XTQGBEvsZC6c6kRyIXY9+oXg1Inv41JnlOnSbdA4dpk=' 'sha256-4Amo8MXCWfkrOHD6HrolTcZjIyciljwHajQRyeNI9II=' 'sha256-A4JZnFCGjbho2ITgxvzKTBse/cJesrRa3yg9S8aEKEc=' 'sha256-B75kuj4XBwqTynjEBPY0crnnQrCH3Uckwy8CeNtR5Mg=' 'sha256-h/VhtJ/dejlggs4c099UMIOFXHbY7GShgW9ib/S3fYY=' 'sha256-jt0fluv+2kfDRP7lqettjyHx8MocFVb7Knqy4uxo7Ps=' 0xreki.de static.0xreki.de *.netlify.app; style-src 'self' 'unsafe-inline' 0xreki.de static.0xreki.de; font-src 'self' data: 0xreki.de static.0xreki.de; img-src 'self' data: 0xreki.de static.0xreki.de https://img.youtube.com; frame-src 'self' www.youtube-nocookie.com www.google.com; form-action 0xreki.de *.netlify.app amau.ga cd-ht.ml;
+
+/*
+  Cache-Control: public, max-age=86400, s-max-age=259200, stale-while-revalidate=259200
+
+/favicon.ico
+  Content-Type: image/x-icon
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/robots.txt
+  Content-Type: text/plain; charset=UTF-8
+
+/sitemap.xml
+  Content-Type: application/xml
+
+/**/*.css
+  Content-Type: text/css; charset=UTF-8
+  Cache-Control: public, max-age=604800, stale-while-revalidate=1209600
+
+/**/*.hpb
+  Content-Type: application/octet-stream
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.jpg
+  Content-Type: image/jpeg
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.js
+  Content-Type: application/javascript
+  Cache-Control: public, max-age=604800, stale-while-revalidate=1209600
+
+/**/*.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.ttf
+  Content-Type: font/ttf
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.wasm
+  Content-Type: application/wasm
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.woff2
+  Content-Type: font/woff2
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.mp3
+  Content-Type: audio/mpeg
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.ogg
+  Content-Type: audio/ogg
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/chapters.xml
+  Content-Type: application/atom+xml; charset=UTF-8
+
+/**/blog.xml
+  Content-Type: application/atom+xml; charset=UTF-8
+
+/**/playlist.xspf
+  Content-Type: application/xspf+xml; charset=UTF-8
+
+/**/podcast.xml
+  Content-Type: application/rss+xml"; charset=UTF-8
+
+# vim: set textwidth=0:

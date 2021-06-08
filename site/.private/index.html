@@ -1,0 +1,31 @@
+---
+layout: 2020/base
+published: private
+sitemap: false
+robots: noindex
+title: Private Index
+shortlink: /private/
+token: 172025
+---
+<ul>
+{% assign pages = site.pages | sort: 'date' %}
+{% for p in pages %}
+{% if p.published == "sponsors" or p.published == "pre-sponsors" or p.published == "private" %}
+<li>Date to be published: {{ p.date }}<br>
+    {% assign s = p.shortlink %}
+    {% for i in site.shorturl %}
+      {% assign s = s | replace: i.prefix, i.url %}
+    {% endfor %}
+    {% if p.type == "chapter" %}
+      {{ p.book.series }}: {{ p.book.number }}-{{ p.chapter }}: {{ p.title }}<br>
+      {% if p.chapter %}
+        {% capture url %}{{ s }}?p={{ site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus }}{% endcapture %}
+      {% endif %}
+    {% else %}
+      {{ p.title }}<br>
+      {% capture url%}{{ s }}?p={{ p.token }}{% endcapture %}
+    {% endif %}
+      <a href="{{ url }}">{{ url }}</a> --> https://crystaldown.de{{ p.url }}</li>
+{% endif %}
+{% endfor %}
+</ul>
