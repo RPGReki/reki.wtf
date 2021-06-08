@@ -1,18 +1,29 @@
 [submodule "amauga"]
 	path = amauga
 	url = git@github.com:0xReki/amauga.git
+	branch = main
+	
 [submodule "crystaldown"]
 	path = crystaldown
 	url = git@github.com:0xReki/crystaldown.git
+	branch = main
+
 [submodule "scions"]
 	path = scions
 	url = git@github.com:0xReki/scions.git
+	branch = main
+
 [submodule "reincarnated-as-cat"]
 	path = reincarnated-as-cat
 	url = git@github.com:0xReki/reincarnated-as-cat.git
+	branch = main
+
 [submodule "theme"]
 	path = theme
 	url = git@github.com:0xReki/crystaldown-theme.git
+	branch = main
+
 [submodule "0xReki"]
 	path = 0xReki
 	url = git@github.com:0xReki/0xReki.git
+	branch = main
