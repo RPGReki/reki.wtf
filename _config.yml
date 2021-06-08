@@ -27,9 +27,12 @@ exclude:
   - "**/.map"
   - "_theme"
   - "**/Makefile"
+  
 include:
   - "_headers"
   - "_redirects"
+  - ".private"
+
 permalink: pretty
 future: true
 

@@ -10,6 +10,9 @@
 - text: Doman Mahjong Tournament
   url: /doman/
   unicode_icon: 🀙
+- text: Tags
+  url: /tags/
+  unicode_icon: 🏷
 - text: FAQ
   url: /q-and-a/
   unicode_icon: ⁉️

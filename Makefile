@@ -31,3 +31,6 @@ create-tables:
 
 diff-tables:
 	bash $(GIT_ROOT)/scripts/diffTables.sh
+
+tags:
+	bash $(GIT_ROOT)/docs/.well-known/createTags.sh
