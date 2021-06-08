@@ -26,6 +26,7 @@ Session.vim
 /site/_posts/
 /site/_data/comments.json
 /site/_data/polls/
+/site/plugins/
 /site/proxy/
 .sass-cache
 .jekyll-cache
