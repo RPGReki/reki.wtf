@@ -2,26 +2,26 @@ GIT_ROOT = $(shell git rev-parse --show-toplevel)
 
 default: production
 
-testing:
+testing: posts
 	bash $(GIT_ROOT)/scripts/buildTesting.sh
 
-serve-testing:
-	bash $(GIT_ROOT)/scripts/buildTesting.sh --watch
+serve-testing: posts
+	bash $(GIT_ROOT)/scripts/runTesting.sh
 
-staging:
+staging: posts
 	bash $(GIT_ROOT)/scripts/buildStaging.sh
 
-serve-staging:
-	bash $(GIT_ROOT)/scripts/buildStaging.sh --watch
+serve-staging: posts
+	bash $(GIT_ROOT)/scripts/runStaging.sh
 
-production: comments polls
+production: posts comments polls
 	bash $(GIT_ROOT)/scripts/buildProduction.sh
 
 deploy: production
 	netlify deploy -p
 
-build-ebooks:
-	bash $(GIT_ROOT)/scripts/buildEbooks.sh
+posts:
+	bash $(GIT_ROOT)/scripts/copyPosts.sh
 
 comments:
 	gulp get-comments

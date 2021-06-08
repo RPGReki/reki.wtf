@@ -15,6 +15,7 @@ _site*
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+/doc/
 
 ## Netlify
 .env

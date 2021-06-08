@@ -2,7 +2,7 @@
 layout: compress
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-{% assign pages = site.posts | where: "series", "status" | sort_natural: "date" | reverse %}
+{% assign pages = site.posts | where: "category", "personal" | sort_natural: "date" | reverse %}
 <feed xmlns="http://www.w3.org/2005/Atom">
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml"/>

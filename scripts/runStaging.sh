@@ -4,7 +4,7 @@ set -m
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 PIDS=()
-scripts/buildTesting.sh --watch &
+scripts/buildStaging.sh --watch &
 PIDS+=($!)
 
 netlify dev &

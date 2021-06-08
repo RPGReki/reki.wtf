@@ -2,7 +2,7 @@
 title: "0xReki's Adventures by Night"
 description: "Creative Writing, Mahjong and more!"
 source: site
-destination: site/_site
+destination: doc
 
 url: "https://0xreki.de"
 staticUrl: "https://static.0xreki.de"
@@ -184,7 +184,39 @@ defaults:
       published: true
       image: /assets/images/site-og.png
       permalink: /crystaldown/blog/:year/:month-:day-:title
-  - # /01-life-in-avan-forest
+  - # /_posts/scions
+    scope:
+      path: "_posts/scions"
+    values:
+      category: scions
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /amauga/blog/:year/:month-:day-:title
+  - # /_posts/reincarnated-as-cat
+    scope:
+      path: "_posts/reincarnated-as-cat"
+    values:
+      category: amauga
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /amauga/blog/:year/:month-:day-:title
+  - # /crystaldown/01-life-in-avan-forest
     scope:
       path: "crystaldown/01-life-in-avan-forest"
     values:
@@ -211,7 +243,7 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
-  - # /02-vampire-aide-and-exodus
+  - # /crystaldown/02-vampire-aide-and-exodus
     scope:
       path: "crystaldown/02-vampire-aide-and-exodus"
     values:
@@ -238,7 +270,7 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
-  - # /elemental-children/01-children-of-light-and-darkness
+  - # /scions/01-children-of-light-and-darkness
     scope:
       path: "scions/01-children-of-light-and-darkness"
     values:
@@ -264,7 +296,7 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
-  - # /amauga/01
+  - # /amauga/01-far-from-any-semblance-of-modern-civilization
     scope:
       path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
     values:
@@ -316,9 +348,9 @@ defaults:
           - Fantasy
           - Slice of Life
       image: /assets/images/site-og.png
-  - # /private
+  - # /.private
     scope:
-      path: "private"
+      path: ".private"
     values:
       layout: base
       sitemap: false
