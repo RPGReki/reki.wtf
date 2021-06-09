@@ -17,6 +17,7 @@ permalink: /sitemap.xml
      page.url contains 'sitemap.xml' or 
      page.url contains 'podcast-ogg.xml' or 
      page.url contains 'itunes.xml' or 
+     page.url contains '.dev' or
      page.url contains '.well-known' or
      page.url contains 'scions/blog.xml' or
      page.url contains 'reincarnated-as-cat'

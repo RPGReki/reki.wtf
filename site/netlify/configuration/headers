@@ -17,6 +17,18 @@ permalink: /_headers
 /*
   Cache-Control: public, max-age=86400, s-max-age=259200, stale-while-revalidate=259200
 
+/a/*
+  Cache-Control: max-age=300, must-revalidate
+
+/cd/*
+  Cache-Control: max-age=300, must-revalidate
+
+/e/*
+  Cache-Control: max-age=300, must-revalidate
+
+/cat/*
+  Cache-Control: max-age=300, must-revalidate
+
 /favicon.ico
   Content-Type: image/x-icon
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
@@ -72,6 +84,7 @@ permalink: /_headers
 
 /**/blog.xml
   Content-Type: application/atom+xml; charset=UTF-8
+  X-Robots-Tag: Seobility: noindex, follow
 
 /**/playlist.xspf
   Content-Type: application/xspf+xml; charset=UTF-8
