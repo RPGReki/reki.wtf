@@ -36,6 +36,9 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 
 # Per Page rules, with fixes do preserve pre-release access key
 
+{% assign pages = site.posts | where_exp: "redirect_from", "redirect_from" %}{% for page in pages %}{% for from in page.redirect_from %}
+{{ from }}*    {{ page.url | absolute_url }}{% endfor %}{% endfor %}
+
 {% assign pages = site.pages | where_exp: "redirect_from", "redirect_from" %}{% for page in pages %}{% for from in page.redirect_from %}
 {{ from }}*    {{ page.url | absolute_url }}{% endfor %}{% endfor %}
 
@@ -92,7 +95,7 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 /02-vampire-aide-and-exodus/                              /crystaldown/#volume02vampire-aideandexodus
 /02-vampire-aide-and-exodus/*                             /crystaldown/02-vampire-aide-and-exodus/:splat
 
-/elemental-children/*                                     /scions/:splat
+/tags/*                                                   /tags/
 
 # Short URLs
 https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
@@ -101,14 +104,14 @@ https://cd-ht.ml/2/*      {{ "/cd/2" | absolute_url }}:splat   301!
 
 https://cd-ht.ml/s/1/*    {{ "/s/1/" | absolute_url }}:splat   301!
 
-https://cd-ht.ml/*        {{ "/" | absolute_url }}:splat       301!
+https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}:splat       301!
 
-https://www.cd-ht.ml/*    {{ "/" | absolute_url }}:splat       301!
+https://www.cd-ht.ml/*    {{ "/crystaldown/" | absolute_url }}:splat       301!
 
-https://amau.ga/1/*      {{ "/a/1/" | absolute_url }}:splat    301!
+https://amau.ga/1/*       {{ "/a/1/" | absolute_url }}:splat    301!
 
-https://amau.ga/*        {{ "/" | absolute_url }}:splat        301!
+https://amau.ga/*         {{ "/amauga/" | absolute_url }}        301!
 
-https://www.amau.ga/*    {{ "/" | absolute_url }}:splat        301!
+https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}:splat        301!
 
 # vim: set textwidth=0:
