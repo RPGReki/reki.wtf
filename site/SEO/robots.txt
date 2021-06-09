@@ -6,14 +6,15 @@ Sitemap: {{"/sitemap.xml" | absolute_url }}
 
 User-Agent: *
 Allow:
+Disallow: /.dev
 
 User-Agent: Seobility
-Disallow: /blog.xml
-Disallow: /amauga/chapters.xml
-Disallow: /amauga/blog.xml
-Disallow: /crystaldown/chapters.xml
-Disallow: /crystaldown/blog.xml
-Disallow: /scions/chapters.xml
-Disallow: /scions/blog.xml
-Disallow: /reincarnated-as-cat/chapters.xml
-Disallow: /reincarnated-as-cat/blog.xml
+Disallow: blog.xml
+Disallow: amauga/chapters.xml
+Disallow: amauga/blog.xml
+Disallow: crystaldown/chapters.xml
+Disallow: crystaldown/blog.xml
+Disallow: scions/chapters.xml
+Disallow: scions/blog.xml
+Disallow: reincarnated-as-cat/chapters.xml
+Disallow: reincarnated-as-cat/blog.xml
