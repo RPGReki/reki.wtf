@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     request = require('request'),
     fs = require('fs'),
     md5 = require('md5'),
-    config = require('dotenv').config();
+    config = require('dotenv').config(),
+    argv = require('minimist')(process.argv.slice(2));
 
 var buildSrc = "./";
 
@@ -14,7 +15,7 @@ gulp.task("get-comments", function (done) {
     // get the data from Netlify's submissions API
     request(url, function(err, response, body){
         if(!err && response.statusCode === 200){
-            console.log("Submissions found");
+            argv.silent || console.log("Submissions found");
             var body = JSON.parse(body);
             var comments = {};
 
@@ -45,7 +46,7 @@ gulp.task("get-comments", function (done) {
                     console.log(err);
                     done();
                 } else {
-                    console.log("Comments data saved.");
+                    argv.silent || console.log("Comments data saved.");
                     done();
                 }
             });
@@ -65,7 +66,7 @@ gulp.task("get-poll-referral", function (done) {
     // get the data from Netlify's submissions API
     request(url, function(err, response, body){
         if(!err && response.statusCode === 200){
-            console.log("Submissions found");
+            argv.silent || console.log("Submissions found");
             var body = JSON.parse(body);
             var poll = [];
 
@@ -87,7 +88,7 @@ gulp.task("get-poll-referral", function (done) {
                     console.log(err);
                     done();
                 } else {
-                    console.log("Poll data saved.");
+                    argv.silent || console.log("Poll data saved.");
                     done();
                 }
             });
