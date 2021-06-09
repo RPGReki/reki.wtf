@@ -43,7 +43,7 @@ site/_data/polls:
 	mkdir "$@"
 	gulp get-poll-referral --silent
 
-site/tags: $(PERSONAL_POST_SRC) $(STORY_POSTS_SRC)
+site/tags: $(PERSONAL_POST_DEST) $(STORY_POSTS_DEST)
 	jekyll b -q
 	bash docs/.dev/createTags.sh 2>&1 > /dev/null
 
