@@ -12,7 +12,9 @@ staging-live: posts
 	bash $(GIT_ROOT)/scripts/serve.sh staging --live
 
 production: posts comments polls
-	bash $(GIT_ROOT)/scripts/build.sh production
+	bash $(GIT_ROOT)/scripts/build.sh production --no-watch
+	make tags
+	bash $(GIT_ROOT)/scripts/build.sh production --incremental
 
 deploy: production
 	netlify deploy -p
@@ -33,4 +35,4 @@ diff-tables:
 	bash $(GIT_ROOT)/scripts/diffTables.sh
 
 tags:
-	bash $(GIT_ROOT)/docs/.well-known/createTags.sh
+	bash $(GIT_ROOT)/docs/.dev/createTags.sh > /dev/null

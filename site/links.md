@@ -46,25 +46,25 @@ I'm open for cross promotion. See [Questions & Answers](/q-and-a/) for Contactin
 ### Software
 
 - [markdowny](https://www.npmjs.com/package/markdowny){:target="_blank" ref="noopener"}\\
-  When I started out I had like 5 lines of front matter in my files. Since then I had to add more to
-  do things like navigation, SEO etc. There were times where 40 lines of front matter for each file
-  was normal. All that would be a real pain to manage and check if I didn't have a tool that goes
-  with it.
+  When I started out I had like 5 lines of front matter in my files.
+  Since then I had to add more to do things like navigation, SEO etc.
+  There were times where 40 lines of front matter for each file   was normal.
+  All that would be a real pain to manage and check if I didn't have a tool that goes with it.
 - [Jekyll](https://jekyllrb.com/){:target="_blank" ref="noopener"}\\
-  Jekyll takes my markdown files and builds this website. Usually, GitHub Pages does that for me,
-  but when I need to test something I need to run it on my computer testing it before I release
-  changes to the wild.
+  Jekyll takes my markdown files and builds this website.
+  Usually, GitHub Pages does that for me, but when I need to test something I need to run it on my computer testing it before I release changes to the wild.
 - [ProWritingAid](https://prowritingaid.com/?afid=9599){:target="_blank" ref="noopener"}\\
-  while I have some people that read over my chapters, it'd be rude not to run it through automated tools before
-  having a human look at them. So far, it works better than I expected!
+  while I have some people that read over my chapters, it'd be rude not to run it through automated tools before having a human look at them.
+  So far, it works better than I expected!
 - [pandoc](https://pandoc.org/){:target="_blank" ref="noopener"}\\
-  While I could just try and use some plugin for jekyll for creating eBook versions those plugins
-  just don't work with my setup. So instead I just wrote a script that creates an ebook using
-  kramdown and pandoc.
+  While I could just try and use some plugin for jekyll for creating eBook versions those plugins just don't work with my setup.
+  So instead I just wrote a script that creates an ebook using kramdown and pandoc.
 - [Calibre](https://calibre-ebook.com/){:target="_blank" ref="noopener"}\\
-  A must-have tool for eBook lovers. I use it to convert my ePUB to PDF. It works 90% of all cases.
+  A must-have tool for eBook lovers.
+  I use it to convert my ePUB to PDF.
+  In 90% of all cases, it works without further intervention.
 - [mnater/Hyphenopoly](https://github.com/mnater/Hyphenopoly){:target="_blank" ref="noopener"}\\
   A Hyphenation Polyfill for client-side hyphenation.
 - [Hagsten/Talkify](https://github.com/Hagsten/Talkify){:target="_blank" ref="noopener"}\\
-  Used for the Text-To-Speech function. I don't use the their fancy voice, since these seem to
-  have trouble with hyphenation.
+  Used for the Text-To-Speech function.
+  I don't use the their fancy voice, since these seem to have trouble with hyphenation.

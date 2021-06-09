@@ -1,15 +1,44 @@
 ---
-title: "All Posts Tagged with Good Old Game"
+layout: null
+---
+#!/bin/bash
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}{% 
+assign tag_words = site_tags | split:',' | sort %}
+
+cd $(git rev-parse --show-toplevel) || exit 1
+
+[ -d "site/tags/" ] || mkdir "site/tags/"
+
+cat << EOF > site/tags/index.html
+---
+title: "List of All Tags 🏷"
 layout: 2020/base
 robots: noindex, follow
 ---
-<h1>{{ page.title }}</h1>
-{% 
-assign posts = site.tags["Good Old Game"] | sort: 'date' | reverse %}{%
+<h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+<div class="container">
+<div class="row">
+{% for i in tag_words %}
+  <a href="/tags/{{ i | strip | slugify }}/" class="btn bln-lg btn-primary mx-md-2 my-md-2">{{ i }}</a>{% endfor %}
+</div>
+</div>
+
+EOF
+
+{% for i in tag_words %}
+cat << EOF > site/tags/{{ i | strip | slugify }}.html
+---
+title: "All Posts Tagged with {{ i }}"
+layout: 2020/base
+robots: noindex, follow
+---
+<h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+{% raw %}{% 
+assign posts = site.tags["{% endraw %}{{i}}{% raw %}"] | sort: 'date' | reverse %}{%
 for post in posts %}
-  <article itemscope itemtype="https://schema.org/BlogPosting" class="interface top-toggle hentry">
+  <article itemscope itemtype="https://schema.org/BlogPosting" class="interface hentry">
     <h2 itemprop="name" id="{{ post.title | slugify }}" class="active entry-title" onclick="toggleAccordion(this)">
-        {{ post.title }}
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </h2>
     <meta itemprop="headline" content="{{ post.title }}">
     {% assign author = site.data.staff | where: "id", page.author | last %}
@@ -65,7 +94,9 @@ for post in posts %}
   </a>
 </p>
 <!-- hash: 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' -->
-<script>function openHash(hash){.removeClass('bg-success');hits	command
-  27	/bin/cat.addClass('bg-success').parents('.interface').children('.inactive').addClass('active');.scrollTop(hits	command
-  27	/bin/cat.offset().top);}if (window.location.hash!=""){document.addEventListener('DOMContentLoaded',function(){openHash(window.location.hash)},false)}</script>
+<script>function openHash(hash){$('.bg-success').removeClass('bg-success');$(hash).addClass('bg-success').parents('.interface').children('.inactive').addClass('active');$('html').scrollTop($(hash).offset().top);}if (window.location.hash!=""){document.addEventListener('DOMContentLoaded',function(){openHash(window.location.hash)},false)}</script>
+{% endraw %}
+EOF
 
+{% endfor %}
+ 

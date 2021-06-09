@@ -28,6 +28,7 @@ Session.vim
 /site/_data/polls/
 /site/plugins/
 /site/proxy/
+/site/tags/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata

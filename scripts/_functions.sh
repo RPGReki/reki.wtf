@@ -6,10 +6,12 @@ function sync-story-posts {
         while read path action file; do
             target_path="site/_posts/$(echo ${path} | cut -d '/' -f 1)/$(echo ${path} | cut -d '/' -f 3)"
             [ -d "$target_path" ] || mkdir -p "${target_path}"
+            rm -rf site/tags/
             cp "${path}${file}" "${target_path}/${file}"
+            make tags
         done
     )&
-    echo -$! | tee -a .PID 
+    >> .PID 
 }
 
 function sync-personal-posts {
@@ -21,7 +23,7 @@ function sync-personal-posts {
             cp "${path}${file}" "${target_path}/${file}"
         done
     ) &
-    echo -$! | tee -a .PID
+    echo -$! >> .PID
 }
 
 function wait-for-input {
@@ -48,7 +50,7 @@ function build {
 
     if [ "$2" = "--watch" ]; then
         bundle exec jekyll b --config ${_config} --future --trace -q "$2" &
-        echo $! | tee -a .PID
+        echo $! >> tee -a .PID
     else
         bundle exec jekyll b --config ${_config} --future --trace "$2"
     fi
@@ -56,14 +58,8 @@ function build {
 
 function kill-tasks {
     for i in $(cat .PID); do
-        echo SIGTERM PID ${i}…
-        kill -s 15 ${i}
-    done
-    
-    for i in $(cat .PID); do
-        echo SIGKILL PID ${i}…
-        kill -s 9 ${i}
+        kill -s 15 ${i} || (sleep 10 && kill -s9 ${i})
     done
 
-    rm .PID
+    > .PID
 }

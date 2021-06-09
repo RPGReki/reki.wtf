@@ -6,4 +6,4 @@ cd "$(git rev-parse --show-toplevel)" || exit 1
 
 source scripts/_functions.sh
 
-build $1 --no-watch
+build $1 $2

@@ -5,10 +5,16 @@ cd "$(git rev-parse --show-toplevel)" || exit 1
 
 source scripts/_functions.sh
 
-netlify dev "$2" &
-echo $! | tee -a .PID
+make tags && build "$1" && netlify dev "$2" &
+echo $! >> .PID
 
-build "$1" --watch
+(
+    while true; do
+        build "$1" --incremental
+        sleep 10
+    done
+) &
+echo -$! >> .PID
 
 sync-story-posts
 

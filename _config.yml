@@ -32,6 +32,7 @@ include:
   - "_headers"
   - "_redirects"
   - ".private"
+  - ".dev"
 
 permalink: pretty
 future: true
@@ -85,6 +86,8 @@ compress_html:
   blanklines: false
   profile: false
   startings: [html, head, body]
+  ignore:
+    envs: [unpublished]
 
 preload:
   fonts:
@@ -318,7 +321,7 @@ defaults:
         series: Amauga
         copyrightYear: 2021
         title: "Far From Any Semblance of Modern Civilization"
-        url: "/amauga/#volume01-farfromanysemblanceofmoderncivilization"
+        url: "/amauga/#volume01-farfromanysemblance-ofmoderncivilization"
         genres:
           - Adventure
           - Fantasy
