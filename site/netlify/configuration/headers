@@ -79,8 +79,13 @@ permalink: /_headers
   Content-Type: audio/ogg
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
+/chapters.xml
+  Content-Type: application/atom+xml; charset=UTF-8
+  X-Robots-Tag: Seobility: noindex, follow
+
 /**/chapters.xml
   Content-Type: application/atom+xml; charset=UTF-8
+  X-Robots-Tag: Seobility: noindex, follow
 
 /blog.xml
   Content-Type: application/atom+xml; charset=UTF-8
