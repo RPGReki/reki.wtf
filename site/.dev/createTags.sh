@@ -9,7 +9,7 @@ cd $(git rev-parse --show-toplevel) || exit 1
 
 [ -d "site/tags/" ] || mkdir "site/tags/"
 
-cat << EOF > site/tags/index.html
+cat << 'EOF' > site/tags/index.html
 ---
 title: "List of All Tags 🏷"
 layout: 2020/base
@@ -26,7 +26,7 @@ robots: noindex, follow
 EOF
 
 {% for i in tag_words %}
-cat << EOF > site/tags/{{ i | strip | slugify }}.html
+cat << 'EOF' > site/tags/{{ i | strip | slugify }}.html
 ---
 title: "All Posts Tagged with {{ i }}"
 layout: 2020/base

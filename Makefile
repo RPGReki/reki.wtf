@@ -44,7 +44,7 @@ site/_data/polls:
 
 site/tags: $(PERSONAL_POSTS_DEST) $(STORY_POSTS_DEST)
 	jekyll b -q
-	bash docs/.dev/createTags.sh 2>&1 > /dev/null
+	bash docs/.dev/createTags.sh
 
 clean:
 	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json
