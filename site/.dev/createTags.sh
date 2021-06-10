@@ -2,8 +2,11 @@
 layout: null
 ---
 #!/bin/bash
+
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}{% 
 assign tag_words = site_tags | split:',' | sort %}
+
+# site.tags: {{ site_tags }}
 
 cd $(git rev-parse --show-toplevel) || exit 1
 
@@ -24,6 +27,8 @@ robots: noindex, follow
 </div>
 
 EOF
+
+# tag_words: {{ tag_words }}
 
 {% for i in tag_words %}
 cat << 'EOF' > site/tags/{{ i | strip | slugify }}.html

@@ -7,7 +7,7 @@ PERSONAL_POSTS_DEST = $(addprefix site/_posts/personal/, $(subst 0xReki/blog/_po
 
 COMMON_SRC = site site/_data/comments.json site/_data/polls site/tags $(STORY_POSTS_DEST) $(PERSONAL_POSTS_DEST)
 
-.PHONY: clean diff-tables $(STORY_POSTS_SRC) $(PERSONAL_POSTS_DEST)
+.PHONY: clean diff-tables $(STORY_POSTS_SRC) $(PERSONAL_POSTS_SRC)
 
 default: production
 
@@ -18,7 +18,7 @@ staging: $(COMMON_SRC)
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
 
 production: $(COMMON_SRC)
-	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml --incremental
+	JEKYLL_ENV=production bundle exec jekyll b --incremental
 
 deploy: production
 	netlify deploy -p
