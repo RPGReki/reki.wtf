@@ -31,5 +31,8 @@ layout: compress
     <content type="html" xml:base="{{ page.url | absolute_url }}">
       <p>{{ description }}</p>
     </content>
+    <description>
+      {{ description }}
+    </description>
   </entry>{% endfor %}
 </feed>
