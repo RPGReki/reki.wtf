@@ -39,18 +39,15 @@ production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) 
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 
 .make-state-env-testing:
-	@if [[ -f ".make-state-env-staging" ]]; then $(MAKE) force-rebuild; fi
-	@if [[ -f ".make-state-env-production" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-staging" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml; fi
 	touch $(@)
 
 .make-state-env-staging: 
-	@if [[ -f ".make-state-env-testing" ]]; then $(MAKE) force-rebuild; fi
-	@if [[ -f ".make-state-env-production" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-testing" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml; fi
 	touch $(@)
 
 .make-state-env-production:
-	@if [[ -f ".make-state-env-testing" ]]; then $(MAKE) force-rebuild; fi
-	@if [[ -f ".make-state-env-staging" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-testing" || -f ".make-state-env-staging" ]]; then JEKYLL_ENV=production bundle exec jekyll b; fi
 	touch $(@)
 
 deploy install: production

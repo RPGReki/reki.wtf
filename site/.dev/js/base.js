@@ -200,7 +200,8 @@ async function setUpTalkify() {
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
 
-  window['player'] = new talkify.Html5Player();
+  window['player'] = new talkify.Html5Player()
+    .enableTextHighlighting();
   
   while (null == player.forcedVoice) {
     await sleep(100);
@@ -209,16 +210,19 @@ async function setUpTalkify() {
       player.forceVoice(window.speechSynthesis.getVoices().find(e => e.lang.match(/US/)));
   }
   
+  domPlaylist = $('#talkify-title > *').toArray()
+    .concat($('#talkify-metadata > *').toArray())
+    .concat($('main section > *').toArray());
+  
+  exclusionList = $('[aria-hidden=true]').toArray()
+    .concat($('rb').toArray())
+    .concat($('rp').toArray());
+
   window['playlist'] = new talkify.playlist()
     .begin()
     .usingPlayer(window['player'])
-    .excludeElements('[aria-hidden=true]')
-    .excludeElements('[aria-hidden=true] *')
-    .excludeElements('.breadcrumb')
-    .excludeElements('.breadcrumb *')
-    .excludeElements('aside')
-    .excludeElements('aside *')
-    .excludeElements('rb')
+    .withElements(domPlaylist)
+    .excludeElements(exclusionList)
     .build();
 }
 
