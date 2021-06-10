@@ -1,13 +1,20 @@
+SHELL = /bin/bash
+
 STORIES = amauga crystaldown scions reincarnated-as-cat
+POLLS = referral
 
-STORY_POSTS_SRC = $(wildcard $(addsuffix /_posts/*, $(STORIES)))
-PERSONAL_POSTS_SRC = $(wildcard 0xReki/blog/_posts/*)
-STORY_POSTS_DEST = $(addprefix site/_posts/, $(subst _posts/,,$(STORY_POSTS_SRC)))
-PERSONAL_POSTS_DEST = $(addprefix site/_posts/personal/, $(subst 0xReki/blog/_posts/,,$(PERSONAL_POSTS_SRC)))
+STORY_POSTS_IMPORT_SRC = $(wildcard $(addsuffix /_posts/*, $(STORIES)))
+PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xReki/blog/_posts/*)
 
-COMMON_SRC = site site/_data/comments.json site/_data/polls site/tags $(STORY_POSTS_DEST) $(PERSONAL_POSTS_DEST)
+STORY_POSTS_IMPORT_DEST = $(addprefix site/_posts/, $(subst _posts/,,$(STORY_POSTS_IMPORT_SRC)))
+PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xReki/blog/_posts/,,$(PERSONAL_POSTS_IMPORT_SRC)))
 
-.PHONY: clean diff-tables $(STORY_POSTS_SRC) $(PERSONAL_POSTS_SRC)
+POLL_FILES = $(addprefix site/_data/polls/,$(POLLS))
+
+COMMON_SRC = site/tags site/_data/comments.json $(POLL_FILES) $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
+
+# imported files are phony to force re-importing
+.PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 
 default: production
 
@@ -18,10 +25,11 @@ staging: $(COMMON_SRC)
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
 
 production: $(COMMON_SRC)
-	JEKYLL_ENV=production bundle exec jekyll b --incremental
+	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 
-deploy: production
-	netlify deploy -p
+install: production
+	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
+	netlify deploy --production --message="$(shell git log --oneline -1)"
 
 site/_posts/personal/%: 0xReki/blog/_posts/%
 	@mkdir -p "$(@D)"
@@ -37,18 +45,22 @@ endef
 
 $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
 
+# could be made phony if needed
 site/_data/comments.json:
 	gulp get-comments --silent
 
-site/_data/polls:
-	mkdir "$@"
-	gulp get-poll-referral --silent
+# could be made phony if needed
+site/_data/polls/%: | site/_data/polls
+	gulp get-poll-$(*) --silent
 
-site/tags: $(PERSONAL_POSTS_DEST) $(STORY_POSTS_DEST) | docs
+site/_data/polls:
+	mkdir "$(@)"
+
+site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
 	@rm -rf site/tags
 	bash docs/.dev/createTags.sh
 
-docs: | $(PERSONAL_POSTS_DEST) $(STORY_POSTS_DEST)
+docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 	jekyll b -q
 
 clean:
@@ -57,8 +69,8 @@ clean:
 serve:
 	@exec netlify dev
 
-create-tables: $(STORY_POSTS_SRC) $(PERSONAL_POSTS_SRC)
+create-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 	bash scripts/createTables.sh
 
-diff-tables: $(STORY_POSTS_SRC) $(PERSONAL_POSTS_SRC)
-	@bash scripts/diffTables.sh
+diff-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
+	bash scripts/diffTables.sh
