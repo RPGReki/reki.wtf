@@ -1,7 +1,7 @@
 [build]
 base = ""
 publish = "docs"
-command = "make"
+command = "make -j 4"
 
 [dev]
 framework = "#static"
