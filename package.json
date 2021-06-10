@@ -20,6 +20,7 @@
     "request": "^2.88.2"
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "netlify-cli": "^3.37.8"
   }
 }

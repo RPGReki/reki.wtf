@@ -101,4 +101,9 @@ permalink: /_headers
 /**/podcast.xml
   Content-Type: application/rss+xml"; charset=UTF-8
 
+{% if jekyll.environment == "unpublished"  %}
+/*
+  Cache-Control: no-cache
+{% endif %}
+
 # vim: set textwidth=0:

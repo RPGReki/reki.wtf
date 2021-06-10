@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: https://github.com/0xReki/jekyll-wns.git
-  revision: 30d8005d43308b774edbc7beaab1bd2633cb4d04
+  revision: 6c0b2b70ae677442521a5e7dcb517b3994f5b437
   branch: main
   specs:
-    jekyll-wns (3.2.0)
+    jekyll-wns (3.3.1)
 
 GEM
   remote: https://rubygems.org/

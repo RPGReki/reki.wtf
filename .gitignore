@@ -29,6 +29,7 @@ Session.vim
 /site/plugins/
 /site/proxy/
 /site/tags/
+.make-state-env-*
 .sass-cache
 .jekyll-cache
 .jekyll-metadata

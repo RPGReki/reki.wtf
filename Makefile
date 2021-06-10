@@ -1,9 +1,13 @@
 SHELL = /bin/bash
 
+# user configuration
+
 URL = https://0xreki.de
 STORIES = amauga crystaldown scions reincarnated-as-cat
 POLLS = referral
 STORY_FEEDS = blog.xml chapters.xml
+
+# automation begins here
 
 STORY_POSTS_IMPORT_SRC = $(wildcard $(addsuffix /_posts/*, $(STORIES)))
 PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xReki/blog/_posts/*)
@@ -14,23 +18,40 @@ PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xReki/b
 STORY_XML = $(foreach story,$(STORIES),$(foreach feed,$(STORY_FEEDS),/$(story)/$(feed)))
 GLOBAL_XML = /sitemap.xml /blog.xml $(STORY_XML)
 
-POLL_FILES = $(addprefix site/_data/polls/,$(POLLS))
+POLL_FILES = $(addprefix site/_data/polls/,$(addsuffix .json,$(POLLS)))
 
-COMMON_SRC = site/tags site/_data/comments.json $(POLL_FILES) $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
+COMMON_NORMAL_PREREQUESITES = site/tags site/_data/comments.json $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
+
+COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 
 # imported files are phony to force re-importing
 .PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap
 
 default: production
 
-testing: $(COMMON_SRC)
+testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-testing 
 	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
 
-staging: $(COMMON_SRC)
+staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-staging
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
 
-production: $(COMMON_SRC)
+production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
+
+.make-state-env-testing:
+	@if [[ -f ".make-state-env-staging" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-production" ]]; then $(MAKE) force-rebuild; fi
+	touch $(@)
+
+.make-state-env-staging: 
+	@if [[ -f ".make-state-env-testing" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-production" ]]; then $(MAKE) force-rebuild; fi
+	touch $(@)
+
+.make-state-env-production:
+	@if [[ -f ".make-state-env-testing" ]]; then $(MAKE) force-rebuild; fi
+	@if [[ -f ".make-state-env-staging" ]]; then $(MAKE) force-rebuild; fi
+	touch $(@)
 
 deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
@@ -61,13 +82,11 @@ endef
 
 $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
 
-# could be made phony if needed
 site/_data/comments.json:
 	gulp get-comments --silent
 
-# could be made phony if needed
 site/_data/polls/%: | site/_data/polls
-	gulp get-poll-$(*) --silent
+	gulp get-poll-$(*:.json=) --silent
 
 site/_data/polls:
 	mkdir "$(@)"
@@ -79,8 +98,11 @@ site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
 docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 	jekyll b -q
 
+force-rebuild:
+	rm -rf docs/*
+
 clean:
-	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json
+	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json .make-state-*
 
 serve:
 	@exec netlify dev
