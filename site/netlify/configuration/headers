@@ -82,6 +82,10 @@ permalink: /_headers
 /**/chapters.xml
   Content-Type: application/atom+xml; charset=UTF-8
 
+/blog.xml
+  Content-Type: application/atom+xml; charset=UTF-8
+  X-Robots-Tag: Seobility: noindex, follow
+
 /**/blog.xml
   Content-Type: application/atom+xml; charset=UTF-8
   X-Robots-Tag: Seobility: noindex, follow
