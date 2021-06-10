@@ -14,13 +14,10 @@ permalink: /sitemap.xml
      page.published == 'pre-sponsors' or 
      page.published == 'private' or 
      page.url contains 'robots.txt' or 
-     page.url contains 'sitemap.xml' or 
-     page.url contains 'podcast-ogg.xml' or 
-     page.url contains 'itunes.xml' or 
-     page.url contains '.dev' or
-     page.url contains '.well-known' or
-     page.url contains 'scions/blog.xml' or
-     page.url contains 'reincarnated-as-cat'
+     page.url contains '/tags' or
+     page.url contains '/.dev' or
+     page.url contains '/.well-known' or
+     page.url contains '.xml'
 %}{% 
   continue
 %}{% 
