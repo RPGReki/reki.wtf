@@ -178,6 +178,7 @@ The planet seems like any other underdeveloped planet, but something is differen
 
 <h3 class="mt-3">Latest Post on Amauga</h3>
 {% assign p = site.posts| where: "category", "amauga" %}
+{% if jekyll.environment != "unpublished" %}{% if p.published == "sponsors" or p.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
 {% for post in p %}
   <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
     <h3 itemprop="name" id="{{ post.title | slugify }}">

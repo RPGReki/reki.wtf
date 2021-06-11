@@ -115,10 +115,6 @@ about:
 liquid:
   error_mode: warn
 
-wns:
-  quads: true
-  abbreviations: true
-
 token:
   max: 2147483647
   mod:  899998
@@ -126,6 +122,10 @@ token:
 
 # Syntax
 markdown: kramdown
+
+wns:
+  quads: true
+  abbreviations: true
 
 # Comments
 comments:
