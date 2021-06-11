@@ -9,6 +9,6 @@ group :jekyll_plugins do
     gem "jekyll-regex-replace"
     gem "jekyll-last-modified-at"
     gem "jekyll-liquify"
-    gem "jekyll-criticmarkup"#, git: "https://github.com/0xReki/jekyll-criticmarkup.git", branch: "main"
-    gem "jekyll-wns"#, git: "https://github.com/0xReki/jekyll-wns.git", branch: "main"
+    gem "jekyll-criticmarkup"#, git: "https://gitlab.com/0xReki/jekyll-criticmarkup.git", branch: "main"
+    gem "jekyll-wns"#, git: "https://gitlab.com/0xReki/jekyll-wns.git", branch: "main"
 end

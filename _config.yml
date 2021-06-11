@@ -205,7 +205,23 @@ defaults:
       commenting: open
       published: true
       image: /assets/images/site-og.png
-      permalink: /amauga/blog/:year/:month-:day-:title/
+      permalink: /scions/blog/:year/:month-:day-:title/
+  - # /_posts/scions-reboot
+    scope:
+      path: "_posts/scions-reboot"
+    values:
+      category: scions-reboot
+      layout: 2020/post
+      type: post
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      image: /assets/images/site-og.png
+      comments: true
+      commenting: open
+      published: true
+      image: /assets/images/site-og.png
+      permalink: /scions-reboot/blog/:year/:month-:day-:title/
   - # /_posts/reincarnated-as-cat
     scope:
       path: "_posts/reincarnated-as-cat"

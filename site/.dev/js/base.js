@@ -15,7 +15,7 @@ async function acceptPolicy() {
   banner.style.opacity = 0;
   writeCookie('acceptedPolicy', true);
   await sleep(1000);
-  banner.style.display = 'none';
+  banner.style = null;
 }
 
 

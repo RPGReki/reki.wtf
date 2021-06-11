@@ -30,10 +30,10 @@ COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 default: production
 
 testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-testing 
-	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
+	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml -q
 
 staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-staging
-	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml --incremental -q
+	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
 
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
