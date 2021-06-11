@@ -361,3 +361,29 @@ defaults:
       layout: base
       sitemap: false
       image: /assets/images/site-og.png
+  - # /scions-reboot/01-children-of-light-and-darkness
+    scope:
+      path: "scions-reboot/01-children-of-light-and-darkness"
+    values:
+      layout: 2020/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      additional_js: hyphenate
+      comments: true
+      commenting: open
+      published: pre-sponsor
+      termbase: /none/
+      book:
+        number: 1
+        series: "Scions Reboot"
+        copyrightYear: 2022
+        title: "Children of Light and Darkness"
+        url: "/scions/#volume-01-children-of-light-and-darkness"
+        genres:
+          - Adventure
+          - Fantasy
+          - LitRPG
+          - Slice of Life
+      image: /assets/images/site-og.png
