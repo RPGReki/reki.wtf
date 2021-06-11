@@ -25,7 +25,7 @@ Here you can find my Creative Writing, by <a href="/blog/">Blog</a> and other Pr
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       {% unless post.long %}
       <a
-        href="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+        href="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}/blog/#{{ post.title | slugify }}">
         {{ post.title }}
       </a>
       {% else %}
@@ -46,7 +46,7 @@ Here you can find my Creative Writing, by <a href="/blog/">Blog</a> and other Pr
       <meta itemprop="url" content="{{ author.url }}">
     </div>
       {% unless post.long %}
-    <meta itemprop="url" content="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+    <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}/blog/#{{ post.title | slugify }}">
       {% else %}
     <meta itemprop="url" content="{{ post.url | absolute_url }}">
     <meta itemprop="mainEntityOfPage" content="{{ post.url | absolute_url }}">
