@@ -247,7 +247,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: true
@@ -274,7 +273,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: true
@@ -301,7 +299,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: true
@@ -327,7 +324,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: true
@@ -354,7 +350,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: true
@@ -386,7 +381,6 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      additional_js: hyphenate
       comments: true
       commenting: open
       published: pre-sponsor

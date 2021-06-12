@@ -143,7 +143,7 @@ async function setUpPageForUsers() {
     d.addEventListener('touchmove', touchMove, false);
     toggleAllAccordions()
   }
-  window['Hyphenopoly']={require:{"en-ca":"Supercalifragilisticexpialidocious"}};
+  
   d.getElementsByTagName('html')[0].className = 'animated';
 
   $('#dark-mode').on('change', toggleTheme);
