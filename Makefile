@@ -10,10 +10,10 @@ STORY_FEEDS = blog.xml chapters.xml
 # automation begins here
 
 STORY_POSTS_IMPORT_SRC = $(wildcard $(addsuffix /_posts/*, $(STORIES)))
-PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xreki.github.io/blog/_posts/*)
+PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xreki.github.io/_posts/*)
 
 STORY_POSTS_IMPORT_DEST = $(addprefix site/_posts/, $(subst _posts/,,$(STORY_POSTS_IMPORT_SRC)))
-PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xreki.github.io/blog/_posts/,,$(PERSONAL_POSTS_IMPORT_SRC)))
+PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xreki.github.io/_posts/,,$(PERSONAL_POSTS_IMPORT_SRC)))
 
 STORY_XML = $(foreach story,$(STORIES),$(foreach feed,$(STORY_FEEDS),/$(story)/$(feed)))
 GLOBAL_XML = /sitemap.xml /blog.xml $(STORY_XML)
@@ -65,7 +65,7 @@ endef
 
 $(foreach xml,$(GLOBAL_XML),$(eval $(call SUBMIT,$(xml))))
 
-site/_posts/personal/%: 0xreki.github.io/blog/_posts/%
+site/_posts/personal/%: 0xreki.github.io/_posts/%
 	@mkdir -p "$(@D)"
 	@rm -rf $(@)
 	cp -r "$(<)" "$(@D)/"
@@ -109,3 +109,6 @@ create-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 
 diff-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 	bash scripts/diffTables.sh
+
+mirrors:
+	git submodule foreach "[ ! -f '_config.yml' ] || (jekyll b && git add . && git commit -m 'Rebuild mirror' && git push)"
