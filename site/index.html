@@ -21,7 +21,7 @@ Here you can find my Creative Writing, by <a href="/blog/">Blog</a> and other Pr
 <h2>Latest Personal Blog Post on 0xReki's Adventures by Night</h2>
 {% assign p = site.posts | where: "category", "personal" %}
 {% for post in p %}
-{% if jekyll.environment != "unpublished" %}{% if p.published == "sponsors" or p.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
+{% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
   <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       {% unless post.long %}

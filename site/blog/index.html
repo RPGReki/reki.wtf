@@ -19,6 +19,7 @@ feed: /blog.xml
 </p>
 {% assign ps = site.posts | where: 'category', 'personal' %}
 {% for post in ps %}
+{% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
   <article itemscope itemtype="https://schema.org/BlogPosting" class="interface top-toggle hentry">
     <h2 itemprop="name" id="{{ post.title | slugify }}" class="active entry-title" onclick="toggleAccordion(this)">
         {{ post.title }}
