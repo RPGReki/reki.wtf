@@ -112,3 +112,8 @@ diff-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 
 mirrors:
 	git submodule foreach "[ ! -f '_config.yml' ] || (jekyll b && git add . && git commit -m 'Rebuild mirror' && git push)"
+
+js: theme/assets/2020/scripts/default.js
+
+theme/assets/2020/scripts/default.js: docs/.dev/js/default.js
+	cp docs/.dev/js/default.js theme/assets/2020/scripts/default.js

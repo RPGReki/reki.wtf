@@ -3,11 +3,11 @@ var d = document;
 var b = $('body')[0];
 
 function getCookie() {
-  return d.cookie;
+  return d.cookie
 }
 
 function isHasAcceptedPolicy() {
-  return (null != getCookie().match(/acceptedPolicy=true/));
+  return (null != getCookie().match(/acceptedPolicy=true/))
 }
 
 async function acceptPolicy() {
@@ -15,7 +15,7 @@ async function acceptPolicy() {
   banner.style.opacity = 0;
   writeCookie('acceptedPolicy', true);
   await sleep(1000);
-  banner.style = null;
+  banner.style = null
 }
 
 
@@ -23,34 +23,33 @@ function writeCookie(cookieName, cookieValue, ttl = 14) {
   var date = new Date();
   date.setTime(date.getTime() + ttl * 24 * 3600 * 1000);
   d.cookie = cookieName + '=' + cookieValue + '; expires=' + date.toUTCString() + '; ' + 'domain=' + window.location.hostname
-+ '; path=/';
++ '; path=/'
 }
 
 
 function toggleTheme() {
   if (!isHasAcceptedPolicy()) {
-    return;
+    return
   }
 
   $('body').toggleClass('dark-theme').toggleClass('light-theme');
-  writeCookie('darkTheme', $('body').hasClass('dark-theme'));
+  writeCookie('darkTheme', $('body').hasClass('dark-theme'))
 }
-
 
 function toggleDyslexicFont() {
   if (!isHasAcceptedPolicy()) {
-    return;
+    return
   }
 
   $('body').toggleClass('dyslexic');
-  writeCookie('dyslexic', $('body').hasClass('dyslexic'));
+  writeCookie('dyslexic', $('body').hasClass('dyslexic'))
 }
 
 
 function loadYouTube() {
   var videos = d.getElementsByClassName('youtube');
   for (var i = 0; i < videos.length; i++) {
-    videos[i].innerHTML = d.getElementById(videos[i].getAttribute('data-videoid')).innerHTML;
+    videos[i].innerHTML = d.getElementById(videos[i].getAttribute('data-videoid')).innerHTML
   }
 }
 
@@ -58,35 +57,35 @@ function restoreSettingsFromCookie() {
   if (!isHasAcceptedPolicy()) {
     var bannerClass = $('.policy-banner');
     for(var i = 0; i < bannerClass.length; i++)
-      bannerClass[i].style.display = 'block';
+      bannerClass[i].style.display = 'block'
     return;
   }
 
   if (null != getCookie().match(/darkTheme=false/)) {
     $('#dark-mode').prop('checked', true);
-    toggleTheme();
+    toggleTheme()
   }
   if (null != getCookie().match(/dyslexic=true/)) {
     $('#dyslexic').prop('checked', true);
-    toggleDyslexicFont();
+    toggleDyslexicFont()
   }
   if (null != getCookie().match(/fontSize/)) zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
-  acceptPolicy();
+  acceptPolicy()
 }
 
 function g(evt) {
-  return evt.touches;
+  return evt.touches
 }
 
 function touchStart(evt) {
   const firstTouch = g(evt)[0];
   x = firstTouch.clientX;
-  y = firstTouch.clientY;
-};
+  y = firstTouch.clientY
+}
 
 function touchMove(evt) {
   if (null == x || null == y) {
-    return;
+    return
   }
 
   var xu = evt.touches[0].clientX;
@@ -96,49 +95,43 @@ function touchMove(evt) {
   var yd = y - yu;
 
   if (Math.abs(xd) > 11 && Math.abs(xd) > 2 * Math.abs(yd)) {
-    if (xd > 0) {
+    if (xd > 0)
       loadPage('next');
-    } else {
-      loadPage('previous');
-    }
+    else
+      loadPage('previous')
   }
 
-  x = null;
-  y = null;
-};
+  x = null, y = null
+}
 
 function loadPage(partId) {
   var href = $('#' + partId)[0].href;
   if ('' == href) return;
 
-  window.location.href = href;
+  window.location.href = href
 }
 
 function zoom(points) {
   if (!isHasAcceptedPolicy()) {
-    return;
+    return
   }
 
   var fontSize = (parseInt(b.style.fontSize, 10) || 12) + points;
   if (fontSize > 20) fontSize = 22;
   if (fontSize < 12) fontSize = 10;
   b.style.fontSize = fontSize + 'pt';
-  writeCookie('fontSize', fontSize);
+  writeCookie('fontSize', fontSize)
 }
-
 
 function clearCookies() {
   writeCookie('acceptedPolicy', '', -1);
-  writeCookie('activateGoogleAnalytics', '', -1);
   writeCookie('fontSize', '', -1);
   writeCookie('darkTheme', '', -1);
-  writeCookie('condensed', '', -1);
-  writeCookie('dyslexic', '', -1);
+  writeCookie('dyslexic', '', -1)
 }
 
-
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 async function setUpPageForUsers() {
@@ -148,50 +141,69 @@ async function setUpPageForUsers() {
   if (isMobile) {
     d.addEventListener('touchstart', touchStart, false);
     d.addEventListener('touchmove', touchMove, false);
-    document.getElementById('mobile-top').scrollIntoView(true);
-    toggleAllAccordions();
+    toggleAllAccordions()
   }
   window['Hyphenopoly']={require:{"en-ca":"Supercalifragilisticexpialidocious"}};
   d.getElementsByTagName('html')[0].className = 'animated';
 
   $('#dark-mode').on('change', toggleTheme);
   $('#dyslexic').on('change', toggleDyslexicFont);
-  $('#tts').on('change', toggleTTS);
+  $('#tts').on('change', toggleTTS)
 }
 
 function toggleAccordion(e) {
   e.classList.toggle('inactive');
-  e.classList.toggle('active');
+  e.classList.toggle('active')
 }
-
 
 function toggleAllAccordions() {
   document
     .querySelectorAll('.inactive')
     .forEach(e => {
-      toggleAccordion(e);
-    });
+      toggleAccordion(e)
+    })
 }
 
 function loadTalkify() {
-  var js, fjs = d.getElementsByTagName("script")[0];
-  var html = d.getElementsByTagName("html")[0];
-  var i = "talkify";
+  var js, fjs = $('script')[0];
+  var html = $('html')[0];
+  var i = 'talkify';
 
   if (d.getElementById(i)) {
     return;
   }
+  
+  var b = $('body')[0];
 
-  js = d.createElement("script");
+  js = d.createElement('script');
   js.id = i;
   js.src = '/assets/2020/scripts/talkify/talkify.min.js';
 
-  fjs.parentNode.insertBefore(js, fjs);
+  fjs.parentNode.insertBefore(js, fjs)
+}
+
+function createTTS() {
+  tts = d.createElement('div');
+  tts.style = 'display:none';
+  tts.id = 'tts-content';
+ 
+  tts.innerHTML = $('body > header').html()
+    + '<p>' + ($('.series-title').attr('title') || '') + '.</p>'
+    + '<p>' + $('main h1').attr('aria-label') + '.</p>'
+    + $('#talkify-metadata').html()
+    + $('main section').html();
+
+  $('body').append(tts);
+
+  $('#tts-content rb').remove();
+  $('#tts-content rp').remove();
+
+  window['ttsContent'] = $('#tts-content > *').toArray()
 }
 
 async function setUpTalkify() {
   while ('undefined' == typeof talkify || 'undefined' == typeof talkify.config ) {
-    await sleep(100);
+    await sleep(100)
   }
 
   talkify.config.useSsml = true;
@@ -200,30 +212,24 @@ async function setUpTalkify() {
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
 
-  window['player'] = new talkify.Html5Player()
-    .enableTextHighlighting();
+  window['player'] = new talkify.Html5Player();
   
   while (null == player.forcedVoice) {
     await sleep(100);
     player.forceVoice(window.speechSynthesis.getVoices().find(e => e.name == 'Google US English'));
     if (null == player.forcedVoice)
-      player.forceVoice(window.speechSynthesis.getVoices().find(e => e.lang.match(/US/)));
+      player.forceVoice(window.speechSynthesis.getVoices().find(e => e.lang.match(/US/)))
   }
   
-  domPlaylist = $('#talkify-title > *').toArray()
-    .concat($('#talkify-metadata > *').toArray())
-    .concat($('main section > *').toArray());
-  
-  exclusionList = $('[aria-hidden=true]').toArray()
-    .concat($('rb').toArray())
-    .concat($('rp').toArray());
+  while ('undefined' == typeof window['ttsContent']) {
+    await sleep(10)
+  }
 
   window['playlist'] = new talkify.playlist()
     .begin()
     .usingPlayer(window['player'])
-    .withElements(domPlaylist)
-    .excludeElements(exclusionList)
-    .build();
+    .withElements(window['ttsContent'])
+    .build()
 }
 
 async function toggleTTS() {
@@ -232,21 +238,22 @@ async function toggleTTS() {
     toggleAllAccordions();
     loadTalkify();
     setUpTalkify();
+    createTTS();
   
-    while ('undefined' == typeof window['playlist']) {
-      await sleep(100);
+    while ('undefined' == typeof window['playlist'] || 'undefined' == typeof window['ttsContent']) {
+      await sleep(100)
     }
 
     playlist.play();
-    return;
+    return
   }
 
-  if (window['isReading']) {
+  if (window['isReading'])
     player.pause();
-  } else {
+  else
     player.play();
-  }
-  window['isReading'] = !window['isReading'];
+
+  window['isReading'] = !window['isReading']
 }
 
 restoreSettingsFromCookie();
