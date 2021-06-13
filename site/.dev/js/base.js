@@ -1,6 +1,6 @@
 var x, y = null;
 var d = document;
-var b = $('body')[0];
+var b = $('body');
 
 function getCookie() {
   return d.cookie
@@ -32,8 +32,8 @@ function toggleTheme() {
     return
   }
 
-  $('body').toggleClass('dark-theme').toggleClass('light-theme');
-  writeCookie('darkTheme', $('body').hasClass('dark-theme'))
+  b.toggleClass('dark-theme').toggleClass('light-theme');
+  writeCookie('darkTheme', b.hasClass('dark-theme'))
 }
 
 function toggleDyslexicFont() {
@@ -41,8 +41,8 @@ function toggleDyslexicFont() {
     return
   }
 
-  $('body').toggleClass('dyslexic');
-  writeCookie('dyslexic', $('body').hasClass('dyslexic'))
+  b.toggleClass('dyslexic');
+  writeCookie('dyslexic', b.hasClass('dyslexic'))
 }
 
 
@@ -69,7 +69,8 @@ function restoreSettingsFromCookie() {
     $('#dyslexic').prop('checked', true);
     toggleDyslexicFont()
   }
-  if (null != getCookie().match(/fontSize/)) zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
+  if (null != getCookie().match(/fontSize/))
+    zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
   acceptPolicy()
 }
 
@@ -84,9 +85,8 @@ function touchStart(evt) {
 }
 
 function touchMove(evt) {
-  if (null == x || null == y) {
-    return
-  }
+  if (null == x || null == y)
+    return;
 
   var xu = evt.touches[0].clientX;
   var yu = evt.touches[0].clientY;
@@ -112,9 +112,8 @@ function loadPage(partId) {
 }
 
 function zoom(points) {
-  if (!isHasAcceptedPolicy()) {
-    return
-  }
+  if (!isHasAcceptedPolicy())
+    return;
 
   var fontSize = (parseInt(b.style.fontSize, 10) || 12) + points;
   if (fontSize > 20) fontSize = 22;
@@ -136,7 +135,7 @@ function sleep(ms) {
 
 async function setUpPageForUsers() {
   await sleep(200);
-  var isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
+  var isMobile = window.matchMedia('only screen and (max-width: 785.9px)').matches;
 
   if (isMobile) {
     d.addEventListener('touchstart', touchStart, false);
@@ -166,15 +165,12 @@ function toggleAllAccordions() {
 
 function loadTalkify() {
   var js, fjs = $('script')[0];
-  var html = $('html')[0];
   var i = 'talkify';
 
   if (d.getElementById(i)) {
     return;
   }
   
-  var b = $('body')[0];
-
   js = d.createElement('script');
   js.id = i;
   js.src = '/assets/2020/scripts/talkify/talkify.min.js';
@@ -182,22 +178,33 @@ function loadTalkify() {
   fjs.parentNode.insertBefore(js, fjs)
 }
 
-function createTTS() {
-  tts = d.createElement('div');
-  tts.style = 'display:none';
-  tts.id = 'tts-content';
- 
-  tts.innerHTML = $('body > header').html()
-    + '<p>' + ($('.series-title').attr('title') || '') + '.</p>'
-    + '<p>' + $('main h1').attr('aria-label') + '.</p>'
-    + $('#talkify-metadata').html()
-    + $('main section').html();
 
-  $('body').append(tts);
+async function assignVoices() {
+  $('#tts-content [data-character*=mittens]').each((e, i) => {i.setAttribute('data-talkify-pitch', 10)});
+}
 
-  $('#tts-content rb').remove();
-  $('#tts-content rp').remove();
+async function createTTS() {
+  t = d.createElement('div');
+  t.style = 'display:none';
+  t.id = 'tts-content';
 
+  b.append(t);
+
+  t = $('#tts-content');
+  t.append(
+    $('body > header').html(),
+    $('.volume-title')[0].outerHTML,
+    $('main h1')[0].outerHTML,
+    $('#talkify-metadata').html(),
+    $('main section').html()
+  );
+
+  $('#tts-content [aria-label]').each((e,i) => {i.innerHTML = i.getAttribute('aria-label')});
+  $('#tts-content [aria-hidden]').remove();
+  $('#tts-content button').remove();
+
+  assignVoices();
+  
   window['ttsContent'] = $('#tts-content > *').toArray()
 }
 
@@ -211,19 +218,15 @@ async function setUpTalkify() {
   talkify.config.keyboardCommands.enabled = false;
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
-
+  talkify.messageHub.subscribe('[key]', '*', () => {true});
+    
+  while (0 == (window['voices'] = window.speechSynthesis.getVoices()).length) await sleep(100);
+  
   window['player'] = new talkify.Html5Player();
-  
-  while (null == player.forcedVoice) {
-    await sleep(100);
-    player.forceVoice(window.speechSynthesis.getVoices().find(e => e.name == 'Google US English'));
-    if (null == player.forcedVoice)
-      player.forceVoice(window.speechSynthesis.getVoices().find(e => e.lang.match(/US/)))
-  }
-  
-  while ('undefined' == typeof window['ttsContent']) {
-    await sleep(10)
-  }
+  player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
+  player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)));
+
+  while ('undefined' == typeof ttsContent) await sleep(10);
 
   window['playlist'] = new talkify.playlist()
     .begin()
@@ -240,7 +243,7 @@ async function toggleTTS() {
     setUpTalkify();
     createTTS();
   
-    while ('undefined' == typeof window['playlist'] || 'undefined' == typeof window['ttsContent']) {
+    while ('undefined' == typeof playlist || 'undefined' == typeof ttsContent) {
       await sleep(100)
     }
 
@@ -248,12 +251,12 @@ async function toggleTTS() {
     return
   }
 
-  if (window['isReading'])
+  if (isReading)
     player.pause();
   else
     player.play();
 
-  window['isReading'] = !window['isReading']
+  isReading = !isReading
 }
 
 restoreSettingsFromCookie();

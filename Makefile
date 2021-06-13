@@ -116,4 +116,4 @@ mirrors:
 js: theme/assets/2020/scripts/default.js
 
 theme/assets/2020/scripts/default.js: docs/.dev/js/default.js
-	cp docs/.dev/js/default.js theme/assets/2020/scripts/default.js
+	cp docs/.dev/js/default.js* theme/assets/2020/scripts/
