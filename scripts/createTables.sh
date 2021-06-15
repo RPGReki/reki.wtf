@@ -16,7 +16,7 @@ for i in {amauga,crystaldown,scions,reincarnated-as-cat}; do
     )
 done
 
-for i in {../amauga/_posts,../crystaldown/_posts,../scions/_posts,../0xReki/blog/_posts}; do
+for i in {../amauga/_posts,../crystaldown/_posts,../scions/_posts,../0xreki.github.io/_posts}; do
     (
         echo "Entering $i…"
         cd "$i" || return

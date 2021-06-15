@@ -87,7 +87,7 @@ compress_html:
   profile: false
   startings: [html, head, body]
   ignore:
-    envs: [unpublished]
+    envs: [debug]
 
 preload:
   fonts:
@@ -126,6 +126,7 @@ markdown: kramdown
 wns:
   quads: true
   abbreviations: true
+  label_unicode: true
 
 # Comments
 comments:
