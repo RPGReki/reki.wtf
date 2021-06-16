@@ -191,9 +191,12 @@ async function createTTS() {
   b.append(t);
 
   t = $('#tts-content');
+
+  t.append($('body > header').html());
+
+  if(pageType=='chapter') t.append($('.volume-title')[0].outerHTML);
+
   t.append(
-    $('body > header').html(),
-    $('.volume-title')[0].outerHTML,
     $('main h1')[0].outerHTML,
     $('#talkify-metadata').html(),
     $('main section').html()
@@ -202,6 +205,7 @@ async function createTTS() {
   $('#tts-content [aria-label]').each((e,i) => {i.innerHTML = i.getAttribute('aria-label')});
   $('#tts-content [aria-hidden]').remove();
   $('#tts-content button').remove();
+  $('#tts-content [role=doc-noteref]').remove();
 
   assignVoices();
   
