@@ -22,7 +22,7 @@ robots: noindex, follow
 <div class="container">
 <div class="row">
 {% for i in tag_words %}
-  <a href="/tags/{{ i | strip | slugify }}/" class="btn bln-lg btn-primary mx-md-2 my-md-2">{{ i }}</a>{% endfor %}
+  <a href="/tags/{{ i | strip | slugify }}/" class="btn bln-lg btn-primary mx-1 my-1 mx-md-2 my-md-2">{{ i }}</a>{% endfor %}
 </div>
 </div>
 
