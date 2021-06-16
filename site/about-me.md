@@ -35,10 +35,10 @@ While I do like action games, but I kinda suck at those.
     <img src="{{ "/assets/images/scribblehub.png" | prepend: site.static_url | absolute_url }}" alt="ScribbleHub">
   </a>
   <a href="https://twitch.tv/RPGReki">
-    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" alt="Twitch">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
   </a>
   <a href="https://twitch.tv/RiichiReki">
-    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" alt="Twitch">
+    <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
   </a>
   <a href="https://github.com/0xReki">
     <img src="{{ "/assets/images/github.png" | prepend: site.static_url | absolute_url }}" alt="GitHub">
@@ -47,7 +47,7 @@ While I do like action games, but I kinda suck at those.
     <img src="{{ "/assets/images/gitlab.png" | prepend: site.static_url | absolute_url }}" alt="GitLab">
   </a>
   <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img src="{{ "/assets/images/patreon.png" | prepend: site.static_url | absolute_url }}" class="patreon" alt="Patreon">
+    <img src="{{ "/assets/images/patreon.png" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon">
   </a>
   <a href="https://linkedin.com/in/q-thai-chung">
     <img src="{{ "/assets/images/linkedin.png" | prepend: site.static_url | absolute_url }}" alt="LinkedIn">

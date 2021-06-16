@@ -18,7 +18,7 @@ https://static.0xreki.de/proxy/gravatar/:i/:s/avatar.jpg  https://secure.gravata
 
 https://static.0xreki.de/proxy/cloudflare/*               https://static.cloudflareinsights.com/:splat                200
 
-https://static.0xreki.de/proxy/shields/:t/:l/shield.svg   https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=0072ed 200
+https://static.0xreki.de/proxy/shields/:t/:l/shield.svg   https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=9c2c2c 200
 
 https://static.crystaldown.de/*                    https://static.0xreki.de/:splat                     301!
 https://static.0xreki.de/*                         {{ "/" | absolute_url }}:splat                      301!
