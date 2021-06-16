@@ -1,0 +1,52 @@
+---
+layout: 2020/base
+title: Social Media Helper
+---
+{% assign pages = site.posts | sort_natural: "date" | reverse | slice: 2, 5 %}
+<ul>
+  {% for page in pages %}
+    {% if jekyll.environment != "unpublished" %}
+      {% if page.published == "pre-sponsors"%}{% continue %}{% endif %}
+    {% endif %}
+    {% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: "&thinsp;", " " | truncatewords: 50, '…' }}      {% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
+    {% assign chapter = site.pages | where: "type", "chapter" | where: "book.series", page.link.series
+      | where: "book.number", page.link.volume_number | where: "chapter", page.link.chapter | first %}
+    
+    {% assign s = chapter.shortlink %}
+    {% for i in site.shorturl %}
+      {% assign s = s | replace: i.prefix, i.url %}
+    {% endfor %}
+  
+    {% if chapter.published == "sponsors" %}
+      {% assign token = site.token.max | divided_by: chapter.chapter | modulo: site.token.mod | plus: site.token.plus | prepend: '?p=' %}
+    {% else %}
+      {% assign token = '' %}
+    {% endif %}
+  <li>
+    {{ page.link.series }} {{ page.link.volume_number }}-{{ chapter.chapter }}: {{ chapter.title }}<br>
+    Date: {{ page.date }}<br>
+    Text: {{ description }}
+    {% capture twitter_text %}The latest public chapter of my #Fantasy #Webnovel {{ page.link.series }}, chapter {{ chapter.chapter }}, is now available on my homepage.{% endcapture %}
+    {% capture share_title %}{{ page.link.series }} {{ page.link.volume_number }}-{{ chapter.chapter }}: {{ chapter.title }}{% endcapture %}
+    <ul>
+      <li>
+        <a target="_blank" href="https://twitter.com/intent/tweet?url={{ s | absolute_url }}{{ token | url_encode }}%0A%0A&text={{ twitter_text | url_encode }}%0A%0A&hashtags=Novel,WebFiction,WebSerial" title="{{ chapter.title }}">Share on Twitter</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?src=bm&u={{ s | absolute_url }}{{ token | url_encode }}">Share on Facebook</a>
+        <blockquote>
+          {{ description }}<br><br>
+          {{ twitter_text }}<br><br>
+          #Fantasy #Novel #WebFiction
+        </blockquote>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.reddit.com/user/0xReki/submit?url={{ s | absolute_url }}{{ token | url_encode }}&title={{ share_title | url_encode }}" title="{{ chapter.title }}">Share on Reddit</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ s }}&title={{ share_title }}&tags={{ page.link.series | camelcase }},WebFiction,WebNovel,WebSerial,Fantasy&caption={{ description | strip | url_encode }}">Share on Tumblr</a>
+      </li>
+  </a>
+    </ul>
+    </li>{% endfor %}
+</ul>
