@@ -100,7 +100,7 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 # Short URLs
 https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
 
-https://cd-ht.ml/2/*      {{ "/cd/2" | absolute_url }}:splat   301!
+https://cd-ht.ml/2/*      {{ "/cd/2/" | absolute_url }}:splat   301!
 
 https://cd-ht.ml/s/1/*    {{ "/s/1/" | absolute_url }}:splat   301!
 
