@@ -172,11 +172,10 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /amauga/-og.png
       permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/crystaldown
     scope:

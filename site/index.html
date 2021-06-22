@@ -205,9 +205,24 @@ The planet seems like any other underdeveloped planet, but something is differen
     </small></p>
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
-    <div itemprop="image" itemscope itemtype="https://schema.org/URL">
-      <meta itemprop="url" content="{{ "/amauga/-og.png"| prepend: static_url | absolute_url }}">
+    {% if post.image contains "-og." %}  
+    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
     </div>
+    {% else %}
+    <figure class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img itemprop="url"
+        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
+        alt="{{ post.title }}">
+      {% if post.image_license %}
+      <figcaption>
+        {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
+        {{ post.image_license }}
+        {% if post.image_license_url %}</a>{% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
     <div class="entry-summary">
     {{ post.content | markdownify }}
     </div>
