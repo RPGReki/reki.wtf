@@ -1,0 +1,17 @@
+---
+layout: 2020/base
+sitemap: false
+title: HTML5 Visualizer
+---
+<h1>HTML5 Audio Visualizer</h1>
+<div id="wrapper">
+    <div id="fileWrapper" class="file_wrapper">
+        <h2 id="info"></h2>
+        <label for="uploadedFile">Drag &amp; drop or select a file to play:</label>
+        <input type="file" id="uploadedFile"></input>
+    </div>
+    <div id="visualizer_wrapper" style="width: 100%; height: 100%;">
+        <canvas id='canvas' width="914" height="512" style="width: 100%; height: 100%;"></canvas>
+    </div>
+</div>
+<script src="js/html5_audio_visualizer.js"></script>

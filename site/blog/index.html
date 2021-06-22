@@ -38,26 +38,30 @@ feed: /blog.xml
     {% if post.long %}
       <meta itemprop="url" content="{{ post.url | absolute_url }}">
     {% else %}
-      <meta itemprop="url" content="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+      <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}/blog/#{{ post.title | slugify }}">
     {% endif %}
     <p class="float-left"><small>
       published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" class="published">{{ post.date | date: "%Y-%m-%d" }}</span>
     </small></p>
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
-    {% if post.image != "/assets/images/site-og.png" %}  
+    {% unless post.image contains "-og." %}  
     <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    {% if post.long %}
       <a href="{{ post.url | absolute_url }}">
+    {% endif %}
       <img itemprop="url"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
+    {% if post.long %}
       </a>
+    {% endif %}
     </div>
     {% else %}
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.static_url | absolute_url }}">
     </div>
-    {% endif %}
+    {% endunless %}
     {% unless post.long %}
     <div class="entry-summary">
       {{ post.content | markdownify }}

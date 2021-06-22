@@ -159,7 +159,7 @@ Visualizer.prototype = {
             cwidth = canvas.width,
             capHeight = 2,
             cheight = canvas.height - capHeight,
-            capStyle = '#B23F3F',
+            capStyle = '#9C2C2C',
             meterNum = (128 + 64) / 2, //count of the meters
             gap = 4, //gap between meters
             meterWidth = (cwidth - gap) / meterNum - gap, //width of the meters in the spectrum
@@ -168,9 +168,9 @@ Visualizer.prototype = {
 
         ctx = canvas.getContext('2d'),
         gradient = ctx.createLinearGradient(0, 0, 0, cheight);
-        gradient.addColorStop(0.7, '#8F3267');
-        gradient.addColorStop(0, '#B23F3F');
-        gradient.addColorStop(1, '#BA759C');
+        gradient.addColorStop(0.7, '#92C2C2');
+        gradient.addColorStop(0, '#92C2C2');
+        gradient.addColorStop(1, '#0062CC');
 
         analyser.fftSize = 32768 / 2; 
 
