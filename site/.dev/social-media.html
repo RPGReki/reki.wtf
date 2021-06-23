@@ -28,6 +28,7 @@ title: Social Media Helper
     Text: {{ description }}
     {% capture twitter_text %}The latest public chapter of my #Fantasy #Webnovel {{ page.link.series }}, chapter {{ chapter.chapter }}, is now available on my homepage.{% endcapture %}
     {% capture share_title %}{{ page.link.series }} {{ page.link.volume_number }}-{{ chapter.chapter }}: {{ chapter.title }}{% endcapture %}
+{% capture series_camelcase %}{% assign ws = page.book.series | split: ' ' %}{% for w in ws %}{{w | capitalize}}{% endfor %}{% endcapture %}
     <ul>
       <li>
         <a target="_blank" href="https://twitter.com/intent/tweet?url={{ s | absolute_url }}{{ token | url_encode }}%0A%0A&text={{ twitter_text | url_encode }}%0A%0A&hashtags=Novel,WebFiction,WebSerial" title="{{ chapter.title }}">Share on Twitter</a>
@@ -41,10 +42,10 @@ title: Social Media Helper
         </blockquote>
       </li>
       <li>
-        <a target="_blank" href="https://www.reddit.com/user/0xReki/submit?url={{ s | absolute_url }}{{ token | url_encode }}&title={{ share_title | url_encode }}" title="{{ chapter.title }}">Share on Reddit</a>
+        <a target="_blank" href="https://www.reddit.com/user/0xReki/submit?url={{ s | absolute_url }}{{ token | url_encode }}&title={{ share_title | url_encode }}">Share on Reddit</a>
       </li>
       <li>
-        <a target="_blank" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ s }}&title={{ share_title }}&tags={{ page.link.series | camelcase }},WebFiction,WebNovel,WebSerial,Fantasy&caption={{ description | strip | url_encode }}">Share on Tumblr</a>
+        <a target="_blank" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ s }}&title={{ share_title }}&tags={{ series_camelcase }},WebFiction,Web%20Fiction,WebNovel,Web%20Novel,WebSerial,Web%20Serial,Fantasy&caption={{ description | strip | url_encode }}">Share on Tumblr</a>
       </li>
   </a>
     </ul>
