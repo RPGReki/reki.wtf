@@ -28,41 +28,41 @@ robots: "noindex, follow"
 
 ## Web Fiction
 
-- [Tuesday Serial](https://tuesdayserial.com/){:target="_blank" ref="noopener"}:
+- [Tuesday Serial](https://tuesdayserial.com/){:target="_blank" rel="noopener"}:
   Check each Tuesday/Wednesday for new chapters!
-- [ScribbleHub](https://www.scribblehub.com/){:target="_blank" ref="noopener"}:
+- [ScribbleHub](https://www.scribblehub.com/){:target="_blank" rel="noopener"}:
   Scribble Hub is the home of original web stories dedicated to helping authors grow as authors and
   readers find exactly what they are looking for.
 
 I'm open for cross promotion. See [Questions & Answers](/q-and-a/) for Contacting Information.
 
-- [aka by Cy](https://akaverse.wordpress.com){:target="_blank" ref="noopener"}:
+- [aka by Cy](https://akaverse.wordpress.com){:target="_blank" rel="noopener"}:
   interesting take on “everyone has powers”
-- [The Brotherhood Archive by J. Ander](https://brotherhoodarchive.com/){:target="_blank" ref="noopener"}:
+- [The Brotherhood Archive by J. Ander](https://brotherhoodarchive.com/){:target="_blank" rel="noopener"}:
   cross-genre fantasy stories
 
 ## Used Resources
 
 ### Software
 
-- [markdowny](https://www.npmjs.com/package/markdowny){:target="_blank" ref="noopener"}\\
+- [markdowny](https://www.npmjs.com/package/markdowny){:target="_blank" rel="noopener"}\\
   When I started out I had like 5 lines of front matter in my files.
   Since then, I had to add more to do things like navigation, SEO etc.
   There were times, where 40 lines of front matter for each file was normal.
   All that would be a real pain to manage and check, if I didn't have a tool that goes with it.
-- [Jekyll](https://jekyllrb.com/){:target="_blank" ref="noopener"}\\
+- [Jekyll](https://jekyllrb.com/){:target="_blank" rel="noopener"}\\
   Jekyll takes my markdown files and builds this website.
   Usually, GitHub Pages does that for me, but when I need to test something I need to run it on my computer testing it before I release changes to the wild.
-- [ProWritingAid](https://prowritingaid.com/?afid=9599){:target="_blank" ref="noopener"}\\
+- [ProWritingAid](https://prowritingaid.com/?afid=9599){:target="_blank" rel="noopener"}\\
   while I have some people that read over my chapters, it'd be rude not to run it through automated tools before having a human look at them.
   ~~So far, it works better than I expected!~~
-- [pandoc](https://pandoc.org/){:target="_blank" ref="noopener"}\\
+- [pandoc](https://pandoc.org/){:target="_blank" rel="noopener"}\\
   While I could just try and use some plugin for jekyll for creating eBook versions those plugins just don't work with my setup.
   So instead, I just wrote a script that creates an ebook using kramdown and pandoc.
-- [Calibre](https://calibre-ebook.com/){:target="_blank" ref="noopener"}\\
+- [Calibre](https://calibre-ebook.com/){:target="_blank" rel="noopener"}\\
   A must-have tool for eBook lovers.
   I use it to convert my ePUB to PDF.
   In 90% of all cases, it works without further intervention.
-- [Hagsten/Talkify](https://github.com/Hagsten/Talkify){:target="_blank" ref="noopener"}\\
+- [Hagsten/Talkify](https://github.com/Hagsten/Talkify){:target="_blank" rel="noopener"}\\
   Used for the Text-To-Speech function.
   I don't use their fancy voices, since these seem to have trouble with hyphenation.

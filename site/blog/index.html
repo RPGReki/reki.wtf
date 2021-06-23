@@ -45,23 +45,24 @@ feed: /blog.xml
     </small></p>
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
-    {% unless post.image contains "-og." %}  
-    <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-    {% if post.long %}
-      <a href="{{ post.url | absolute_url }}">
-    {% endif %}
+    {% if post.image contains "-og." %}  
+    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
+    </div>
+    {% else %}
+    <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <img itemprop="url"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
-    {% if post.long %}
-      </a>
+      {% if post.image_license %}
+      <figcaption>
+        {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
+        {{ post.image_license }}
+        {% if post.image_license_url %}</a>{% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
     {% endif %}
-    </div>
-    {% else %}
-    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.static_url | absolute_url }}">
-    </div>
-    {% endunless %}
     {% unless post.long %}
     <div class="entry-summary">
       {{ post.content | markdownify }}

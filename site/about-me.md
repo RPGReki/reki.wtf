@@ -4,7 +4,37 @@ title: "About Me"
 layout: 2020/base
 lang: en-CA
 
+date: 2016-11-08
+
 description: "About me, my universe and everything else"
+
+extra_meta:
+  - property: og:type
+    content: profile
+  - property: profile:first_name
+    content: Thai
+  - property: profile:last_name
+    content: Chung
+  - property: profile:username
+    content: 0xReki
+
+about:
+  type: Person
+  links:
+    - https://twitter.com/0xReki
+    - https://facebook.com/0xReki
+    - https://instagram.com/oxreki
+    - https://www.scribblehub.com/profile/19792/0xreki/
+    - https://twitch.tv/RPGReki
+    - https://twitch.tv/RiichiReki
+    - https://github.com/0xReki
+    - https://gitlab.com/0xReki
+    - https://www.patreon.com/RWNS
+    - https://www.linkedin.com/in/q-thai-chung
+    - https://www.xing.com/profile/Thai_Chung
+    - https://amazon.com/author/0xreki
+    - http://mahjong-europe.org/ranking/Players/05100170.htm
+
 ---
 
 # About Me, my Universe and Everything Else
@@ -17,6 +47,16 @@ I like playing JPRGs.
 While I do like action games, but I kinda suck at those.
 
 ## 0xReki on other Platforms
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "{{ page.about.type }}",
+    "name": "Thai “0xReki Chung”",
+    "url": "{{ page.url | absolute_url }}"{% if page.about.links %},
+    "sameAs": {{ page.about.links | jsonify }}{% endif %}
+  }
+</script>
 
 <p class="social icons">
   <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">

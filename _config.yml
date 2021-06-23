@@ -61,11 +61,7 @@ plugins:
 ## SEO
 twitter:
   username: 0xReki
-  creator: 0xReki
   card: summary
-facebook:
-  app_id: 1161469024012899
-  publisher: 372546986661616
 tumblr:
   url: 0xreki.tumblr.com
 google_analytics: UA-143950814-4
@@ -97,23 +93,6 @@ preload:
   - /assets/fonts/Cardo-Bold.woff2
   - /assets/fonts/Source-Sans-Pro-Regular.woff2
   - /assets/fonts/Source-Sans-Pro-Bold.woff2
-
-about:
-  type: Person
-  links:
-    - https://twitter.com/0xReki
-    - https://facebook.com/0xReki
-    - https://instagram.com/oxreki
-    - https://www.scribblehub.com/profile/19792/0xreki/
-    - https://twitch.tv/RPGReki
-    - https://twitch.tv/RiichiReki
-    - https://github.com/0xReki
-    - https://gitlab.com/0xReki
-    - https://www.patreon.com/RWNS
-    - https://www.linkedin.com/in/q-thai-chung
-    - https://www.xing.com/profile/Thai_Chung
-    - https://amazon.com/author/0xreki
-    - http://mahjong-europe.org/ranking/Players/05100170.htm
 
 liquid:
   error_mode: warn
@@ -193,6 +172,10 @@ defaults:
       published: true
       image: /assets/images/site-og.png
       permalink: /crystaldown/blog/:year/:month-:day-:title/
+      intermediate_breadcrumbs:
+        -
+          title: Archived Projects
+          url: /archive/
   - # /_posts/scions
     scope:
       path: "_posts/scions"
@@ -209,6 +192,10 @@ defaults:
       published: true
       image: /assets/images/site-og.png
       permalink: /scions/blog/:year/:month-:day-:title/
+      intermediate_breadcrumbs:
+        -
+          title: Archived Projects
+          url: /archive/
   - # /_posts/scions-reboot
     scope:
       path: "_posts/scions-reboot"
@@ -267,6 +254,10 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
+      intermediate_breadcrumbs:
+        -
+          title: Archived Projects
+          url: /archive/
   - # /crystaldown/02-vampire-aide-and-exodus
     scope:
       path: "crystaldown/02-vampire-aide-and-exodus"
@@ -293,6 +284,21 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
+      intermediate_breadcrumbs:
+        -
+          title: Archived Projects
+          url: /archive/
+  - # /doman
+    scope:
+      path: "doman"
+    values:
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      intermediate_breadcrumbs:
+        -
+          title: Doman Mahjong Tournaments
+          url: /doman/
   - # /scions/01-children-of-light-and-darkness
     scope:
       path: "scions/01-children-of-light-and-darkness"
@@ -318,6 +324,10 @@ defaults:
           - LitRPG
           - Slice of Life
       image: /assets/images/site-og.png
+      intermediate_breadcrumbs:
+        -
+          title: Archived Projects
+          url: /archive/
   - # /amauga/01-far-from-any-semblance-of-modern-civilization
     scope:
       path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
@@ -368,9 +378,9 @@ defaults:
           - Fantasy
           - Slice of Life
       image: /assets/images/site-og.png
-  - # /.private
+  - # /private
     scope:
-      path: ".private"
+      path: "private"
     values:
       layout: base
       sitemap: false
@@ -393,7 +403,7 @@ defaults:
         series: "Scions Reboot"
         copyrightYear: 2022
         title: "Children of Light and Darkness"
-        url: "/scions/#volume-01-children-of-light-and-darkness"
+        url: "/scions-reboot/#volume-01-children-of-light-and-darkness"
         genres:
           - Adventure
           - Fantasy

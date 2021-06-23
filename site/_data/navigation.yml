@@ -1,7 +1,10 @@
-- text: "Amauga"
+- text: Amauga
   url: /amauga/
   unicode_icon: 📕
-- text: "Archived Projects"
+- text: Blog
+  url: /blog/
+  unicode_icon: 🗞️
+- text: Archived Projects
   url: /archive/
   unicode_icon: 📁
 #- text: Crystal Down Glossary
@@ -16,6 +19,6 @@
 - text: FAQ
   url: /q-and-a/
   unicode_icon: ⁉️
-- text: Links
-  url: /links/
-  unicode_icon: 🔗
+#- text: Links
+#  url: /links/
+#  unicode_icon: 🔗
