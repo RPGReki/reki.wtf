@@ -62,6 +62,8 @@ plugins:
 twitter:
   username: 0xReki
   card: summary
+facebook:
+  app_id: 656032504831426
 tumblr:
   url: tumblr.0xreki.de
 google_analytics: UA-143950814-4
