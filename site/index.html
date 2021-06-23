@@ -63,9 +63,25 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
     </div>
     {% else %}
     <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      {% if post.long %}
+        {% if post.link %}
+          {% assign chapter = site.pages
+            | where: "type", "chapter"
+            | where: "book.series", post.link.series
+            | where: "book.number", post.link.volume_number
+            | where: "chapter", post.link.chapter
+            | first %}
+          <a href="{{ chapter.url | absolute_url }}" title="{{ chapter.title }}">
+        {% else %}
+        <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
+        {% endif %}
+      {% endif %}
       <img itemprop="url"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
+      {% if post.long %}
+      </a>
+      {% endif %}
       {% if post.image_license %}
       <figcaption>
         {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
@@ -216,9 +232,25 @@ The planet seems like any other underdeveloped planet, but something is differen
     </div>
     {% else %}
     <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      {% if post.long %}
+        {% if post.link %}
+          {% assign chapter = site.pages
+            | where: "type", "chapter"
+            | where: "book.series", post.link.series
+            | where: "book.number", post.link.volume_number
+            | where: "chapter", post.link.chapter
+            | first %}
+          <a href="{{ chapter.url | absolute_url }}" title="{{ chapter.title }}">
+        {% else %}
+        <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
+        {% endif %}
+      {% endif %}
       <img itemprop="url"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
+      {% if post.long %}
+      </a>
+      {% endif %}
       {% if post.image_license %}
       <figcaption>
         {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
