@@ -72,7 +72,7 @@ While I do like action games, but I kinda suck at those.
     <img src="{{ "/assets/images/instagram.png" | prepend: site.static_url | absolute_url }}" alt="Instagram">
   </a>
   <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img src="{{ "/assets/images/scribblehub.png" | prepend: site.static_url | absolute_url }}" alt="ScribbleHub">
+    <img src="{{ "/assets/images/scribblehub.png" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub">
   </a>
   <a href="https://twitch.tv/RPGReki">
     <img src="{{ "/assets/images/twitch.png" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">

@@ -33,7 +33,7 @@ permalink: /thanks-for-voting/poll-referral/
 > | Facebook    | <meter min="0" max="{{ total }}" value="{{ facebook }}" style="width:20em">{{ facebook }}/{{ total }}</meter> |
 > | Google      | <meter min="0" max="{{ total }}" value="{{ google }}" style="width:20em">{{ google }}/{{ total }}</meter> |
 > | Twitter     | <meter min="0" max="{{ total }}" value="{{ twitter }}" style="width:20em">{{ twitter }}/{{ total }}</meter> |
-> | ScribbleHub  | <meter min="0" max="{{ total }}" value="{{ scribblehub }}" style="width:20em">{{ scribblehub }}/{{ total }}</meter> |
+> | Scribble Hub  | <meter min="0" max="{{ total }}" value="{{ scribblehub }}" style="width:20em">{{ scribblehub }}/{{ total }}</meter> |
 > | other       | <meter min="0" max="{{ total }}" value="{{ other }}" style="width:20em">{{ other }}/{{ total }}</meter> |
 >
 > {% endif %}
