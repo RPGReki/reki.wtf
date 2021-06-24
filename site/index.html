@@ -77,6 +77,8 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
         {% endif %}
       {% endif %}
       <img itemprop="url"
+        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
+        sizes="(max-width: 575.96px) 319px, 880px"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
       {% if post.long %}
@@ -246,6 +248,8 @@ The planet seems like any other underdeveloped planet, but something is differen
         {% endif %}
       {% endif %}
       <img itemprop="url"
+        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
+        sizes="(max-width: 575.96px) 319px, 880px"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 
         alt="{{ post.title }}">
       {% if post.long %}
