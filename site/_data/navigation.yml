@@ -1,24 +1,18 @@
 - text: Amauga
   url: /amauga/
   unicode_icon: 📕
-- text: Blog
-  url: /blog/
-  unicode_icon: 🗞️
 - text: Archived Projects
   url: /archive/
   unicode_icon: 📁
-#- text: Crystal Down Glossary
-#  url: /crystaldown/glossary/
-#  unicode_icon: 📖
-- text: Doman Mahjong Tournament
-  url: /doman/
-  unicode_icon: 🀙
+- text: Blog
+  url: /blog/
+  unicode_icon: 🗞️
 - text: Tags
   url: /tags/
   unicode_icon: 🏷
+- text: Doman Mahjong Tournament
+  url: /doman/
+  unicode_icon: 🀙
 - text: FAQ
   url: /q-and-a/
   unicode_icon: ⁉️
-#- text: Links
-#  url: /links/
-#  unicode_icon: 🔗
