@@ -1,7 +1,7 @@
 ---
 title: "Furiten Riichi May-hem 2020 Doman Mahjong Tournament"
 layout: 2020/base
-image: /doman/images/furiten.jpg
+image: /doman/images/furiten.webp
 type: tournament-archive
 redirect_from: 
   - /doman-mahjong-tournament/2020-05-furiten-riichi-may-hem/
@@ -39,7 +39,7 @@ seo_title_fix: 1
 }
 </script>
 
-![Furiten]({{ "/doman/images/furiten.jpg" | prepend: site.static_url | absolute_url }})
+![Furiten]({{ "/doman/images/furiten.webp" | prepend: site.static_url | absolute_url }})
 
 I wasn't planning on having another tournament till 2020 Q3.
 But since most of us are at home let's have another tournament!

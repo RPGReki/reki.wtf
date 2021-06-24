@@ -3,7 +3,7 @@ title: "Doman Mahjong Team League 2021"
 published: false
 layout: 2020/base
 redirect_from: 
-image: /doman/images/turn-order.png
+image: /doman/images/turn-order.webp
 start_date: 2021-01-09
 end_date: 2021-06-31
 registration_url: 
@@ -49,7 +49,7 @@ robots: noindex
 }
 </script>
 
-![Turn Order]({{ "/doman/images/turn-order.png" | prepend: site.static_url | absolute_url }})
+![Turn Order]({{ "/doman/images/turn-order.webp" | prepend: site.static_url | absolute_url }})
 
 The poll has spoken, the next thing will be a team league.
 Don't worry, the event after this will be solo tournament again.

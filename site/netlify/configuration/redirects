@@ -6,8 +6,8 @@ permalink: /_redirects
 # Static URLs for better caching
 https://static.0xreki.de/assets/*                  {{ "/assets/" | absolute_url }}:splat               200
 https://static.0xreki.de/crystaldown/thumbnail.jpg {{ "/crystaldown/thumbnail.jpg" | absolute_url }}   200
-https://static.0xreki.de/scions/thumbnail.png      {{ "/scions/thumbnail.jpg" | absolute_url }}        200
-https://static.0xreki.de/amauga/thumbnail.png      {{ "/amauga/thumbnail.png" | absolute_url }}        200
+https://static.0xreki.de/scions/thumbnail.webp      {{ "/scions/thumbnail.jpg" | absolute_url }}        200
+https://static.0xreki.de/amauga/thumbnail.webp      {{ "/amauga/thumbnail.webp" | absolute_url }}        200
 
 https://static.0xreki.de/blog/images/*             {{ "/blog/images/" | absolute_url }}:splat          200
 https://static.0xreki.de/doman/images/*            {{ "/doman/images/" | absolute_url }}:splat         200

@@ -41,9 +41,9 @@ robots: noindex, follow
 {% raw %}{% 
 assign posts = site.tags["{% endraw %}{{i}}{% raw %}"] | sort: 'date' | reverse %}{%
 for post in posts %}
-  <article itemscope itemtype="https://schema.org/BlogPosting" class="interface hentry">
+<article itemscope itemtype="https://schema.org/BlogPosting" class="interface top-toggle hentry">
     <h2 itemprop="name" id="{{ post.title | slugify }}" class="active entry-title" onclick="toggleAccordion(this)">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.title }}
     </h2>
     <meta itemprop="headline" content="{{ post.title }}">
     {% assign author = site.data.staff | where: "id", page.author | last %}
@@ -59,25 +59,48 @@ for post in posts %}
     {% if post.long %}
       <meta itemprop="url" content="{{ post.url | absolute_url }}">
     {% else %}
-      <meta itemprop="url" content="{{ '/blog/' | absolute_url }}#{{ post.title | slugify }}">
+      <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}/blog/#{{ post.title | slugify }}">
     {% endif %}
     <p class="float-left"><small>
       published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" class="published">{{ post.date | date: "%Y-%m-%d" }}</span>
     </small></p>
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
-    {% if post.image != "/assets/images/site-og.png" %}  
-    <div class="post-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <a href="{{ post.url | absolute_url }}">
-      <img itemprop="url"
-        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
-        alt="{{ post.title }}">
-      </a>
+    {% if post.image contains "-og." %}  
+    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
     </div>
     {% else %}
-    <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ "/assets/images/site-icon.png" | prepend: site.static_url | absolute_url }}">
-    </div>
+    <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      {% if post.long %}
+        {% if post.link %}
+          {% assign chapter = site.pages
+            | where: "type", "chapter"
+            | where: "book.series", post.link.series
+            | where: "book.number", post.link.volume_number
+            | where: "chapter", post.link.chapter
+            | first %}
+          <a href="{{ chapter.url | absolute_url }}" title="{{ chapter.title }}">
+        {% else %}
+        <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
+        {% endif %}
+      {% endif %}
+      <img itemprop="url"
+        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
+        sizes="(max-width: 575.96px) 319px, 880px"
+        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
+        alt="{{ post.title }}">
+      {% if post.long %}
+      </a>
+      {% endif %}
+      {% if post.image_license %}
+      <figcaption>
+        {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
+        {{ post.image_license }}
+        {% if post.image_license_url %}</a>{% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
     {% endif %}
     {% unless post.long %}
     <div class="entry-summary">

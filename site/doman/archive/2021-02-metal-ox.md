@@ -4,7 +4,7 @@ layout: 2020/base
 redirect_from: 
   - /doman-mahjong-tournament/
   - /doman/
-image: /doman/images/2021-ox.jpg
+image: /doman/images/2021-ox.webp
 
 seo_title_fix: 3
 
@@ -52,7 +52,7 @@ sheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRdG2tiFL5ZhVZNDZWzEd
 }
 </script>
 
-![FFXIV Heavensturn Ox Event]({{ "/doman/images/2021-ox.jpg" | prepend: site.static_url | absolute_url }})
+![FFXIV Heavensturn Ox Event]({{ "/doman/images/2021-ox.webp" | prepend: site.static_url | absolute_url }})
 
 A new year, a new tournament!
 This time, it's on the weekend of the Lunar New Year!

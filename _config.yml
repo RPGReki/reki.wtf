@@ -126,7 +126,7 @@ defaults:
       author: reki
       publisher: reki
       comments: false
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
   - # /_posts/personal
     scope:
       path: "_posts/personal"
@@ -137,11 +137,11 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       permalink: /:year/:month-:day-:title/
   - # /_posts/amauga
     scope:
@@ -156,7 +156,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /amauga/-og.png
+      image: /amauga/-og.webp
       permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/crystaldown
     scope:
@@ -168,11 +168,11 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       permalink: /crystaldown/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -188,11 +188,11 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       permalink: /scions/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -208,11 +208,11 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       permalink: /scions-reboot/blog/:year/:month-:day-:title/
   - # /_posts/reincarnated-as-cat
     scope:
@@ -224,11 +224,11 @@ defaults:
       lang: "en-CA"
       author: reki
       publisher: reki
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       comments: true
       commenting: open
       published: true
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       permalink: /amauga/blog/:year/:month-:day-:title/
   - # /crystaldown/01-life-in-avan-forest
     scope:
@@ -255,7 +255,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -285,7 +285,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -325,7 +325,7 @@ defaults:
           - Fantasy
           - LitRPG
           - Slice of Life
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -355,7 +355,7 @@ defaults:
           - Slice of Life
         audio_mirror: 
           - "https://amauga.s3.us-east-2.amazonaws.com/"
-      image: /amauga/-og.png
+      image: /amauga/-og.webp
   - # /reincarnated-as-cat/01
     scope:
       path: "reincarnated-as-cat/01/"
@@ -379,14 +379,14 @@ defaults:
           - Adventure
           - Fantasy
           - Slice of Life
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
   - # /private
     scope:
       path: "private"
     values:
       layout: base
       sitemap: false
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
   - # /scions-reboot/01-children-of-light-and-darkness
     scope:
       path: "scions-reboot/01-children-of-light-and-darkness"
@@ -411,4 +411,4 @@ defaults:
           - Fantasy
           - LitRPG
           - Slice of Life
-      image: /assets/images/site-og.png
+      image: /assets/images/site-og.webp
