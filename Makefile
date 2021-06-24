@@ -38,6 +38,9 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .ma
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 
+amp: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-amp
+	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_amp.yml
+
 .make-state-env-testing:
 	@if [[ -f ".make-state-env-staging" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml; fi
 	touch $(@)
