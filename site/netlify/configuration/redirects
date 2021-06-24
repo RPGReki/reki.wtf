@@ -23,6 +23,7 @@ https://static.0xreki.de/proxy/shields/:t/:l/shield.svg   https://img.shields.io
 https://static.crystaldown.de/*                    https://static.0xreki.de/:splat                     301!
 https://static.0xreki.de/*                         {{ "/" | absolute_url }}:splat                      301!
 https://crystaldown.de/*                           {{ "/" | absolute_url }}:splat                      301!
+https://0xreki.netlify.app/*                       {{ '/' | absolute_url }}:splat                      301!
 
 https://amau.ga/sh      https://www.scribblehub.com/series/215253/amauga-far-away-from-modern-civilization/
 https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
@@ -46,7 +47,7 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 
 {{ from }}*    {{ p.url | absolute_url }}
 
-{{ p.url }}     p=:p    {{ p.url | absolute_url }}?bugfix 302! {% elsif p.published == "external" %}
+{{ p.url }}     p=:p    {{ p.url | absolute_url }}?bugfix 301! {% elsif p.published == "external" %}
 
 {{ from }}*     p=:p    {{ p.external }}?bugfix 302!
 
@@ -112,6 +113,7 @@ https://amau.ga/1/*       {{ "/a/1/" | absolute_url }}:splat    301!
 
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}        301!
 
-https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}:splat        301!
+https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}:splat               301!
+
 
 # vim: set textwidth=0:
