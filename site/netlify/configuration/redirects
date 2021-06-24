@@ -89,6 +89,8 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 /amauga/01-far-from-any-semblance-of-modern-civilization/ /amauga/#volume01-farfromanysemblanceofmoderncivilization
 /a/1/                                                     /amauga/#volume01-farfromanysemblanceofmoderncivilization
 
+/tags/*                                                   /tags/
+
 # Legacy URLs
 /01-life-in-avan-forest/                                  /crystaldown/#volume01-lifeinavanforest
 /01-life-in-avan-forest/*                                 /crystaldown/01-life-in-avan-forest/:splat
@@ -96,7 +98,8 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 /02-vampire-aide-and-exodus/                              /crystaldown/#volume02vampire-aideandexodus
 /02-vampire-aide-and-exodus/*                             /crystaldown/02-vampire-aide-and-exodus/:splat
 
-/tags/*                                                   /tags/
+/wordpress/*/media/*                                      /archive/youtube-archive/
+/wordpress/*/random-stuff/*                               /archive/youtube-archive/
 
 # Short URLs
 https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
