@@ -69,7 +69,19 @@ permalink: /_headers
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/*.ogg
-  Content-Type: audio/ogg
+  Content-Type: audio/ogg; codecs=vorbis
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.opus
+  Content-Type: audio/ogg; codecs=opus
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.aac
+  Content-Type: audio/aac
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.m4a
+  Content-Type: audio/mp4
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/*.avif
@@ -106,7 +118,7 @@ permalink: /_headers
 /**/playlist.xspf
   Content-Type: application/xspf+xml; charset=UTF-8
 
-/**/podcast.xml
+/**/podcast*.xml
   Content-Type: application/rss+xml"; charset=UTF-8
 
 {% if jekyll.environment == "unpublished" %}

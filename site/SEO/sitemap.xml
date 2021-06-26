@@ -17,6 +17,7 @@ permalink: /sitemap.xml
      page.url contains '/tags' or
      page.url contains '/.dev' or
      page.url contains '/.well-known' or
+     page.url contains '.ssml'
      page.url contains '.xml'
 %}{% 
   continue
