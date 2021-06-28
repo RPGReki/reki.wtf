@@ -84,6 +84,14 @@ permalink: /_headers
   Content-Type: audio/mp4
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
+/**/*.2.m4a
+  Content-Type: audio/mp4; codecs=m4a.40.2
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
+/**/*.42.m4a
+  Content-Type: audio/mp4; codecs=mp4a.40.42
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
 /**/*.avif
   Content-Type: image/avif
 
