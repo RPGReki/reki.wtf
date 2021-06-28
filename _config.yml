@@ -143,6 +143,8 @@ defaults:
       published: true
       image: /assets/images/site-og.webp
       permalink: /:year/:month-:day-:title/
+      audio_mirror: 
+        - https://reki-adventures.s3.eu-central-1.amazonaws.com/
   - # /_posts/amauga
     scope:
       path: "_posts/amauga"

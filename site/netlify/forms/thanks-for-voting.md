@@ -4,7 +4,7 @@ layout: 2020/home
 sitemap: false
 robots: noindex
 comments: false
-permalink: /thanks-for-voting/poll-referral/
+permalink: /thanks-for-voting/
 ---
 <!-- markdownlint-disable MD025 -->
 # Thanks for Voting
@@ -27,7 +27,7 @@ permalink: /thanks-for-voting/poll-referral/
 > [Go Back](javascript:history.back()){:onclick="history.back()"}
 > {:.button}
 >
-> {% if votes %}
+> {% if votes and false %}
 > | Results | |
 > | ---- | ----- |
 > | Facebook    | <meter min="0" max="{{ total }}" value="{{ facebook }}" style="width:20em">{{ facebook }}/{{ total }}</meter> |
