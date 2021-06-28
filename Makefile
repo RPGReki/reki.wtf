@@ -4,7 +4,7 @@ SHELL = /bin/bash
 
 URL = https://0xreki.de
 STORIES = amauga crystaldown scions reincarnated-as-cat scions-reboot
-POLLS = referral
+POLLS = referral audio-2021
 STORY_FEEDS = blog.xml chapters.xml
 
 # automation begins here
