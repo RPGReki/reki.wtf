@@ -12,6 +12,7 @@ layout: compress
   <title type="html">{{ site.title }} Personal Blog Atom Feed</title>
   {% for page in pages %}
 {% if jekyll.environment != "unpublished" %}{% if page.published == "sponsors" or page.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
+{% unless post.long %}{% continue %}{% endunless %}
   <entry xml:lang="en-CA">
     <title type="html">{{ page.title }}</title>
     {% if page.long %}
