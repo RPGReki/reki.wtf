@@ -85,7 +85,7 @@ for post in posts %}
         <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
         {% endif %}
       {% endif %}
-      <img itemprop="url"
+      <img loading="lazy"itemprop="url"
         srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
         sizes="(max-width: 575.96px) 319px, 880px"
         src="{{ post.image | prepend: site.static_url | absolute_url }}" 

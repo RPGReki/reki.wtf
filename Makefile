@@ -35,7 +35,7 @@ COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 
 default: production
 
-## Build Automation
+## Build Tasks
 testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-testing 
 	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml -q
 
@@ -61,20 +61,25 @@ deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
 	netlify deploy --production --message="$(shell git log --oneline -1)"
 
-## Additional Tasks: Sumit Sitemaps
+## Build Tasks: Tags
 
-submit: $(addprefix submit-,$(GLOBAL_XML))
+site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
+	@rm -rf site/tags
+	bash docs/.dev/createTags.sh
 
-define SUBMIT
-submit-$(1):
-	curl -s "https://www.google.com/ping?sitemap=$$(URL)$(1)" > /dev/null
-	curl -s "https://www.bing.com/ping?sitemap=$$(URL)$(1)" > /dev/null
-	curl -s "https://webmaster.yandex.ru/ping?sitemap=$$(URL)$(1)" > /dev/null
-endef
+docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
+	jekyll b -q
 
-## Automation: Posts
+## Build Tasks: Cleaning
 
-$(foreach xml,$(GLOBAL_XML),$(eval $(call SUBMIT,$(xml))))
+force-rebuild:
+	rm -rf docs/*
+
+clean:
+	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json .make-state-*
+
+## Build Tasks: Posts
+
 site/_posts/personal/%: 0xreki.github.io/_posts/%
 	@mkdir -p "$(@D)"
 	@rm -rf $(@)
@@ -87,9 +92,9 @@ site/_posts/$(1)/%: $(1)/_posts/%
 	cp -r "$$(<)" "$$(@D)/"
 endef
 
-## Automation: Stories
-
 $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
+
+## Build Tasks: Get Remote Data
 
 site/_data/comments.json:
 	gulp get-comments --silent
@@ -100,27 +105,22 @@ site/_data/polls/%: | site/_data/polls
 site/_data/polls:
 	mkdir "$(@)"
 
-site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
-	@rm -rf site/tags
-	bash docs/.dev/createTags.sh
 
-docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
-	jekyll b -q
-
-force-rebuild:
-	rm -rf docs/*
-
-clean:
-	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json .make-state-*
-
+## Additional Tasks: Netlify
 serve:
 	@exec netlify dev
+
+## Additional Tasks: Collect Writing Statistics
 
 create-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 	bash scripts/createTables.sh
 
 diff-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 	bash scripts/diffTables.sh
+
+## Additional Tasks: Render Audio
+
+audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 
 %.loudnorm-16.json: %.ssml.mp3
 	ffmpeg -hide_banner \
@@ -171,12 +171,28 @@ diff-tables: $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC)
 		-b:a 96k \
 		$(@)
 
-audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
+
+## Additional Tasks: Rebuild Mirrors
 
 mirrors-rebuild:
 	git submodule foreach "[ ! -f '_config.yml' ] || (jekyll b && git add . && git commit -m 'Rebuild mirror' && git push)"
 
-js: theme/assets/2020/scripts/default.js
+## Additional Tasks: Copy JavaScript
 
-theme/assets/2020/scripts/default.js: docs/.dev/js/default.js
-	cp docs/.dev/js/default.js* theme/assets/2020/scripts/
+js: theme/assets/2020/scripts/early.js theme/assets/2020/scripts/late.js
+
+theme/assets/2020/scripts/%.js: docs/.dev/js/%.js
+	cp $(<) $(@D)
+
+## Additional Tasks: Submit Sitemaps
+
+submit: $(addprefix submit-,$(GLOBAL_XML))
+
+define SUBMIT
+submit-$(1):
+	curl -s "https://www.google.com/ping?sitemap=$$(URL)$(1)" > /dev/null
+	curl -s "https://www.bing.com/ping?sitemap=$$(URL)$(1)" > /dev/null
+	curl -s "https://webmaster.yandex.ru/ping?sitemap=$$(URL)$(1)" > /dev/null
+endef
+
+$(foreach xml,$(GLOBAL_XML),$(eval $(call SUBMIT,$(xml))))

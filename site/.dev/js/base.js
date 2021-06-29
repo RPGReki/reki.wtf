@@ -1,77 +1,10 @@
 var x, y = null;
-var d = document;
-var b = $('body');
-
-function getCookie() {
-  return d.cookie
-}
-
-function isHasAcceptedPolicy() {
-  return (null != getCookie().match(/acceptedPolicy=true/))
-}
-
-async function acceptPolicy() {
-  var banner = $('#policy-banner')[0];
-  banner.style.opacity = 0;
-  writeCookie('acceptedPolicy', true);
-  await sleep(1000);
-  banner.style = null
-}
-
-
-function writeCookie(cookieName, cookieValue, ttl = 14) {
-  var date = new Date();
-  date.setTime(date.getTime() + ttl * 24 * 3600 * 1000);
-  d.cookie = cookieName + '=' + cookieValue + '; expires=' + date.toUTCString() + '; ' + 'domain=' + window.location.hostname
-+ '; path=/'
-}
-
-
-function toggleTheme() {
-  if (!isHasAcceptedPolicy()) {
-    return
-  }
-
-  b.toggleClass('dark-theme').toggleClass('light-theme');
-  writeCookie('darkTheme', b.hasClass('dark-theme'))
-}
-
-function toggleDyslexicFont() {
-  if (!isHasAcceptedPolicy()) {
-    return
-  }
-
-  b.toggleClass('dyslexic');
-  writeCookie('dyslexic', b.hasClass('dyslexic'))
-}
-
 
 function loadYouTube() {
   var videos = d.getElementsByClassName('youtube');
   for (var i = 0; i < videos.length; i++) {
     videos[i].innerHTML = d.getElementById(videos[i].getAttribute('data-videoid')).innerHTML
   }
-}
-
-function restoreSettingsFromCookie() {
-  if (!isHasAcceptedPolicy()) {
-    var bannerClass = $('.policy-banner');
-    for(var i = 0; i < bannerClass.length; i++)
-      bannerClass[i].style.display = 'block'
-    return;
-  }
-
-  if (null != getCookie().match(/darkTheme=false/)) {
-    $('#dark-mode').prop('checked', true);
-    toggleTheme()
-  }
-  if (null != getCookie().match(/dyslexic=true/)) {
-    $('#dyslexic').prop('checked', true);
-    toggleDyslexicFont()
-  }
-  if (null != getCookie().match(/fontSize/))
-    zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
-  acceptPolicy()
 }
 
 function g(evt) {
@@ -104,24 +37,6 @@ function touchMove(evt) {
   x = null, y = null
 }
 
-function loadPage(partId) {
-  var href = $('#' + partId)[0].href;
-  if ('' == href) return;
-
-  window.location.href = href
-}
-
-function zoom(points) {
-  if (!isHasAcceptedPolicy())
-    return;
-
-  var fontSize = (parseInt(b.style.fontSize, 10) || 12) + points;
-  if (fontSize > 20) fontSize = 22;
-  if (fontSize < 12) fontSize = 10;
-  b.style.fontSize = fontSize + 'pt';
-  writeCookie('fontSize', fontSize)
-}
-
 function clearCookies() {
   writeCookie('acceptedPolicy', '', -1);
   writeCookie('fontSize', '', -1);
@@ -131,6 +46,14 @@ function clearCookies() {
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+async function acceptPolicy() {
+  var banner = d.querySelectorAll('#policy-banner')[0];
+  banner.style.opacity = 0;
+  writeCookie('acceptedPolicy', true);
+  await sleep(1000);
+  banner.style = null
 }
 
 async function setUpPageForUsers() {
@@ -157,9 +80,8 @@ function toggleAccordion(e) {
 }
 
 function toggleAllAccordions() {
-  document
-    .querySelectorAll('.inactive')
-    .forEach(e => {
+  d.querySelectorAll('.inactive')
+   .forEach(e => {
       toggleAccordion(e)
     })
 }
@@ -177,11 +99,6 @@ function loadTalkify() {
   js.src = '/assets/2020/scripts/talkify/talkify.min.js';
 
   fjs.parentNode.insertBefore(js, fjs)
-}
-
-
-async function assignVoices() {
-  $('#tts-content [data-character*=mittens]').each((e, i) => {i.setAttribute('data-talkify-pitch', 10)});
 }
 
 async function createTTS() {
@@ -264,5 +181,4 @@ async function toggleTTS() {
   isReading = !isReading
 }
 
-restoreSettingsFromCookie();
-setUpPageForUsers();
+setUpPageForUsers()

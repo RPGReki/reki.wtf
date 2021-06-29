@@ -60,40 +60,40 @@ While I do like action games, but I kinda suck at those.
 
 <p class="social icons">
   <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
-    <img src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord">
+    <img loading="lazy"src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord">
   </a>
   <a href="https://twitter.com/0xReki">
-    <img src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter">
+    <img loading="lazy"src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter">
   </a>
   <a href="https://fb.com/0xReki">
-    <img src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook">
+    <img loading="lazy"src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook">
   </a>
   <a href="https://instagram.com/oxreki">
-    <img src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram">
+    <img loading="lazy"src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram">
   </a>
   <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub">
+    <img loading="lazy"src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub">
   </a>
   <a href="https://twitch.tv/RPGReki">
-    <img src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
+    <img loading="lazy"src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
   </a>
   <a href="https://twitch.tv/RiichiReki">
-    <img src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
+    <img loading="lazy"src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
   </a>
   <a href="https://github.com/0xReki">
-    <img src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub">
+    <img loading="lazy"src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub">
   </a>
   <a href="https://gitlab.com/0xReki">
-    <img src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab">
+    <img loading="lazy"src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab">
   </a>
   <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon">
+    <img loading="lazy"src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon">
   </a>
   <a href="https://linkedin.com/in/q-thai-chung">
-    <img src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn">
+    <img loading="lazy"src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn">
   </a>
   <a href="https://www.xing.com/profile/Thai_Chung">
-    <img src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING">
+    <img loading="lazy"src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING">
   </a>
 </p>
 
@@ -103,15 +103,15 @@ A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
 {:.icons}
-![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}})
-![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }})
-![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }})
-![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }})
-![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }})
-![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }})
-![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }})
-![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }})
-![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }})
+![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy"}
+![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}{:loading="lazy"}
 
 ## Game Profiles
 
