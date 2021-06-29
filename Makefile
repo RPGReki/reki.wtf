@@ -175,7 +175,7 @@ audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 ## Additional Tasks: Rebuild Mirrors
 
 mirrors-rebuild:
-	git submodule foreach "[ ! -f '_config.yml' ] || (jekyll b && git add . && git commit -m 'Rebuild mirror' && git push)"
+	git submodule foreach "[ ! -f '_config.yml' ] || (jekyll b && git add . && git commit -m 'Rebuild mirror'; git push)"
 
 ## Additional Tasks: Copy JavaScript
 
