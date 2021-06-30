@@ -80,9 +80,9 @@ webmaster_verifications:
 
 # Optimizations
 compress_html:
-  clippings: []
+  clippings: all
   comments: ["<!-- ", " -->"]
-  endings: all
+  endings: [p, li, td, rb, rp, rt, dt, dd, tr, td, th]
   blanklines: false
   profile: false
   startings: [html, head, body]

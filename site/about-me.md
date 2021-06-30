@@ -54,7 +54,34 @@ While I do like action games, but I kinda suck at those.
     "@type": "{{ page.about.type }}",
     "name": "Thai “0xReki Chung”",
     "url": "{{ page.url | absolute_url }}"{% if page.about.links %},
-    "sameAs": {{ page.about.links | jsonify }}{% endif %}
+    "sameAs": {{ page.about.links | jsonify }}{% endif %},
+    "alumniOf": {
+      "@id": "#uulm"
+    },
+    "hasOccupation": [{
+      "@id": "#it-nrw"
+    },{
+      "@id": "#plusserver"
+    },{
+      "@id": "#clubfamily"
+    },{
+      "@id": "#schuelernachhilfe1"
+    },{
+      "@id": "#teaching-assistant"
+    },{
+      "@id": "#sgi"
+    },{
+      "@id": "#private-tutor"
+    },{
+      "@id": "#devradio"
+    },{
+      "@id": "#sk"
+    },{
+      "@id": "#fin"
+    }],
+    "hasCredential": {
+      "@id": "#bc"
+    }
   }
 </script>
 
@@ -97,22 +124,187 @@ While I do like action games, but I kinda suck at those.
   </a>
 </p>
 
-## Technologies & Tools
+## Preferred Technologies & Tools
 
 A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
 {:.icons}
-![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="128" height="28"}
-![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="258" height="28"}
-![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="152" height="28"}
-![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="133" height="28"}
-![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="134" height="28"}
-![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="137" height="28"}
-![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="136" height="28"}
-![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="174" height="28"}
-![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="153" height="28"}
+![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="256" height="56"}
+![OS: archlinux]({{'/proxy/shields/OS-archlinux/Arch_Linux/shield.svg'| preprend: site.static_url | absolute_url}}){:loading="lazy"}
+![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/Ubuntu/shield.svg'| preprend: site.static_url | absolute_url}}){:loading="lazy"}
+![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
+![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="304" height="56"}
+![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="266" height="56"}
+![Code: Haskell]({{ "/proxy/shields/Code-Haskell/Haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy""}
+![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="268" height="56"}
+![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="274" height="56"}
+![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="272" height="56"}
+![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="348" height="56"}
+![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="306" height="56"}
 
+<!-- markdownlint-disable -->
+
+{:.mb-1}
+## Work Experience
+
+<div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#it-nrw">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="name">Network Administrator</h3>
+ <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
+ <time property="startDate">2020</time>&thinsp;—&thinsp;Present
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
+<div class="col">
+  <h3 class="mx-0" property="name">System Administrator</h3>
+  <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
+  <time property="startDate">2018</time>&thinsp;—&thinsp;<time property="endDate">2019</time>
+  <p property="responsibilities">
+   Internal IT: Linux and Windows Server
+  </p>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/PlusServer.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="name">Web Developer</h3>
+ <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
+  <time property="startDate">2017</time>&thinsp;—&thinsp;<time property="endDate">2017</time>
+  <p property="responsibilities">
+   Drupal, Symphony and small Infrastrukture Tasks Linux und macOS
+  </p>
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/ClubFamily.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
+<div class="col">
+  <h3 class="mx-0" property="name">Private Tutor</h3>
+  <a href="https://schuelernachhilfe1.de">SchülerNachhilfe1</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2017</time>
+  <meta property="endDate" content="2017">
+  <p property="responsibilities">
+   Private Tutor for English, Mathematics, Chemistry and Physics
+  </p>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/S1.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="name">Teaching Assistant</h3>
+ <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2016</time>
+  <p property="responsibilities">
+    Undergraduate Teaching Assitant for several different lectures:<br>
+    i.a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms
+  </p>
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
+<div class="col">
+  <h3 class="mx-0" property="name">Linux System Administrator</h3>
+  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2013</time>&thinsp;—&thinsp;<time property="endDate">2014</time>
+  <p property="responsibilities">
+    Administration of student Linux computer pool
+  </p>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="name">Private Tutor</h3>
+ <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen, Germany</span></span><br>
+  <time property="startDate">2005</time>&thinsp;—&thinsp;<time property="endDate">2009</time>
+ <p property="responsibilities">
+  Private Tutor for Mathematics, Chemistry and Physics
+ </p>
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/bsg-mm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+{:.mt-4}
+## Volunteer Work
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#devradio">
+<div class="col">
+  <h3 class="mx-0" property="name">Radio Show Host</h3>
+  <a href="https://www.devradio.de">/dev/radio</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2017</time>
+  <p property="responsibilities">
+    /dev/radio was a show of the Chaos Computer Club in Ulm, which used to be broadcasted at a non-commercial radio station.
+    Topics of the show include everything geeky and technology.
+  </p>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/devradio.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="name">Member of the Computer Science Study Commission</h3>
+  <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2014</time>
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
+<div class="col">
+  <h3 class="mx-0" property="name">Chairman</h3>
+  <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <time property="startDate">2012</time>&thinsp;—&thinsp;<time property="endDate">2013</time>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+{:.mt-4}
+## Education
+
+<div class="row mt-4" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
+" about="#bsc">
+<div class="col order-sm-2">
+ <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>
+ <link property="recognizedBy" href="#uulm">
+ <p typeof="CollegeOrUniversity" about="#uulm">
+  <a href="https://www.uni-ulm.de" property="name" rel="url">Ulm University</a>, <span property="address">Ulm, Germany</span>
+ </p>
+  <time>2010</time>&thinsp;—&thinsp;<time property="dateCreated">2016</time>
+ <p>Major in Computer Science; Minor in Physics</p>
+</div>
+<div class="col-12 col-sm-auto order-sm-1">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
+
+{:.mt-4}
 ## Game Profiles
 
 ### Final Fantasy XIV

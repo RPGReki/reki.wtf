@@ -49,8 +49,13 @@ robots: noindex
 }
 </script>
 
-![Turn Order]({{ "/doman/images/turn-order.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/turn-order.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/turn-order.webp | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img src="{{ '/doman/images/turn-order.jpg' | prepend: site.static_url | absolute_url }}" alt="Turn Order">
+</picture>
 
+{:.mt-4}
 The poll has spoken, the next thing will be a team league.
 Don't worry, the event after this will be solo tournament again.
 More information will follow as soon as I get to it.

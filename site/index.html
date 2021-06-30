@@ -4,7 +4,7 @@ layout: 2020/home
 title: "0xReki's Adventures by Night"
 pagination:
   enabled: true
-robots: noindex, follow
+robots: index, follow
 excerpt: |
   Welcome to the 0xReki's Adventures by Night.
   Here you can find my Creavtive Writing, my Blog and my other Projects.
@@ -22,7 +22,7 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
 {% assign p = site.posts | where: "category", "personal" %}
 {% for post in p %}
 {% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
-  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
+  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       {% unless post.long %}
       <a
@@ -76,11 +76,35 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
         <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
         {% endif %}
       {% endif %}
-      <img loading="lazy" itemprop="url"
-        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
-        sizes="(max-width: 575.96px) 319px, 880px"
-        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
-        alt="{{ post.title }}">
+      <picture>
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/avif">
+        <source  
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/jpeg">
+        <source
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/avif">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/jpeg">
+        <img loading="lazy" itemprop="url"
+          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          alt="{{ post.title }}">
+      </picture>
       {% if post.long %}
       </a>
       {% endif %}
@@ -162,16 +186,16 @@ If I'm more productive, there'll be more updates.
 
 <h2><a href="{{ "/amauga/" | absolute_url }}">Amauga</a></h2>
 <div class="row">
-  <div class="col-12 col-sm-6 col-lg-3">
+  <div class="col-12 col-sm-auto">
     <a href="{{ "/amauga/"| absolute_url }}">
       <img loading="lazy" src="{{ "/amauga/thumbnail.webp" | prepend: site.static_url | absolute_url }}"
-           alt="Amauga Cover: ">
+           alt="Amauga Cover" width="250" height="350">
     </a>
    </div>
-   <div class="col-12 col-sm-6 col-lg-9">
+   <div class="col">
     <p>Amauga is an ongoing Fantasy Web Novel / Web Fiction / Web Serial.</p>
-  <h3 data-nosnippet>Synopsis</h3>
-  <p data-nosnippet>
+  <h3>Synopsis</h3>
+  <p>
 Space: the final frontier.
 These are the voyages of the shuttle Speeding Kitten.
 Well, it would be more space voyages if its Hyperdrive didn't malfunction.
@@ -204,7 +228,7 @@ The planet seems like any other underdeveloped planet, but something is differen
 {% assign p = site.posts | where: "category", "amauga" %}
 {% for post in p %}
 {% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
-  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface" data-nosnippet>
+  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       <a
         href="{{ post.category | first | prepend: '/' | absolute_url }}/blog/#{{ post.title | slugify }}">
@@ -247,11 +271,35 @@ The planet seems like any other underdeveloped planet, but something is differen
         <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
         {% endif %}
       {% endif %}
-      <img loading="lazy" itemprop="url"
-        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
-        sizes="(max-width: 575.96px) 319px, 880px"
-        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
-        alt="{{ post.title }}">
+      <picture>
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/avif">
+        <source  
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/jpeg">
+        <source
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/avif">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/jpeg">
+        <img loading="lazy" itemprop="url"
+          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          alt="{{ post.title }}">
+      </picture>
       {% if post.long %}
       </a>
       {% endif %}

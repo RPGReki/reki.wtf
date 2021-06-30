@@ -39,8 +39,13 @@ seo_title_fix: 1
 }
 </script>
 
-![Furiten]({{ "/doman/images/furiten.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/furiten.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/furiten.webp | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img src="{{ '/doman/images/furiten.jpg' | prepend: site.static_url | absolute_url }}" alt="Furiten">
+</picture>
 
+{:.mt-4}
 I wasn't planning on having another tournament till 2020 Q3.
 But since most of us are at home let's have another tournament!
 This is the third Doman Mahjong Tournament on Light, feel free to make an alt to join.

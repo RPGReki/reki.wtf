@@ -53,8 +53,13 @@ redirect_from:
 }
 </script>
 
-![Turn Order]({{ "/doman/images/turn-order.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/turn-order.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/turn-order.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/turn-order.jpg' | prepend: site.static_url | absolute_url }}" alt="Turn Order">
+</picture>
 
+{:.mt-4}
 It was time for another Light Doman Open!
 This was the fourth Doman Mahjong Tournament on Light, with 31 participants from 14 countries.
 As always, this was a player event: it is not affiliated with FFXIV etc.
@@ -64,53 +69,98 @@ I was reliant on screenshot of the final standings and big hands, of course.
 I set the bar for big hand to at least baiman.
 In retrospect, I should have asked for rare hands, too.
 
-![Baiman by Dojun Sanshoku - Riichi Ippatsu Dora 6]({{ "/doman/images/2020-09-18-baiman-dojun-sanshoku.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-18-baiman-dojun-sanshoku.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-18-baiman-dojun-sanshoku.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-18-baiman-dojun-sanshoku.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Dojun Sanshoku - Riichi Ippatsu Dora 6">
+</picture>
 
+{:.mt-4}
 A Baiman came very quickly, like this dora explosion by Dojun Sanshoku, I wonder if I know them in real life:
 Riichi Ippatsu Dora 6. Sadly, it stayed the biggest hand for the day.
 
-![Baiman by Ai Hinatsuru — Honitsu Chanta Haku Hatsu Sha Dora Dora]({{ "/doman/images/2020-09-19-baiman-ai-hinatsuru.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-ai-hinatsuru.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-ai-hinatsuru.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-19-baiman-ai-hinatsuru.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Ai Hinatsuru — Honitsu Chanta Haku Hatsu Sha Dora Dora">
+</picture>
 
+{:.mt-4}
 Saturday was the secound day. And things went wild very quickly.
 Ai Hinatsuru hit with an open Honitsu Chanta Haku Hatsu Sha Dora Dora.
 Even so it wasn't enough to become first at that table.
 
-![Baiman by Aeliott Cadenza - Honitsu Toitoi Chun Hatsu Dora Dora]({{ "/doman/images/2020-09-19-baiman-aeliott-cadenza.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-aeliott-cadenza.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-aeliott-cadenza.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-19-baiman-aeliott-cadenza.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Aeliott Cadenza - Honitsu Toitoi Chun Hatsu Dora Dora">
+</picture>
 
+{:.mt-4}
 At another table, Aeliott soared to first place with his Honitsu Toitoi Chun Hatsu Dora Dora in East 1.
 Apparently they didn't let go of their lead ended that table with 52700 points.
 
-![Baiman by Sakarow Kowarowsky - Riichi Ippatsu Chitoi Dora 4]({{ "/doman/images/2020-09-19-baiman-sakarov-kowarovsky.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-sakarov-kowarovsky.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-sakarov-kowarovsky.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-19-baiman-sakarov-kowarovsky.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Sakarow Kowarowsky - Riichi Ippatsu Chitoi Dora 4">
+</picture>
 
+{:.mt-4}
 Later, Sakarow Kowarowsky hit a very tasty Riichi Ippatsu Chitoi Dora 4 to steal Simb's secound place at the table.
 Just another example that suji only means a tile less likely to be a winning tile, not guaranteed not to be.
 
-![Baiman by Chihaya Nakahara - Tsumo Pinfu Tanyao Iipeikou Dora 4]({{ "/doman/images/2020-09-19-baiman-chihaya-nakahara.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Chihaya Nakahara - Tsumo Pinfu Tanyao Iipeikou Dora 4">
+</picture>
 
+{:.mt-4}
 Even though by the end of Saturday people started going missing the Big Hand Collection didn't stop.
 Chihaya Nakahara scored Tsumo Pinfu Tanyao Iipeikou Dora 4 on the final game of the day.
 
-![Baiman by Chihaya Nakahara - Tsumo Pinfu Tanyao Iipeikou Dora 4]({{ "/doman/images/2020-09-19-baiman-chihaya-nakahara.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-19-baiman-chihaya-nakahara.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Chihaya Nakahara - Tsumo Pinfu Tanyao Iipeikou Dora 4">
+</picture>
 
+{:.mt-4}
 Sunday, last day of the tourmanent, Not Sirocco started the Big Hand Colection effort with a Dora Explosion:
 Riichi Tsumo Sanankou Dora 7 — Sanbaiman.
 
-![Baiman by Sakarow Kowarowsky - Riichi Pinfu Chinitsu Ippeikou]({{ "/doman/images/2020-09-20-baiman-sakarov-kowarovsky.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-20-baiman-sakarov-kowarovsky.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-20-baiman-sakarov-kowarovsky.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-20-baiman-sakarov-kowarovsky.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Sakarow Kowarowsky - Riichi Pinfu Chinitsu Ippeikou">
+</picture>
 
+{:.mt-4}
 Apparently, Sakarow thinks Dora are boring, as scored his 2nd Baiman of the weekend with a Riichi Pinfu Chinitsu Ippeikou.
 In his words: “Baiman without dora ain't that a thing of beauty?”
 I kinda agree, a Baiman with Dora does seem like a piece of art.
 
-![Baiman by Nonori Rereyl — Riichi Ippatsu Tsumo Honitsu Itsuu Dora Dora]({{ "/doman/images/2020-09-20-baiman-nonori.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-20-baiman-nonori.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-20-baiman-nonori.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-20-baiman-nonori.jpg' | prepend: site.static_url | absolute_url }}" alt="Baiman by Nonori Rereyl — Riichi Ippatsu Tsumo Honitsu Itsuu Dora Dora">
+</picture>
 
+{:.mt-4}
 Not soon after, Nonori Rereyl got their own Baiman: Riichi Ippatsu Tsumo Honitsu Itsuu Dora Dora.
 With that the tournament was about to come to an end I give a quick note of the top 6 players, thinking nothing would change much.
 
 But Lemon Bread just had to get a Dealer Yakuman: Daisangen!
 And with that they made it to temporarily first and ended up secound with a final score 160.4.
 
-![Yakuman by Lemon Bread — Daisangen]({{ "/doman/images/2020-09-20-yakuman-lemon-bread.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2020-09-20-yakuman-lemon-bread.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2020-09-20-yakuman-lemon-bread.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img loading="lazy" src="{{ '/doman/images/2020-09-20-yakuman-lemon-bread.jpg' | prepend: site.static_url | absolute_url }}" alt="Yakuman by Lemon Bread — Daisangen">
+</picture>
 
+{:.mt-4}
 Panda-Ficer ended up missing secound by 100 points. Sorry, FFXIV doesn't do Atamahane.
 The winner of the tournament was Gravaton Something with a final score of 177.6.
 Congratulations!

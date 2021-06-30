@@ -85,11 +85,35 @@ for post in posts %}
         <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">
         {% endif %}
       {% endif %}
-      <img loading="lazy"itemprop="url"
-        srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }} 319w, {{ post.image | prepend: site.static_url | absolute_url }} 880w"
-        sizes="(max-width: 575.96px) 319px, 880px"
-        src="{{ post.image | prepend: site.static_url | absolute_url }}" 
-        alt="{{ post.title }}">
+      <picture>
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/avif">
+        <source  
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(max-width: 575.96px)"
+          type="image/jpeg">
+        <source
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/avif">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/webp">
+        <source
+          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          media="(min-width: 576px)"
+          type="image/jpeg">
+        <img loading="lazy" itemprop="url"
+          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          alt="{{ post.title }}">
+      </picture>
       {% if post.long %}
       </a>
       {% endif %}

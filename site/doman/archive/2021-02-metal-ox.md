@@ -52,8 +52,13 @@ sheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRdG2tiFL5ZhVZNDZWzEd
 }
 </script>
 
-![FFXIV Heavensturn Ox Event]({{ "/doman/images/2021-ox.webp" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
+<picture>
+  <source srcset="{{ '/doman/images/2021-ox.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
+  <source srcset="{{ '/doman/images/2021-ox.webp | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <img src="{{ '/doman/images/2021-ox.jpg' | prepend: site.static_url | absolute_url }}" alt="FFXIV Heavensturn Ox Event">
+</picture>
 
+{:.mt-4}
 A new year, a new tournament!
 This time, it's on the weekend of the Lunar New Year!
 This is the fifth Doman Mahjong Tournament on Light, feel free to make an alt to join.
