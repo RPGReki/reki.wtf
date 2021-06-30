@@ -389,6 +389,7 @@ defaults:
       layout: base
       sitemap: false
       image: /assets/images/site-og.webp
+      robots: noindex, nofollow
   - # /scions-reboot/01-children-of-light-and-darkness
     scope:
       path: "scions-reboot/01-children-of-light-and-darkness"

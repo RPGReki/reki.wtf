@@ -60,40 +60,40 @@ While I do like action games, but I kinda suck at those.
 
 <p class="social icons">
   <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
-    <img loading="lazy"src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord">
+    <img loading="lazy" src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord" width="64" height="64">
   </a>
   <a href="https://twitter.com/0xReki">
-    <img loading="lazy"src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter">
+    <img loading="lazy" src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter" width="64" height="64">
   </a>
   <a href="https://fb.com/0xReki">
-    <img loading="lazy"src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook">
+    <img loading="lazy" src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook" width="64" height="64">
   </a>
-  <a href="https://instagram.com/oxreki">
-    <img loading="lazy"src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram">
+  <a href="https://instagram.com/oxreki" width="64" height="64">
+    <img loading="lazy" src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram" width="64" height="64">
   </a>
   <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img loading="lazy"src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub">
+    <img loading="lazy" src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub" width="64" height="64">
   </a>
   <a href="https://twitch.tv/RPGReki">
-    <img loading="lazy"src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
+    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
   </a>
   <a href="https://twitch.tv/RiichiReki">
-    <img loading="lazy"src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch">
+    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
   </a>
   <a href="https://github.com/0xReki">
-    <img loading="lazy"src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub">
+    <img loading="lazy" src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub" width="64" height="64">
   </a>
   <a href="https://gitlab.com/0xReki">
-    <img loading="lazy"src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab">
+    <img loading="lazy" src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab" width="69" height="64">
   </a>
   <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img loading="lazy"src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon">
+    <img loading="lazy" src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon" width="67" height="64">
   </a>
   <a href="https://linkedin.com/in/q-thai-chung">
-    <img loading="lazy"src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn">
+    <img loading="lazy" src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn" width="64" height="64">
   </a>
   <a href="https://www.xing.com/profile/Thai_Chung">
-    <img loading="lazy"src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING">
+    <img loading="lazy" src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING" width="64" height="64">
   </a>
 </p>
 
@@ -103,15 +103,15 @@ A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
 {:.icons}
-![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy"}
-![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy"}
-![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}{:loading="lazy"}
+![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="128" height="28"}
+![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="258" height="28"}
+![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="152" height="28"}
+![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="133" height="28"}
+![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="134" height="28"}
+![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="137" height="28"}
+![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="136" height="28"}
+![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="174" height="28"}
+![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="153" height="28"}
 
 ## Game Profiles
 
