@@ -23,14 +23,14 @@ A good start to an adventure… or it would be an adventure if he didn't hole hi
 <h3 class="col-12 mt-3">Reading Crystal Down</h3>
 <div class="col-12 col-lg-6">
   <p>Are you new to the story? <br>
-    <a class="btn btn-primary btn-lg my-1 mx-1" href="{{ "/crystaldown/01-life-in-avan-forest/00-prologue-the-bus-factor/" | absolute_url }}">
+    <a class="btn btn-primary btn-lg my-1" href="{{ "/crystaldown/01-life-in-avan-forest/00-prologue-the-bus-factor/" | absolute_url }}">
       Start with the first Chapter of Crystal Down
     </a>
   </p>
 </div>
 <div class="col-12 col-lg-6">
-  <p>Are you returning reader? <br>
-  <a class="btn btn-primary btn-lg mt-1 mx-1" href="{{ "/crystaldown/"| absolute_url }}">
+  <p>Are you a returning reader? <br>
+  <a class="btn btn-primary btn-lg mt-1" href="{{ "/crystaldown/"| absolute_url }}">
     <span class="unicode-icon">📕</span> See Crystal Down Chapters
   </a>
 </p>
@@ -84,7 +84,7 @@ A good start to an adventure… or it would be an adventure if he didn't hole hi
 
 <h2><a href="{{ "/scions/" | absolute_url }}">Crystal Down: Scions</a></h2>
 <div class="row">
-  <div class="col-12 col-sm-6 col-lg-3">
+<div class="col-12 col-sm-6 col-lg-3">
     <a href="{{ "/scions/"| absolute_url }}">
       <img loading="lazy"src="{{ "/scions/thumbnail.webp" | prepend: site.static_url | absolute_url }}" alt="Crystal Down: Scions Cover: a black and a white cat form a circle">
     </a>
@@ -104,23 +104,27 @@ All they have of their real parents are the pendants they have always worm.
 Their peaceful world crumbles when they're forced to leave the country — and thus are forced to leave their village.
 </p>
 </div>
-<div class="col-12">
-    <h3>Reading Crystal Down: Scions</h3>
+</div>
+<h3 class="col-12 mt-3">Reading Crystal Down: Scions</h3>
+<div class="row">
+  <div class="col-12 col-md-auto">
     <p>
       Are you new to the story? <br>
-      <a class="btn btn-primary btn-lg my-1 mx-1" href="{{ "/scions/01-children-of-darkness-and-light/00-prologue/" | absolute_url }}">
+      <a class="btn btn-primary btn-lg my-1" href="{{ "/scions/01-children-of-darkness-and-light/00-prologue/" | absolute_url }}">
         Start with the first Chapter of Crystal Down: Scions
       </a>
     </p>
-
+  </div>
+  <div class="col-12 col-md-auto">
     <p>
-      Are you returning reader? <br>
-      <a class="btn btn-primary btn-lg mt-1 mx-1" href="{{ "/scions/" | absolute_url }}">
+      Are you a returning reader? <br>
+      <a class="btn btn-primary btn-lg mt-1" href="{{ "/scions/" | absolute_url }}">
         <span class="unicode-icon">📕</span> See Crystal Down: Scions Chapters
       </a>
     </p>
   </div>
 </div>
+
 
 <h3 class="mt-3">Latest Post on Crystal Down: Scions</h3>
 {% assign p = site.posts| where: "category", "scions" %}
@@ -167,7 +171,8 @@ Their peaceful world crumbles when they're forced to leave the country — and t
   </a>
 </p>
 
-<h2 id="youtube-archive">YouTube Archive</h2>
+<h2 id="youtube-archive"><a
+  href="{{ "/archive/youtube-archive" | absolute_url }}">YouTube Archive</a></h2>
 <p>
 I used to do Vocal Covers and Mixes on YouTube.
 These days, I can only cringe at the quality of my early works.
