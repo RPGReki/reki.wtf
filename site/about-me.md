@@ -131,12 +131,12 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 {:.icons}
 ![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="256" height="56"}
-![OS: archlinux]({{'/proxy/shields/OS-archlinux/Arch_Linux/shield.svg'| preprend: site.static_url | absolute_url}}){:loading="lazy"}
-![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/Ubuntu/shield.svg'| preprend: site.static_url | absolute_url}}){:loading="lazy"}
+![OS: archlinux]({{'/proxy/shields/OS-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy"}
+![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy"}
 ![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
 ![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="304" height="56"}
 ![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="266" height="56"}
-![Code: Haskell]({{ "/proxy/shields/Code-Haskell/Haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy""}
+![Code: Haskell]({{ "/proxy/shields/Code-Haskell/kaskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="314" height="56"}
 ![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="268" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="274" height="56"}
 ![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="272" height="56"}
@@ -293,12 +293,12 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="col order-sm-2">
  <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>
  <link property="recognizedBy" href="#uulm">
- <p typeof="CollegeOrUniversity" about="#uulm">
+ <div typeof="CollegeOrUniversity" about="#uulm">
   <a href="https://www.uni-ulm.de" property="name" rel="url">Ulm University</a>, <span property="address">Ulm, Germany</span>
- </p>
+ </div>
   <time>2010</time>&thinsp;—&thinsp;<time property="dateCreated">2016</time>
- <p>Major in Computer Science; Minor in Physics</p>
 </div>
+ <p>Major in Computer Science; Minor in Physics</p>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
