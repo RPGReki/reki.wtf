@@ -54,7 +54,7 @@ sheet_url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRdG2tiFL5ZhVZNDZWzEd
 
 <picture>
   <source srcset="{{ '/doman/images/2021-ox.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
-  <source srcset="{{ '/doman/images/2021-ox.webp | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <source srcset="{{ '/doman/images/2021-ox.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
   <img src="{{ '/doman/images/2021-ox.jpg' | prepend: site.static_url | absolute_url }}" alt="FFXIV Heavensturn Ox Event">
 </picture>
 

@@ -41,7 +41,7 @@ seo_title_fix: 1
 
 <picture>
   <source srcset="{{ '/doman/images/furiten.avif' | prepend: site.static_url | absolute_url }}" type="image/avif">
-  <source srcset="{{ '/doman/images/furiten.webp | prepend: site.static_url | absolute_url }}" type="image/webp">
+  <source srcset="{{ '/doman/images/furiten.webp' | prepend: site.static_url | absolute_url }}" type="image/webp">
   <img src="{{ '/doman/images/furiten.jpg' | prepend: site.static_url | absolute_url }}" alt="Furiten">
 </picture>
 
