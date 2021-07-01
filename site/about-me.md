@@ -36,6 +36,7 @@ about:
     - http://mahjong-europe.org/ranking/Players/05100170.htm
 
 ---
+<!-- markdownlint-disable MD022 MD025 MD032 MD033 -->
 
 {:.no-print}
 # About Me, my Universe and Everything Else
@@ -90,44 +91,7 @@ While I do like action games, but I kinda suck at those.
   }
 </script>
 
-<p class="social icons">
-  <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
-    <img loading="lazy" src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord" width="64" height="64">
-  </a>
-  <a href="https://twitter.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter" width="64" height="64">
-  </a>
-  <a href="https://fb.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook" width="64" height="64">
-  </a>
-  <a href="https://instagram.com/oxreki" width="64" height="64">
-    <img loading="lazy" src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram" width="64" height="64">
-  </a>
-  <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img loading="lazy" src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub" width="64" height="64">
-  </a>
-  <a href="https://twitch.tv/RPGReki">
-    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
-  </a>
-  <a href="https://twitch.tv/RiichiReki">
-    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
-  </a>
-  <a href="https://github.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub" width="64" height="64">
-  </a>
-  <a href="https://gitlab.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab" width="69" height="64">
-  </a>
-  <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img loading="lazy" src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon" width="67" height="64">
-  </a>
-  <a href="https://linkedin.com/in/q-thai-chung">
-    <img loading="lazy" src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn" width="64" height="64">
-  </a>
-  <a href="https://www.xing.com/profile/Thai_Chung">
-    <img loading="lazy" src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING" width="64" height="64">
-  </a>
-</p>
+{% include_relative platforms.md %}
 
 Two Twitch Channels?
 Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
@@ -137,21 +101,31 @@ Yes, I have one where I mostly stream RPGs, stream language is German and I have
 A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
-{:.icons.justify-content-center.shields}
-![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="256" height="56"}
-![OS: archlinux]({{'/proxy/shields/OS-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="320" height="56"}
-![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="272" height="56"}
-![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
-![Code: Haskell]({{ "/proxy/shields/Code-Haskell/kaskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="314" height="56"}
-![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="268" height="56"}
-![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="304" height="56"}
-![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="266" height="56"}
-![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="274" height="56"}
-![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="272" height="56"}
-![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="348" height="56"}
-![Tools: Jekyll]({{ "/proxy/shields/Tools-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="306" height="56"}
+{:.icons.justify-content-center.shields.mb-2}
+![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
+![OS: archlinux]({{'/proxy/shields/-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="244" height="56"}
+![OS: Ubuntu]({{'/proxy/shields/-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="198" height="56"}
 
-<!-- markdownlint-disable -->
+{:.icons.justify-content-center.shields.mb-2}
+![Code: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
+![Code: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
+![Code: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
+![Code: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
+
+{:.icons.justify-content-center.shields.mb-2}
+![Code: Haskell]({{ "/proxy/shields/-Haskell/haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="206" height="56"}
+![Code: Make]({{ "/proxy/shields/-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="160" height="56"}
+![Code: Python]({{ "/proxy/shields/-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="196" height="56"}
+![Code: Ruby]({{ "/proxy/shields/-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
+![Shell: Bash]({{ "/proxy/shields/-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
+
+{:.icons.justify-content-center.shields.mb-2}
+![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
+![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
+
+{:.icons.justify-content-center.shields}
+![Web: Jekyll]({{ "/proxy/shields/Web-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="278" height="56"}
+![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
 
 {:.mb-1}
 ## Work Experience
