@@ -37,15 +37,20 @@ about:
 
 ---
 
+{:.no-print}
 # About Me, my Universe and Everything Else
 
-I'm Thai “0xReki” Chung, a jack of all trades from Germany.
+{:.print-only.h1}
+q. Thai “0xReki” Chung
+
+Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
 My focus is in Linux, but that doesn't mean I dislike using other OSes.
 I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
 I like playing JPRGs.
 While I do like action games, but I kinda suck at those.
 
+{:.no-print}
 ## 0xReki on other Platforms
 
 <script type="application/ld+json">
@@ -124,20 +129,23 @@ While I do like action games, but I kinda suck at those.
   </a>
 </p>
 
+Two Twitch Channels?
+Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
+
 ## Preferred Technologies & Tools
 
 A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
-{:.icons}
+{:.icons.justify-content-center.shields}
 ![OS: Linux]({{ "/proxy/shields/OS-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="256" height="56"}
-![OS: archlinux]({{'/proxy/shields/OS-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy"}
-![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy"}
+![OS: archlinux]({{'/proxy/shields/OS-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="320" height="56"}
+![OS: Ubuntu]({{'/proxy/shields/OS-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="272" height="56"}
 ![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
-![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="304" height="56"}
-![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="266" height="56"}
 ![Code: Haskell]({{ "/proxy/shields/Code-Haskell/kaskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="314" height="56"}
 ![Code: Make]({{ "/proxy/shields/Code-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="268" height="56"}
+![Code: Python]({{ "/proxy/shields/Code-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="304" height="56"}
+![Code: Ruby]({{ "/proxy/shields/Code-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="266" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/Shell-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="274" height="56"}
 ![Text: LaTeX]({{ "/proxy/shields/Text-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="272" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/Text-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="348" height="56"}
@@ -152,18 +160,18 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Network Administrator</h3>
  <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
- <time property="startDate">2020</time>&thinsp;—&thinsp;Present
+ since <time property="startDate">2020</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
 <div class="col">
   <h3 class="mx-0" property="name">System Administrator</h3>
   <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
-  <time property="startDate">2018</time>&thinsp;—&thinsp;<time property="endDate">2019</time>
+  from <time property="startDate">2018</time> until <time property="endDate">2019</time>
   <p property="responsibilities">
    Internal IT: Linux and Windows Server
   </p>
@@ -173,11 +181,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Web Developer</h3>
  <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
-  <time property="startDate">2017</time>&thinsp;—&thinsp;<time property="endDate">2017</time>
+  from <time property="startDate">2017</time> until <time property="endDate">2018</time>
   <p property="responsibilities">
    Drupal, Symphony and small Infrastrukture Tasks Linux und macOS
   </p>
@@ -187,11 +195,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
+<div class="row mt-4 mt-print-8 print-h-10" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
 <div class="col">
   <h3 class="mx-0" property="name">Private Tutor</h3>
   <a href="https://schuelernachhilfe1.de">SchülerNachhilfe1</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2017</time>
+  in <time property="startDate">2017</time>
   <meta property="endDate" content="2017">
   <p property="responsibilities">
    Private Tutor for English, Mathematics, Chemistry and Physics
@@ -202,11 +210,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
+<div class="row mt-4 mt-print-28" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Teaching Assistant</h3>
  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2016</time>
+  from <time property="startDate">2010</time> until <time property="endDate">2016</time>
   <p property="responsibilities">
     Undergraduate Teaching Assitant for several different lectures:<br>
     i.a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms
@@ -217,11 +225,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
 <div class="col">
   <h3 class="mx-0" property="name">Linux System Administrator</h3>
   <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2013</time>&thinsp;—&thinsp;<time property="endDate">2014</time>
+  from <time property="startDate">2013</time> until <time property="endDate">2014</time>
   <p property="responsibilities">
     Administration of student Linux computer pool
   </p>
@@ -231,11 +239,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Private Tutor</h3>
  <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen, Germany</span></span><br>
-  <time property="startDate">2005</time>&thinsp;—&thinsp;<time property="endDate">2009</time>
+  from <time property="startDate">2005</time> until <time property="endDate">2009</time>
  <p property="responsibilities">
   Private Tutor for Mathematics, Chemistry and Physics
  </p>
@@ -248,11 +256,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 {:.mt-4}
 ## Volunteer Work
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#devradio">
+<div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#devradio">
 <div class="col">
   <h3 class="mx-0" property="name">Radio Show Host</h3>
   <a href="https://www.devradio.de">/dev/radio</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2017</time>
+  from <time property="startDate">2010</time> until <time property="endDate">2017</time>
   <p property="responsibilities">
     /dev/radio was a show of the Chaos Computer Club in Ulm, which used to be broadcasted at a non-commercial radio station.
     Topics of the show include everything geeky and technology.
@@ -263,22 +271,22 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Member of the Computer Science Study Commission</h3>
   <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2010</time>&thinsp;—&thinsp;<time property="endDate">2014</time>
+  from <time property="startDate">2010</time> until <time property="endDate">2014</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
+<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
 <div class="col">
   <h3 class="mx-0" property="name">Chairman</h3>
   <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  <time property="startDate">2012</time>&thinsp;—&thinsp;<time property="endDate">2013</time>
+  from <time property="startDate">2012</time> until <time property="endDate">2013</time>
 </div>
 <div class="col-12 col-sm-auto">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
@@ -288,7 +296,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 {:.mt-4}
 ## Education
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
+<div class="row mt-1 print-h-10" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
 " about="#bsc">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>
@@ -296,9 +304,10 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  <div typeof="CollegeOrUniversity" about="#uulm">
   <a href="https://www.uni-ulm.de" property="name" rel="url">Ulm University</a>, <span property="address">Ulm, Germany</span>
  </div>
-  <time>2010</time>&thinsp;—&thinsp;<time property="dateCreated">2016</time>
-</div>
+ from <time>2010</time> until <time property="dateCreated">2016</time>
  <p>Major in Computer Science; Minor in Physics</p>
+ <p>Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
+</div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
@@ -307,13 +316,16 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 {:.mt-4}
 ## Game Profiles
 
+{:.no-print}
 ### Final Fantasy XIV
 
+{:.mb-1.no-print}
 I play [Final Fantasy XIV Online](https://www.finalfantasyxiv.com). My characters:
 
-- [Tsumohou Tenhou on Shiva](https://eu.finalfantasyxiv.com/lodestone/character/13180550/) (Main Character)
-- [Suuankou Tanki on Gilgamesh](https://eu.finalfantasyxiv.com/lodestone/character/24491607/) (Alt Character to play Mahjong on Aether)
-- [Coconpa Kukunpa on Tonberry](https://eu.finalfantasyxiv.com/lodestone/character/34199686/) (Alternative Character to play Mahjong on Elemental)
+{:.no-print}
+- [Tsumohou Tenhou on Light: Shiva](https://eu.finalfantasyxiv.com/lodestone/character/13180550/) (Main Character)
+- [Suuankou Tanki on Aether: Gilgamesh](https://eu.finalfantasyxiv.com/lodestone/character/24491607/)
+- [Coconpa Kukunpa on Elemental: Tonberry](https://eu.finalfantasyxiv.com/lodestone/character/34199686/)
 
 ### Riichi Mahjong
 
