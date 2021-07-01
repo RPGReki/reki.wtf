@@ -93,6 +93,7 @@ While I do like action games, but I kinda suck at those.
 
 {% include_relative platforms.md %}
 
+{:.no-print}
 Two Twitch Channels?
 Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
 
@@ -101,29 +102,29 @@ Yes, I have one where I mostly stream RPGs, stream language is German and I have
 A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
-{:.icons.justify-content-center.shields.mb-2}
+{:.d-flex.justify-content-center.shields.mb-2}
 ![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
 ![OS: archlinux]({{'/proxy/shields/-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="244" height="56"}
 ![OS: Ubuntu]({{'/proxy/shields/-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="198" height="56"}
 
-{:.icons.justify-content-center.shields.mb-2}
+{:.d-flex.justify-content-center.shields.mb-2}
 ![Code: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
 ![Code: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
 ![Code: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
 ![Code: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
 
-{:.icons.justify-content-center.shields.mb-2}
+{:.d-flex.justify-content-center.shields.mb-2}
 ![Code: Haskell]({{ "/proxy/shields/-Haskell/haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="206" height="56"}
 ![Code: Make]({{ "/proxy/shields/-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="160" height="56"}
 ![Code: Python]({{ "/proxy/shields/-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="196" height="56"}
 ![Code: Ruby]({{ "/proxy/shields/-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 
-{:.icons.justify-content-center.shields.mb-2}
+{:.d-flex.justify-content-center.shields.mb-2}
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
 
-{:.icons.justify-content-center.shields}
+{:.d-flex.justify-content-center.shields}
 ![Web: Jekyll]({{ "/proxy/shields/Web-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="278" height="56"}
 ![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
 
@@ -190,7 +191,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
   from <time property="startDate">2010</time> until <time property="endDate">2016</time>
   <p property="responsibilities">
-    Undergraduate Teaching Assitant for several different lectures:<br>
+    Undergraduate Teaching Assistant for several different lectures:<br>
     i.a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms
   </p>
 </div>
@@ -306,3 +307,43 @@ I play [Final Fantasy XIV Online](https://www.finalfantasyxiv.com). My character
 I finally got [listed at the European Mahjong Association](https://mahjong-europe.org/ranking/Players/05100170.html).
 I play on [tenhou.net](https://tenhou.net) and [in Final Fantasy XIV Online](https://www.finalfantasyxiv.com).
 See my post about [Riichi Mahjong Clients](/2019/03-12-riichi-mahjong-clients-2019/).
+
+<style>
+@media print {
+  #preferred-technologies--tools,
+  #work-experience {
+    margin-top: 15mm;
+  }
+  
+  #work-experience {
+    margin-bottom: 5mm;
+  }
+  
+  [about='#it-nrw'],
+  [about='#plusserver'] {
+    height: 58mm;
+  }
+
+  [about='#clubfamily'] {
+    height: 48mm;
+  }
+
+  [about='#schuelernachhilfe1'],
+  [about='#teaching-assistant'],
+  [about='#sgi'],
+  [about='#bsg-mm'],
+  [about='#devradio'],
+  [about='#sk'] {
+    height: 56mm;
+  }
+
+  img[src*=uulm] {
+    filter: contrast(1.5);
+  }
+
+  [about='#devradio'] .col-12 {
+    background-color: #313b97;
+  }
+
+}
+</style> 

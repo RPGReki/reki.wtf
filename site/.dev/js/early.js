@@ -1,19 +1,19 @@
-var d = document;
-var b = d.querySelectorAll('#body')[0];
-var bc = b.classList;
-
-function getCookie() {
-  return d.cookie
-}
+var d = document,
+    b = d.querySelectorAll('#body')[0],
+    bc = b.classList;
 
 function isHasAcceptedPolicy() {
   return (null != getCookie().match(/acceptedPolicy=true/))
 }
 
-function writeCookie(cookieName, cookieValue, ttl = 14) {
-  var date = new Date();
-  date.setTime(date.getTime() + ttl * 24 * 3600 * 1000);
-  d.cookie = cookieName + '=' + cookieValue + '; expires=' + date.toUTCString() + '; ' + 'domain=' + window.location.hostname
+function getCookie() {
+  return d.cookie
+}
+
+function writeCookie(n, v, t = 14) {
+  var dt = new Date();
+  dt.setTime(date.getTime() + t * 24 * 3600 * 1000);
+  d.cookie = n + '=' + v + '; expires=' + dt.toUTCString() + '; ' + 'domain=' + window.location.hostname
 + '; path=/'
 }
 
@@ -21,21 +21,21 @@ function toggleTheme() {
   bc.toggle('dark-theme');
   bc.toggle('light-theme');
 
-  writeCookie('darkTheme', c.contains('dark-theme'))
+  writeCookie('darkTheme', bc.contains('dark-theme'))
 }
 
 function toggleDyslexicFont() {
   bc.toggle('dyslexic');
 
-  writeCookie('dyslexic', c.contains('dyslexic'))
+  writeCookie('dyslexic', bc.contains('dyslexic'))
 }
 
-function zoom(points) {
-  var fontSize = (parseInt(b.style.fontSize, 10) || 12) + points;
-  if (fontSize > 22) fontSize = 24;
-  if (fontSize < 10) fontSize = 8;
-  b.style.fontSize = fontSize + 'pt';
-  writeCookie('fontSize', fontSize)
+function zoom(s) {
+  var fs = (parseInt(b.style.fontSize, 10) || 12) + s;
+  if (fs > 22) fs = 24;
+  if (fs < 10) fs = 8;
+  b.style.fontSize = fs + 'pt';
+  writeCookie('fontSize', fs)
 }
 
 function restoreSettingsFromCookie() {
@@ -55,7 +55,6 @@ function restoreSettingsFromCookie() {
   }
   if (null != getCookie().match(/fontSize/))
     zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
-  acceptPolicy()
 }
 
 restoreSettingsFromCookie()

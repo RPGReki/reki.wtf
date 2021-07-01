@@ -1,10 +1,9 @@
 var x, y = null;
 
-function loadYouTube() {
-  var videos = d.getElementsByClassName('youtube');
-  for (var i = 0; i < videos.length; i++) {
-    videos[i].innerHTML = d.getElementById(videos[i].getAttribute('data-videoid')).innerHTML
-  }
+function loadYouTube(e = null) {
+  if (e == null) return;
+  var i = e.target.getAttribute('data-videoid');
+  d.getElementById(i).innerHTML = d.getElementById('yt-' + i).innerHTML
 }
 
 function g(evt) {
@@ -73,9 +72,9 @@ async function setUpPageForUsers() {
   $('#tts').on('change', toggleTTS);
   $('.youtube a:last-child').on('click', loadYouTube);
 
-  d.addEventListener('beforeprint', ()=> {
+  d.addEventListener('beforeprint', ()=>{
     $('img').prop('loading','eager')
-  });
+  })
 }
 
 function toggleAccordion(e) {

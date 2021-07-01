@@ -179,7 +179,7 @@ mirrors-rebuild:
 
 ## Additional Tasks: Copy JavaScript
 
-js: theme/assets/2020/scripts/early.js theme/assets/2020/scripts/late.js
+js: theme/assets/2020/scripts/early.min.js theme/assets/2020/scripts/late.min.js
 
 theme/assets/2020/scripts/%.js: docs/.dev/js/%.js
 	cp $(<) $(@D)

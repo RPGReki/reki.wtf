@@ -1,4 +1,4 @@
-{:.icons-shields}
+{:.icons.shields}
 [![Discord]({{ "/proxy/shields/-/discord/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc)
 [![Twitter]({{ "/proxy/shields/-/twitter/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/0xReki)
 [![Facebook]({{ "/proxy/shields/-/facebook/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://fb.com/0xReki)
