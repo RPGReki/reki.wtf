@@ -141,7 +141,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
 <div class="col">
   <h3 class="mx-0" property="name">System Administrator</h3>
   <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
@@ -155,7 +155,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Web Developer</h3>
  <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
@@ -169,7 +169,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8 print-h-10" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
 <div class="col">
   <h3 class="mx-0" property="name">Private Tutor</h3>
   <a href="https://schuelernachhilfe1.de">SchülerNachhilfe1</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -184,7 +184,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-28" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Teaching Assistant</h3>
  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -199,7 +199,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
 <div class="col">
   <h3 class="mx-0" property="name">Linux System Administrator</h3>
   <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -213,7 +213,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Private Tutor</h3>
  <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen, Germany</span></span><br>
@@ -245,7 +245,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Member of the Computer Science Study Commission</h3>
   <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -256,7 +256,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4 mt-print-8" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
+<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
 <div class="col">
   <h3 class="mx-0" property="name">Chairman</h3>
   <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -270,7 +270,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 {:.mt-4}
 ## Education
 
-<div class="row mt-1 print-h-10" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
+<div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
 " about="#bsc">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>

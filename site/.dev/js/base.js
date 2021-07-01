@@ -71,7 +71,11 @@ async function setUpPageForUsers() {
   $('#dark-mode').on('change', toggleTheme);
   $('#dyslexic').on('change', toggleDyslexicFont);
   $('#tts').on('change', toggleTTS);
-  $('.youtube a:last-child').on('click', loadYouTube)
+  $('.youtube a:last-child').on('click', loadYouTube);
+
+  d.addEventListener('beforeprint', ()=> {
+    $('img').prop('loading','eager')
+  });
 }
 
 function toggleAccordion(e) {
