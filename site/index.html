@@ -138,44 +138,8 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
 </p>
 
 <h2>0xReki on other Platforms</h2>
-<p class="social icons">
-  <a href="https://discord.gg/8DCZWGc" target="_blank" rel="noopener nofollow" title="{{ site.name }} Discord">
-    <img loading="lazy" src="{{ "/assets/images/discord.webp" | prepend: site.static_url | absolute_url }}" alt="Discord" width="64" height="64">
-  </a>
-  <a href="https://twitter.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/twitter.webp" | prepend: site.static_url | absolute_url }}" alt="Twitter" width="64" height="64">
-  </a>
-  <a href="https://fb.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/facebook.webp" | prepend: site.static_url | absolute_url }}" alt="Facebook" width="64" height="64">
-  </a>
-  <a href="https://instagram.com/oxreki" width="64" height="64">
-    <img loading="lazy" src="{{ "/assets/images/instagram.webp" | prepend: site.static_url | absolute_url }}" alt="Instagram" width="64" height="64">
-  </a>
-  <a href="https://www.scribblehub.com/profile/19792/0xreki/">
-    <img loading="lazy" src="{{ "/assets/images/scribblehub.webp" | prepend: site.static_url | absolute_url }}" alt="Scribble Hub" width="64" height="64">
-  </a>
-  <a href="https://twitch.tv/RPGReki">
-    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
-  </a>
-  <a href="https://twitch.tv/RiichiReki">
-    <img loading="lazy" src="{{ "/assets/images/twitch.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Twitch" width="56" height="64">
-  </a>
-  <a href="https://github.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/github.webp" | prepend: site.static_url | absolute_url }}" alt="GitHub" width="64" height="64">
-  </a>
-  <a href="https://gitlab.com/0xReki">
-    <img loading="lazy" src="{{ "/assets/images/gitlab.webp" | prepend: site.static_url | absolute_url }}" alt="GitLab" width="69" height="64">
-  </a>
-  <a href="https://www.patreon.com/bePatron?u=27792463">
-    <img loading="lazy" src="{{ "/assets/images/patreon.webp" | prepend: site.static_url | absolute_url }}" class="rounded-0" alt="Patreon" width="67" height="64">
-  </a>
-  <a href="https://linkedin.com/in/q-thai-chung">
-    <img loading="lazy" src="{{ "/assets/images/linkedin.webp" | prepend: site.static_url | absolute_url }}" alt="LinkedIn" width="64" height="64">
-  </a>
-  <a href="https://www.xing.com/profile/Thai_Chung">
-    <img loading="lazy" src="{{ "/assets/images/xing.webp" | prepend: site.static_url | absolute_url }}" alt="XING" width="64" height="64">
-  </a>
-</p>
+{% capture platforms %}{% include_relative platforms.md %}{% endcapture %}
+{{ platforms | markdownify }}
 
 <h2>Creative Writing Schedule</h2>
 
