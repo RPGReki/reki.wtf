@@ -103,7 +103,7 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
           src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
-          alt="{{ post.title }}">
+          alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}
       </a>
@@ -262,7 +262,7 @@ The planet seems like any other underdeveloped planet, but something is differen
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
           src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
-          alt="{{ post.title }}">
+          alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}
       </a>
