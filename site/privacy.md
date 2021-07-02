@@ -19,13 +19,13 @@ statement should readable by non-lawyers, anyway.
 This page itself doesn't require cookies.
 However, since people are so adamant about convenience, some cookies may used to store user settings and the fact you have accepted this Cookies & Privacy Statement at all.
 If you haven't accepted it, there are no cookies stored but Cloudflare's ID cookie.
-If you later decide to remove the cookies you can use the button below.
+If you later decide to remove the cookies of this page you can use the button below.
 
 [<span>✨</span> Clear All Cookies from this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
 
 ## Logs
 
-This page uses Cloudsflare and Netlify.
+This page uses Cloudflare and Netlify.
 When you visit this site, Cloudflare — and to a lesser degree Netlify — will process your Log Data which includes but is no limited to IP address (real or proxied), system configuration information and information about the access to this site.
 
 When you comment, the comment and Log Data will be processed by Netlify.
@@ -36,11 +36,10 @@ For more information, refer to the [Privacy Policy of Cloudflare](https://www.cl
 
 The comment system of this site uses [Gravatar](https://gravatar.com){:target="_blank" rel="noopener nofollow"} for user icons.
 To avoid exposing your IP address to Gravatar, the images are proxied through this site.
-To avoid exposing your IP address social media sites, all share buttons are javascript-less versions that don't require communication with the social media sites.
+To avoid exposing your IP address to social media sites, all share buttons are javascript-less versions that don't require communication with the social media sites.
 However, clicking on a sharing button will direct you to the associated social media page.
 
 ## Commenting
 
-By commenting you accept your name and your comment being displayed on the site.
-Your IP address will be saved but only used to combat spam.
-Your eMail address is used to calculate your Gravatar URL.
+By commenting, you accept your name and your comment being displayed on the site.
+Your email address is used to calculate your Gravatar URL.

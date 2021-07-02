@@ -128,8 +128,6 @@ async function createTTS() {
   $('#tts-content button').remove();
   $('#tts-content [role=doc-noteref]').remove();
 
-  assignVoices();
-  
   window['ttsContent'] = $('#tts-content > *').toArray()
 }
 

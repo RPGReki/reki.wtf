@@ -30,6 +30,7 @@ about:
     - https://github.com/0xReki
     - https://gitlab.com/0xReki
     - https://www.patreon.com/RWNS
+    - https://flattr.com/@0xReki
     - https://www.linkedin.com/in/q-thai-chung
     - https://www.xing.com/profile/Thai_Chung
     - https://amazon.com/author/0xreki

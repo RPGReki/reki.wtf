@@ -17,7 +17,6 @@ shorturl:
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
 exclude:
-  - "build.sh"
   - "Gemfile"
   - "Gemfile.lock"
   - "LICENSE.md"
