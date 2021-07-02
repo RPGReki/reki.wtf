@@ -12,7 +12,7 @@ function getCookie() {
 
 function writeCookie(n, v, t = 14) {
   var dt = new Date();
-  dt.setTime(date.getTime() + t * 24 * 3600 * 1000);
+  dt.setTime(dt.getTime() + t * 24 * 3600 * 1000);
   d.cookie = n + '=' + v + '; expires=' + dt.toUTCString() + '; ' + 'domain=' + window.location.hostname
 + '; path=/'
 }

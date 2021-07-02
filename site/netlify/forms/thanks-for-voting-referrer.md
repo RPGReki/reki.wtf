@@ -24,8 +24,8 @@ permalink: /thanks-for-voting/poll-referral/
 >
 > Your vote has been received by the system.
 >
-> [Go Back](javascript:history.back()){:onclick="history.back()"}
-> {:.button}
+> {:.mb-2}
+> [Go Back](javascript:history.back()){:onclick="history.back()" .btn .btn-primary}
 >
 > {% if votes %}
 > | Results | |

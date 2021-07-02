@@ -15,6 +15,6 @@ permalink: /thanks-for-commenting/
 > Your comment has been received by the system. Note it can take a while until
 > it appears on the page.
 >
-> [Go Back](javascript:history.back()){:onclick="history.back()"}
-> {:.button}
+> {:.mb-2}
+> [Go Back](javascript:history.back()){:onclick="history.back()" .btn .btn-primary}
 >

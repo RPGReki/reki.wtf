@@ -14,6 +14,6 @@ permalink: /thanks-for-the-message/
 >
 > Your message has been received by the system.
 >
-> [Go Back](javascript:history.back()){:onclick="history.back()"}
-> {:.button}
+> {:.mb-2}
+> [Go Back](javascript:history.back()){:onclick="history.back()" .btn .btn-primary}
 >
