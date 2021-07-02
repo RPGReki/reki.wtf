@@ -5,7 +5,7 @@ permalink: /_headers
 ---
 /*
   X-Content-Type-Options: nosniff
-  Access-Control-Allow-Origin: https://0xreki.de http://localhost
+  Access-Control-Allow-Origin: https://0xreki.de
   Access-Control-Max-Age: 86400
   Access-Control-Allow-Credentials: true
 
@@ -130,7 +130,7 @@ permalink: /_headers
   Content-Type: application/xspf+xml; charset=UTF-8
 
 /**/podcast*.xml
-  Content-Type: application/rss+xml"; charset=UTF-8
+  Content-Type: application/rss+xml; charset=UTF-8
 
 {% if jekyll.environment == "unpublished" %}
 /*
