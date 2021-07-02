@@ -14,7 +14,7 @@ https://static.0xreki.de/doman/images/*             {{ "/doman/images/" | absolu
 
 # Proxy URLs for better privacy
 
-/gravatar/:i/:s/avatar.jpg                         https://secure.gravatar.com/avatar/:i?s=:s&d=identicon&r=pg 200
+/proxy/gravatar/:i/:s/avatar.jpg                         https://secure.gravatar.com/avatar/:i?s=:s&d=identicon&r=pg 200
 
 /proxy/cloudflare/*                                https://static.cloudflareinsights.com/:splat                200
 
