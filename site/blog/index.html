@@ -9,13 +9,13 @@ redirect_from:
 ---
 <h1>All Personal Blog Posts</h1>
 
-<p class="social icons">
+<p class="icons shields justify-content-start">
   {% if page.feed %}
   <link rel="alternate" type="application/atom+xml" href="{{ page.feed | absolute_url }}" title="{{ site.title }} Personal Blog Atom Feed">
   <a rel="alternate" type="application/atom+xml"
    href="{{ page.feed | absolute_url }}"
    title="{{ site.title }} Personal Blog Atom Feed">
-    <img loading="lazy" src="{{ '/assets/images/feed.webp' | prepend: site.static_url | absolute_url }}" alt="Atom Feed">
+    <img loading="lazy" src="{{ '/proxy/shields/-/rss/shield.svg' | prepend: site.static_url | absolute_url }}" alt="Atom Feed">
   </a>
   {% endif %}
 </p>
@@ -40,7 +40,7 @@ redirect_from:
     {% if post.long %}
       <meta itemprop="url" content="{{ post.url | absolute_url }}">
     {% else %}
-      <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}/blog/#{{ post.title | slugify }}">
+      <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}blog/#{{ post.title | slugify }}">
     {% endif %}
     <p class="float-left"><small>
       published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" class="published">{{ post.date | date: "%Y-%m-%d" }}</span>
