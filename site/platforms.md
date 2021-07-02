@@ -1,8 +1,9 @@
-{:.icons.shields}
+{:.icons.shields.justify-content-start}
 [![Discord]({{ "/proxy/shields/-/discord/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc)
 [![Twitter]({{ "/proxy/shields/-/twitter/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/0xReki)
 [![Facebook]({{ "/proxy/shields/-/facebook/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://fb.com/0xReki)
 [![Instagram]({{ "/proxy/shields/-/instagram/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://instagram.com/oxreki)
+[![tumblr]({{ "/proxy/shields/-/tumblr/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://tumblr.0xreki.de)
 [![SH]({{ "/proxy/shields/-/scribblehub/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.scribblehub.com/profile/19792/0xreki/)
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki)
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RiichiReki)

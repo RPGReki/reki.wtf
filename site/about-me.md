@@ -103,29 +103,29 @@ Yes, I have one where I mostly stream RPGs, stream language is German and I have
 A selection of technology and tools that I use.
 Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}
 
-{:.d-flex.justify-content-center.shields.mb-2}
+{:.shields.mb-2}
 ![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
 ![OS: archlinux]({{'/proxy/shields/-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="244" height="56"}
 ![OS: Ubuntu]({{'/proxy/shields/-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="198" height="56"}
 
-{:.d-flex.justify-content-center.shields.mb-2}
+{:.shields.mb-2}
 ![Code: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
 ![Code: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
 ![Code: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
 ![Code: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
 
-{:.d-flex.justify-content-center.shields.mb-2}
+{:.shields.mb-2}
 ![Code: Haskell]({{ "/proxy/shields/-Haskell/haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="206" height="56"}
 ![Code: Make]({{ "/proxy/shields/-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="160" height="56"}
 ![Code: Python]({{ "/proxy/shields/-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="196" height="56"}
 ![Code: Ruby]({{ "/proxy/shields/-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 
-{:.d-flex.justify-content-center.shields.mb-2}
+{:.shields.mb-2}
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
 
-{:.d-flex.justify-content-center.shields}
+{:.shields}
 ![Web: Jekyll]({{ "/proxy/shields/Web-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="278" height="56"}
 ![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
 
