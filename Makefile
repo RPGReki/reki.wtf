@@ -4,7 +4,7 @@ SHELL = /bin/bash
 
 URL = https://0xreki.de
 STORIES = amauga crystaldown scions reincarnated-as-cat scions-reboot
-POLLS = referral audio-2021
+POLLS = audio-2021
 STORY_FEEDS = blog.xml chapters.xml
 
 # automation begins here
@@ -76,7 +76,7 @@ force-rebuild:
 	rm -rf docs/*
 
 clean:
-	rm -rf docs site/tags site/_posts site/_data/polls site/_data/comments.json .make-state-*
+	rm -rf docs site/tags site/_posts .make-state-*
 
 ## Build Tasks: Posts
 
