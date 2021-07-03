@@ -1,18 +1,42 @@
-- text: Amauga
+- title: Amauga
   url: /amauga/
-  unicode_icon: 📕
-- text: Archived Projects
-  url: /archive/
-  unicode_icon: 📁
-- text: Blog
+  unicode_icon: 📘
+- title: Archive
+  unicode_icon: 🗄️
+  subitems:
+  - title: Archived Projects
+    url: /archive/
+    unicode_icon: 📁
+  - title: Crystal Down
+    url: /crystaldown/
+    unicode_icon: 📕
+  - title: 'Crystal Down: Scions'
+    url: /scions/
+    unicode_icon: 📗
+  - title: YouTube Archive
+    url: /archive/youtube-archive/
+    unicode_icon: 🎥
+- title: Blog
   url: /blog/
   unicode_icon: 🗞️
-- text: Tags
+- title: Tags
   url: /tags/
   unicode_icon: 🏷
-- text: Doman Mahjong Tournament
-  url: /doman/
+- title: Doman Mahjong Tournament
   unicode_icon: 🀙
-- text: FAQ
+  subitems:
+  - title: Furiten Riichi May-hem Doman Mahjong Tournament 2020
+    url: /doman/archive/2020-05-furiten-riichi-may-hem/
+    unicode_icon: 🤪
+  - title: 2nd Light Doman Open 2020
+    url: /doman/archive/2020-09-2nd-light-doman-open/
+    unicode_icon: 📖
+  - title: Metal Ox Doman Mahjong Tournament 2021
+    url: /doman/archive/2021-02-metal-ox/
+    unicode_icon: 🐂
+  - title: 3rd Light Doman Open 2020
+    url: /doman/archive/2021-09-3rd-light-doman-open/
+    unicode_icon: 🆕
+- title: FAQ
   url: /q-and-a/
   unicode_icon: ⁉️
