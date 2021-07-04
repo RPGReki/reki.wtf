@@ -1,6 +1,6 @@
 ---
 title: "2nd Light Doman Open Mahjong Tournament"
-layout: 2020/base
+layout: 2021/base
 image: /doman/images/turn-order.webp
 
 seo_title_fix: 2

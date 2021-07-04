@@ -1,7 +1,7 @@
 ---
 title: "Doman Mahjong Team League 2021"
 published: false
-layout: 2020/base
+layout: 2021/base
 redirect_from: 
 image: /doman/images/turn-order.webp
 start_date: 2021-01-09

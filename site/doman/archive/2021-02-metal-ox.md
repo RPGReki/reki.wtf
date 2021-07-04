@@ -1,6 +1,6 @@
 ---
 title: "Metal Ox Doman Mahjong Tournament on Light — 2021 New Year's Tournament"
-layout: 2020/base
+layout: 2021/base
 redirect_from: 
   - /doman-mahjong-tournament/
   - /doman/

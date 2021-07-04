@@ -44,17 +44,19 @@ function restoreSettingsFromCookie() {
     b.style.display = 'block';
     return;
   }
-
-  if (null != getCookie().match(/darkTheme=false/)) {
-    d.querySelectorAll('#dark-mode').checked=true;
-    toggleTheme()
-  }
-  if (null != getCookie().match(/dyslexic=true/)) {
+  c = getCookie();
+  if (null != c.match(/darkTheme/)) {
+    if ((null != c.match(/darkTheme=true/)) != bc.contains('dark-theme')) {
+      d.querySelectorAll('#dark-mode').checked=true;
+      toggleTheme()
+    }
+  };
+  if (null != c.match(/dyslexic=true/)) {
     d.querySelectorAll('#dyslexic').checked=true;
     toggleDyslexicFont()
   }
-  if (null != getCookie().match(/fontSize/))
-    zoom((getCookie().match(/(^| )fontSize=([^;]+)/))[2] - 12);
+  if (null != c.match(/fontSize/))
+    zoom(c.match(/(^| )fontSize=([^;]+)/)[2] - 12);
 }
 
 restoreSettingsFromCookie()

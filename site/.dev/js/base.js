@@ -99,7 +99,7 @@ function loadTalkify() {
   
   js = d.createElement('script');
   js.id = i;
-  js.src = '/assets/2020/scripts/talkify/talkify.min.js';
+  js.src = '/assets/2021/scripts/talkify/talkify.min.js';
 
   fjs.parentNode.insertBefore(js, fjs)
 }

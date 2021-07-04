@@ -179,9 +179,9 @@ mirrors-rebuild:
 
 ## Additional Tasks: Copy JavaScript
 
-js: theme/assets/2020/scripts/early.min.js theme/assets/2020/scripts/late.min.js
+js: theme/assets/2021/scripts/early.min.js theme/assets/2021/scripts/late.min.js
 
-theme/assets/2020/scripts/%.js: docs/.dev/js/%.js
+theme/assets/2021/scripts/%.js: docs/.dev/js/%.js
 	cp $(<) $(@D)
 
 ## Additional Tasks: Submit Sitemaps

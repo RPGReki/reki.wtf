@@ -1,6 +1,6 @@
 ---
 title: "Thanks for the Message"
-layout: 2020/home
+layout: 2021/base
 sitemap: false
 robots: noindex
 comments: false

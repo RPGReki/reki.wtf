@@ -1,6 +1,6 @@
 ---
 title: "Furiten Riichi May-hem 2020 Doman Mahjong Tournament"
-layout: 2020/base
+layout: 2021/base
 image: /doman/images/furiten.webp
 type: tournament-archive
 redirect_from: 

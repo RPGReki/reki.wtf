@@ -15,7 +15,7 @@ cd $(git rev-parse --show-toplevel) || exit 1
 cat << 'EOF' > site/tags/index.html
 ---
 title: "List of All Tags 🏷"
-layout: 2020/base
+layout: 2021/base
 robots: noindex, follow
 ---
 <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
@@ -34,7 +34,7 @@ EOF
 cat << 'EOF' > site/tags/{{ i | strip | slugify }}.html
 ---
 title: "All Posts Tagged with {{ i }}"
-layout: 2020/base
+layout: 2021/base
 robots: noindex, follow
 ---
 <h1>{% raw %}{{ page.title }}{% endraw %}</h1>

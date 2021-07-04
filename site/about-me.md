@@ -1,8 +1,6 @@
 ---
 title: "About Me"
-
-layout: 2020/base
-lang: en-CA
+layout: 2021/base
 
 date: 2016-11-08
 
@@ -109,25 +107,23 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 ![OS: Ubuntu]({{'/proxy/shields/-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="198" height="56"}
 
 {:.shields.mb-2}
-![Code: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
-![Code: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
-![Code: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
-![Code: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
+![Web: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
+![Web: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
+![Web: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
+![Web: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
+![Web: Jekyll]({{ "/proxy/shields/-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="184" height="56" class="no-print"}
 
 {:.shields.mb-2}
+![Code: Basic.NET]({{ "/proxy/shields/-Basic_.NET/.net/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="242" height="56"}
 ![Code: Haskell]({{ "/proxy/shields/-Haskell/haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="206" height="56"}
 ![Code: Make]({{ "/proxy/shields/-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="160" height="56"}
 ![Code: Python]({{ "/proxy/shields/-Python/python/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="196" height="56"}
 ![Code: Ruby]({{ "/proxy/shields/-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 
-{:.shields.mb-2}
+{:.shields}
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
-
-{:.shields}
-![Web: Jekyll]({{ "/proxy/shields/Web-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="278" height="56"}
-![Editor: Visual Studio Code]({{ "/proxy/shields/Editor-Visual_Studio_Code/visual-studio-code/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="516" height="56"}
 
 {:.mb-1}
 ## Work Experience
@@ -290,7 +286,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 
 {:.mt-4}
-## Game Profiles
+## Hobbies
 
 {:.no-print}
 ### Final Fantasy XIV
@@ -307,22 +303,42 @@ I play [Final Fantasy XIV Online](https://www.finalfantasyxiv.com). My character
 
 I finally got [listed at the European Mahjong Association](https://mahjong-europe.org/ranking/Players/05100170.html).
 I play on [tenhou.net](https://tenhou.net) and [in Final Fantasy XIV Online](https://www.finalfantasyxiv.com).
-See my post about [Riichi Mahjong Clients](/2019/03-12-riichi-mahjong-clients-2019/).
+See my post about [Riichi Mahjong Clients](https://0xreki.de/2019/03-12-riichi-mahjong-clients-2019/).
+
+### Creative Writing
+
+I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
 
 <style>
 @media print {
+  .h1 {
+    font-size: 32pt !important;
+  }
+
+  main {
+    font-size: 12pt !important;
+  }
+
+  .icons.shields {
+    justify-content: center !important;
+  }
+
   #preferred-technologies--tools,
   #work-experience {
     margin-top: 15mm;
   }
   
   #work-experience {
-    margin-bottom: 5mm;
+    height: 8mm;
+  }
+
+  #education {
+    height: 14mm;
   }
   
   [about='#it-nrw'],
   [about='#plusserver'] {
-    height: 58mm;
+    height: 54mm;
   }
 
   [about='#clubfamily'] {
@@ -334,17 +350,31 @@ See my post about [Riichi Mahjong Clients](/2019/03-12-riichi-mahjong-clients-20
   [about='#sgi'],
   [about='#bsg-mm'],
   [about='#devradio'],
-  [about='#sk'] {
+  [about='#sk'],
+  [about='#fin']{
     height: 56mm;
+  }
+  [about='#uulm'] {
+  }
+
+  [about]::after {
+    clear: both;
+    display: block;
+    height: 1px;
+    width: 100%;
+    content: '&nbsp;';
+    overflow: hidden;
   }
 
   img[src*=uulm] {
     filter: contrast(1.5);
   }
 
-  [about='#devradio'] .col-12 {
-    background-color: #313b97;
+  #hobbies::before {
+    display: block;
+    content: '&nbsp;'
+    height: 8mm;
+    width: 100%;
   }
-
 }
 </style> 

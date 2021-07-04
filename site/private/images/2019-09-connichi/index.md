@@ -1,6 +1,6 @@
 ---
 title: "Pictures from Connichi 2019"
-layout: 2020/base
+layout: 2021/base
 redirect_from:
   - "/2019/09/connichi/"
 ---

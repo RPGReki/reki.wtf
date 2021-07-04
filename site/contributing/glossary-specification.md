@@ -1,6 +1,6 @@
 ---
 title: "Glossary Specification"
-layout: 2020/base
+layout: 2021/base
 comments: false
 robots: noindex
 sitemap: false

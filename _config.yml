@@ -131,7 +131,7 @@ defaults:
       path: "_posts/personal"
     values:
       category: personal
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -149,7 +149,7 @@ defaults:
       path: "_posts/amauga"
     values:
       category: amauga
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -164,7 +164,7 @@ defaults:
       path: "_posts/crystaldown"
     values:
       category: crystaldown
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -184,7 +184,7 @@ defaults:
       path: "_posts/scions"
     values:
       category: scions
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -204,7 +204,7 @@ defaults:
       path: "_posts/scions-reboot"
     values:
       category: scions-reboot
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -220,7 +220,7 @@ defaults:
       path: "_posts/reincarnated-as-cat"
     values:
       category: reincarnated-as-cat
-      layout: 2020/post
+      layout: 2021/post
       type: post
       lang: "en-CA"
       author: reki
@@ -235,7 +235,7 @@ defaults:
     scope:
       path: "crystaldown/01-life-in-avan-forest"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki
@@ -265,7 +265,7 @@ defaults:
     scope:
       path: "crystaldown/02-vampire-aide-and-exodus"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki
@@ -306,7 +306,7 @@ defaults:
     scope:
       path: "scions/01-children-of-light-and-darkness"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki
@@ -335,7 +335,7 @@ defaults:
     scope:
       path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki
@@ -361,7 +361,7 @@ defaults:
     scope:
       path: "reincarnated-as-cat/01/"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki
@@ -393,7 +393,7 @@ defaults:
     scope:
       path: "scions-reboot/01-children-of-light-and-darkness"
     values:
-      layout: 2020/chapter
+      layout: 2021/chapter
       type: chapter
       lang: "en-CA"
       author: reki

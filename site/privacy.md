@@ -1,5 +1,5 @@
 ---
-layout: 2020/base
+layout: 2021/base
 title: "Cookie & Privacy Statement"
 excerpt: "This page itself doesn't require cookies. However, since people are so adamant about convenience some cookies may used…"
 author: 0xReki
