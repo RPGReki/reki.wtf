@@ -3,7 +3,7 @@ layout: 2020/base
 title: "Cookie & Privacy Statement"
 excerpt: "This page itself doesn't require cookies. However, since people are so adamant about convenience some cookies may used…"
 author: 0xReki
-date: 2019-11-11
+date: 2021-07-04
 comments: false
 sitemap: false
 robots: noindex
@@ -18,7 +18,6 @@ statement should readable by non-lawyers, anyway.
 
 This page itself doesn't require cookies.
 However, since people are so adamant about convenience, some cookies may used to store user settings and the fact you have accepted this Cookies & Privacy Statement at all.
-If you haven't accepted it, there are no cookies stored but Cloudflare's ID cookie.
 If you later decide to remove the cookies of this page you can use the button below.
 
 [<span>✨</span> Clear All Cookies from this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
@@ -39,7 +38,9 @@ To avoid exposing your IP address to Gravatar, the images are proxied through th
 To avoid exposing your IP address to social media sites, all share buttons are javascript-less versions that don't require communication with the social media sites.
 However, clicking on a sharing button will direct you to the associated social media page.
 
-## Commenting
+## Commenting and Contact Form
 
-By commenting, you accept your name and your comment being displayed on the site.
+By commenting, you content to your name and your comment being processed by Cloudflare and Netlify, being stored and being displayed on the site.
+By using the Contact Form, you consent to your name and message being processed by Cloudflare and Netlify, being stored and being forwarded to us.
 Your email address is used to calculate your Gravatar URL.
+To combat spam, faulty submission can be silently removed or rejected by the system or a moderator.

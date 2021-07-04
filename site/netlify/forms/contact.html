@@ -10,24 +10,30 @@ permalink: /contact/
 <form name="Contact" method="POST" action="/thanks-for-the-message/" id="contactform" class="form-horizontal" data-netlify="true" netlify-honeypot="captcha">
   <fieldset id="contact">
     <div>
-      <label for="name">Name </label>
-      <input type="text" name="name" id="name" placeholder="Name" />
-      <label for="email">Email</span></label>
-      <input type="email" name="email" id="email" placeholder="name@domain.tld" />
+      <label for="name">Name*</label>
+      <input type="text" name="name" id="name" placeholder="Name" aria-required="true" required="true" />
+      <label for="email">Email*</span></label>
+      <input type="email" name="email" id="email" placeholder="name@domain.tld" aria-required="true" required="true" />
       <label for="url">Website</label>
-      <input type="text" name="url" id="url" placeholder="https://domain.tld" />
+      <input type="URL" name="url" id="url" placeholder="https://domain.tld" />
     </div>
     <div>
       <label for="message">Message*</label>
-      <textarea name="message" id="message" placeholder="Leave a message."></textarea>
+      <textarea name="message" id="message" placeholder="Leave a message." aria-required="true" required="true"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" name="accept-policy" id="accept-policy" aria-required="true" required="true">
+      <label for="accept-policy">
+        I content to my data associated with this message to be processed by Cloudflare and Netlify, to stored and forwarded to the owner of this site.
+      </label>
     </div>
     <div class="d-none">
-      <input name="slug" type="hidden" value="{{ slug }}">
-      <label for="captcha">Captcha</label>
+      <input name="lang" type="hidden" value="{{ page.lang }}">
+      <label for="captcha">Captcha*</label>
       <input name="captcha" type="text">
     </div>
     <div>
       <button type="sumbit" id="messagebutton" class="btn btn-primary btn-block">Submit</button>
     </div>
   </fieldset>
-</form>
+</form
