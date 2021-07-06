@@ -5,8 +5,8 @@
 [![Instagram]({{ "/proxy/shields/-/instagram/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://instagram.com/oxreki){:.no-print}
 [![tumblr]({{ "/proxy/shields/-/tumblr/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://tumblr.0xreki.de){:.no-print}
 [![SH]({{ "/proxy/shields/-/scribblehub/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.scribblehub.com/profile/19792/0xreki/){:.no-print}
-[![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki)
-[![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RiichiReki)
+[![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki){:.no-print}
+[![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RiichiReki){:.no-print}
 [![GitHub]({{ "/proxy/shields/-/github/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://github.com/0xReki)
 [![GitLab]({{ "/proxy/shields/-/gitlab/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://gitlab.com/0xReki)
 [![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/bePatron?u=27792463){:.no-print}

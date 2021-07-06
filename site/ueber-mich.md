@@ -1,10 +1,10 @@
 ---
-title: "About Me"
+title: "Über Mich"
+lang: de-DE
 layout: 2021/base
+sitemap: false
 
 date: 2016-11-08
-
-description: "About me, my universe and everything else"
 
 extra_meta:
   - property: og:type
@@ -38,15 +38,15 @@ about:
 <!-- markdownlint-disable MD022 MD025 MD032 MD033 -->
 
 {:.no-print}
-# About Me, my Universe and Everything Else
+# Über Mich
 
 {:.print-only.h1.text-center}
-[q. Thai “0xReki” Chung](https://0xreki.de/about-me/){:.text-dark}
+[q. Thai “0xReki” Chung](https://0xreki.de/ueber-mich/){:.text-dark}
 
 {:.print-only.text-center}
-Am Rath 29, 41540 Dormagen, Germany  •  ☎ +49 162/36 76 245  •  📧 [thai.&#8203;chung@0&#8203;x&#8203;re&#8203;k&#8203;i&#8203;.&#8203;d&#8203;e](mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65)
+Am Rath 29, 41540 Dormagen, Deutschland  •  ☎ +49 162/36 76 245  •  📧 [thai.&#8203;chung@0&#8203;x&#8203;re&#8203;k&#8203;i&#8203;.&#8203;d&#8203;e](mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65)
 
-Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
+Hallo! Ich bin Thai „0xReki“ Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
 My focus is in Linux, but that doesn't mean I dislike using other OSes.
 I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
@@ -54,7 +54,7 @@ I like playing JPRGs.
 While I do like action games, but I kinda suck at those.
 
 {:.no-print}
-## 0xReki on other Platforms
+## 0xReki auf anderen Platformen
 
 <script type="application/ld+json">
   {
@@ -96,13 +96,15 @@ While I do like action games, but I kinda suck at those.
 {% include_relative platforms.md %}
 
 {:.no-print}
-Two Twitch Channels?
-Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
+Zwei Twitch Kanäle?
+Ja, ich habe einen, auf dem ich hauptsächlich RPGs streame; die Streamsprache ist da Deutsch.
+Und ich habe einen Kanal, auf dem ich zum größten Teil nur Riichi Mahjong streame; die Streamsprache ist da Englisch.
 
-## Preferred Technologies & Tools
+{:#preferred-technologies--tools}
+## Bevorzugte Technologien & Tools
 
-A selection of technology and tools that I use.
-Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}.
+Eine Auswahl an Technologien und Tools, die ich nutze.
+Badges sind von [shields.io](https://shields.io){:target="_blank" ref="noopener"}.
 
 {:.shields.mb-2}
 ![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
@@ -128,14 +130,14 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
 
-{:.mb-1}
-## Work Experience
+{:.mb-1 #work-experience}
+## Berufliche Erfahrungen
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#it-nrw">
 <div class="col order-sm-2">
- <h3 class="mx-0" property="name">Network Administrator</h3>
- <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
- since <time property="startDate">2020</time>
+ <h3 class="mx-0" property="name">Netzwerk Administrator</h3>
+ <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf</span></span><br>
+ seit <time property="startDate">2020</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
@@ -145,10 +147,10 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#plusserver">
 <div class="col">
   <h3 class="mx-0" property="name">System Administrator</h3>
-  <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
-  from <time property="startDate">2018</time> until <time property="endDate">2019</time>
+  <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Köln</span></span><br>
+  von <time property="startDate">2018</time> bis <time property="endDate">2019</time>
   <p property="responsibilities">
-   Internal IT: Linux and Windows Server
+   Interne IT: Linux and Windows Server
   </p>
 </div>
 <div class="col-12 col-sm-auto">
@@ -159,10 +161,10 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#clubfamily">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="name">Web Developer</h3>
- <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
-  from <time property="startDate">2017</time> until <time property="endDate">2018</time>
+ <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Köln</span></span><br>
+  von <time property="startDate">2017</time> bis <time property="endDate">2018</time>
   <p property="responsibilities">
-   Drupal, Symphony and small Infrastrukture Tasks Linux und macOS
+   Drupal, Symphony und kleinere Infrastrukturaufgaben in Linux und macOS
   </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
@@ -173,11 +175,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#schuelernachhilfe1">
 <div class="col">
   <h3 class="mx-0" property="name">Private Tutor</h3>
-  <a href="https://schuelernachhilfe1.de">SchülerNachhilfe1</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
+  <a href="https://schuelernachhilfe1.de">SchülerNachhilfe1</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
   in <time property="startDate">2017</time>
   <meta property="endDate" content="2017">
   <p property="responsibilities">
-   Private Tutor for English, Mathematics, Chemistry and Physics
+    Nachhilfelehrer für Mathematik, Chemie und Physik
   </p>
 </div>
 <div class="col-12 col-sm-auto">
@@ -187,12 +189,12 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#teaching-assistant">
 <div class="col order-sm-2">
- <h3 class="mx-0" property="name">Teaching Assistant</h3>
- <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  from <time property="startDate">2010</time> until <time property="endDate">2016</time>
+ <h3 class="mx-0" property="name">Tutor / Übungsleiter</h3>
+ <a href="https://www.uni-ulm.de">Univetsität Ulm</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
+  von <time property="startDate">2010</time> bis <time property="endDate">2016</time>
   <p property="responsibilities">
-    Undergraduate Teaching Assistant for several different lectures:<br>
-    i.a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms
+    Übungen für verschiedene Lehrverstaltungen:
+    FormaleGrundlagen derInformatik, Logik für Informatiker, Algorithmen und Datenstrukturen, Einführung in die Informatik, Paradigmen der Programmierung, Introduction to Computer Science for Psychologists, Formal Foundations of Computer Science for Psychologists
   </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
@@ -203,10 +205,10 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
 <div class="col">
   <h3 class="mx-0" property="name">Linux System Administrator</h3>
-  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  from <time property="startDate">2013</time> until <time property="endDate">2014</time>
+  <a href="https://www.uni-ulm.de">Universität Ulm</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
+  von <time property="startDate">2013</time> bis <time property="endDate">2014</time>
   <p property="responsibilities">
-    Administration of student Linux computer pool
+    Administration der Pools der Studierenden der Informatik mit Ubuntu, Fedora und Windows
   </p>
 </div>
 <div class="col-12 col-sm-auto">
@@ -216,11 +218,11 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
 <div class="col order-sm-2">
- <h3 class="mx-0" property="name">Private Tutor</h3>
- <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen, Germany</span></span><br>
-  from <time property="startDate">2005</time> until <time property="endDate">2009</time>
+ <h3 class="mx-0" property="name">Tutor</h3>
+ <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen</span></span><br>
+  von <time property="startDate">2005</time> bis <time property="endDate">2009</time>
  <p property="responsibilities">
-  Private Tutor for Mathematics, Chemistry and Physics
+  Tutor für Mathematik, Chemie and Physik
  </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
@@ -228,17 +230,18 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-{:.mt-4}
-## Volunteer Work
+{:.mt-4 #volunteer-work}
+## Ehrenamtliche Arbeit
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#devradio">
 <div class="col">
-  <h3 class="mx-0" property="name">Radio Show Host</h3>
-  <a href="https://www.devradio.de">/dev/radio</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  from <time property="startDate">2010</time> until <time property="endDate">2017</time>
+  <h3 class="mx-0" property="name">Radio Moderator</h3>
+  <a href="https://www.devradio.de">/dev/radio</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
+  von <time property="startDate">2010</time> bis <time property="endDate">2017</time>
   <p property="responsibilities">
-    /dev/radio was a show of the Chaos Computer Club in Ulm, which used to be broadcasted at a non-commercial radio station.
-    Topics of the show include everything geeky and technology.
+    /dev/radio war eine Sendung des Chaos Computer Club in Ulm, die auf einem freien Radiosender ausgestrahlt wurde.
+    Zu den Themen gehörte alles, was mit Geeks und Technologie zu tun hat.
+
   </p>
 </div>
 <div class="col-12 col-sm-auto">
@@ -248,9 +251,9 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sk">
 <div class="col order-sm-2">
- <h3 class="mx-0" property="name">Member of the Computer Science Study Commission</h3>
-  <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  from <time property="startDate">2010</time> until <time property="endDate">2014</time>
+ <h3 class="mx-0" property="name">Mitglied der Studienkomission </h3>
+  <a href="https://stuve.uni-ulm.de/fin/">Fachschaft Informatik, Universität Ulm</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
+  von <time property="startDate">2010</time> bis <time property="endDate">2014</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
@@ -259,58 +262,56 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 <div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#fin">
 <div class="col">
-  <h3 class="mx-0" property="name">Chairman</h3>
-  <a href="https://stuve.uni-ulm.de/fin/">Computer Science Student Representation, Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
-  from <time property="startDate">2012</time> until <time property="endDate">2013</time>
+  <h3 class="mx-0" property="name">Vorsitzender der Fachschaft Informatik</h3>
+  <a href="https://stuve.uni-ulm.de/fin/">Fachschaft Informatik, Universität Ulm</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm</span></span><br>
+  von <time property="startDate">2012</time> bis <time property="endDate">2013</time>
 </div>
 <div class="col-12 col-sm-auto">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
 </div>
 
-{:.mt-4}
-## Education
+{:.mt-4 #education}
+## Schule und Studium
 
-<div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
-" about="#bsc">
+<div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential" about="#bsc">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>
  <link property="recognizedBy" href="#uulm">
  <div typeof="CollegeOrUniversity" about="#uulm">
-  <a href="https://www.uni-ulm.de" property="name" rel="url">Ulm University</a>, <span property="address">Ulm, Germany</span>
+  <a href="https://www.uni-ulm.de" property="name" rel="url">Universität Ulm</a>, <span property="address">Ulm</span>
  </div>
- from <time>2010</time> until <time property="dateCreated">2016</time>
- <p>Major in Computer Science; Minor in Physics</p>
- <p>Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
+ von <time>2010</time> bis <time property="dateCreated">2016</time>
+ <p>Hauptfach: Informatik; Anwendungsfach: Physik</p>
+ <p>Bachelorarbeit: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
 </div>
 </div>
 
-{:.mt-4}
-## Hobbies
+<div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential" about="#abi">
+<div class="col">
+ <h3 class="mx-0" property="educationalLevel">Abitur</h3>
+  <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, Memmingen<br>
+  von <time>2000</time> bis <time property="dateCreated">2009</time>
+</div>
+<div class="col-12 col-sm-auto">
+  <img src="{{ '/images/bsg-mm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+</div>
+</div>
 
-{:.no-print}
-### Final Fantasy XIV
-
-{:.mb-1.no-print}
-I play [Final Fantasy XIV Online](https://www.finalfantasyxiv.com). My characters:
-
-{:.no-print}
-- [Tsumohou Tenhou on Light: Shiva](https://eu.finalfantasyxiv.com/lodestone/character/13180550/) (Main Character)
-- [Suuankou Tanki on Aether: Gilgamesh](https://eu.finalfantasyxiv.com/lodestone/character/24491607/)
-- [Coconpa Kukunpa on Elemental: Tonberry](https://eu.finalfantasyxiv.com/lodestone/character/34199686/)
+{:.mt-4 #hobbies}
+## Hobbys
 
 ### Riichi Mahjong
 
-I finally got [listed at the European Mahjong Association](https://mahjong-europe.org/ranking/Players/05100170.html).
-I play on [tenhou.net](https://tenhou.net) and [in Final Fantasy XIV Online](https://www.finalfantasyxiv.com).
-See my post about [Riichi Mahjong Clients](https://0xreki.de/2019/03-12-riichi-mahjong-clients-2019/).
+Ich bin endlich [bei der Europäischen Mahjong Vereinigung](https://mahjong-europe.org/ranking/Players/05100170.html) zu finden!
+Spiele auf  [tenhou.net](https://tenhou.net) und [in Final Fantasy XIV Online](https://www.finalfantasyxiv.com).
 
 ### Creative Writing
 
-I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
+Aktuell schreibe ich an der [Web Novelle Amauga](https://0xreki.de/amauga/).
 
 <style>
 @media print {

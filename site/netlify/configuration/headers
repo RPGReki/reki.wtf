@@ -18,7 +18,7 @@ permalink: /_headers
 /.dev/*
   Content-Security-Policy: none
 
-/.private/slides/*
+/private/slides/*
   Content-Security-Policy: none
 
 /*
@@ -137,7 +137,7 @@ permalink: /_headers
   Cache-Control: no-cache
 {% endif %}
 
-/index.html
+/crystaldown/glossary/*
   X-Robots-Tag: Seobility: noindex, follow
 
 # vim: set textwidth=0:
