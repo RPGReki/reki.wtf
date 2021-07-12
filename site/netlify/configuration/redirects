@@ -104,6 +104,8 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 /wordpress/*/media/*                                      /archive/youtube-archive/
 /wordpress/*/random-stuff/*                               /archive/youtube-archive/
 
+/crystaldown/crystaldown/*                                /crystaldown/:splat
+
 # Short URLs
 https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
 

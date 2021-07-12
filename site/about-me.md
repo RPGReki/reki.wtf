@@ -34,6 +34,11 @@ about:
     - https://amazon.com/author/0xreki
     - http://mahjong-europe.org/ranking/Players/05100170.htm
 
+excerpt: |
+  Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
+  I live near Cologne and currently work at IT.NRW.
+  My focus is in Linux, but that doesn't mean I dislike using other OSes.
+  I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
 ---
 <!-- markdownlint-disable MD022 MD025 MD032 MD033 -->
 
@@ -140,7 +145,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  since <time property="startDate">2020</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Nordrhein-Westfalen Symbol">
 </div>
 </div>
 
@@ -154,7 +159,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto">
-  <img src="{{ '/images/PlusServer.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/PlusServer.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="PlusServer Icon">
 </div>
 </div>
 
@@ -168,7 +173,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/ClubFamily.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/ClubFamily.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="ClubFamily Icon">
 </div>
 </div>
 
@@ -183,7 +188,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto">
-  <img src="{{ '/images/S1.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/S1.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="SchülerNachhilfe1 Icon">
 </div>
 </div>
 
@@ -198,7 +203,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
 </div>
 </div>
 
@@ -212,7 +217,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto">
-  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
 </div>
 </div>
 
@@ -226,7 +231,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/bsg-mm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/bsg-mm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Bernhard-Strigel-Gymnasium Logo">
 </div>
 </div>
 
@@ -244,7 +249,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   </p>
 </div>
 <div class="col-12 col-sm-auto">
-  <img src="{{ '/images/devradio.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/devradio.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="/dev/radio Logo">
 </div>
 </div>
 
@@ -255,7 +260,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   from <time property="startDate">2010</time> until <time property="endDate">2014</time>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
 </div>
 </div>
 
@@ -266,7 +271,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   from <time property="startDate">2012</time> until <time property="endDate">2013</time>
 </div>
 <div class="col-12 col-sm-auto">
-  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
 </div>
 </div>
 
@@ -286,7 +291,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  <p>Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy">
+  <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
 </div>
 </div>
 
