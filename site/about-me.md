@@ -43,8 +43,10 @@ about:
 {:.print-only.h1.text-center}
 [q. Thai “0xReki” Chung](https://0xreki.de/about-me/){:.text-dark}
 
-{:.print-only.text-center}
-Am Rath 29, 41540 Dormagen, Germany  •  ☎ +49 162/36 76 245  •  📧 [thai.&#8203;chung@0&#8203;x&#8203;re&#8203;k&#8203;i&#8203;.&#8203;d&#8203;e](mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65)
+{:.print-text-center}
+<address class="lr">Am <span class="rl">92 htaR</span>,
+4<span class="rl">51</span>40 <span class="rl">ne<span class="lr">mag</span>roD</span>,
+Germany  •  ☎ <a href="tel:+491623676245" >+<span class="rl">94</span> <span class="rl">61</span>2/<span class="rl">63</span> 76 245</a>  •  📧 <a href="mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65">thai.chung@<span class="rl">x0</span>reki.<span class="rl">ed</span></a></address>
 
 Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
@@ -314,6 +316,10 @@ I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
 
 <style>
 @media print {
+  .print-text-center {
+    text: center !important;
+  }
+
   .h1 {
     font-size: 32pt !important;
   }
@@ -380,4 +386,14 @@ I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
     width: 100%;
   }
 }
+
+.lr {
+  direction:ltr;
+  unicode-bidi:bidi-override
+}
+
+.rl {
+  direction:rtl;
+  unicode-bidi:bidi-override
+
 </style> 
