@@ -2,7 +2,7 @@
 title: "Pictures from Connichi 2019"
 layout: 2021/base
 redirect_from:
-  - "/2019/09/connichi/"
+  - /2019/09/connichi
 ---
 
 <style>
