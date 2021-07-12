@@ -124,6 +124,7 @@ async function createTTS() {
   );
 
   $('#tts-content [aria-label]').each((e,i) => {i.innerHTML = i.getAttribute('aria-label')});
+  $('#tts-content .navbar-collpase').remove();
   $('#tts-content [aria-hidden]').remove();
   $('#tts-content button').remove();
   $('#tts-content [role=doc-noteref]').remove();
@@ -146,8 +147,13 @@ async function setUpTalkify() {
   while (0 == (window['voices'] = window.speechSynthesis.getVoices()).length) await sleep(100);
   
   window['player'] = new talkify.Html5Player();
-  player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
-  player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)));
+  if (b.lang == "de-DE") {
+    player.forceVoice(voices.find(e => e.lang.match(/DE/)));
+    player.forceVoice(voices.find(e => e.name.match(/Microsoft Katja Online|Google Deutsch/)))
+  } else {
+    player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
+    player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
+  }
 
   while ('undefined' == typeof ttsContent) await sleep(10);
 

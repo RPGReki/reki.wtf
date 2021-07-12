@@ -18,7 +18,7 @@ STORY_CHAPTER_AUDIO_DEST = $(subst .ssml.mp3,.mp3,$(STORY_CHAPTER_AUDIO_SRC)) $(
 PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xreki.github.io/_posts/*)
 PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xreki.github.io/_posts/,,$(PERSONAL_POSTS_IMPORT_SRC)))
 
-PERSONAL_POSTS_AUDIO_SRC = $(wildcard 0xreki.github.io/blog/audio/*.ssml.mp3)
+PERSONAL_POSTS_AUDIO_SRC = $(wildcard 0xreki.github.io/blog/audio/2021/*.ssml.mp3)
 PERSONAL_POSTS_AUDIO_DEST = $(subst .ssml.mp3,.mp3,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.aac,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.2.m4a,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.42.m4a,$(PERSONAL_POSTS_AUDIO_SRC))
 
 STORY_XML = $(foreach story,$(STORIES),$(foreach feed,$(STORY_FEEDS),/$(story)/$(feed)))
@@ -134,7 +134,7 @@ audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 		-af loudnorm=I=-14:TP=-1.5:LRA=11:dual_mono=true:print_format=json \
 		-f null - 2>&1 | tail -n 12 | tee $(@)
 
-%.wav: %.ssml.mp3 %.loudnorm-16.json
+%.wav: %.ssml.mp3 | %.loudnorm-16.json
 	ffmpeg -hide_banner -loglevel error -stats -y \
 		-i $(<) \
 		-af loudnorm=I=-16:TP=-1.5:LRA=11:dual_mono=true:linear=true:$(shell grep -v output $(@:.wav=.loudnorm-16.json) | grep -v type | tr -d '\n' | sed -e 's/\s//g' -e 's/["\{\}]//g' -e 's/:/=/g' -e 's/,/:/g' -e 's/input_/measured_/g' -e 's/target_offset/offset/'):print_format=summary \
@@ -142,7 +142,7 @@ audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 		-ar 48000 \
 		$(@)
 
-%.2.m4a: %.ssml.mp3 %.loudnorm-16.json
+%.2.m4a: %.ssml.mp3 | %.loudnorm-16.json
 	ffmpeg -hide_banner -loglevel error -stats -y \
 		-i $(<) \
 		-af loudnorm=I=-16:TP=-1.5:LRA=11:dual_mono=true:linear=true:$(shell grep -v output $(@:.2.m4a=.loudnorm-16.json) | grep -v type | tr -d '\n' | sed -e 's/\s//g' -e 's/["\{\}]//g' -e 's/:/=/g' -e 's/,/:/g' -e 's/input_/measured_/g' -e 's/target_offset/offset/'):print_format=summary \
@@ -155,7 +155,7 @@ audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 	-@rm -f $(@)
 	exhale 2 $(<) $(@)
 
-%.aac: %.ssml.mp3 %.loudnorm-16.json
+%.aac: %.ssml.mp3 | %.loudnorm-16.json
 	ffmpeg -hide_banner -loglevel error -stats -y \
 		-i $(<) \
 		-af loudnorm=I=-16:TP=-1.5:LRA=11:dual_mono=true:linear=true:$(shell grep -v output $(@:.aac=.loudnorm-16.json) | grep -v type | tr -d '\n' | sed -e 's/\s//g' -e 's/["\{\}]//g' -e 's/:/=/g' -e 's/,/:/g' -e 's/input_/measured_/g' -e 's/target_offset/offset/'):print_format=summary \
@@ -163,7 +163,7 @@ audio: $(STORY_CHAPTER_AUDIO_DEST) $(PERSONAL_POSTS_AUDIO_DEST)
 		-b:a 32k \
 		$(@)
 
-%.mp3: %.ssml.mp3 %.loudnorm-14.json
+%.mp3: %.ssml.mp3 | %.loudnorm-14.json
 	ffmpeg -hide_banner -loglevel error -stats -y \
 		-i $(<) \
 		-af loudnorm=I=-14:TP=-1.5:LRA=11:dual_mono=true:linear=true:$(shell grep -v output $(@:.mp3=.loudnorm-14.json) | grep -v type | tr -d '\n' | sed -e 's/\s//g' -e 's/["\{\}]//g' -e 's/:/=/g' -e 's/,/:/g' -e 's/input_/measured_/g' -e 's/target_offset/offset/'):print_format=summary \

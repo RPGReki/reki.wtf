@@ -354,8 +354,8 @@ defaults:
           - Adventure
           - Fantasy
           - Slice of Life
-        audio_mirror: 
-          - "https://amauga.s3.us-east-2.amazonaws.com/"
+      audio_mirror: 
+        - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.webp
   - # /reincarnated-as-cat/01
     scope:
