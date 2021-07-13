@@ -46,14 +46,14 @@ excerpt: |
 # About Me, my Universe and Everything Else
 
 {:.print-only.h1.text-center}
-[q. Thai “0xReki” Chung](https://0xreki.de/about-me/){:.text-dark}
+[quốc Thái “0xReki” Chung](https://0xreki.de/about-me/){:.text-dark}
 
 {:.print-text-center}
 <address class="lr">Am <span class="rl">92 htaR</span>,
 4<span class="rl">51</span>40 <span class="rl">ne<span class="lr">mag</span>roD</span>,
 Germany  •  ☎ <a href="tel:+491623676245" >+<span class="rl">94</span> <span class="rl">61</span>2/<span class="rl">63</span> 76 245</a>  •  📧 <a href="mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65">thai.chung@<span class="rl">x0</span>reki.<span class="rl">ed</span></a></address>
 
-Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
+Hello! I'm quốc Thái “0xReki” Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
 My focus is in Linux, but that doesn't mean I dislike using other OSes.
 I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
@@ -85,8 +85,6 @@ While I do like action games, but I kinda suck at those.
       "@id": "#teaching-assistant"
     },{
       "@id": "#sgi"
-    },{
-      "@id": "#private-tutor"
     },{
       "@id": "#devradio"
     },{
@@ -221,20 +219,6 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#bsg-mm">
-<div class="col order-sm-2">
- <h3 class="mx-0" property="name">Private Tutor</h3>
- <a href="https://www.bsg-mm.de">Bernhard-Strigel-Gymnasium</a>, <span property="occupationLocation" typeof="City"><span property="name">Memmingen, Germany</span></span><br>
-  from <time property="startDate">2005</time> until <time property="endDate">2009</time>
- <p property="responsibilities">
-  Private Tutor for Mathematics, Chemistry and Physics
- </p>
-</div>
-<div class="col-12 col-sm-auto order-sm-1">
-  <img src="{{ '/images/bsg-mm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Bernhard-Strigel-Gymnasium Logo">
-</div>
-</div>
-
 {:.mt-4}
 ## Volunteer Work
 
@@ -289,6 +273,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  from <time>2010</time> until <time property="dateCreated">2016</time>
  <p>Major in Computer Science; Minor in Physics</p>
  <p>Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
+ <p>Average Grade: 1.9 (1.0 is best possible grade, 4.0 is barely passing, 5.0 is failing)</p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
