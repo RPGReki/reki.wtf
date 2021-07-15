@@ -27,9 +27,11 @@
 	path = 0xReki
 	url = git@github.com:0xReki/0xReki.git
 	branch = main
+
 [submodule "scions-reboot"]
 	path = scions-reboot
 	url = git@gitlab.com:0xReki/scions-reboot.git
+	
 [submodule "0xreki.github.io"]
 	path = 0xreki.github.io
 	url = git@github.com:0xReki/0xreki.github.io.git

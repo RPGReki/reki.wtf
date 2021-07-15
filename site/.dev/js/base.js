@@ -6,36 +6,6 @@ function loadYouTube(e = null) {
   d.getElementById(i).innerHTML = d.getElementById('yt-' + i).innerHTML
 }
 
-function g(evt) {
-  return evt.touches
-}
-
-function touchStart(evt) {
-  const firstTouch = g(evt)[0];
-  x = firstTouch.clientX;
-  y = firstTouch.clientY
-}
-
-function touchMove(evt) {
-  if (null == x || null == y)
-    return;
-
-  var xu = evt.touches[0].clientX;
-  var yu = evt.touches[0].clientY;
-
-  var xd = x - xu;
-  var yd = y - yu;
-
-  if (Math.abs(xd) > 11 && Math.abs(xd) > 2 * Math.abs(yd)) {
-    if (xd > 0)
-      loadPage('next');
-    else
-      loadPage('previous')
-  }
-
-  x = null, y = null
-}
-
 function clearCookies() {
   writeCookie('acceptedPolicy', '', -1);
   writeCookie('fontSize', '', -1);
@@ -57,13 +27,6 @@ async function acceptPolicy() {
 
 async function setUpPageForUsers() {
   await sleep(200);
-  var isMobile = window.matchMedia('only screen and (max-width: 785.9px)').matches;
-
-  if (isMobile) {
-    d.addEventListener('touchstart', touchStart, false);
-    d.addEventListener('touchmove', touchMove, false);
-    toggleAllAccordions()
-  }
   
   d.getElementsByTagName('html')[0].className = 'animated';
 
