@@ -4,8 +4,8 @@ sitemap: false
 permalink: /_redirects
 ---
 https://static.crystaldown.de/*                    https://static.0xreki.de/:splat                      301!
-https://crystaldown.de/*                           {{ "/" | absolute_url }}:splat                      301!
-https://0xreki.netlify.app/*                       {{ '/' | absolute_url }}:splat                      301!
+https://crystaldown.de/*                           {{ "/" | absolute_url }}:splat                       301!
+https://0xreki.netlify.app/*                       {{ '/' | absolute_url }}:splat                       301!
 
 # Static URLs for better caching
 https://static.0xreki.de/assets/*                   {{ "/assets/" | absolute_url }}:splat               200
@@ -13,9 +13,14 @@ https://static.0xreki.de/crystaldown/thumbnail.webp {{ "/crystaldown/thumbnail.w
 https://static.0xreki.de/scions/thumbnail.webp      {{ "/scions/thumbnail.webp" | absolute_url }}       200
 https://static.0xreki.de/amauga/thumbnail.webp      {{ "/amauga/thumbnail.webp" | absolute_url }}       200
 
+https://static.0xreki.de/amauga/*.m4a               {{ "/amauga/" | absolute_url }}:splat               200
+https://static.0xreki.de/amauga/*.aac               {{ "/amauga/" | absolute_url }}:splat               200
+https://static.0xreki.de/amauga/*.mp3               {{ "/amauga/" | absolute_url }}:splat               200
+
 https://static.0xreki.de/blog/images/*              {{ "/blog/images/" | absolute_url }}:splat          200
+https://static.0xreki.de/blog/audio/*               {{ "/blog/audio/" | absolute_url }}:splat           200
 https://static.0xreki.de/doman/images/*             {{ "/doman/images/" | absolute_url }}:splat         200
-https://static.0xreki.de/recipes/images/*           {{ "/doman/images/" | absolute_url }}:splat         200
+https://static.0xreki.de/recipes/images/*           {{ "/recipes/images/" | absolute_url }}:splat       200
 
 # Proxy URLs for better privacy
 
@@ -29,8 +34,8 @@ https://static.0xreki.de/recipes/images/*           {{ "/doman/images/" | absolu
 
 https://static.0xreki.de/*                         {{ "/" | absolute_url }}:splat                      301!
 
-https://amau.ga/sh      https://www.scribblehub.com/series/215253/amauga-far-away-from-modern-civilization/
-https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
+https://amau.ga/sh                                 https://www.scribblehub.com/series/215253/amauga-far-away-from-modern-civilization/
+https://cd-ht.ml/sh                                https://www.scribblehub.com/series/75079/crystal-down/
 
 /discord                https://discord.gg/8DCZWGc
 
@@ -84,14 +89,10 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 # Protective URLs
 /crystaldown/01-life-in-avan-forest/                      /crystaldown/#volume01-lifeinavanforest
 /crystaldown/02-vampire-aide-and-exodus/                  /crystaldown/#volume02vampire-aideandexodus
-/cd/1/                                                    /crystaldown/#volume01-lifeinavanforest
-/cd/2/                                                    /crystaldown/#volume02vampire-aideandexodus
 
 /scions/01-children-of-light-and-darkness/                /scions/#volume-01-children-of-light-and-darkness
-/s/1/                                                     /scions/#volume-01-children-of-light-and-darkness
 
 /amauga/01-far-from-any-semblance-of-modern-civilization/ /amauga/#volume01-farfromanysemblanceofmoderncivilization
-/a/1/                                                     /amauga/#volume01-farfromanysemblanceofmoderncivilization
 
 /tags/*                                                   /tags/
 
@@ -108,22 +109,20 @@ https://cd-ht.ml/sh     https://www.scribblehub.com/series/75079/crystal-down/
 /crystaldown/crystaldown/*                                /crystaldown/:splat
 /elemental-children/*                                     /scions/:splat
 
+/2016/*                                                   /blog/2016/:splat
+/2017/*                                                   /blog/2017/:splat
+/2018/*                                                   /blog/2018/:splat
+/2019/*                                                   /blog/2019/:splat
+/2020/*                                                   /blog/2020/:splat
+/2021/*                                                   /blog/2021/:splat
+
 # Short URLs
-https://cd-ht.ml/1/*      {{ "/cd/1/" | absolute_url }}:splat  301!
-
-https://cd-ht.ml/2/*      {{ "/cd/2/" | absolute_url }}:splat   301!
-
-https://cd-ht.ml/s/1/*    {{ "/s/1/" | absolute_url }}:splat   301!
-
 https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}:splat       301!
 
 https://www.cd-ht.ml/*    {{ "/crystaldown/" | absolute_url }}:splat       301!
 
-https://amau.ga/1/*       {{ "/a/1/" | absolute_url }}:splat    301!
-
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}        301!
 
 https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}:splat               301!
-
 
 # vim: set textwidth=0:

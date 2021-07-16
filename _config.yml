@@ -140,7 +140,7 @@ defaults:
       commenting: open
       published: true
       image: /images/-og.avif
-      permalink: /:year/:month-:day-:title/
+      permalink: /blog/:year/:month-:day-:title/
       audio_mirror: 
         - https://0xreki.github.io/blog/audio/
         - https://reki-adventures.s3.eu-central-1.amazonaws.com/
