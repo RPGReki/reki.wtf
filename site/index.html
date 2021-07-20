@@ -110,6 +110,7 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
       {% endif %}
       {% if post.image_license %}
       <figcaption>
+        {% if post.image_alt %}{{ post.image_alt }}<br>{% endif %}
         {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
         {{ post.image_license }}
         {% if post.image_license_url %}</a>{% endif %}
