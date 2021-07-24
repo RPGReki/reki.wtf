@@ -22,7 +22,8 @@ about:
     - https://twitter.com/0xReki
     - https://facebook.com/0xReki
     - https://instagram.com/oxreki
-    - https://www.scribblehub.com/profile/19792/0xreki/
+    - https://www.scribblehub.com/profile/19792/0xreki
+    - https://www.deviantart.com/0xreki
     - https://twitch.tv/RPGReki
     - https://twitch.tv/RiichiReki
     - https://github.com/0xReki
