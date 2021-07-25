@@ -6,7 +6,7 @@
 [![Instagram]({{ "/proxy/shields/-/instagram/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://instagram.com/oxreki){:.no-print rel="me"}
 [![tumblr]({{ "/proxy/shields/-/tumblr/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://0xreki.tumblr.com){:.no-print rel="me"}
 [![SH]({{ "/proxy/shields/-/scribblehub/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.scribblehub.com/profile/19792/0xreki/){:.no-print rel="me"}
-[![deviantart]({{ "/proxy/shields/-/deviantart/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.deviantart.com/0xreki){:.no-print rel="me"}
+[![DeviantArt]({{ "/proxy/shields/-/deviantart/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.deviantart.com/0xreki){:.no-print rel="me"}
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki){:.no-print rel="me"}
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RiichiReki){:.no-print rel="me"}
 [![GitHub]({{ "/proxy/shields/-/github/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://github.com/0xReki){:rel="me"}
