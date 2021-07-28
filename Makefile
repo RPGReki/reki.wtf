@@ -68,7 +68,7 @@ site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
 	bash docs/.dev/createTags.sh
 
 docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
-	jekyll b -q
+	bundle exec jekyll b -q
 
 ## Build Tasks: Cleaning
 
