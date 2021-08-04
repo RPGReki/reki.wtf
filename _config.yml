@@ -76,6 +76,14 @@ webmaster_verifications:
     key: ol39pw
   - name: yandex-verification
     key: 323210d55347b761
+favicon:
+  href: /icon.svg
+  type: image/svg+xml
+alt-icon:
+  href: /icon.ico
+mask-icon:
+  href: /mark-icon.svg
+  color: '#9c2c2c'
 
 # Optimizations
 compress_html:
