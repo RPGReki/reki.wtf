@@ -16,10 +16,9 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "gulp": "^4.0.2",
+    "gulp-purgecss": "^4.0.3",
     "md5": "^2.3.0",
-    "request": "^2.88.2"
-  },
-  "dependencies": {
+    "request": "^2.88.2",
     "minimist": "^1.2.5",
     "netlify-cli": "^3.39.4"
   }

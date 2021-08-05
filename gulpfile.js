@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     request = require('request'),
+    purgecss = require('gulp-purgecss'),
     fs = require('fs'),
     md5 = require('md5'),
     config = require('dotenv').config(),
@@ -144,3 +145,11 @@ gulp.task("get-poll-audio-2021", function (done) {
         }
     });
 });
+
+gulp.task('purgecss', () => {
+  return gulp.src('docs/assets/2021/css/*.css')
+    .pipe(purgecss({
+        content: ['docs/**/*.html', 'docs/.dev/**/*.html']
+    }))
+    .pipe(gulp.dest('docs/assets/2021/css/purged/'))
+})

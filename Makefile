@@ -4,7 +4,7 @@ SHELL = /bin/bash
 
 URL = https://0xreki.de
 STORIES = amauga crystaldown scions reincarnated-as-cat scions-reboot
-POLLS = audio-2021
+POLLS = 
 STORY_FEEDS = blog.xml chapters.xml
 
 # automation begins here
@@ -26,6 +26,10 @@ GLOBAL_XML = /sitemap.xml /blog.xml $(STORY_XML)
 
 POLL_FILES = $(addprefix site/_data/polls/,$(addsuffix .json,$(POLLS)))
 
+CSS_SCSS = $(wildcard theme/assets/2021/css/pre-purge/*.scss)
+CSS_PREPURGE = $(subst .scss,.css,$(subst theme,docs,$(CSS_SCSS)))
+CSS_DEST = $(subst /pre-purge,,$(CSS_PREPURGE))
+
 COMMON_NORMAL_PREREQUESITES = site/tags site/_data/comments.json $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
 
 COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
@@ -38,12 +42,15 @@ default: production
 ## Build Tasks
 testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-testing 
 	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml -q
+	gulp purgecss
 
 staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-staging
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
+	gulp purgecss
 
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
+	gulp purgecss
 
 .make-state-env-testing:
 	@if [[ -f ".make-state-env-staging" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml; fi
@@ -105,6 +112,11 @@ site/_data/polls/%: | site/_data/polls
 site/_data/polls:
 	mkdir "$(@)"
 
+##
+
+purgecss: $(CSS_PREPURGE) docs
+	gulp purgecss
+	mv docs/assets/2021/css/purged/*.css docs/assets/2021/css/
 
 ## Additional Tasks: Netlify
 serve:
