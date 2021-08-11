@@ -1,17 +1,17 @@
 ---
-layout: null
+layout: xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 {% assign pages = site.posts | where: "category", "personal" | sort_natural: "date" | reverse %}
 <feed xmlns="http://www.w3.org/2005/Atom">
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
-  <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml"/>
-  <link href="{{ "/blog/" | absolute_url }}" rel="alternate" type="text/html"/>
+  <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+  <link href="{{ "/blog/" | absolute_url }}" rel="alternate" type="text/html" />
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ page.url | absolute_url }}</id>
   <title type="html">{{ site.title }} Personal Blog Atom Feed</title>
   {% for page in pages %}
-{% if jekyll.environment != "unpublished" %}{% if page.published == "sponsors" or page.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
+{% if jekyll.environment != "unpublished" %}{% if page.published == "sponsors" or page.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
 {% unless page.long %}{% continue %}{% endunless %}
   <entry xml:lang="en-CA">
     <title type="html">{{ page.title }}</title>
@@ -30,10 +30,7 @@ layout: null
     </author>
     <rights>{{ site.copyright.license | strip_html }} {{ site.copyright.name | strip_html }}</rights>
     <content type="html" xml:base="{{ page.url | absolute_url }}">
-      <p>{{ description }}</p>
-    </content>
-    <description>
       {{ description }}
-    </description>
+    </content>
   </entry>{% endfor %}
 </feed>
