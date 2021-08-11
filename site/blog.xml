@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 {% assign pages = site.posts | where: "category", "personal" | sort_natural: "date" | reverse %}
@@ -28,7 +28,7 @@ layout: compress
       <name>{{ author.name }}</name>
       <uri>{{ author.url }}</uri>
     </author>
-    <rights>{{ site.copyright.license }} {{ site.copyright.name }}</rights>
+    <rights>{{ site.copyright.license | strip_html }} {{ site.copyright.name | strip_html }}</rights>
     <content type="html" xml:base="{{ page.url | absolute_url }}">
       <p>{{ description }}</p>
     </content>

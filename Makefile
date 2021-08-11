@@ -205,6 +205,7 @@ submit-$(1):
 	curl -s "https://www.google.com/ping?sitemap=$$(URL)$(1)" > /dev/null
 	curl -s "https://www.bing.com/ping?sitemap=$$(URL)$(1)" > /dev/null
 	curl -s "https://webmaster.yandex.ru/ping?sitemap=$$(URL)$(1)" > /dev/null
+	
 endef
 
 $(foreach xml,$(GLOBAL_XML),$(eval $(call SUBMIT,$(xml))))
