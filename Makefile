@@ -15,10 +15,10 @@ STORY_POSTS_IMPORT_DEST = $(addprefix site/_posts/, $(subst _posts/,,$(STORY_POS
 STORY_CHAPTER_AUDIO_SRC = $(wildcard $(addsuffix /*.ssml.mp3, ($(wildcard $(addsuffix /pages/*, $(STORIES))))))
 STORY_CHAPTER_AUDIO_DEST = $(subst .ssml.mp3,.mp3,$(STORY_CHAPTER_AUDIO_SRC)) $(subst .ssml.mp3,.aac,$(STORY_CHAPTER_AUDIO_SRC)) $(subst .ssml.mp3,.2.m4a,$(STORY_CHAPTER_AUDIO_SRC)) $(subst .ssml.mp3,.42.m4a,$(STORY_CHAPTER_AUDIO_SRC))
 
-PERSONAL_POSTS_IMPORT_SRC = $(wildcard 0xreki.github.io/_posts/*)
-PERSONAL_POSTS_IMPORT_DEST = $(addprefix site/_posts/personal/, $(subst 0xreki.github.io/_posts/,,$(PERSONAL_POSTS_IMPORT_SRC)))
+PERSONAL_POSTS_IMPORT_SRC = $(wildcard personal-blog/_posts/*)
+PERSONAL_POSTS_IMPORT_DEST = $(subst personal-blog/_posts/,site/_posts/personal/,$(PERSONAL_POSTS_IMPORT_SRC))
 
-PERSONAL_POSTS_AUDIO_SRC = $(wildcard 0xreki.github.io/blog/audio/2021/*.ssml.mp3)
+PERSONAL_POSTS_AUDIO_SRC = $(wildcard personal-blog/blog/audio/2021/*.ssml.mp3)
 PERSONAL_POSTS_AUDIO_DEST = $(subst .ssml.mp3,.mp3,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.aac,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.2.m4a,$(PERSONAL_POSTS_AUDIO_SRC)) $(subst .ssml.mp3,.42.m4a,$(PERSONAL_POSTS_AUDIO_SRC))
 
 STORY_XML = $(foreach story,$(STORIES),$(foreach feed,$(STORY_FEEDS),/$(story)/$(feed)))
@@ -87,7 +87,7 @@ clean:
 
 ## Build Tasks: Posts
 
-site/_posts/personal/%: 0xreki.github.io/_posts/%
+site/_posts/personal/%: personal-blog/_posts/%
 	@mkdir -p "$(@D)"
 	@rm -rf $(@)
 	cp -r "$(<)" "$(@D)/"
