@@ -1,7 +1,7 @@
 	
-[submodule "0xreki.github.io"]
+[submodule "personal-blog"]
 	path = personal-blog
-	url = git@github.com:0xReki/personal-blog.git
+	url = git@gitlab.com:0xReki/personal-blog.git
 
 [submodule "theme"]
 	path = theme
