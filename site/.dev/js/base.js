@@ -76,7 +76,7 @@ async function createTTS() {
 
   t = $('#tts-content');
 
-  t.append($('body > header').html());
+  t.append($('body .navbar-brand').html());
 
   if(pageType=='chapter') t.append($('.volume-title')[0].outerHTML);
 

@@ -98,6 +98,8 @@ https://cd-ht.ml/sh                                https://www.scribblehub.com/s
 
 /tags/*                                                   /tags/
 
+/wtf/*                                                    /blog/
+
 # Legacy URLs
 /01-life-in-avan-forest/                                  /crystaldown/#volume01-lifeinavanforest
 /01-life-in-avan-forest/*                                 /crystaldown/01-life-in-avan-forest/:splat

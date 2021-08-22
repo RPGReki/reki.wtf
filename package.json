@@ -18,8 +18,8 @@
     "gulp": "^4.0.2",
     "gulp-purgecss": "^4.0.3",
     "md5": "^2.3.0",
-    "request": "^2.88.2",
     "minimist": "^1.2.5",
-    "netlify-cli": "^3.39.4"
+    "netlify-cli": "^3.39.4",
+    "request": "^2.88.2"
   }
 }
