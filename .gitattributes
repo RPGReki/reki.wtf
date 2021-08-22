@@ -1,4 +1,5 @@
 *.md text eol=lf
 *.html text eol=lf
-
-
+*.git* text eol=lf
+*.js text eol=lf
+*.sh text eol=lf

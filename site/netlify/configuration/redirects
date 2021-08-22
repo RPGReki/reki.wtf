@@ -3,9 +3,10 @@ layout: null
 sitemap: false
 permalink: /_redirects
 ---
-https://static.crystaldown.de/*                    https://static.0xreki.de/:splat                      301!
-https://crystaldown.de/*                           {{ "/" | absolute_url }}:splat                       301!
-https://0xreki.netlify.app/*                       {{ '/' | absolute_url }}:splat                       301!
+https://static.crystaldown.de/*                     https://static.0xreki.de/:splat                     301!
+https://crystaldown.de/*                            {{ "/" | absolute_url }}:splat                      301!
+https://0xreki.netlify.app/*                        {{ '/' | absolute_url }}:splat                      301!
+https://oxreki.de/*                                 {{ '/' | absolute_url }}:splat                      301!
 
 # Static URLs for better caching
 https://static.0xreki.de/assets/*                   {{ "/assets/" | absolute_url }}:splat               200
@@ -121,12 +122,13 @@ https://cd-ht.ml/sh                                https://www.scribblehub.com/s
 /post/2018-*                                              /blog/2018/:splat
 
 # Short URLs
-https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}:splat       301!
+https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
+https://www.cd-ht.ml/*    {{ "/crystaldown/" | absolute_url }}       301!
+ 
+https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
+https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}            301!
 
-https://www.cd-ht.ml/*    {{ "/crystaldown/" | absolute_url }}:splat       301!
-
-https://amau.ga/*         {{ "/amauga/" | absolute_url }}        301!
-
-https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}:splat               301!
+https://reki.wtf/*        {{ '/blog/' | absolute_url }}:splat        301!
+https://www.reki.wtf/*    {{ '/blog/' | absolute_url }}:splat        301!
 
 # vim: set textwidth=0:
