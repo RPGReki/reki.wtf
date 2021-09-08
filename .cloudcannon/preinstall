@@ -6,7 +6,7 @@ npm i
 
 (
   cd theme || exit
-  git pull
+  git pull --quiet
 ) || (
   rm -rf theme
   git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/crystaldown-theme.git" theme

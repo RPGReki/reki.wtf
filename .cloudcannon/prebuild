@@ -5,7 +5,7 @@ STORIES=(crystaldown scions amauga reincarnated-as-cat)
 # Prepare Posts
 (
   cd personal-blog || exit
-  git pull
+  git pull --quiet
 ) || (
   rm -rf personal-blog
   git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git"
@@ -21,7 +21,7 @@ cp -r personal-blog/blog site/
 for i in "${STORIES[@]}"; do
   (
     cd "${i}" || exit
-    git pull
+    git pull --quiet
   ) || (
     rm -rf "${i}"
     git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git"
