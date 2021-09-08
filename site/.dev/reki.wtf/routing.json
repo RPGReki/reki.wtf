@@ -57,12 +57,7 @@ sitemap: false
         },
 
         {
-            "from": "/wordpress/.*/media/.*",
-            "to": "/archive/youtube-archive/",
-            "status": 301
-        },
-        {
-            "from": "/wordpress/.*/random-stuff/.*",
+            "from": "/wordpress/.*/(media/random-stuff)/.*",
             "to": "/archive/youtube-archive/",
             "status": 301
         },
