@@ -109,6 +109,7 @@ wns:
 # Comments
 comments:
   action: /thanks-for-commenting/
+  mailto: comments@0xreki.de
 
 ## Defaults
 defaults:
