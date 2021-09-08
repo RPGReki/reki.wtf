@@ -43,3 +43,5 @@ bash docs/.dev/createTags.sh
 
 cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js
 cp {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js
+
+node-modules/.bin/gulp get-comments
