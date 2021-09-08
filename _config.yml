@@ -109,8 +109,7 @@ wns:
 # Comments
 comments:
   action: /thanks-for-commenting/
-  mailto: comments@0xreki.de
-  webhook: https://wh.automate.io/webhook/613910361ba2a613ded0cd1c
+  webhook: https://hooks.zapier.com/hooks/catch/10870781/b47gri9
 
 ## Defaults
 defaults:
