@@ -5,24 +5,6 @@ permalink: /_headers
 ---
 /*
   X-Content-Type-Options: nosniff
-  Access-Control-Allow-Origin: https://0xreki.de
-  Access-Control-Max-Age: 86400
-  Access-Control-Allow-Credentials: true
-
-/**/*.html
-  Content-Security-Policy: upgrade-insecure-requests; default-src 'self' 0xreki.de static.0xreki.de; base-uri 'self'; media-src 'self' 0xreki.de static.0xreki.de amauga.s3.us-east-2.amazonaws.com reki-adventures.s3.eu-central-1.amazonaws.com talkify.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' 0xreki.de static.0xreki.de *.netlify.app; script-src-elem 'self' 'sha256-0x8+KctX5w3DwyXg14J1w5wIgB1Asxhd0pasYrI9TKg=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' 'sha256-XTQGBEvsZC6c6kRyIXY9+oXg1Inv41JnlOnSbdA4dpk=' 'sha256-A4JZnFCGjbho2ITgxvzKTBse/cJesrRa3yg9S8aEKEc=' 'sha256-B75kuj4XBwqTynjEBPY0crnnQrCH3Uckwy8CeNtR5Mg=' 'sha256-h/VhtJ/dejlggs4c099UMIOFXHbY7GShgW9ib/S3fYY=' 'sha256-jt0fluv+2kfDRP7lqettjyHx8MocFVb7Knqy4uxo7Ps=' 0xreki.de static.0xreki.de *.netlify.app; script-src-attr 'self' 'unsafe-hashes' 'sha256-MQU1BH4wD3u64AS6Cy/nWfH/f02mnGU0CkcWkax+FLo=' 'sha256-6EslD/JK6DRtZhCSSJeYErR4KqZrUh9v2JDxUbYRE9s=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-fSqLOr3szT8xi3iYGmDBfK9fVPTqCKDrB+wtoUs/3rs=' 'sha256-FIbEe8NyuozKHmqjyymJtVB+RlgJHrq5bEHfUaeSVks=' 'sha256-mKENJbUttTA1eG1zHsOaKvsqA+eWGYqqtGyLB+2ooMs=' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM='; style-src 'self' 'unsafe-inline' 0xreki.de static.0xreki.de; font-src 'self' data: 0xreki.de static.0xreki.de; img-src 'self' data: 0xreki.de static.0xreki.de https://img.youtube.com; frame-src 'self' www.youtube-nocookie.com www.google.com; form-action 0xreki.de *.netlify.app amau.ga cd-ht.ml; connect-src talkify.net;
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  Content-Type: text/html; charset=utf-8
-
-/.dev/*
-  Content-Security-Policy: none
-
-/private/slides/*
-  Content-Security-Policy: none
-
-/*
-  Cache-Control: public, max-age=300, stale-while-revalidate=3600, s-max-age=86400
 
 /a/*
   Cache-Control: max-age=60, must-revalidate
@@ -35,16 +17,6 @@ permalink: /_headers
 
 /cat/*
   Cache-Control: max-age=60, must-revalidate
-
-/favicon.ico
-  Content-Type: image/x-icon
-  Cache-Control: public, max-age=1576800, immutable
-
-/robots.txt
-  Content-Type: text/plain; charset=UTF-8
-
-/sitemap.xml
-  Content-Type: application/xml
 
 /assets/*
   Cache-Control: public, max-age=1576800, immutable
@@ -109,35 +81,5 @@ permalink: /_headers
 
 /**/*.svg
   Content-Type: image/svg+xml
-
-/chapters.xml
-  Content-Type: application/atom+xml; charset=UTF-8
-  X-Robots-Tag: noindex, follow
-
-/**/chapters.xml
-  Content-Type: application/atom+xml; charset=UTF-8
-  X-Robots-Tag: noindex, follow
-
-/blog.xml
-  Content-Type: application/atom+xml; charset=UTF-8
-  X-Robots-Tag: noindex, follow
-
-/**/blog.xml
-  Content-Type: application/atom+xml; charset=UTF-8
-  X-Robots-Tag: noindex, follow
-
-/**/playlist.xspf
-  Content-Type: application/xspf+xml; charset=UTF-8
-
-/**/podcast*.xml
-  Content-Type: application/rss+xml; charset=UTF-8
-
-{% if jekyll.environment == "unpublished" %}
-/*
-  Cache-Control: no-cache
-{% endif %}
-
-/crystaldown/glossary/*
-  X-Robots-Tag: Seobility: noindex, follow
 
 # vim: set textwidth=0:
