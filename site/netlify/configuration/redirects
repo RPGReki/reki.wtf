@@ -59,7 +59,7 @@ https://www.cd-ht.ml/*    {{ "/crystaldown/" | absolute_url }}       301!
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
 https://www.amau.ga/*     {{ "/amauga/" | absolute_url }}            301!
  
-https://0xreki.de/*       {{ '' | absolute_url }}:splat              301!
+https://0xreki.de/*       {{ '' | absolute_url }}:splat              301
 https://www.0xreki.de/*   {{ '' | absolute_url }}:splat              301!
 
 # vim: set textwidth=0:

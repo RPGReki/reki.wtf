@@ -137,7 +137,7 @@ defaults:
       image: /images/-og.avif
       permalink: /blog/:year/:month-:day-:title/
       audio_mirror: 
-        - https://0xreki.github.io/blog/audio/
+        - https://0xreki.de/blog/audio/
         - https://reki-adventures.s3.eu-central-1.amazonaws.com/
   - # /_posts/amauga
     scope:
@@ -334,7 +334,7 @@ defaults:
           - Adventure
           - Fantasy
           - Slice of Life
-      audio_mirror: 
+      audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.avif
   - # /reincarnated-as-cat/01
