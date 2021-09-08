@@ -41,7 +41,7 @@ about:
 # Über Mich
 
 {:.print-only.h1.text-center}
-[q. Thai “0xReki” Chung](https://0xreki.de/ueber-mich/){:.text-dark}
+[q. Thai “0xReki” Chung](https://reki.wtf/ueber-mich/){:.text-dark}
 
 {:.print-text-center}
 <address class="lr">Am <span class="rl">92 htaR</span>,

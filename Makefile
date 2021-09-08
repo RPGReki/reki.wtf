@@ -13,7 +13,7 @@ static:
 staging:
 	bash .cloudcannon/preinstall
 	bash .cloudcannon/prebuild
-	bundle exec jekyll -c _config.yml,_local.yml
+	bundle exec jekyll b --config _config.yml,_local.yml
 	bash .cloudcannon/postbuild
 
 ## Additional Tasks: Render Audio

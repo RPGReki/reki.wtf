@@ -47,7 +47,7 @@ excerpt: |
 # About Me, my Universe and Everything Else
 
 {:.print-only.h1.text-center}
-[quốc Thái “0xReki” Chung](https://0xreki.de/about-me/){:.text-dark}
+[quốc Thái “0xReki” Chung](https://reki.wtf/about-me/){:.text-dark}
 
 {:.print-text-center}
 <address class="lr">Am <span class="rl">92 htaR</span>,
