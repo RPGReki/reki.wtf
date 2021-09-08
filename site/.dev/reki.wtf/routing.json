@@ -31,7 +31,7 @@ sitemap: false
 
         {% assign pages = site.posts | where_exp: "redirect_from", "redirect_from" %}{% for page in pages %}{% for from in page.redirect_from %}
         {
-            "from": "{{ from }}/.*",
+            "from": "{{ from }}.*",
             "to": "{{ page.url }}",
             "status": 301
         },
@@ -39,7 +39,7 @@ sitemap: false
 
         {% assign pages = site.pages | where_exp: "redirect_from", "redirect_from" %}{% for page in pages %}{% for from in page.redirect_from %}
         {
-            "from": "{{ from }}/.*",
+            "from": "{{ from }}.*",
             "to": "{{ page.url }}",
             "status": 301
         },
