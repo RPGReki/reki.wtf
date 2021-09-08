@@ -8,8 +8,6 @@ assign tag_words = site_tags | split:',' | sort %}
 
 # site.tags: {{ site_tags }}
 
-cd $(git rev-parse --show-toplevel) || exit 1
-
 [ -d "site/tags/" ] || mkdir "site/tags/"
 
 cat << 'EOF' > site/tags/index.html

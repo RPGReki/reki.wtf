@@ -1,0 +1,30 @@
+#!/bin/bash
+
+STORIES=(crystaldown scions amauga reincarnated-as-cat)
+
+npm i
+
+# Prepare Submodules
+
+rm -rf theme
+git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/crystaldown-theme.git theme
+rm -rf site/_includes site/_layouts site/_sass site/assets
+cp -r theme/_includes theme/_layouts theme/_sass theme/assets site
+
+rm -rf personal-blog
+git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git
+mkdir -p site/_posts/personal
+cp -r personal-blog/_posts/* site/_posts/personal
+
+for i in ${STORIES[@]}; do
+  rm -rf ${i}
+  git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git
+
+  rm -rf site/_posts/${i}
+  mkdir -p site/_posts/${i}
+  cp -r ${i}/_posts/* site/_posts/${i}/
+  
+  rm -rf site/${i}
+  mkdir -p site/${i}
+  cp -r ${i}/pages/* site/${i}/
+done

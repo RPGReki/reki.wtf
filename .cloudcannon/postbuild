@@ -1,0 +1,4 @@
+#!/bin/bash
+
+node_modules/.bin/gulp purgecss
+mv docs/assets/2021/css/purged/*.css docs/assets/2021/css/

@@ -71,8 +71,7 @@ deploy install: production
 ## Build Tasks: Tags
 
 site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
-	@rm -rf site/tags
-	bash docs/.dev/createTags.sh
+	@
 
 docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 	bundle exec jekyll b -q
