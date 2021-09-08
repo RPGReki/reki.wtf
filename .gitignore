@@ -27,6 +27,8 @@ Session.vim
 /site/_posts/
 /site/_data/comments.json
 /site/_data/polls/
+/site/_data/amauga/
+/site/_data/cd/
 /site/plugins/
 /site/proxy/
 /site/tags/
