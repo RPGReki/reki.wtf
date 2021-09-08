@@ -22,6 +22,7 @@ Session.vim
 /.netlify
 /.vscode
 /docs/
+/.cloudcannon/routing.json
 /site/_drafts
 /site/_posts/
 /site/_data/comments.json
@@ -29,6 +30,15 @@ Session.vim
 /site/plugins/
 /site/proxy/
 /site/tags/
+/site/_includes
+/site/_layouts
+/site/_sass
+/site/amauga
+/site/assets
+/site/crystaldown
+/site/reincarnated-as-cat
+/site/scions
+/site/scions-reboot
 .make-state-env-*
 .sass-cache
 .jekyll-cache

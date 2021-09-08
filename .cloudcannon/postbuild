@@ -2,3 +2,6 @@
 
 node_modules/.bin/gulp purgecss
 mv docs/assets/2021/css/purged/*.css docs/assets/2021/css/
+rm -rf docs/.dev/csskeep
+
+mv docs/.dev/reki.wtf/routing.json .cloudcannon/
