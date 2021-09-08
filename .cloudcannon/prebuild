@@ -3,22 +3,41 @@
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
 # Prepare Posts
-rm -rf personal-blog
-git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git
+if [ -d personal-blog/.git ]; then
+  (
+    cd personal-blog || exit
+    git pull
+  )
+else
+  rm -rf personal-blog
+  git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git"
+fi
+
+rm -rf site/_posts/personal
 mkdir -p site/_posts/personal
-cp -r personal-blog/_posts/* site/_posts/personal
+cp -r personal-blog/_posts/* site/_posts/personal/
 
-for i in ${STORIES[@]}; do
-  rm -rf ${i}
-  git clone https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git
+rm -rf site/blog
+cp -r personal-blog/blog site/
 
-  rm -rf site/_posts/${i}
-  mkdir -p site/_posts/${i}
-  cp -r ${i}/_posts/* site/_posts/${i}/
+for i in "${STORIES[@]}"; do
+  if [ -d "${i}/.git" ]; then
+    (
+      cd "${i}" || exit
+      git pull
+    )  
+  else
+    rm -rf "${i}"
+    git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git"
+  fi
+
+  rm -rf "site/_posts/${i}"
+  mkdir -p "site/_posts/${i}"
+  cp -r "${i}/_posts/"* "site/_posts/${i}/"
   
-  rm -rf site/${i}
-  mkdir -p site/${i}
-  cp -r ${i}/pages/* site/${i}/
+  rm -rf "site/${i}"
+  mkdir -p "site/${i}"
+  cp -r "${i}/pages/"* "site/${i}/"
 done
 
 bundle exec jekyll b

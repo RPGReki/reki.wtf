@@ -13,27 +13,11 @@ shorturl:
   -
     url: "https://cd-ht.ml/"
     prefix: "/cd/"
-  -
-    url: "https://reki.wtf/"
-    prefix: "/wtf/"
 
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
-exclude:
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "LICENSE.md"
-  - "README.md"
-  - "**/*.xcf"
-  - "**/.*"
-  - "**/.map"
-  - "_theme"
-  - "**/Makefile"
   
 include:
-  - "_headers"
-  - "_redirects"
-  - ".private"
   - ".dev"
 
 permalink: pretty
@@ -103,8 +87,8 @@ preload:
   fonts:
   - /assets/fonts/Cardo-Regular.woff2
   - /assets/fonts/Cardo-Bold.woff2
-  - /assets/fonts/Source-Sans-Pro-Regular.woff2
-  - /assets/fonts/Source-Sans-Pro-Bold.woff2
+  - /assets/fonts/SourceSans3-Regular.woff2
+  - /assets/fonts/SourceSans3-Bold.woff2
 
 liquid:
   error_mode: warn
