@@ -136,7 +136,7 @@ sitemap: false
             "from": "/post/([0-9]*)-(.*)",
             "to": "/blog/$1/$2",
             "status": 301
-        },
+        }
     ]
 }
 
