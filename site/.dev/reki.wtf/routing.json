@@ -45,60 +45,6 @@ sitemap: false
         },
         {% endfor %}{% endfor %}
 
-        {% assign pages = site.pages | where_exp: "shortlink", "shortlink" %}{% for p in pages %}{% for from in p.shortlink %}{% if p.published == true %}
-        {
-            "from": "{{ from }}.*",
-            "to": "{{ p.url }}",
-            "status": 301
-        },
-        {% elsif p.published == "external" %}
-        {
-            "from": "{{ from }}.*",
-            "to": "{{ p.external }}",
-            "status": 302
-        },
-        {
-            "from": "{{ p.url }}.*",
-            "to": "{{ p.external }}",
-            "status": 302
-        },
-        {% elsif p.published == "private" %}
-        {
-            "from": "{{ from }}?p={{ p.token }}",
-            "to": "{{ p.url }}",
-            "status": 302
-        },
-        {
-            "from": "{{ from }}.*",
-            "to": "/401.html",
-            "status": 401
-        },
-
-        {% elsif p.published == "sponsors" or p.published == "pre-sponsors" %}
-        {% if p.chapter %}
-        {% assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus %}
-        {% else %}
-        {% assign token = '000000' %}
-        {% endif %}
-        {
-            "from": "{{ from }}/?p={{ p.token }}",
-            "to": "{{ p.url }}",
-            "status": 302
-        },
-        {
-            "from": "{{ from }}.*",
-            "to": "/401.html",
-            "status": 401
-        },
-
-        {% else %}
-        {
-            "from": "{{ from }}.*",
-            "to": "{{ p.url }}",
-            "status": 301
-        },
-        {% endif %}{% endfor %}{% endfor %}
-
         {
             "from": "/01-life-in-avan-forest/(.*)",
             "to": "/crystaldown/01-life-in-avan-forest/$1",
