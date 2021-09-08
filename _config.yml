@@ -110,6 +110,7 @@ wns:
 comments:
   action: /thanks-for-commenting/
   mailto: comments@0xreki.de
+  webhook: https://wh.automate.io/webhook/613910361ba2a613ded0cd1c
 
 ## Defaults
 defaults:
