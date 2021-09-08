@@ -3,15 +3,13 @@
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
 # Prepare Posts
-if [ -d personal-blog/.git ]; then
-  (
-    cd personal-blog || exit
-    git pull
-  )
-else
+(
+  cd personal-blog || exit
+  git pull
+) || (
   rm -rf personal-blog
   git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git"
-fi
+)
 
 rm -rf site/_posts/personal
 mkdir -p site/_posts/personal
@@ -21,16 +19,14 @@ rm -rf site/blog
 cp -r personal-blog/blog site/
 
 for i in "${STORIES[@]}"; do
-  if [ -d "${i}/.git" ]; then
-    (
-      cd "${i}" || exit
-      git pull
-    )  
-  else
+  (
+    cd "${i}" || exit
+    git pull
+  ) || (
     rm -rf "${i}"
     git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git"
-  fi
-
+  )  
+ 
   rm -rf "site/_posts/${i}"
   mkdir -p "site/_posts/${i}"
   cp -r "${i}/_posts/"* "site/_posts/${i}/"
