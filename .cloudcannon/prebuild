@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STORIES=(crystaldown scions amauga reincarnated-as-cat scions-reboot)
+STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
 # Prepare Posts
 (
