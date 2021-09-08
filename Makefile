@@ -10,6 +10,12 @@ static:
 	find docs -iname '*.xml' -exec rm {} \;
 	find docs -empty -type d -delete
 
+staging:
+	bash .cloudcannon/preinstall
+	bash .cloudcannon/prebuild
+	bundle exec jekyll -c _config.yml,_local.yml
+	bash .cloudcannon/postbuild
+
 ## Additional Tasks: Render Audio
 
 %.loudnorm-16.json: %.ssml.mp3

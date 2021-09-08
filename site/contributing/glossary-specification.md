@@ -4,9 +4,6 @@ layout: 2021/base
 comments: false
 robots: noindex
 sitemap: false
-redirect_from:
-  - /glossary-specification/
-  - /glossary/specification/
 ---
 # Glossary Specification
 
