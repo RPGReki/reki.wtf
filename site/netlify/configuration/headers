@@ -4,6 +4,7 @@ sitemap: false
 permalink: /_headers
 ---
 /*
+  Access-Control-Allow-Origin: https://reki.wtf
   X-Content-Type-Options: nosniff
 
 /a/*
