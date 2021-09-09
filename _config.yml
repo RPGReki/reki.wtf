@@ -109,7 +109,7 @@ wns:
 # Comments
 comments:
   action: /thanks-for-commenting/
-  webhook: https://hooks.zapier.com/hooks/catch/10870781/b47gri9
+  webhook: https://hook.integromat.com/qjrsmiidz9oc9favftmjfm35geqpgkp6
 
 ## Defaults
 defaults:

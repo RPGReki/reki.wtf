@@ -1,14 +1,14 @@
 #!/bin/bash
 
-cd "$(git rev-parse --show-toplevel)/site" || exit 1
+cd "$(git rev-parse --show-toplevel)" || exit 1
 
 for i in {amauga,crystaldown,scions,reincarnated-as-cat}; do
     (
         echo "Entering $i…"
-        cd "$i" || return
+        cd "$i/pages/" || exit 1
         for j in [0-9]*; do
             (
-                cd "$j" || return
+                cd "$j" || exit
                 markdowny table --fields chapter title published day notes _words -- *.md | tee .table.md
             )
         done
@@ -16,13 +16,13 @@ for i in {amauga,crystaldown,scions,reincarnated-as-cat}; do
     )
 done
 
-for i in {../amauga/_posts,../crystaldown/_posts,../scions/_posts,../0xreki.github.io/_posts}; do
+for i in {amauga/_posts,crystaldown/_posts,scions/_posts,personal-blog/_posts}; do
     (
         echo "Entering $i…"
-        cd "$i" || return
+        cd "$i" || exit 1
         for j in [0-9]*; do
             (
-                cd "$j" || return
+                cd "$j" || exit 1
                 echo "$j"
                 markdowny table -t --fields _filename title long _words -- *.md | tee .table.md
                 echo ""
