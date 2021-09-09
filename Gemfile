@@ -11,4 +11,6 @@ group :jekyll_plugins do
     gem "jekyll-liquify"
     gem "jekyll-criticmarkup"#, git: "https://gitlab.com/0xReki/jekyll-criticmarkup.git", branch: "main"
     gem "jekyll-wns"#, git: "https://gitlab.com/0xReki/jekyll-wns.git", branch: "main"
+    gem "jekyll-cloudcannon-schedule"
 end
+

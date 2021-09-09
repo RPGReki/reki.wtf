@@ -21,7 +21,6 @@ include:
   - ".dev"
 
 permalink: pretty
-future: true
 
 ### Copyright
 copyright:
@@ -41,6 +40,7 @@ plugins:
   - jekyll-regex-replace
   - jekyll-include-cache
   - jekyll-liquify
+  - jekyll-cannonball-schedule
   - jekyll-criticmarkup
   - jekyll-wns
 
