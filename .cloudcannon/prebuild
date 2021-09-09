@@ -2,7 +2,7 @@
 
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
-if [ -f wait.fifo ]; then
+if [ -e wait.fifo ]; then
   rm wait.fifo
 fi
 
