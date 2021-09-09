@@ -40,7 +40,7 @@ plugins:
   - jekyll-regex-replace
   - jekyll-include-cache
   - jekyll-liquify
-  - jekyll-cannonball-schedule
+  - jekyll-cloudcannon-schedule
   - jekyll-criticmarkup
   - jekyll-wns
 

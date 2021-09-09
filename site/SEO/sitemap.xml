@@ -18,7 +18,8 @@ permalink: /sitemap.xml
      page.url contains '/.dev' or
      page.url contains '/.well-known' or
      page.url contains '.ssml' or
-     page.url contains '.xml'
+     page.url contains '.xml' or
+     page.url contains '_schedule'
 %}{% 
   continue
 %}{% 

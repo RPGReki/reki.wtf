@@ -27,22 +27,26 @@ gulp.task("get-comments", function (done) {
 
             // shape the data
             for(var item in body){
-                var data = JSON.parse(body[item].body);
+                try {
+                    var data = JSON.parse(body[item].body);
 
-                var comment = {
-                    slug: data.slug,
-                    date: body[item].created_at,
-                    name: data.name,
-                    url: data.url,
-                    gravatar: md5(data.email),
-                    message: data.message
-                };
+                    var comment = {
+                        slug: data.slug,
+                        date: body[item].created_at,
+                        name: data.name,
+                        url: data.url,
+                        gravatar: md5(data.email),
+                        message: data.message
+                    };
 
-                // Add it to an existing array or create a new one
-                if(comments[data.slug]){
-                    comments[data.slug].push(comment);
-                } else {
-                    comments[data.slug] = [comment];
+                    // Add it to an existing array or create a new one
+                    if(comments[data.slug]){
+                        comments[data.slug].push(comment);
+                    } else {
+                        comments[data.slug] = [comment];
+                    }
+                } catch (e) {
+                    continue;
                 }
             }
 
