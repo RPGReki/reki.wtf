@@ -11,8 +11,8 @@ mkfifo wait.fifo
 
 # Prepare Posts
 (
-  # rm -rf personal-blog
-  # git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git" --quiet
+  rm -rf personal-blog
+  git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/personal-blog.git" --depth 1 --quiet
 
   rm -rf site/_posts/personal
   mkdir -p site/_posts/personal
@@ -28,8 +28,8 @@ rm -rf site/_data/{amauga,cd}
 
 for i in "${STORIES[@]}"; do
   (
-    # rm -rf "${i}"
-    # git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git" --quiet
+    rm -rf "${i}"
+    git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git" --depth 1 --quiet
  
     rm -rf "site/_posts/${i}"
     mkdir -p "site/_posts/${i}"
