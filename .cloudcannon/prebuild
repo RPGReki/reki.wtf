@@ -12,10 +12,10 @@ mkfifo wait.fifo
 
   rm -rf site/_posts/personal
   mkdir -p site/_posts/personal
-  rsync -r personal-blog/_posts/* site/_posts/personal/
+  cp -r personal-blog/_posts/* site/_posts/personal/
 
   rm -rf site/blog
-  rsync -r personal-blog/blog site/
+  cp -r personal-blog/blog site/
   : > wait.fifo
   echo personal-blog imported.
 ) &
@@ -29,18 +29,18 @@ for i in "${STORIES[@]}"; do
  
     rm -rf "site/_posts/${i}"
     mkdir -p "site/_posts/${i}"
-    rsync -r "${i}/_posts/"* "site/_posts/${i}/"
+    cp -r "${i}/_posts/"* "site/_posts/${i}/"
   
     rm -rf "site/${i}"
     mkdir -p "site/${i}"
-    rsync -r "${i}/pages/"* "site/${i}/"
+    cp -r "${i}/pages/"* "site/${i}/"
 
     if [ "${i}" = "amauga" ]; then
-      rsync -r amauga/_data site/_data/amauga
+      cp -r amauga/_data site/_data/amauga
     fi
 
     if [ "${i}" = "crystaldown" ]; then
-      rsync -r crystaldown/_data site/_data/cd
+      cp -r crystaldown/_data site/_data/cd
     fi
     
     : > wait.fifo
@@ -63,5 +63,5 @@ read < wait.fifo
 rm -rf site/tags
 bundle exec jekyll b
 bash docs/.dev/createTags.sh
-rsync {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js
-rsync {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js
+cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js
+cp {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js
