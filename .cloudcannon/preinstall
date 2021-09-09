@@ -1,6 +1,7 @@
 #!/bin/bash
 
-npm i &
+npm i
+echo node_modules installed.
 
 # Prepare Theme
 
@@ -11,3 +12,4 @@ rm -rf site/_includes site/_layouts site/_sass site/assets
 cp -r theme/_includes theme/_layouts theme/_sass theme/assets site
 
 echo theme imported.
+

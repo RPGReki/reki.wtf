@@ -2,13 +2,6 @@
 
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
-if [ -e wait.fifo ]; then
-  rm wait.fifo
-fi
-
-trap 'rm wait.fifo' EXIT
-mkfifo wait.fifo
-
 # Prepare Posts
 (
   rm -rf personal-blog
@@ -22,7 +15,7 @@ mkfifo wait.fifo
   cp -r personal-blog/blog site/
   : > wait.fifo
   echo personal-blog imported.
-) &
+)
 
 rm -rf site/_data/{amauga,cd}
 
@@ -47,22 +40,14 @@ for i in "${STORIES[@]}"; do
       cp -r crystaldown/_data site/_data/cd
     fi
     
-    : > wait.fifo
     echo ${i} imported.
-  ) & 
+  )
 done
 
 ( 
   node_modules/.bin/gulp get-comments --quiet
-  : > wait.fifo
   echo comments imported.
-) &
-
-for i in "${STORIES[@]}"; do 
-  read < wait.fifo
-done
-read < wait.fifo
-read < wait.fifo
+)
 
 rm -rf site/tags
 bundle exec jekyll b
