@@ -2,6 +2,10 @@
 
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
+if [ -f wait.fifo ]; then
+  rm wait.fifo
+fi
+
 trap 'rm wait.fifo' EXIT
 mkfifo wait.fifo
 
