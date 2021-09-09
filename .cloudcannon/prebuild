@@ -19,21 +19,16 @@ rm -rf site/blog
 cp -rv personal-blog/blog site/
 
 for i in "${STORIES[@]}"; do
-  (
-    cd "${i}" || exit
-    git pull --quiet
-  ) || (
-    rm -rf "${i}"
-    git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git"
-  )  
+  rm -rf "${i}"
+  git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki.WN/${i}.git"
  
   rm -rf "site/_posts/${i}"
   mkdir -p "site/_posts/${i}"
-  cp -rv "${i}/_posts/"* "site/_posts/${i}/"
+  cp -r "${i}/_posts/"* "site/_posts/${i}/"
   
   rm -rf "site/${i}"
   mkdir -p "site/${i}"
-  cp -rv "${i}/pages/"* "site/${i}/"
+  cp -r "${i}/pages/"* "site/${i}/"
 done
 
 bundle exec jekyll b
@@ -49,4 +44,4 @@ rm -rf site/_data/{amauga,cd}
 cp -r amauga/_data site/_data/amauga
 cp -r crystaldown/_data site/_data/cd
 
-node_modules/.bin/gulp get-comments
+node_modules/.bin/gulp get-comments || cp site/_docs/{saved-,}comments.json

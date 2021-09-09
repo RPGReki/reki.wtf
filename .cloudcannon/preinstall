@@ -4,13 +4,8 @@ npm i
 
 # Prepare Theme
 
-(
-  cd theme || exit
-  git pull --quiet
-) || (
-  rm -rf theme
-  git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/crystaldown-theme.git" theme
-)
+rm -rf theme
+git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/crystaldown-theme.git" theme
 
 rm -rf site/_includes site/_layouts site/_sass site/assets
 cp -r theme/_includes theme/_layouts theme/_sass theme/assets site
