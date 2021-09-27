@@ -2,6 +2,17 @@
 
 STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
+# Prepare Theme
+(
+  rm -rf theme
+  git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/0xReki/crystaldown-theme.git" theme  --depth 1 --quiet
+
+  rm -rf site/_includes site/_layouts site/_sass site/assets
+  cp -r theme/_includes theme/_layouts theme/_sass theme/assets site
+
+  echo theme imported.
+) &
+
 # Prepare Posts
 (
   rm -rf personal-blog
@@ -13,9 +24,9 @@ STORIES=(crystaldown scions amauga reincarnated-as-cat)
 
   rm -rf site/blog
   cp -r personal-blog/blog site/
-  : > wait.fifo
+
   echo personal-blog imported.
-)
+) &
 
 rm -rf site/_data/{amauga,cd}
 
@@ -41,16 +52,22 @@ for i in "${STORIES[@]}"; do
     fi
     
     echo ${i} imported.
-  )
+  )&
 done
 
 ( 
   node_modules/.bin/gulp get-comments --quiet
+
   echo comments imported.
-)
+) &
+
+wait
 
 rm -rf site/tags
 bundle exec jekyll b
-bash docs/.dev/createTags.sh
-cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js
-cp {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js
+
+bash docs/.dev/createTags.sh &
+cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js &
+cp {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js &
+
+wait
