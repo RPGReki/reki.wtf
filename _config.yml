@@ -13,7 +13,7 @@ shorturl:
   -
     url: "https://cd-ht.ml/"
     prefix: "/cd/"
-  - 
+  -
     url: "https://cc-ht.ml/s/"
     prefix: "/s/"
 
