@@ -4,7 +4,7 @@ default: static
 
 static:
 	bash .cloudcannon/preinstall
-	bash .cloudcannon/prebuild
+	bash .cloudcannon/prebuild.static
 	bash .cloudcannon/postbuild
 	find docs -iname '*.html' -exec rm {} \;
 	find docs -iname '*.xml' -exec rm {} \;

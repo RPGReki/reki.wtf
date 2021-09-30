@@ -7,15 +7,12 @@ destination: docs
 url: "https://reki.wtf"
 static_url: "https://0xreki.de"
 shorturl:
-  -
-    url: "https://amau.ga/"
+  - url: "https://amau.ga/"
     prefix: "/a/"
-  -
-    url: "https://cd-ht.ml/"
+  - url: "https://cd-ht.ml/"
     prefix: "/cd/"
-  -
-    url: "https://cc-ht.ml/s/"
-    prefix: "/s/"
+  - url: "https://cd-ht.ml/s/"
+    prefix: "/s/"
 
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
