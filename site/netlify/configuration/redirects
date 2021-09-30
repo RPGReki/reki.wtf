@@ -21,33 +21,50 @@ https://cd-ht.ml/sh                                https://www.scribblehub.com/s
 
 
 {% assign pages = site.pages | where_exp: "shortlink", "shortlink" %}{% for p in pages %}{% for from in p.shortlink %}{% if p.published == true %}
+{% assign su = from %}
+{% for s in site.shorturl %}
+{% assign su = su | replace: s.prefix,  s.url %}
+{% endfor %}
 
-{{ from }}*    {{ p.url | absolute_url }}{% elsif p.published == "external" %}
+{{ su }}*    {{ p.url | absolute_url }}{% elsif p.published == "external" %}
 
-{{ from }}*     p=:p    {{ p.external }}?bugfix 302!
+{{ su }}*     p=:p    {{ p.external }}?bugfix 302!
 
-{{ from }}*    {{ p.external }} 302!
+{{ su }}*    {{ p.external }} 302!
 
 {{ p.url }}*    p=:p    {{ p.external }}?bugfix 302!
 
 {{ p.url }}*    {{ p.external }} 302!
 
 {% elsif p.published == "private" %}
-{{ from }}*    p={{ p.token }}    {{ p.url }}    200
-{{ from }}*    /401.html    401
+{% assign su = from %}
+{% for s in site.shorturl %}
+{% assign su = su | replace: s.prefix, s.url %}
+{% endfor %}
+{{ su }}*    p={{ p.token }}    {{ p.url }}    200
+{{ su }}*    /401.html    401
 
 {% elsif p.published == "sponsors" or p.published == "pre-sponsors" %}
+{% assign su = from %}
+{% for s in site.shorturl %}
+{% assign su = su | replace: s.prefix, s.url %}
+{% endfor %}
 {% if p.chapter %}
 {% assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus %}
 {% else %}
 {% assign token = '000000' %}
 {% endif %}
-{{ from }}*    p={{ token }}    {{ p.url }}    200
-{{ from }}*    p=:p             /401.html      401
-{{ from }}*                     /402.html      402
+{{ su }}*    p={{ token }}    {{ p.url }}    200
+{{ su }}*    p=:p             /401.html      401
+{{ su }}*                     /402.html      402
 
 {% else %}
-{{ from }}*    {{ p.url }}
+{% assign su = from %}
+{% for s in site.shorturl %}
+{% assign su = su | replace: s.prefix, s.url %}
+# {{ s.prefix }} --> {{ s.url }}
+{% endfor %}
+{{ su }}*    {{ p.url }}
 {% endif %}
 
 {% endfor %}{% endfor %}

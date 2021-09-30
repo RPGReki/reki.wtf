@@ -1,0 +1,55 @@
+#!/bin/bash
+
+STORIES=(crystaldown scions amauga reincarnated-as-cat)
+
+# Prepare Posts
+(
+  rm -rf site/_posts/personal
+  mkdir -p site/_posts/personal
+  cp -r personal-blog/_posts/* site/_posts/personal/
+
+  rm -rf site/blog
+  cp -r personal-blog/blog site/
+
+  echo personal-blog imported.
+) &
+
+rm -rf site/_data/{amauga,cd}
+
+for i in "${STORIES[@]}"; do
+  (
+    rm -rf "site/_posts/${i}"
+    mkdir -p "site/_posts/${i}"
+    cp -r "${i}/_posts/"* "site/_posts/${i}/"
+  
+    rm -rf "site/${i}"
+    mkdir -p "site/${i}"
+    cp -r "${i}/pages/"* "site/${i}/"
+
+    if [ "${i}" = "amauga" ]; then
+      cp -r amauga/_data site/_data/amauga
+    fi
+
+    if [ "${i}" = "crystaldown" ]; then
+      cp -r crystaldown/_data site/_data/cd
+    fi
+    
+    echo ${i} imported.
+  )&
+done
+
+( 
+  node_modules/.bin/gulp get-comments --quiet
+
+  echo comments imported.
+)&
+wait
+
+rm -rf site/tags
+bundle exec jekyll b
+
+bash docs/.dev/createTags.sh &
+cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js &
+cp {docs/.dev/js/,theme/assets/2021/scripts/}late.min.js &
+
+wait

@@ -34,6 +34,7 @@ about:
     - https://www.xing.com/profile/Thai_Chung
     - https://amazon.com/author/0xreki
     - http://mahjong-europe.org/ranking/Players/05100170.htm
+    - https://gitconnected.com/0xreki/resume
 
 excerpt: |
   Hello! I'm Thai “0xReki” Chung, a jack of all trades from Germany.
@@ -139,9 +140,15 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#it-nrw">
 <div class="col order-sm-2">
- <h3 class="mx-0" property="name">Network Administrator</h3>
- <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
+  <h3 class="mx-0" property="name">Network Administrator</h3>
+  <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
  since <time property="startDate">2020</time>
+
+  <p>IT.NRW developes and provides IT infrastructure for state administration of North Rhine-Westphalia.</p>
+  <p>Tasks at this position include:<p>
+  <ul property="reponsibilities">
+    <li>Administration of Application Layer Gateways and Proxies</li>
+  </ul>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Nordrhein-Westfalen Symbol">
@@ -153,9 +160,12 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   <h3 class="mx-0" property="name">System Administrator</h3>
   <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
   from <time property="startDate">2018</time> until <time property="endDate">2019</time>
-  <p property="responsibilities">
-   Internal IT: Linux and Windows Server
-  </p>
+  
+  <p>PlusServer helps organizations realise the full potential of their cloud strategy.</p>
+  <p>Tasks at this position included:<p>
+  <ul property="responsibilities">
+   <li>Administration of Linux and Windows Server for Internal IT</li>
+  </ul>
 </div>
 <div class="col-12 col-sm-auto">
   <img src="{{ '/images/PlusServer.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="PlusServer Icon">
@@ -167,9 +177,13 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
  <h3 class="mx-0" property="name">Web Developer</h3>
  <a href="https://www.inspiring-travel.de">SD Inspiring Travel GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
   from <time property="startDate">2017</time> until <time property="endDate">2018</time>
-  <p property="responsibilities">
-   Drupal, Symphony and small Infrastrukture Tasks Linux und macOS
-  </p>
+  
+  <p>SD Inspiring Travel GmbH is an online travel agency that specializes in family vacations.</p>
+  <p>Tasks at this position included:<p>
+  <ul property="responsibilities">
+    <li>PHP Developement: Drupal, Symphony</li>
+    <li>Administration of Linux & macOS</li>
+  </ul>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/ClubFamily.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="ClubFamily Icon">
