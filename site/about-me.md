@@ -181,7 +181,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
   <p>SD Inspiring Travel GmbH is an online travel agency that specializes in family vacations.</p>
   <p>Tasks at this position included:<p>
   <ul property="responsibilities">
-    <li>PHP Developement: Drupal, Symphony</li>
+    <li>PHP Development: Drupal, Symphony</li>
     <li>Administration of Linux & macOS</li>
   </ul>
 </div>
