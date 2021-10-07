@@ -3,11 +3,9 @@ SHELL = /bin/bash
 default: static
 
 static:
-	bash .cloudcannon/preinstall
 	bash .cloudcannon/prebuild.static
 	bash .cloudcannon/postbuild
-	find docs -iname '*.html' -exec rm {} \;
-	find docs -iname '*.xml' -exec rm {} \;
+	find docs \( -iname '*.xml' -or -iname '*.html' \) -and \( -not -iname '40?.html' \) -exec rm {} \;
 	find docs -empty -type d -delete
 
 staging:
