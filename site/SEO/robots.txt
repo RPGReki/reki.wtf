@@ -2,7 +2,7 @@
 layout: null
 permalink: /robots.txt
 ---
-Sitemap: {{"/sitemap.xml" | absolute_url }}
+Sitemap: {{ "/sitemap.xml" | absolute_url }}
 
 User-Agent: *
 Allow: /
@@ -10,11 +10,12 @@ Disallow:
 
 User-Agent: Seobility
 Disallow: /blog.xml
-Disallow: /amauga/chapters.xml
 Disallow: /amauga/blog.xml
-Disallow: /crystaldown/chapters.xml
+Disallow: /amauga/chapters.xml
 Disallow: /crystaldown/blog.xml
-Disallow: /scions/chapters.xml
+Disallow: /crystaldown/chapters.xml
+Disallow: /crystaldown/glossary/
 Disallow: /scions/blog.xml
-Disallow: /reincarnated-as-cat/chapters.xml
+Disallow: /scions/chapters.xml
 Disallow: /reincarnated-as-cat/blog.xml
+Disallow: /reincarnated-as-cat/chapters.xml
