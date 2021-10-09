@@ -64,7 +64,7 @@ done
 wait
 
 rm -rf site/tags
-bundle exec jekyll b
+bundle exec jekyll b --future
 
 bash docs/.dev/createTags.sh &
 cp {docs/.dev/js/,theme/assets/2021/scripts/}early.min.js &

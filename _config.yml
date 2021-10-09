@@ -13,7 +13,8 @@ shorturl:
     prefix: "/cd/"
   - url: "https://cd-ht.ml/s/"
     prefix: "/s/"
-
+#  - url: "https://cd-ht.ml/cat/"
+#    prefix: '/cat/'
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
   

@@ -8,8 +8,10 @@ token: 172025
 ---
 <ul>
 {% assign pages = site.pages | sort: 'date' %}
+{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
 {% for p in pages %}
-{% if p.published == "sponsors" or p.published == "pre-sponsors" or p.published == "private" %}
+{% capture p_time %}{{ p.date | date: '%s'}}{% endcapture %}
+{% if p_time > now or p.published == "private" %}
 <li>Date to be published: {{ p.date }}<br>
     {% assign s = p.shortlink %}
     {% for i in site.shorturl %}

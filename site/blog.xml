@@ -10,8 +10,10 @@ layout: xml
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ page.url | absolute_url }}</id>
   <title type="html">{{ site.title }} Personal Blog Atom Feed</title>
-  {% for page in pages %}
-{% if jekyll.environment != "unpublished" %}{% if page.published == "sponsors" or page.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
+{% capture now %}{{ 'now'| date: '%s'}}{% endcapture %}
+{% for page in pages %}
+  {% capture post_time %}{{ page.date | date: '%s'}}{% endcapture %}
+  {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
 {% unless page.long %}{% continue %}{% endunless %}
   <entry xml:lang="en-CA">
     <title type="html">{{ page.title }}</title>

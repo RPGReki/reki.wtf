@@ -4,9 +4,10 @@ title: Social Media Helper
 ---
 {% assign pages = site.posts | sort_natural: "date" | reverse | slice: 2, 5 %}
 <ul>
+  {% capture now %}{{ 'now'| date: '%s'}}{% endcapture %}
   {% for page in pages %}
-    {% if jekyll.environment != "unpublished" %}
-      {% if page.published == "pre-sponsors"%}{% continue %}{% endif %}
+    {% capture page_sponsor_time %}{{ page.date | date: '%s' | minus: 648000 }}{% endcapture %}
+    {% if jekyll.environment != "unpublished" %}{% if page_sponsor_time > now %}{% continue %}{% endif %}
     {% endif %}
     {% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: "&thinsp;", " " | truncatewords: 50, '…' }}      {% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
     {% assign chapter = site.pages | where: "type", "chapter" | where: "book.series", page.link.series

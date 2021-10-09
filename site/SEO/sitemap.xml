@@ -5,13 +5,14 @@ permalink: /sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{%
   assign pages = site.pages | sort: "url"
+%}{% capture now %}{{ 'now'| date: '%s'}}{% endcapture 
 %}{%
   for page in pages
+%}{% capture page_time %}{{ page.date | date: '%s' }}{% endcapture 
 %}{%
   if page.path contains 'assets' or 
      page.sitemap == false or 
-     page.published == 'sponsors' or 
-     page.published == 'pre-sponsors' or 
+     page_time > now or
      page.published == 'private' or 
      page.url contains 'robots.txt' or 
      page.url contains '/tags' or

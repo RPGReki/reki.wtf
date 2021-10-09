@@ -18,15 +18,17 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 https://amau.ga/sh                                  https://www.scribblehub.com/series/215253/amauga-far-away-from-modern-civilization/
 https://cd-ht.ml/sh                                 https://www.scribblehub.com/series/75079/crystal-down/
+{%- capture now -%}{{ 'now'| date: '%s' }}{%- endcapture -%}
+{%- assign pages = site.pages | where_exp: "shortlink", "shortlink" -%}{%- for p in pages -%}
+{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}
+{%- capture p_sponsor_time -%}{{ p.date | date: '%s' | minus: 648000 }}{%- endcapture -%}
+{% for from in p.shortlink %}{%- if p.published == true and p_time <= now -%}
+{%- assign su = from -%}
+{%- for s in site.shorturl -%}
+{%- assign su = su | replace: s.prefix,  s.url -%}
+{%- endfor -%}
 
-
-{% assign pages = site.pages | where_exp: "shortlink", "shortlink" %}{% for p in pages %}{% for from in p.shortlink %}{% if p.published == true %}
-{% assign su = from %}
-{% for s in site.shorturl %}
-{% assign su = su | replace: s.prefix,  s.url %}
-{% endfor %}
-
-{{ su }}*    {{ p.url | absolute_url }}{% elsif p.published == "external" %}
+{{ su }}*    {{ p.url | absolute_url }}{%- elsif p.published == "external" -%}
 
 {{ su }}*     p=:p    {{ p.external }}?bugfix 302!
 {{ su }}*    {{ p.external }} 302!
@@ -34,36 +36,34 @@ https://cd-ht.ml/sh                                 https://www.scribblehub.com/
 {{ p.url }}*    {{ p.external }} 302!
 
 {% elsif p.published == "private" %}
-{% assign su = from %}
-{% for s in site.shorturl %}
-{% assign su = su | replace: s.prefix, s.url %}
-{% endfor %}
-{{ su }}*    p={{ p.token }}    {{ p.url }}    200
+{%- assign su = from -%}
+{%- for s in site.shorturl -%}
+{%- assign su = su | replace: s.prefix, s.url -%}
+{%- endfor -%}
+{{ su }}*    p={{ p.token }}    {{ p.url | absolute_url }}    200
 {{ su }}*    /401.html    401
 
-{% elsif p.published == "sponsors" or p.published == "pre-sponsors" %}
-{% assign su = from %}
-{% for s in site.shorturl %}
-{% assign su = su | replace: s.prefix, s.url %}
-{% endfor %}
-{% if p.chapter %}
-{% assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus %}
-{% else %}
-{% assign token = '000000' %}
-{% endif %}
-{{ su }}*    p={{ token }}    {{ p.url }}    200
+{% elsif p_time > now %}
+{%- assign su = from -%}
+{%- for s in site.shorturl -%}
+{%- assign su = su | replace: s.prefix, s.url -%}
+{%- endfor -%}
+{%- if p.chapter -%}
+{%- assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus -%}
+{%- else -%}
+{%- assign token = '000000' -%}
+{%- endif -%}
+{{ su }}*    p={{ token }}    {{ p.url | absolute_url }}    200
 {{ su }}*    p=:p             /401.html      401
 {{ su }}*                     /402.html      402
 
 {% else %}
-{% assign su = from %}
-{% for s in site.shorturl %}
-{% assign su = su | replace: s.prefix, s.url %}
-# {{ s.prefix }} --> {{ s.url }}
-{% endfor %}
+{%- assign su = from -%}
+{%- for s in site.shorturl -%}
+{%- assign su = su | replace: s.prefix, s.url -%}
+{%- endfor -%}
 {{ su }}*    {{ p.url }}
 {% endif %}
-
 {% endfor %}{% endfor %}
 
 /a/*                      https://amau.ga/:splat                     301!
