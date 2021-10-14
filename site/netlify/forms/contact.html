@@ -24,17 +24,16 @@ permalink: /contact/
     <div class="row mx-2">
       <input type="checkbox" name="accept-policy" id="accept-policy" aria-required="true" required="true" class="col-auto mt-2">
       <label for="accept-policy" class="col">
-        I content to my data associated with this message to be processed by Cloudflare and Cloudcannon, to be stored and forwarded to the owner of this site.
+        I content to my data associated with this message to be processed by Cloudflare and Netlify, to stored and forwarded to the owner of this site.
       </label>
     </div>
     <div class="d-none">
       <input name="lang" type="hidden" value="{{ page.lang }}">
-      <label for="_gotcha">Captcha*</label>
-      <input name="_gotcha" type="text">
-      <input name="_to" type="hidden" value="contact@0xreki.de">
+      <label for="captcha">Captcha*</label>
+      <input name="captcha" type="text">
     </div>
     <div>
       <button type="sumbit" id="messagebutton" class="btn btn-primary btn-block">Submit</button>
     </div>
   </fieldset>
-</form>
+</form
