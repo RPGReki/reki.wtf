@@ -80,4 +80,7 @@ https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
  
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
  
+https://0xreki.de/        {{ "/" | absolute_url }}                   301!
+https://0xreki.de/*.html  {{ "/" | absolute_url }}:splat             302!
+
 # vim: set textwidth=0:
