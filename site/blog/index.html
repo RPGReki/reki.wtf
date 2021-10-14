@@ -1,21 +1,32 @@
 ---
-title: All Posts in the Category Personal Posts
+title: "All Personal Blog Posts"
 layout: 2021/base
-excerpt: Personal Posts of 0xReki's Adventures
-
+excerpt: Things that I take interest in, or happen to think about when I have some time.
 feed: /blog.xml
+redirect_from: 
+  - /status/blog
 ---
-<h1>{{ page.title }}</h1>
+<h1>All Personal Blog Posts</h1>
 
+<p class="icons shields justify-content-start">
+  {% if page.feed %}
+  <link rel="alternate" type="application/atom+xml" href="{{ page.feed | absolute_url }}" title="{{ site.title }} Personal Blog Atom Feed">
+  <a rel="alternate" type="application/atom+xml"
+   href="{{ page.feed | absolute_url }}"
+   title="{{ site.title }} Personal Blog Atom Feed">
+    <img loading="lazy" src="{{ '/proxy/shields/-/rss/shield.svg' | prepend: site.static_url | absolute_url }}" alt="Atom Feed" width="64" height="64">
+  </a>
+  {% endif %}
+</p>
 {% assign ps = site.posts | where: 'category', 'personal' %}
 {% for post in ps %}
 {% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
   <article itemscope itemtype="https://schema.org/BlogPosting" class="interface top-toggle hentry">
-    <h2 itemprop="name" id="{{ post.title | slugify }}" class="inactive entry-title" onclick="toggleAccordion(this)">
+    <h2 itemprop="name" id="{{ post.title | slugify }}" class="entry-title" onclick="toggleAccordion(this)">
         {{ post.title }}
     </h2>
     <meta itemprop="headline" content="{{ post.title }}">
-    {% assign author = site.data.staff | where: "id", page.author | last %} 
+    {% assign author = site.data.staff | where: "id", page.author | last %}
     <div itemprop="author" class="my-0" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="{{ author.name }}">
       <meta itemprop="url" content="{{ author.url }}">
@@ -26,9 +37,9 @@ feed: /blog.xml
       <meta itemprop="url" content="{{ publisher.url }}">
     </div>
     {% if post.long %}
-    <meta itemprop="url" content="{{ post.url }}">
+      <meta itemprop="url" content="{{ post.url | absolute_url }}">
     {% else %}
-    <meta itemprop="url" content="{{ post.category | first | replace: 'personal', '' | prepend: '/' | absolute_url }}blog/#{{ post.title | slugify }}">
+      <meta itemprop="url" content="{{ post.category | first | prepend: '/' | replace: 'personal/', '' | absolute_url }}blog/#{{ post.title | slugify }}">
     {% endif %}
     <p class="float-left"><small>
       published on <span itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}" class="published">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -88,6 +99,7 @@ feed: /blog.xml
       {% endif %}
       {% if post.image_license %}
       <figcaption>
+        {% if post.image_alt %}{{ post.image_alt }}<br>{% endif %}
         {% if post.image_license_url %}<a href="{{ post.image_license_url }}" target="_blank" rel="noopener nofollow">{% endif %}
         {{ post.image_license }}
         {% if post.image_license_url %}</a>{% endif %}

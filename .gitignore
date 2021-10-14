@@ -32,16 +32,6 @@ Session.vim
 /site/plugins/
 /site/proxy/
 /site/tags/
-/site/_includes
-/site/_layouts
-/site/_sass
-/site/amauga
-/site/assets
-/site/blog
-/site/crystaldown
-/site/reincarnated-as-cat
-/site/scions
-/site/scions-reboot
 .make-state-env-*
 .sass-cache
 .jekyll-cache
