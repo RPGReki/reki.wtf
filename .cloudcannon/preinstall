@@ -1,0 +1,6 @@
+#!/bin/bash
+
+npm i
+echo node_modules installed.
+
+
