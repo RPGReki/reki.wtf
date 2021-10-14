@@ -79,7 +79,11 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
  
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
- 
-https://0xreki.de/        {{ "/" | absolute_url }}                   301!
+
+## Protective Redirects; remove these in mid-2023 
+{%- for p in site.pages %}
+https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endfor -%}
+{%- for p in site.posts %}
+https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endfor -%}
 
 # vim: set textwidth=0:
