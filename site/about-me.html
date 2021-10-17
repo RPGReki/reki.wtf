@@ -44,26 +44,24 @@ excerpt: |
 ---
 <!-- markdownlint-disable MD022 MD025 MD032 MD033 -->
 
-{:.no-print}
-# About Me, my Universe and Everything Else
+<h1>About Me, my Universe and Everything Else</h1>
 
-{:.print-only.h1.text-center}
-[quốc Thái “0xReki” Chung](https://reki.wtf/about-me/){:.text-dark}
-
-{:.print-text-center}
+<p>
 <address class="lr">Am <span class="rl">92 htaR</span>,
 4<span class="rl">51</span>40 <span class="rl">ne<span class="lr">mag</span>roD</span>,
 Germany  •  ☎ <a href="tel:+491623676245" >+<span class="rl">94</span> <span class="rl">61</span>2/<span class="rl">63</span> 76 245</a>  •  📧 <a href="mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65">thai.chung@<span class="rl">x0</span>reki.<span class="rl">ed</span></a></address>
+</p>
 
+<p>
 Hello! I'm quốc Thái “0xReki” Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
 My focus is in Linux, but that doesn't mean I dislike using other OSes.
 I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
 I like playing JPRGs.
 While I do like action games, but I kinda suck at those.
+</p>
 
-{:.no-print}
-## 0xReki on other Platforms
+<h2>0xReki on other Platforms</h2>
 
 <script type="application/ld+json">
   {
@@ -100,16 +98,20 @@ While I do like action games, but I kinda suck at those.
   }
 </script>
 
-{% include_relative platforms.md %}
+{% capture md %}{% include_relative platforms.md %}{% endcapture %}
+{{ md | markdownify }}
 
-{:.no-print}
 Two Twitch Channels?
 Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
 
-## Preferred Technologies & Tools
+<h2>Preferred Technologies & Tools</h2>
 
+<p>
 A selection of technology and tools that I use.
-Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noopener"}.
+Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener">shields.io</a>.
+</p>
+
+{% capture md %}
 
 {:.shields.mb-2}
 ![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
@@ -135,8 +137,10 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
 
-{:.mb-1}
-## Work Experience
+{% endcapture %}
+{{ md | markdownify }}
+
+<h2 class="mb-1"> Work Experience</h2>
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#it-nrw">
 <div class="col order-sm-2">
@@ -150,6 +154,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
     <li>Administration of Application Layer Gateways and Proxies</li>
   </ul>
 </div>
+
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/NRW.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Nordrhein-Westfalen Symbol">
 </div>
@@ -234,8 +239,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-{:.mt-4}
-## Volunteer Work
+<h2 class="mt-4">Volunteer Work</h2>
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="Occupation Role" about="#devradio">
 <div class="col">
@@ -274,8 +278,7 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-{:.mt-4}
-## Education
+<h2 class="mt-4">Education</h2>
 
 <div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
 " about="#bsc">
@@ -295,29 +298,38 @@ Badges are powered by [shields.io](https://shields.io){:target="_blank" ref="noo
 </div>
 </div>
 
-{:.mt-4}
-## Hobbies
+<h2 class="mt-4">Hobbies</h2>
 
-{:.no-print}
-### Final Fantasy XIV
+<h3 class="no-print">Hobbies</h3>
 
-{:.mb-1.no-print}
-I play [Final Fantasy XIV Online](https://www.finalfantasyxiv.com). My characters:
+<p class="mb-1 no-print">
+I play <a href="https://www.finalfantasyxiv.com" target="_blank" ref="noopener">Final Fantasy XIV Online</a>. My characters:
 
-{:.no-print}
-- [Tsumohou Tenhou on Light: Shiva](https://eu.finalfantasyxiv.com/lodestone/character/13180550/) (Main Character)
-- [Suuankou Tanki on Aether: Gilgamesh](https://eu.finalfantasyxiv.com/lodestone/character/24491607/)
-- [Coconpa Kukunpa on Elemental: Tonberry](https://eu.finalfantasyxiv.com/lodestone/character/34199686/)
+<ul class="no-print">
+<li>
+  <a href="https://eu.finalfantasyxiv.com/lodestone/character/13180550/" target="_blank" ref="noopener">Tsumohou Tenhou on Light: Shiva</a> (Main Character)
+</li>
+<li>
+  <a href="https://na.finalfantasyxiv.com/lodestone/character/24491607/" target="_blank" ref="noopener">Suuankou Tanki on Aether: Gilgamesh</a>
+</li>
+<li>
+  <a href="https://jp.finalfantasyxiv.com/lodestone/character/34199686/" target="_blank" ref="noopener">Coconpa Kukunpa on Elemental: Tonberry</a>
+</li>
+</ul>
 
-### Riichi Mahjong
+<h3>Riichi Mahjong</h3> 
 
-I finally got [listed at the European Mahjong Association](https://mahjong-europe.org/ranking/Players/05100170.html).
-I play on [tenhou.net](https://tenhou.net) and [in Final Fantasy XIV Online](https://www.finalfantasyxiv.com).
-See my post about [Riichi Mahjong Clients](https://0xreki.de/2019/03-12-riichi-mahjong-clients-2019/).
+<p>
+I finally got <a href="https://mahjong-europe.org/ranking/Players/05100170.html" target="_blank" ref="noopener">listed at the European Mahjong Association</a>
+I play on <a href="https://tenhou.net" target="_blank" ref="noopener">tenhou.net</a> and in <a href="https://www.finalfantasyxiv.com" target="_blank" ref="noopener">Final Fantasy XIV Online</a>.
+See my post about <a href="https://reki.wtf/2019/03-12-riichi-mahjong-clients-2019/">Riichi Mahjong Clients</a>.
+</p>
 
-### Creative Writing
+<h3>Creative Writing</h3> 
 
-I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
+<p>
+I'm currently working on the <a href="https://reki.wtf/amauga/">Web Novel Amauga</a>.
+</p>
 
 <style>
 @media print {
@@ -401,4 +413,4 @@ I'm currently working on the [Web Novel Amauga](https://0xreki.de/amauga/).
   direction:rtl;
   unicode-bidi:bidi-override
 
-</style> 
+</style>
