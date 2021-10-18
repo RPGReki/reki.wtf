@@ -110,4 +110,7 @@ https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endf
 {%- for p in site.posts %}
 https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endfor -%}
 
+/01-life-in-avan-forest/*   {{ '/crystaldown/' | absolute_url }}#volume01-lifeinavanforest 301
+
+/wordpress/             {{ '/archive/youtube-archive/' | absolute_url }}  301
 # vim: set textwidth=0:
