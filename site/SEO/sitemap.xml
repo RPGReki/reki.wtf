@@ -27,19 +27,18 @@ permalink: /sitemap.xml
   endif
 %}
 <url>
-  <loc>{{ page.url | absolute_url }}</loc>{% unless page.type == "index" or page.subcollection or page.url == "/" %}
-  <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% endunless %}
+  <loc>{{ page.url | absolute_url }}</loc>
 </url>{% endfor %}{%
   assign pages = site.posts | sort: "url"
 %}{%
   for page in pages
+%}{% capture page_time %}{{ page.date | date: '%s' }}{% endcapture 
 %}{%
-  unless page.long%}{% 
+  unless page.long %}{% 
   continue
 %}{% endunless %}{% 
   if page.sitemap == false or 
-     page.published == 'sponsors' or 
-     page.published == 'pre-sponsors' or 
+     page_time > now or 
      page.published == 'private'
 %}{% continue %}{% 
 endif 

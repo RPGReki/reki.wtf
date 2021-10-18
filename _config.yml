@@ -37,11 +37,9 @@ sass:
 
 ### Plugins
 plugins:
-  - jekyll-last-modified-at
   - jekyll-regex-replace
   - jekyll-include-cache
   - jekyll-liquify
-  - jekyll-cloudcannon-schedule
   - jekyll-criticmarkup
   - jekyll-wns
 
