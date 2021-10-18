@@ -77,6 +77,19 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 {% endif %}
 {% endfor %}{% endfor %}
 
+{%- assign pages = site.pages | where_exp: "redirect_from", "redirect_from" -%}
+{%- for p in pages -%}
+{%- for f in p.redirect_from -%}
+{{ f }}*                  {{ p.url | absolute_url }}                 301
+{% endfor %}{% endfor %}
+
+{%- assign pages = site.posts | where_exp: "redirect_from", "redirect_from" -%}
+{%- for p in pages -%}
+{%- for f in p.redirect_from -%}
+{{ f }}*                  {{ p.url | absolute_url }}                 301
+{% endfor %}{% endfor %}
+
+
 ## Force handling of local redirects
 /a/*                      https://amau.ga/:splat                     301!
 /cd/*                     https://cd-ht.ml/:splat                    301!
