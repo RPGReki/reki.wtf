@@ -23,13 +23,22 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 /proxy/shields/:t/:l/shield.svg                     https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=9c2c2c 200
 
 # Latest URLs
-{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down" | sort: "chapter" %}/crystaldown/latest/*    {{ pages.last.url }}    302
-{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down: Scions" | sort: "chapter" %}/scions/latest/*    {{ pages.last.url }}    302
-{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Amauga" | sort: "chapter" %}/amauga/latest/*    {{ pages.last.url }}    302
+{% capture now -%}{{ 'now'| date: '%s' }}{%- endcapture -%}
+
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down" | sort: "chapter" | reverse -%}
+{% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
+/crystaldown/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
+
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down: Scions" | sort: "chapter" | reverse %}
+{% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
+/scions/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
+
+{% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Amauga" | sort: "chapter" | reverse -%}
+{% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
+/amauga/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
 
 ## ShortURLs
 
-{% capture now -%}{{ 'now'| date: '%s' }}{%- endcapture -%}
 {%- assign pages = site.pages | where_exp: "shortlink", "shortlink" -%}{%- for p in pages -%}
 {%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}
 {%- capture p_sponsor_time -%}{{ p.date | date: '%s' | minus: 648000 }}{%- endcapture -%}
