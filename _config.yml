@@ -42,6 +42,7 @@ plugins:
   - jekyll-liquify
   - jekyll-criticmarkup
   - jekyll-wns
+  - jekyll-last-modified-at
 
 ## SEO
 twitter:

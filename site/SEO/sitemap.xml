@@ -27,7 +27,8 @@ permalink: /sitemap.xml
   endif
 %}
 <url>
-  <loc>{{ page.url | absolute_url }}</loc>
+  <loc>{{ page.url | absolute_url }}</loc>{% unless page.type == "index" or page.subcollection or page.url == "/" %}
+  <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% endunless %}
 </url>{% endfor %}{%
   assign pages = site.posts | sort: "url"
 %}{%
