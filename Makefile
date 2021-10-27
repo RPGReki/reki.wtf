@@ -32,7 +32,7 @@ CSS_DEST = $(subst /pre-purge,,$(CSS_PREPURGE))
 
 COMMON_NORMAL_PREREQUESITES = site/tags site/_data/comments.json $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
 
-COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
+COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES) restore-mtime
 
 # imported files are phony to force re-importing
 .PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap
@@ -77,6 +77,11 @@ site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs
 docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 	bundle exec jekyll b -q
 
+## Build Tasks: 
+
+restore-mtime:
+	git submodule foreach python3 ../scripts/git-restore-mtime.py
+
 ## Build Tasks: Cleaning
 
 force-rebuild:
@@ -87,16 +92,16 @@ clean:
 
 ## Build Tasks: Posts
 
-site/_posts/personal/%: personal-blog/_posts/%
+site/_posts/personal/%: personal-blog/_posts/% | restore-mtime
 	@mkdir -p "$(@D)"
 	@rm -rf $(@)
-	cp -r "$(<)" "$(@D)/"
+	cp -ra "$(<)" "$(@D)/"
 
 define STORY_POSTS_RULE
-site/_posts/$(1)/%: $(1)/_posts/%
+site/_posts/$(1)/%: $(1)/_posts/% | restore-mtime
 	@mkdir -p "$$(@D)"
 	@rm -rf $$(@)
-	cp -r "$$(<)" "$$(@D)/"
+	cp -ra "$$(<)" "$$(@D)/"
 endef
 
 $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
