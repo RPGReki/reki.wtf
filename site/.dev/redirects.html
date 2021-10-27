@@ -10,7 +10,7 @@ token: 172025
 {% assign pages = site.pages | sort: 'date' %}
 {% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
 {% for p in pages %}
-{% capture p_time %}{{ p.date | date: '%s'}}{% endcapture %}
+{% capture p_time %}{{ p.date | date: '%s' }}{% endcapture %}
 {% if p_time > now or p.published == "private" %}
 <li>Date to be published: {{ p.date }}<br>
     {% assign s = p.shortlink %}
@@ -26,7 +26,7 @@ token: 172025
       {{ p.title }}<br>
       {% capture url%}{{ s }}?p={{ p.token }}{% endcapture %}
     {% endif %}
-      <a href="{{ url }}">{{ url }}</a> --> https://crystaldown.de{{ p.url }}</li>
+      <a href="{{ url }}">{{ url }}</a> --> {{ p.url | absolute_url }}</li>
 {% endif %}
 {% endfor %}
 </ul>
