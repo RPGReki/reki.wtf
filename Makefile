@@ -80,7 +80,7 @@ docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 ## Build Tasks: 
 
 restore-mtime:
-	git submodule foreach python3 ../scripts/git-restore-mtime.py
+	git submodule foreach python3 ../scripts/git-restore-mtime.py \&
 
 ## Build Tasks: Cleaning
 

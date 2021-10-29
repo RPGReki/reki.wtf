@@ -4,8 +4,11 @@ description: "Creative Writing, Mahjong and more!"
 source: site
 destination: docs
 
+future: true
+
 url: "https://reki.wtf"
 static_url: "https://0xreki.de"
+
 shorturl:
   - url: "https://amau.ga/"
     prefix: "/a/"
@@ -15,6 +18,7 @@ shorturl:
     prefix: "/s/"
 #  - url: "https://cd-ht.ml/cat/"
 #    prefix: '/cat/'
+
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
   
