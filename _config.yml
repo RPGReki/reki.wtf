@@ -125,7 +125,7 @@ defaults:
       author: reki
       publisher: reki
       comments: false
-      image: /images/-og.avif
+      image: /images/-og.png
   - # /_posts/personal
     scope:
       path: "_posts/personal"
@@ -139,7 +139,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.avif
+      image: /images/-og.png
       permalink: /blog/:year/:month-:day-:title/
       audio_mirror: 
         - https://0xreki.de/blog/audio/
@@ -157,7 +157,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /amauga/-og.avif
+      image: /amauga/-og.png
       permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/crystaldown
     scope:
@@ -172,7 +172,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /crystaldown/-og.avif
+      image: /crystaldown/-og.png
       permalink: /crystaldown/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -191,7 +191,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /crystaldown/-og.avif
+      image: /crystaldown/-og.png
       permalink: /scions/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -210,7 +210,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.avif
+      image: /images/-og.png
       permalink: /scions-reboot/blog/:year/:month-:day-:title/
   - # /_posts/reincarnated-as-cat
     scope:
@@ -225,7 +225,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.avif
+      image: /images/-og.png
       permalink: /reincarnated-as-cat/blog/:year/:month-:day-:title/
   - # /crystaldown/01-life-in-avan-forest
     scope:
@@ -252,7 +252,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.avif
+      image: /crystaldown/-og.png
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -282,7 +282,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.avif
+      image: /crystaldown/-og.png
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -311,7 +311,7 @@ defaults:
           - Fantasy
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.avif
+      image: /crystaldown/-og.png
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -341,7 +341,7 @@ defaults:
           - Slice of Life
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
-      image: /amauga/-og.avif
+      image: /amauga/-og.png
   - # /amauga/02-first-steps-of-the-pilgrimage
     scope:
       path: "amauga/02-first-steps-of-the-pilgrimage/"
@@ -367,7 +367,7 @@ defaults:
           - Slice of Life
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
-      image: /amauga/-og.avif
+      image: /amauga/-og.png
   - # /reincarnated-as-cat/01
     scope:
       path: "reincarnated-as-cat/01/"
@@ -391,14 +391,14 @@ defaults:
           - Adventure
           - Fantasy
           - Slice of Life
-      image: /images/-og.avif
+      image: /images/-og.png
   - # /private
     scope:
       path: "private"
     values:
       layout: base
       sitemap: false
-      image: /images/-og.avif
+      image: /images/-og.png
       robots: noindex, nofollow
   - # /scions-reboot/01-children-of-light-and-darkness
     scope:
@@ -424,4 +424,4 @@ defaults:
           - Fantasy
           - LitRPG
           - Slice of Life
-      image: /images/-og.avif
+      image: /images/-og.png

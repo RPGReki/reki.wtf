@@ -19,10 +19,11 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
 </p>
 
 <h2>Latest Personal Blog Post on 0xReki's Adventures by Night</h2>
-{% assign p = site.posts | where: "category", "personal" %}
-{% for post in p %}
-{% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
-  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
+{% assign ps = site.posts | where: 'category', 'personal' %}
+{% capture now %}{{ 'now' | date: '%s'}}{% endcapture %}
+{% for post in ps %}
+{% capture post_time %}{{ post.date | date: '%s'}}{% endcapture %}
+{% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       {% unless post.long %}
       <a
@@ -37,7 +38,7 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
       {% endunless %}
     </h3>
     <meta itemprop="headline" content="{{ post.title }}">
-    {% assign author = site.data.staff | where: "id", page.author | last %}
+    {% assign author = site.data.staff | where: "id", post.author | last %}
     <div itemprop="author" class="my-0" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="{{ author.name }}">
       <meta itemprop="url" content="{{ author.url }}">
@@ -78,31 +79,31 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
       {% endif %}
       <picture>
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/avif">
         <source  
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/'  | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/jpeg">
         <source
-          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/avif">
         <source
-          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
-          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
           alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}
@@ -190,9 +191,11 @@ The planet seems like any other underdeveloped planet, but something is differen
 </div>
 
 <h3 class="mt-3">Latest Post on Amauga</h3>
-{% assign p = site.posts | where: "category", "amauga" %}
-{% for post in p %}
-{% if jekyll.environment != "unpublished" %}{% if post.published == "sponsors" or post.published == "pre-sponsors"%}{% continue %}{% endif %}{% endif %}
+{% assign ps = site.posts | where: 'category', 'amauga' %}
+{% capture now %}{{ 'now' | date: '%s'}}{% endcapture %}
+{% for post in ps %}
+{% capture post_time %}{{ post.date | date: '%s' }}{% endcapture %}
+{% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}
   <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       <a
@@ -201,12 +204,12 @@ The planet seems like any other underdeveloped planet, but something is differen
       </a>
     </h3>
     <meta itemprop="headline" content="{{ post.title }}">
-    {% assign author = site.data.staff | where: "id", page.author | last %}
+    {% assign author = site.data.staff | where: "id", post.author | last %}
     <div itemprop="author" class="my-0" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="{{ author.name }}">
       <meta itemprop="url" content="{{ author.url }}">
     </div>
-    {% assign publisher = site.data.staff | where: "id", page.publisher | last %}
+    {% assign publisher = site.data.staff | where: "id", post.publisher | last %}
     <div itemprop="publisher" class="my-0" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="name" content="{{ publisher.name }}">
       <meta itemprop="url" content="{{ publisher.url }}">
@@ -238,31 +241,31 @@ The planet seems like any other underdeveloped planet, but something is differen
       {% endif %}
       <picture>
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/avif">
         <source  
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/'  | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/jpeg">
         <source
-          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/avif">
         <source
-          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
-          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
           alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}

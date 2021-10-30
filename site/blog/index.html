@@ -67,31 +67,31 @@ redirect_from:
       {% endif %}
       <picture>
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/avif">
         <source  
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/'  | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
           media="(max-width: 575.96px)"
           type="image/jpeg">
         <source
-          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/avif">
         <source
-          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
           media="(min-width: 576px)"
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
-          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
           alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}
