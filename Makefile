@@ -48,7 +48,7 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .ma
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
 	gulp purgecss
 
-production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
+production: restore-mtime $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 	gulp purgecss
 
@@ -92,13 +92,13 @@ clean:
 
 ## Build Tasks: Posts
 
-site/_posts/personal/%: personal-blog/_posts/% | restore-mtime
+site/_posts/personal/%: personal-blog/_posts/%
 	@mkdir -p "$(@D)"
 	@rm -rf $(@)
 	cp -ra "$(<)" "$(@D)/"
 
 define STORY_POSTS_RULE
-site/_posts/$(1)/%: $(1)/_posts/% | restore-mtime
+site/_posts/$(1)/%: $(1)/_posts/%
 	@mkdir -p "$$(@D)"
 	@rm -rf $$(@)
 	cp -ra "$$(<)" "$$(@D)/"
