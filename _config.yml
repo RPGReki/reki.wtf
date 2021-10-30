@@ -342,6 +342,32 @@ defaults:
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.avif
+  - # /amauga/02-preparations-for-the-pilgrimage
+    scope:
+      path: "amauga/02-preparations-for-the-pilgrimage/"
+    values:
+      layout: 2021/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      comments: true
+      commenting: open
+      published: true
+      termbase: /amauga
+      book:
+        number: 2
+        series: Amauga
+        copyrightYear: 2021
+        title: "Preparations For The Pilgrimage"
+        url: "/amauga/#volume02-preparationsforthepilgrimage"
+        genres:
+          - Adventure
+          - Fantasy
+          - Slice of Life
+      audio_mirror:
+        - "https://amauga.s3.us-east-2.amazonaws.com/"
+      image: /amauga/-og.avif
   - # /reincarnated-as-cat/01
     scope:
       path: "reincarnated-as-cat/01/"
