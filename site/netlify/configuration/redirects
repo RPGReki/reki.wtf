@@ -39,7 +39,7 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 ## ShortURLs
 
-{%- assign pages = site.pages | where_exp: "shortlink", "shortlink" -%}{%- for p in pages -%}
+{% assign pages = site.pages | where_exp: "shortlink", "shortlink" -%}{%- for p in pages -%}
 {%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}
 {%- capture p_sponsor_time -%}{{ p.date | date: '%s' | minus: 648000 }}{%- endcapture -%}
 {% for from in p.shortlink %}{%- if p.published == true and p_time <= now -%}
@@ -86,7 +86,9 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 {% endif %}
 {% endfor %}{% endfor %}
 
-{%- assign pages = site.pages | where_exp: "redirect_from", "redirect_from" -%}
+# Redirects
+
+{% assign pages = site.pages | where_exp: "redirect_from", "redirect_from" -%}
 {%- for p in pages -%}
 {%- for f in p.redirect_from -%}
 {{ f }}*                  {{ p.url | absolute_url }}                 301
