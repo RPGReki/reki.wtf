@@ -102,6 +102,7 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 
 ## Force handling of local redirects
+
 /a/*                      https://amau.ga/:splat                     301!
 /cd/*                     https://cd-ht.ml/:splat                    301!
 /s/*                      https://cd-ht.ml/s/:splat                  301! 
@@ -109,19 +110,21 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 https://cd-ht.ml/s/*      {{ "/scions/" | absolute_url }}            301!
 https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
- 
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
 
 ## Protective Redirects; remove these in mid-2023 
-
-/20*                      {{ "/blog/" | absolute_url }}20:splat      301!
 
 {%- for p in site.pages %}{% if p.url contains '.html' or p.url contains 'assets' or p.url contains '.dev' %}{% continue %}{% endif %}
 https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endfor -%}
 {%- for p in site.posts %}
 https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endfor -%}
 
-/01-life-in-avan-forest/*   {{ '/crystaldown/' | absolute_url }}#volume01-lifeinavanforest 301
+## More Protective Redirects
 
-/wordpress/             {{ '/archive/youtube-archive/' | absolute_url }}  301
+/20*                      {{ "/blog/" | absolute_url }}20:splat      301!
+
+/01-life-in-avan-forest/* {{ '/crystaldown/01-life-in-avan-forest/' | absolute_url }}:splat 301!
+
+/wordpress/*              {{ '/archive/youtube-archive/' | absolute_url }}  301
+
 # vim: set textwidth=0:
