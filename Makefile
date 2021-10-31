@@ -3,7 +3,7 @@ SHELL = /bin/bash
 # user configuration
 
 URL = https://0xreki.de
-STORIES = amauga crystaldown scions reincarnated-as-cat scions-reboot
+STORIES = amauga crystaldown scions my-life-as-cat scions-reboot
 POLLS = 
 STORY_FEEDS = blog.xml chapters.xml
 

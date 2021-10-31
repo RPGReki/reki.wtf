@@ -16,8 +16,8 @@ shorturl:
     prefix: "/cd/"
   - url: "https://cd-ht.ml/s/"
     prefix: "/s/"
-#  - url: "https://cd-ht.ml/cat/"
-#    prefix: '/cat/'
+  - url: "https://mlac.ml/"
+    prefix: "/m/"
 
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
@@ -85,7 +85,7 @@ compress_html:
   profile: false
   startings: [html, head, body]
   ignore:
-    envs: [unpublished]
+    envs:
 
 preload:
   fonts:
@@ -229,7 +229,7 @@ defaults:
       commenting: open
       published: true
       image: /images/-og.png
-      permalink: /reincarnated-as-cat/blog/:year/:month-:day-:title/
+      permalink: /my-life-as-a-cat/blog/:year/:month-:day-:title/
   - # /crystaldown/01-life-in-avan-forest
     scope:
       path: "crystaldown/01-life-in-avan-forest"
@@ -371,9 +371,15 @@ defaults:
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.png
-  - # /reincarnated-as-cat/01
+  - # /my-life-as-a-cat/
     scope:
-      path: "reincarnated-as-cat/01/"
+      path: "my-life-as-a-cat/"
+    values:
+      sitemap: false
+      robots: noindex
+  - # /my-life-as-a-cat/01
+    scope:
+      path: "my-life-as-a-cat/01/"
     values:
       layout: 2021/chapter
       type: chapter
@@ -383,13 +389,13 @@ defaults:
       comments: true
       commenting: open
       published: true
-      termbase: /reincarnated-as-cat/
+      termbase: /my-life-as-a-cat/
       book:
         number: 1
-        series: My Reincarnation As A Cat
+        series: My Life As A Cat
         copyrightYear: 2022
         title: I Got Reincarnated As A Lazy Cat
-        url: "/reincarnated-as-cat/#volume01-igotreincarnatedasalazycat"
+        url: "/my-life-as-a-cat/#volume01-igotreincarnatedasalazycat"
         genres:
           - Fantasy
           - Slice of Life

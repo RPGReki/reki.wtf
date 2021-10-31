@@ -23,7 +23,7 @@
 	url = git@gitlab.com:0xReki.WN/scions.git
 	branch = main
 
-[submodule "reincarnated-as-cat"]
-	path = reincarnated-as-cat
-	url = git@gitlab.com:0xReki.WN/reincarnated-as-cat.git
+[submodule "my-life-as-a-cat"]
+	path = my-life-as-a-cat
+	url = git@gitlab.com:0xReki.WN/my-life-as-a-cat.git
 	branch = main

@@ -17,5 +17,5 @@ Disallow: /crystaldown/chapters.xml
 Disallow: /crystaldown/glossary/
 Disallow: /scions/blog.xml
 Disallow: /scions/chapters.xml
-Disallow: /reincarnated-as-cat/blog.xml
-Disallow: /reincarnated-as-cat/chapters.xml
+Disallow: /my-life-as-a-cat/blog.xml
+Disallow: /my-life-as-a-cat/chapters.xml
