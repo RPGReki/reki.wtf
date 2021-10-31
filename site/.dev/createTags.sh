@@ -36,9 +36,12 @@ layout: 2021/base
 robots: noindex, follow
 ---
 <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
-{% raw %}{% 
-assign posts = site.tags["{% endraw %}{{i}}{% raw %}"] | sort: 'date' | reverse %}{%
+{% raw %}
+{% capture now %}{{ 'now' | date: '%s' | plus: 43200 }}{% endcapture %}
+{% assign posts = site.tags["{% endraw %}{{i}}{% raw %}"] | sort: 'date' | reverse %}{%
 for post in posts %}
+{% capture post_time %}{{ post.date | date: '%s' }}{% endcapture %}
+{% if post_time > now %}{% continue %}{% endif %}
 <article itemscope itemtype="https://schema.org/BlogPosting" class="interface top-toggle hentry">
     <h2 itemprop="name" id="{{ post.title | slugify }}" class="active entry-title" onclick="toggleAccordion(this)">
         {{ post.title }}

@@ -27,7 +27,3 @@
 	path = reincarnated-as-cat
 	url = git@gitlab.com:0xReki.WN/reincarnated-as-cat.git
 	branch = main
-
-[submodule "scions-reboot"]
-	path = scions-reboot
-	url = git@gitlab.com:0xReki.WN/scions-reboot.git

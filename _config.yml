@@ -386,14 +386,16 @@ defaults:
       termbase: /reincarnated-as-cat/
       book:
         number: 1
-        series: That Time I Got Reincarnated as a Cat
+        series: My Reincarnation As A Cat
         copyrightYear: 2022
-        title: That Time I Got Reincarnated as a Cat
-        url: "/reincarnated-as-cat/#volume01"
+        title: I Got Reincarnated As A Lazy Cat
+        url: "/reincarnated-as-cat/#volume01-igotreincarnatedasalazycat"
         genres:
-          - Adventure
           - Fantasy
           - Slice of Life
+          - Comedy
+          - LitRPG
+          - Isekai
       image: /images/-og.png
   - # /private
     scope:
@@ -403,28 +405,3 @@ defaults:
       sitemap: false
       image: /images/-og.png
       robots: noindex, nofollow
-  - # /scions-reboot/01-children-of-light-and-darkness
-    scope:
-      path: "scions-reboot/01-children-of-light-and-darkness"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: pre-sponsor
-      termbase: /none/
-      book:
-        number: 1
-        series: "Scions Reboot"
-        copyrightYear: 2022
-        title: "Children of Light and Darkness"
-        url: "/scions-reboot/#volume-01-children-of-light-and-darkness"
-        genres:
-          - Adventure
-          - Fantasy
-          - LitRPG
-          - Slice of Life
-      image: /images/-og.png
