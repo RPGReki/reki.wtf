@@ -19,7 +19,7 @@ redirect_from:
   {% endif %}
 </p>
 {% assign ps = site.posts | where: 'category', 'personal' %}
-{% capture now %}{{ 'now' | date: '%s' | plus: 43200 }}{% endcapture %}
+{% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% for post in ps %}
 {% capture post_time %}{{ post.date | date: '%s' }}{% endcapture %}
 {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}

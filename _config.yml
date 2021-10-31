@@ -389,7 +389,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      termbase: /my-life-as-a-cat/
+      termbase: /my-life-as-a-cat
       book:
         number: 1
         series: My Life As A Cat

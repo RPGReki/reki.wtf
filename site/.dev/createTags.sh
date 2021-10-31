@@ -37,7 +37,7 @@ robots: noindex, follow
 ---
 <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
 {% raw %}
-{% capture now %}{{ 'now' | date: '%s' | plus: 43200 }}{% endcapture %}
+{% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% assign posts = site.tags["{% endraw %}{{i}}{% raw %}"] | sort: 'date' | reverse %}{%
 for post in posts %}
 {% capture post_time %}{{ post.date | date: '%s' }}{% endcapture %}
