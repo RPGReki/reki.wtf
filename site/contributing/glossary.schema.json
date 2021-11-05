@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reki.wtf/contributing/glossary.schema.json",
+  "title": "Glossary",
+  "description": "Glossary Database",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/glossary-node"
+  },
+  "$defs": {
+    "glossary-node": {
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "link": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "character": {
+          "type": "string",
+          "pattern": "^[a-zA-Z]*$" 
+        },
+        "description":{
+          "type": "string"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/glossary-node"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "schema_type": {
+          "type": "string",
+          "pattern": "^(cd|schema):[a-zA-Z]*$" 
+        },
+        "extra_schema": {
+          "type": "array"
+        },
+        "element": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "effect": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "invocation": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "diet": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "weakness": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "resistance": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "threat_level": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "rarity": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cd:[a-zA-Z]*$"
+          }
+        },
+        "habitat": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "edible_parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "poisonous_parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "venomous_parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["title", "order"],
+      "additionalProperties": false
+    }
+  }
+}
