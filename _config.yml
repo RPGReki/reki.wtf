@@ -83,7 +83,7 @@ compress_html:
   endings: [p, li, td, rb, rp, rt, dt, dd, tr, td, th]
   blanklines: false
   profile: false
-  startings: [html, head, body]
+  startings: []
   ignore:
     envs:
 
@@ -106,7 +106,7 @@ token:
 markdown: kramdown
 
 kramdown:
-  smart_quotes: ["apos", "apos", "quot", "quot"]
+  smart_quotes: ["apos", "apos", "quot", "quot"] # Smartquotes off
 
 wns:
   quads: true
@@ -128,7 +128,7 @@ defaults:
       author: reki
       publisher: reki
       comments: false
-      image: /images/-og.png
+      image: /images/-og.jpg
   - # /_posts/personal
     scope:
       path: "_posts/personal"
@@ -142,7 +142,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.png
+      image: /images/-og.jpg
       permalink: /blog/:year/:month-:day-:title/
       audio_mirror: 
         - https://0xreki.de/blog/audio/
@@ -160,7 +160,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /amauga/-og.png
+      image: /amauga/-og.jpg
       permalink: /amauga/blog/:year/:month-:day-:title/
   - # /_posts/crystaldown
     scope:
@@ -175,7 +175,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /crystaldown/-og.png
+      image: /crystaldown/-og.jpg
       permalink: /crystaldown/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -194,7 +194,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /crystaldown/-og.png
+      image: /crystaldown/-og.jpg
       permalink: /scions/blog/:year/:month-:day-:title/
       intermediate_breadcrumbs:
         -
@@ -213,13 +213,13 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.png
+      image: /images/-og.jpg
       permalink: /scions-reboot/blog/:year/:month-:day-:title/
-  - # /_posts/reincarnated-as-cat
+  - # /_posts/my-life-as-a-cat
     scope:
-      path: "_posts/reincarnated-as-cat"
+      path: "_posts/my-life-as-a-cat"
     values:
-      category: reincarnated-as-cat
+      category: my-life-as-a-cat
       layout: 2021/post
       type: post
       lang: "en-CA"
@@ -228,7 +228,7 @@ defaults:
       comments: true
       commenting: open
       published: true
-      image: /images/-og.png
+      image: /images/-og.jpg
       permalink: /my-life-as-a-cat/blog/:year/:month-:day-:title/
   - # /crystaldown/01-life-in-avan-forest
     scope:
@@ -255,7 +255,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.png
+      image: /crystaldown/-og.jpg
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -285,7 +285,7 @@ defaults:
           - Isekai
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.png
+      image: /crystaldown/-og.jpg
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -314,7 +314,7 @@ defaults:
           - Fantasy
           - LitRPG
           - Slice of Life
-      image: /crystaldown/-og.png
+      image: /crystaldown/-og.jpg
       intermediate_breadcrumbs:
         -
           title: Archived Projects
@@ -344,7 +344,7 @@ defaults:
           - Slice of Life
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
-      image: /amauga/-og.png
+      image: /amauga/-og.jpg
   - # /amauga/02-first-steps-of-the-pilgrimage
     scope:
       path: "amauga/02-first-steps-of-the-pilgrimage/"
@@ -370,7 +370,7 @@ defaults:
           - Slice of Life
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
-      image: /amauga/-og.png
+      image: /amauga/-og.jpg
   - # /my-life-as-a-cat/
     scope:
       path: "my-life-as-a-cat/"
@@ -402,12 +402,12 @@ defaults:
           - Comedy
           - LitRPG
           - Isekai
-      image: /images/-og.png
+      image: /images/-og.jpg
   - # /private
     scope:
       path: "private"
     values:
       layout: base
       sitemap: false
-      image: /images/-og.png
+      image: /images/-og.jpg
       robots: noindex, nofollow
