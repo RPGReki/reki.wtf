@@ -23,7 +23,7 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 /proxy/shields/:t/:l/shield.svg                     https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=9c2c2c 200
 
 # Latest URLs
-{% capture now -%}{{ 'now'| date: '%s' }}{%- endcapture -%}
+{% capture now -%}{{ 'now'| date: '%s' | plus: 10800 }}{%- endcapture -%}
 
 {% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down" | sort: "chapter" | reverse -%}
 {% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}

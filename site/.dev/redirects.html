@@ -8,7 +8,7 @@ token: 172025
 ---
 <ul>
 {% assign pages = site.pages | sort: 'date' %}
-{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% for p in pages %}
 {% capture p_time %}{{ p.date | date: '%s' }}{% endcapture %}
 {% if p_time > now or p.published == "private" %}
