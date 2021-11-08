@@ -44,15 +44,16 @@ excerpt: |
 ---
 <!-- markdownlint-disable MD022 MD025 MD032 MD033 -->
 
-<h1>About Me, my Universe and Everything Else</h1>
+<h1 class="no-print">About Me, my Universe and Everything Else</h1>
+<p class="h1 print-only print-text-center">quốc Thái Chung</p>
 
-<p>
+<p class="print-text-center">
 <address class="lr">Am <span class="rl">92 htaR</span>,
 4<span class="rl">51</span>40 <span class="rl">ne<span class="lr">mag</span>roD</span>,
 Germany  •  ☎ <a href="tel:+491623676245" >+<span class="rl">94</span> <span class="rl">61</span>2/<span class="rl">63</span> 76 245</a>  •  📧 <a href="mailto:%74%68%61%69%2e%63%68%75%6e%67%40%30%78%72%65%6b%69%2e%64%65">thai.chung@<span class="rl">x0</span>reki.<span class="rl">ed</span></a></address>
 </p>
 
-<p>
+<p class="no-print">
 Hello! I'm quốc Thái “0xReki” Chung, a jack of all trades from Germany.
 I live near Cologne and currently work at IT.NRW.
 My focus is in Linux, but that doesn't mean I dislike using other OSes.
@@ -61,7 +62,7 @@ I like playing JPRGs.
 While I do like action games, but I kinda suck at those.
 </p>
 
-<h2>0xReki on other Platforms</h2>
+<h class="no-print"2>0xReki on other Platforms</h2>
 
 <script type="application/ld+json">
   {
@@ -101,31 +102,33 @@ While I do like action games, but I kinda suck at those.
 {% capture md %}{% include_relative platforms.md %}{% endcapture %}
 {{ md | markdownify }}
 
+<p class="no-print">
 Two Twitch Channels?
 Yes, I have one where I mostly stream RPGs, stream language is German and I have one where I mostly stream Riichi, stream language is English.
+</p>
 
-<h2>Preferred Technologies & Tools</h2>
+<h2 class="no-print">Preferred Technologies & Tools</h2>
 
-<p>
+<p class="no-print">
 A selection of technology and tools that I use.
 Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener">shields.io</a>.
 </p>
 
 {% capture md %}
 
-{:.shields.mb-2}
+{:.shields.mb-2.no-print}
 ![OS: Linux]({{ "/proxy/shields/-Linux/linux/shield.svg" | prepend: site.static_url | absolute_url}}){:loading="lazy" width="172" height="56"}
 ![OS: archlinux]({{'/proxy/shields/-archlinux/archlinux/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="244" height="56"}
 ![OS: Ubuntu]({{'/proxy/shields/-Ubuntu/ubuntu/shield.svg'| prepend: site.static_url | absolute_url}}){:loading="lazy" width="198" height="56"}
 
-{:.shields.mb-2}
+{:.shields.mb-2.no-print}
 ![Web: HTML5]({{ "/proxy/shields/-HTML5/html5/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="176" height="56"}
 ![Web: CSS3]({{ "/proxy/shields/-CSS3/css3/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="154" height="56"}
 ![Web: JavaScript]({{ "/proxy/shields/-javascript/javascript/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="254" height="56"}
 ![Web: jQuery]({{ "/proxy/shields/-jQuery/jquery/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="192" height="56"}
 ![Web: Jekyll]({{ "/proxy/shields/-Jekyll/jekyll/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="184" height="56" class="no-print"}
 
-{:.shields.mb-2}
+{:.shields.mb-2.no-print}
 ![Code: Basic.NET]({{ "/proxy/shields/-Basic_.NET/.net/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="242" height="56"}
 ![Code: Haskell]({{ "/proxy/shields/-Haskell/haskell/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="206" height="56"}
 ![Code: Make]({{ "/proxy/shields/-Make/cmake/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="160" height="56"}
@@ -133,7 +136,7 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
 ![Code: Ruby]({{ "/proxy/shields/-Ruby/ruby/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 ![Shell: Bash]({{ "/proxy/shields/-Bash/gnu-bash/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="158" height="56"}
 
-{:.shields}
+{:.shields.no-print}
 ![Text: LaTeX]({{ "/proxy/shields/-LaTeX/latex/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="170" height="56"}
 ![Text: Markdown]({{ "/proxy/shields/-Markdown/markdown/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="246" height="56"}
 
@@ -148,7 +151,7 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
   <a href="https://www.it.nrw">Information und Technik Nordrhein-Westfalen</a>, <span property="occupationLocation" typeof="City"><span property="name">Düsseldorf, Germany</span></span><br>
  since <time property="startDate">2020</time>
 
-  <p>IT.NRW developes and provides IT infrastructure for state administration of North Rhine-Westphalia.</p>
+  <p>IT.NRW develops and provides IT infrastructure for state administration of North Rhine-Westphalia.</p>
   <p>Tasks at this position include:<p>
   <ul property="reponsibilities">
     <li>Administration of Application Layer Gateways and Proxies</li>
@@ -166,7 +169,7 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
   <a href="https://www.plusserver.com">PlusServer GmbH</a>, <span property="occupationLocation" typeof="City"><span property="name">Cologne, Germany</span></span><br>
   from <time property="startDate">2018</time> until <time property="endDate">2019</time>
   
-  <p>PlusServer helps organizations realise the full potential of their cloud strategy.</p>
+  <p>PlusServer helps organizations realize the full potential of their cloud strategy.</p>
   <p>Tasks at this position included:<p>
   <ul property="responsibilities">
    <li>Administration of Linux and Windows Server for Internal IT</li>
@@ -216,7 +219,7 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
  <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
   from <time property="startDate">2010</time> until <time property="endDate">2016</time>
   <p property="responsibilities">
-    Undergraduate Teaching Assistant for several different lectures:<br>
+    Undergraduate Teaching Assistant for several lectures:<br>
     i.a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms
   </p>
 </div>
@@ -225,7 +228,7 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
 </div>
 </div>
 
-<div class="row mt-4" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
+<div class="row mt-4 no-print" vocab="https://schema.org/" typeof="Occupation Role" about="#sgi">
 <div class="col">
   <h3 class="mx-0" property="name">Linux System Administrator</h3>
   <a href="https://www.uni-ulm.de">Ulm University</a>, <span property="occupationLocation" typeof="City"><span property="name">Ulm, Germany</span></span><br>
@@ -280,18 +283,20 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
 
 <h2 class="mt-4">Education</h2>
 
-<div class="row mt-1" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
+<div class="row mt-1 clearfix" vocab="https://schema.org/" typeof="EducationalOccupationalCredential
 " about="#bsc">
 <div class="col order-sm-2">
  <h3 class="mx-0" property="educationalLevel">Bachelor of Science</h3>
- <link property="recognizedBy" href="#uulm">
- <div typeof="CollegeOrUniversity" about="#uulm">
+ <link class="d-none" property="recognizedBy" href="#uulm">
+ <span class="mx-0 mb-0 pb-0" typeof="CollegeOrUniversity" about="#uulm">
   <a href="https://www.uni-ulm.de" property="name" rel="url">Ulm University</a>, <span property="address">Ulm, Germany</span>
- </div>
+ </span>
  from <time>2010</time> until <time property="dateCreated">2016</time>
- <p>Major in Computer Science; Minor in Physics</p>
- <p>Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms</p>
- <p>Average Grade: 1.9 (1.0 is best possible grade, 4.0 is barely passing, 5.0 is failing)</p>
+ <p>
+    Major in Computer Science; Minor in Physics<br>
+    Bachelor Thesis: Subjective Logic Operators for Fusion of Misbehaviour Detection Mechanisms<br>
+    Average Grade: 1.9 (1.0 is the best possible grade, 4.0 is barely passing, 5.0 is failing)
+  </p>
 </div>
 <div class="col-12 col-sm-auto order-sm-1">
   <img src="{{ '/images/uulm.webp' | prepend: site.static_url | absolute_url }}" width="200" height="200" loading="lazy" alt="Ulm University Logo">
@@ -300,7 +305,9 @@ Badges are powered by <a href="https://shields.io" target="_blank" ref="noopener
 
 <h2 class="mt-4">Hobbies</h2>
 
-<h3 class="no-print">Hobbies</h3>
+<p class="print-only">
+Riichi Mahjong, Vintage Audio, Creative Writing
+</p>
 
 <p class="mb-1 no-print">
 I play <a href="https://www.finalfantasyxiv.com" target="_blank" ref="noopener">Final Fantasy XIV Online</a>. My characters:
@@ -317,17 +324,17 @@ I play <a href="https://www.finalfantasyxiv.com" target="_blank" ref="noopener">
 </li>
 </ul>
 
-<h3>Riichi Mahjong</h3> 
+<h3 class="no-print">Riichi Mahjong</h3> 
 
-<p>
+<p class="no-print">
 I finally got <a href="https://mahjong-europe.org/ranking/Players/05100170.html" target="_blank" ref="noopener">listed at the European Mahjong Association</a>
 I play on <a href="https://tenhou.net" target="_blank" ref="noopener">tenhou.net</a> and in <a href="https://www.finalfantasyxiv.com" target="_blank" ref="noopener">Final Fantasy XIV Online</a>.
 See my post about <a href="https://reki.wtf/blog/2019/03-12-riichi-mahjong-clients-2019/">Riichi Mahjong Clients</a>.
 </p>
 
-<h3>Creative Writing</h3> 
+<h3 class="no-print">Creative Writing</h3>
 
-<p>
+<p class="no-print">
 I'm currently working on the <a href="https://reki.wtf/amauga/">Web Novel Amauga</a>.
 </p>
 
@@ -359,28 +366,27 @@ I'm currently working on the <a href="https://reki.wtf/amauga/">Web Novel Amauga
   }
 
   #education {
-    height: 14mm;
+    height: 8mm;
   }
   
   [about='#it-nrw'],
-  [about='#plusserver'] {
-    height: 54mm;
-  }
-
-  [about='#clubfamily'] {
-    height: 52mm;
-  }
-
+  [about='#plusserver'],
+  [about='#clubfamily'],
   [about='#schuelernachhilfe1'],
-  [about='#teaching-assistant'],
+  [about='#teaching-assistant']{
+    height: 65mm;
+  }
+
   [about='#sgi'],
   [about='#bsg-mm'],
   [about='#devradio'],
   [about='#sk'],
-  [about='#fin']{
-    height: 56mm;
-  }
+  [about='#fin'],
   [about='#uulm'] {
+    height: 55mm;
+  }
+  [about='#bsc'] {
+    height: 65mm;
   }
 
   [about]::after {
@@ -398,7 +404,7 @@ I'm currently working on the <a href="https://reki.wtf/amauga/">Web Novel Amauga
 
   #hobbies::before {
     display: block;
-    content: '&nbsp;'
+    content: '&nbsp;';
     height: 8mm;
     width: 100%;
   }

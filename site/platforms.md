@@ -1,4 +1,4 @@
-{:.icons.shields.justify-content-start}
+{:.icons.shields.justify-content-start.no-print}
 [![Discord]({{ "/proxy/shields/-/discord/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc){:.no-print rel="me"}
 [![Mastodon]({{ "/proxy/shields/-/mastodon/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://toot.kif.rocks/@0xReki){:rel="me"}
 [![Twitter]({{ "/proxy/shields/-/twitter/shield.svg" | prepend: site.static_url | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/0xReki){:rel="me"}

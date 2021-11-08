@@ -40,29 +40,17 @@ COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 default: production
 
 ## Build Tasks
-testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-testing 
+testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml -q
 	gulp purgecss
 
-staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-staging
+staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
 	gulp purgecss
 
-production: restore-mtime $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .make-state-env-production
+production: restore-mtime $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 	gulp purgecss
-
-.make-state-env-testing:
-	@if [[ -f ".make-state-env-staging" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=unpublished bundle exec jekyll b --config _config.yml,_local.yml; fi
-	touch $(@)
-
-.make-state-env-staging: 
-	@if [[ -f ".make-state-env-testing" || -f ".make-state-env-production" ]]; then JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml; fi
-	touch $(@)
-
-.make-state-env-production:
-	@if [[ -f ".make-state-env-testing" || -f ".make-state-env-staging" ]]; then JEKYLL_ENV=production bundle exec jekyll b; fi
-	touch $(@)
 
 deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
