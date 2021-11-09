@@ -48,7 +48,7 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
 	gulp purgecss
 
-production: $(COMMON_NORMAL_PREREQUESITES) | restore-mtime $(COMMON_ORDER_ONLY_PREREQUESITES)
+production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 	gulp purgecss
 
@@ -68,7 +68,7 @@ docs: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
 ## Build Tasks: 
 
 restore-mtime:
-	git submodule foreach python3 ../scripts/git-restore-mtime.py pages _posts
+	-@git submodule foreach python3 ../scripts/git-restore-mtime.py pages _posts
 
 ## Build Tasks: Cleaning
 
