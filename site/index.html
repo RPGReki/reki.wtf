@@ -7,22 +7,37 @@ pagination:
 robots: index, follow
 excerpt: |
   Welcome to the 0xReki's Adventures by Night.
-  Here you can find my Creavtive Writing, my Blog and my other Projects.
+  Here you can find my Creative Writing, my Blog and my other Projects.
 
 ---
 
 <h1>0xReki's Adventures by Night</h1>
 
 <p>
-Welcome to the 0xReki's Adventures by Night.
-Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other Projects.
+Hello! I'm quốc Thái “0xReki” Chung, a jack of all trades from Germany.
+Welcome to my homepage, 0xReki's Adventures by Night!
+Here, you can find my <a href="/blog/">Blog</a>, my Creative Writing, and my other Projects.
 </p>
+
+<h2>About Me</h2>
+<p>
+I currently live near Cologne.
+My focus is in Linux, but that doesn't mean I dislike using other OSes.
+I'm a typical IT guy with interests in creative writing, vintage game consoles, vintage audio hardware, and Riichi Mahjong.
+I like playing JPRGs, preferably the turn-based variant.
+While I do like action games, but I kinda suck at those.
+</p>
+
+<h2>0xReki on other Platforms</h2>
+
+{% capture platforms %}{% include_relative platforms.md %}{% endcapture %}
+{{ platforms | markdownify }}
 
 <h2>Latest Personal Blog Post on 0xReki's Adventures by Night</h2>
 {% assign ps = site.posts | where: 'category', 'personal' %}
 {% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% for post in ps %}
-{% capture post_time %}{{ post.date | date: '%s'}}{% endcapture %}
+{% capture post_time %}{{ post.date | date: '%s' }}{% endcapture %}
 {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}  <div itemscope itemtype="https://schema.org/BlogPosting" class="interface">
     <h3 itemprop="name" id="{{ post.title | slugify }}">
       {% unless post.long %}
@@ -139,10 +154,6 @@ Here you can find my Creative Writing, my <a href="/blog/">Blog</a> and my other
   </a>
 </p>
 
-<h2>0xReki on other Platforms</h2>
-{% capture platforms %}{% include_relative platforms.md %}{% endcapture %}
-{{ platforms | markdownify }}
-
 <h2>Creative Writing Schedule</h2>
 
 <p>
@@ -179,7 +190,7 @@ The planet seems like any other underdeveloped planet, but something is differen
     </p>
 
     <p>
-      Are you returning reader? <br>
+      Are you a returning reader? <br>
       <a class="btn btn-primary btn-lg mt-1 mx-1" href="{{ "/amauga/latest/" | absolute_url }}">
         <span class="unicode-icon">🆕</span> Read the latest chapter of Amauga
       </a> or
