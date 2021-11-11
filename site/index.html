@@ -72,7 +72,7 @@ I enjoy playing JPRGs.
     </small></p>
     <meta itemprop="dateModified" content="{{ post.last_modified_at | date_to_xmlschema }}">
     <div class="clearfix"></div>
-    {% if post.image contains "-og." %}  
+    {% if post.image contains "-og." %}
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
       <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
     </div>
