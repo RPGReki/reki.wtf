@@ -19,65 +19,68 @@ https://mlac.ml/*
 https://0xreki.de/*
   Cache-Control: public, max-age=1576800, immutable
 
-*.css
+/**/*.css
   Content-Type: text/css; charset=UTF-8
 
-*.js
+/**/*.js
   Content-Type: text/javascript; charset=UTF-8
 
-*.pdf
+/**/*.pdf
   Content-Type: application/pdf
 
-*.ttf
+/**/*.ttf
   Content-Type: font/ttf
 
-*.woff
+/**/*.woff
   Content-Type: font/woff
 
-*.woff2
+/**/*.woff2
   Content-Type: font/woff2
 
-*.mp3
+/**/*.mp3
   Content-Type: audio/mpeg
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.ogg
+/**/*.ogg
   Content-Type: audio/ogg; codecs=vorbis
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.opus
+/**/*.opus
   Content-Type: audio/ogg; codecs=opus
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.aac
+/**/*.aac
   Content-Type: audio/aac
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.m4a
+/**/*.m4a
   Content-Type: audio/mp4
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.2.m4a
+/**/*.2.m4a
   Content-Type: audio/mp4; codecs=m4a.40.2
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.42.m4a
+/**/*.42.m4a
   Content-Type: audio/mp4; codecs=mp4a.40.42
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
-*.avif
+/**/*.avif
   Content-Type: image/avif
 
-*.webp
+/**/*.webp
   Content-Type: image/webp
 
-*.png
+/**/*.png
   Content-Type: image/png
 
-*.jpg
+/**/*.jpg
   Content-Type: image/jpeg
 
-*.svg
+/**/*.svg
+  Content-Type: image/svg+xml
+  
+/*.svg
   Content-Type: image/svg+xml
 
 # vim: set textwidth=0:
