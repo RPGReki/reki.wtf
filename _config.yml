@@ -66,7 +66,9 @@ webmaster_verifications:
   - name: "flattr:id"
     key: ol39pw
   - name: yandex-verification
-    key: 323210d55347b761
+    key: 6ffa84e7e6fe0f02
+  - name: "msvalidate.01"
+    key: 6AC9CB5682E608DAAC61DB673BDE81A4
 favicon:
   href: /icon.svg
   type: image/svg+xml
