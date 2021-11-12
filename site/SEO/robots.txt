@@ -6,7 +6,7 @@ Sitemap: {{ "/sitemap.xml" | absolute_url }}
 
 User-Agent: *
 Allow: /
-Disallow:
+Disallow: /cdn-cgi/
 
 User-Agent: Seobility
 Disallow: /blog.xml
