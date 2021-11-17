@@ -29,6 +29,12 @@ permalink: /sitemap.xml
 <url>
   <loc>{{ page.url | absolute_url }}</loc>{% unless page.type == "index" or page.subcollection or page.url == "/" %}
   <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% endunless %}
+    {% if page.ref %}
+    {% assign ps = site.pages | where: 'ref', page.ref %}
+    {% for p in ps %}
+    <xhtml:link rel="alternate" hreflang="{{ p.lang | slice: 0, 2 }}" href="{{ p.url | absolute_url }}" />
+    {% endfor %}
+  {% endif %}
 </url>{% endfor %}{%
   assign pages = site.posts | sort: "url"
 %}{%
@@ -47,6 +53,12 @@ endif
 <url>
   <loc>{{ page.url | absolute_url }}</loc>{% unless page.type == "index" or page.subcollection or page.url == "/" %}
   <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>{% endunless %}
+  {% if page.ref %}
+    {% assign ps = site.pages | where: 'ref', page.ref %}
+    {% for p in ps %}
+    <xhtml:link rel="alternate" hreflang="{{ p.lang | slice: 0, 2 }}" href="{{ p.url | absolute_url }}" />
+    {% endfor %}
+  {% endif %}
 </url>{% endfor %}
 
 </urlset>
