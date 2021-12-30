@@ -10,14 +10,14 @@ permalink: /.well-known/autoconfig/mail/config-v1.1.xml
     <displayName>Solomon Mail</displayName>
     <displayShortName>Solomon</displayShortName>
     <incomingServer type="imap">
-      <hostname>solomon.in-ulm.de</hostname>
+      <hostname>imap.diepold.eu</hostname>
       <port>143</port>
       <socketType>STARTTLS</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILLOCALPART%</username>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>solomon.in-ulm.de</hostname>
+      <hostname>imap.diepold.eu</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <authentication>password-cleartext</authentication>
