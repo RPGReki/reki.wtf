@@ -2,7 +2,7 @@
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
-for i in {amauga,crystaldown,scions,reincarnated-as-cat}; do
+for i in {amauga,crystaldown,scions,my-life-as-a-cat}; do
     (
         echo "Entering $i…"
         cd "$i/pages/" || exit 1
