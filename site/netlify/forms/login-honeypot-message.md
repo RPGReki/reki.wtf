@@ -14,15 +14,17 @@ permalink: /wp-login-error/
 >
 > You did not sign in correctly, or your account is temporarily disabled.
 >
-> {:.mb-2}
+> {:.mb-3}
 > [Go Back](javascript:history.back()){:onclick="history.back()" .btn .btn-primary}
 >
 
 <form name="Login" method="POST" action="/wp-login/?action=login" id="loginform" class="form-horizontal" data-netlify="true" netlify-honeypot="password">
   <fieldset id="login">
     <div>
-      <label for="email">Email</span></label>
+      <label for="email">Email</label>
       <input type="email" name="email" id="email" placeholder="name@domain.tld" aria-required="true" required="true" />
+    </div>
+    <div>
       <label for="password">Password</label>
       <input type="password" name="password" id="password" aria-required="true" required="true" />
     </div>
