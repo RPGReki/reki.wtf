@@ -13,10 +13,8 @@ permalink: /wp-login-error/
 > {:style="background: var(--danger)"}
 >
 > You did not sign in correctly, or your account is temporarily disabled.
->
 > {:.mb-3}
-> [Go Back](javascript:history.back()){:onclick="history.back()" .btn .btn-primary}
->
+
 
 <form name="Login" method="POST" action="/wp-login/?action=login" id="loginform" class="form-horizontal" data-netlify="true" netlify-honeypot="password">
   <fieldset id="login">
