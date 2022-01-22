@@ -26,15 +26,17 @@ async function acceptPolicy() {
 }
 
 async function setUpPageForUsers() {
-  await sleep(200);
-  
-  d.getElementsByTagName('html')[0].className = 'animated';
+  if (null==window.speechSynthesis)
+    $('.tts-controls').html('<span class="btn btn-lg btn-outline-primary col">Unfortunately,&#32;Text to Speech is not supported on this browser.</span>');
 
+  await sleep(500);
+
+  d.getElementsByTagName('html')[0].className = 'animated';
   $('#dark-mode').on('change', toggleTheme);
   $('#dyslexic').on('change', toggleDyslexicFont);
   $('#tts').on('change', toggleTTS);
   $('.youtube a:last-child').on('click', loadYouTube);
-
+  
   d.addEventListener('beforeprint', ()=>{
     $('img').prop('loading','eager')
   })
@@ -106,8 +108,15 @@ async function setUpTalkify() {
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
   talkify.messageHub.subscribe('[key]', '*', () => {true});
-    
-  while (0 == (window['voices'] = window.speechSynthesis.getVoices()).length) await sleep(100);
+
+  var r=0;
+  while (0 == (window['voices'] = window.speechSynthesis.getVoices()).length){
+    await sleep(100);
+    if (r++>30) {
+      $('.tts-controls').html('<span class="btn btn-lg btn-outline-primary col">Text to Speech seems to be supported by this browser,&#32;but unfortunately,&#32;no voices were found.</span>');
+      return
+    }
+  }
   
   window['player'] = new talkify.Html5Player();
   if (b.lang == "de-DE") {
