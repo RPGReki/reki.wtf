@@ -24,7 +24,7 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 # Login Honeypot
 
-/wp-login/* action=login /wp-login/error 200!
+/wp-login/* action=login /wp-login-error/ 200!
 
 # Latest URLs
 {% capture now -%}{{ 'now'| date: '%s' | plus: 10800 }}{%- endcapture -%}
