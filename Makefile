@@ -186,8 +186,12 @@ mirrors-rebuild:
 
 js: theme/assets/2021/scripts/early.min.js theme/assets/2021/scripts/late.min.js
 
-theme/assets/2021/scripts/%.js: docs/.dev/js/%.js
+theme/assets/2021/scripts/%.js: docs/.dev/js/%.js | site/_data/hashes
 	cp $(<) $(@D)
+	cat $(<) | openssl dgst -sha512 -binary | openssl base64 -A > site/_data/hashes/$(<F).yml
+
+site/_data/hashes:
+	mkdir "$(@)"
 
 ## Additional Tasks: Submit Sitemaps
 
