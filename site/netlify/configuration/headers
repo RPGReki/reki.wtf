@@ -18,7 +18,7 @@ permalink: /_headers
   {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml;
   {{- }} connect-src talkify.net;
   X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
+  X-XSS-Protection: 0
   Content-Type: text/html; charset=utf-8
 
 /private/slides/*
