@@ -9,6 +9,8 @@ https://static.0xreki.de/*                          https://0xreki.de/:splat    
 
 https://crystaldown.de/glossary/*                   {{ '/crystaldown/glossary' | absolute_url }}:splat  301!
 
+https://crystaldown.de/1/*                          https://cd-ht.ml/1/:splat                           301!
+
 ## Protective Redirects
 https://crystaldown.de/*                            {{ "/" | absolute_url }}:splat                      301!
 https://0xreki.netlify.app/*                        {{ '/' | absolute_url }}:splat                      301!
@@ -131,11 +133,11 @@ https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endf
 /20*                                         {{ "/blog/" | absolute_url }}20:splat                                      301!
 
 /01-life-in-avan-forest/*                    {{ '/crystaldown/01-life-in-avan-forest/' | absolute_url }}:splat          301!
-/02-vampire-aide-and-exodus/*                {{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat       301!
+/02-vampire-aide-and-exodus/*                {{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat      301!
 /wordpress/*                                 {{ '/archive/youtube-archive/' | absolute_url }}                           301!
 
-/cystaldown/01-life-in-avan-forest/          {{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest                                  301
-/cystaldown/02-vampire-aide-and-exodus/      {{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus                              301
+/crystaldown/01-life-in-avan-forest/          {{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest                                  301
+/crystaldown/02-vampire-aide-and-exodus/      {{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus                              301
 /scions/01-children-of-light-and-darkness/   {{ '/scions/' | absolute_url }}#volume-01-children-of-light-and-darkness                       301
 /elemental-children/*                        {{ '/scions/' | absolute_url }}:splat                 301
 /amauga/01-far-from-any-semblance-of-modern-civilization/ {{ '/amauga/' | absolute_url }}#volume01-farfromanysemblance-ofmoderncivilization 301
