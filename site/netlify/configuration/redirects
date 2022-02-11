@@ -28,6 +28,7 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 # Login Honeypot
 
+/wordpress/wp-login/* /wp-login/ 301
 /wp-login/* action=login /wp-login-error/ 200!
 
 # Latest URLs
@@ -136,8 +137,8 @@ https://0xreki.de{{p.url}}        {{ p.url | absolute_url }}         301!{% endf
 /02-vampire-aide-and-exodus/*                {{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat      301!
 /wordpress/*                                 {{ '/archive/youtube-archive/' | absolute_url }}                           301!
 
-/crystaldown/01-life-in-avan-forest/          {{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest                                  301
-/crystaldown/02-vampire-aide-and-exodus/      {{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus                              301
+/crystaldown/01-life-in-avan-forest/         {{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest                                  301
+/crystaldown/02-vampire-aide-and-exodus/     {{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus                              301
 /scions/01-children-of-light-and-darkness/   {{ '/scions/' | absolute_url }}#volume-01-children-of-light-and-darkness                       301
 /elemental-children/*                        {{ '/scions/' | absolute_url }}:splat                 301
 /amauga/01-far-from-any-semblance-of-modern-civilization/ {{ '/amauga/' | absolute_url }}#volume01-farfromanysemblance-ofmoderncivilization 301
