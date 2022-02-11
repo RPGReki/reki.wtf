@@ -114,4 +114,7 @@ https://0xreki.de/*
 /*.svg
   Content-Type: image/svg+xml
   
+/sitemap.xml:
+  X-Robots-Tag: Seobility: noindex, follow
+
 # vim: set textwidth=0:
