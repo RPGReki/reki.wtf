@@ -113,14 +113,17 @@ https://0xreki.de/*
   
 /*.svg
   Content-Type: image/svg+xml
-  
-/sitemap.xml
-  Content-Type: text/xml; charset=utf-8
 
-/**/chapter.xml
+/**/chapters.xml
   Content-Type: application/atom+xml
 
 /**/blog.xml
   Content-Type: application/atom+xml
+
+/blog.xml
+  Content-Type: application/atom+xml
+  
+/sitemap.xml
+  Content-Type: text/xml; charset=utf-8
 
 # vim: set textwidth=0:
