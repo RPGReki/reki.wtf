@@ -118,9 +118,9 @@ https://0xreki.de/*
   Content-Type: text/xml; charset=utf-8
 
 /**/chapter.xml
-  Content-Type: application/rss+xml
+  Content-Type: application/atom+xml
 
 /**/blog.xml
-  Content-Type: application/rss+xml
+  Content-Type: application/atom+xml
 
 # vim: set textwidth=0:
