@@ -3,13 +3,14 @@ layout: null
 sitemap: false
 permalink: /_redirects
 ---
-## Protective Redirects; remove these in mid-2023 
+## Legacy Redirects; remove these in mid-2023 
 https://static.crystaldown.de/*                     https://0xreki.de/:splat                            301!
 https://static.0xreki.de/*                          https://0xreki.de/:splat                            301!
 
+## Legacy Redirects
 https://crystaldown.de/glossary/*                   {{ '/crystaldown/glossary' | absolute_url }}:splat  301!
-
 https://crystaldown.de/1/*                          https://cd-ht.ml/1/:splat                           301!
+https://crystaldown.de/feeds/chapters.xml           {{ '/crystadown/chapters.xml' | absolute_url }}     301!
 
 ## Protective Redirects
 https://crystaldown.de/*                            {{ "/" | absolute_url }}:splat                      301!
