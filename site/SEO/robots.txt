@@ -7,15 +7,3 @@ Sitemap: {{ "/sitemap.xml" | absolute_url }}
 User-Agent: *
 Allow: /
 Disallow: /cdn-cgi/
-
-User-Agent: Seobility
-Disallow: /blog.xml
-Disallow: /amauga/blog.xml
-Disallow: /amauga/chapters.xml
-Disallow: /crystaldown/blog.xml
-Disallow: /crystaldown/chapters.xml
-Disallow: /crystaldown/glossary/
-Disallow: /scions/blog.xml
-Disallow: /scions/chapters.xml
-Disallow: /my-life-as-a-cat/blog.xml
-Disallow: /my-life-as-a-cat/chapters.xml

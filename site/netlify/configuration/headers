@@ -115,7 +115,12 @@ https://0xreki.de/*
   Content-Type: image/svg+xml
   
 /sitemap.xml
-  X-Robots-Tag: Seobility: noindex, follow
   Content-Type: text/xml; charset=utf-8
+
+/**/chapter.xml
+  Content-Type: application/rss+xml
+
+/**/blog.xml
+  Content-Type: application/rss+xml
 
 # vim: set textwidth=0:
