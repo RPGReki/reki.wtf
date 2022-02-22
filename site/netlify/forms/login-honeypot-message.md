@@ -12,8 +12,9 @@ permalink: /wp-login-error/
 > Error
 > {:style="background: var(--danger)"}
 >
-> You did not sign in correctly, or your account is temporarily disabled.
 > {:.mb-3}
+> You did not sign in correctly, or your account is temporarily disabled.
+>
 
 
 <form name="Login" method="POST" action="/wp-login/?action=login" id="loginform" class="form-horizontal" data-netlify="true" netlify-honeypot="password">
