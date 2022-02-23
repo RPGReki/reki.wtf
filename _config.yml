@@ -381,7 +381,7 @@ defaults:
       robots: noindex
   - # /my-life-as-a-cat/01
     scope:
-      path: "my-life-as-a-cat/01/"
+      path: "my-life-as-a-cat/01-reincarnation/"
     values:
       layout: 2021/chapter
       type: chapter
@@ -396,8 +396,8 @@ defaults:
         number: 1
         series: My Life As A Cat
         copyrightYear: 2022
-        title: I Got Reincarnated As A Lazy Cat
-        url: "/my-life-as-a-cat/#volume01-igotreincarnatedasalazycat"
+        title: Reincarnation
+        url: "/my-life-as-a-cat/#volume01-reincarnation"
         genres:
           - Fantasy
           - Slice of Life
