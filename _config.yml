@@ -114,11 +114,13 @@ wns:
   quads: true
   abbreviations: true
   label_unicode: true
+  label_pronounciation:
+    - term: Dewick
+      pronounciation: Duwick
 
 # Comments
 comments:
   action: /thanks-for-commenting/
-  webhook: https://hook.integromat.com/qjrsmiidz9oc9favftmjfm35geqpgkp6
 
 ## Defaults
 defaults:
