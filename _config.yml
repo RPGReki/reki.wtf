@@ -114,9 +114,9 @@ wns:
   quads: true
   abbreviations: true
   label_unicode: true
-  label_pronounciation:
-    - term: Dewick
-      pronounciation: Duwick
+#  label_pronounciation:
+#    - term: Dewick
+#      pronounciation: Duwick
 
 # Comments
 comments:
