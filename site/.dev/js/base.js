@@ -90,6 +90,8 @@ async function createTTS() {
 
   $('#tts-content [aria-label]').each((e,i) => {i.innerHTML = i.getAttribute('aria-label')});
   $('#tts-content .navbar-collpase').remove();
+  $('#tts-content script').remove();
+  $('#tts-content link').remove();
   $('#tts-content [aria-hidden]').remove();
   $('#tts-content button').remove();
   $('#tts-content [role=doc-noteref]').remove();
