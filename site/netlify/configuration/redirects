@@ -12,6 +12,8 @@ https://crystaldown.de/glossary/*                   {{ '/crystaldown/glossary' |
 https://crystaldown.de/1/*                          https://cd-ht.ml/1/:splat                           301!
 https://crystaldown.de/feeds/chapters.xml           {{ '/crystadown/chapters.xml' | absolute_url }}     301!
 
+/s/v*                                               /410.html                                           410
+
 ## Protective Redirects
 https://crystaldown.de/*                            {{ "/" | absolute_url }}:splat                      301!
 https://0xreki.netlify.app/*                        {{ '/' | absolute_url }}:splat                      301!
