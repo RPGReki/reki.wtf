@@ -1,5 +1,5 @@
 ---
-title: "Thanks for Voting"
+title: Thanks for Voting
 layout: 2021/base
 sitemap: false
 robots: noindex
@@ -7,7 +7,7 @@ comments: false
 permalink: /thanks-for-voting/
 ---
 <!-- markdownlint-disable MD025 -->
-# Thanks for Voting
+# {{ page.title }}
 
 {% if site.data.polls %}
 {% assign votes = site.data.polls.referral %}
@@ -20,7 +20,7 @@ permalink: /thanks-for-voting/
 {% endif %}
 
 {:.interface}
-> Thanks for Voting
+> {{ page.title }}
 >
 > Your vote has been received by the system.
 >

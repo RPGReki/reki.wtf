@@ -1,5 +1,5 @@
 ---
-title: "Thanks for the Message"
+title: Thanks for the Message
 layout: 2021/base
 sitemap: false
 robots: noindex
@@ -7,10 +7,10 @@ comments: false
 permalink: /thanks-for-the-message/
 ---
 <!-- markdownlint-disable MD025 -->
-# Thanks for Commenting
+# {{ page.title }}
 
 {:.interface}
-> Thanks for the Message
+> {{ page.title }}
 >
 > Your message has been received by the system.
 >
