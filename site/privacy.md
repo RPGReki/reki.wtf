@@ -35,7 +35,7 @@ For more information, refer to the [Privacy Policy of Netlify](https://www.netli
 
 The comment system of this site uses [Gravatar](https://gravatar.com){:target="_blank" rel="noopener nofollow"} for user icons.
 To avoid exposing your IP address to Gravatar, the images are proxied through this site.
-To avoid exposing your IP address to social media sites, all share buttons are javascript-less versions that don't require communication with the social media sites.
+To avoid exposing your IP address to social media sites, all share buttons are JavaScript-less versions that don't require communication with the social media sites.
 However, clicking on a sharing button will direct you to the associated social media page.
 
 ## Commenting and Contact Form
