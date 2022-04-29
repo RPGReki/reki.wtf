@@ -24,12 +24,12 @@ If you later decide to remove the cookies of this page you can use the button be
 
 ## Logs
 
-This page uses Cloudflare and Netlify.
-When you visit this site, Cloudflare — and to a lesser degree Netlify — will process your Log Data which includes but is no limited to IP address (real or proxied), system configuration information and information about the access to this site.
+This page uses Netlify.
+When you visit this site, Netlify — will process your Log Data which includes but is no limited to IP address (real or proxied), system configuration information and information about the access to this site.
 
 When you comment, the comment and Log Data will be processed by Netlify.
 
-For more information, refer to the [Privacy Policy of Cloudflare](https://www.cloudflare.com/en-ca/privacypolicy/){:target="_blank" rel="noopener nofollow"} and the [Privacy Policy of Netlify](https://www.netlify.com/privacy/){:target="_blank" rel="noopener nofollow"} respectively.
+For more information, refer to the [Privacy Policy of Netlify](https://www.netlify.com/privacy/){:target="_blank" rel="noopener nofollow"} respectively.
 
 ## Gravatar Images & Social Media Links
 
@@ -40,7 +40,7 @@ However, clicking on a sharing button will direct you to the associated social m
 
 ## Commenting and Contact Form
 
-By commenting, you content to your name and your comment being processed by Cloudflare and Netlify, being stored and being displayed on the site.
-By using the Contact Form, you consent to your name and message being processed by Cloudflare and Netlify, being stored and being forwarded to us.
+By commenting, you content to your name and your comment being processed by Netlify, being stored and being displayed on the site.
+By using the Contact Form, you consent to your name and message being processed by Netlify, being stored and being forwarded to us.
 Your email address is used to calculate your Gravatar URL.
 To combat spam, faulty submission can be silently removed or rejected by the system or a moderator.
