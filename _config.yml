@@ -4,6 +4,7 @@ description: "Creative Writing, Mahjong and more!"
 source: site
 destination: docs
 
+timezone: Europe/Berlin
 future: true
 
 url: "https://reki.wtf"
