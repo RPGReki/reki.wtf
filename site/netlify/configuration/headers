@@ -126,19 +126,19 @@ https://0xreki.de/*
 /sitemap.xml
   Content-Type: text/xml; charset=utf-8
 
-/blog/index.html
+/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
-/amauga/blog/index.html
+/amauga/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
-/crystaldown/blog/index.html
+/crystaldown/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
-/scions/blog/index.html
+/scions/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
-/my-life-as-a-cat/blog/index.html
+/my-life-as-a-cat/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
 # vim: set textwidth=0:
