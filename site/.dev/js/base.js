@@ -42,8 +42,9 @@ async function setUpPageForUsers() {
   });
 
   d.addEventListener('copy', (e)=>{
-    const s = d.getSelection(), t = d.createElement('div'), l = $('[rel=shortlink]')[0].href || d.URL;
+    const s = d.getSelection(), t = d.createElement('div'),sl=$('[rel=shortlink]')[0],l=(sl?sl.href:d.URL);
     for(var i=0; i < s.rangeCount;++i) t.appendChild(s.getRangeAt(i).cloneContents());
+    e.clipboardData.setData('text/plain', s +'\n\n' + $('#copyright p')[0].innerText + '\n' + l);
     e.clipboardData.setData('text/html', '<link rel="canonical" href="' + l + '">' + t.innerHTML + '<p style="text-align:right">' + $('#copyright p')[0].innerHTML + '<br><a href="' + l + '" rel="canonical">' + l + '</a></p>');
     e.preventDefault()
   })
