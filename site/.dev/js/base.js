@@ -39,6 +39,15 @@ async function setUpPageForUsers() {
   
   d.addEventListener('beforeprint', ()=>{
     $('img').prop('loading','eager')
+  });
+
+  d.addEventListener('copy', (e) => {
+    const s = d.getSelection();
+    const t = d.createElement('div');
+    const l = $('[rel=shortlink]')[0].href || d.URL;
+    for(var i=0; i < s.rangeCount; ++i) t.appendChild(s.getRangeAt(i).cloneContents());
+    e.clipboardData.setData('text/html', '<link rel="canonical" href="' + l + '">' + t.innerHTML + '<p style="text-align:right">' + $('#copyright p')[0].innerHTML + '<br><a href="' + l + '" rel="canonical">' + l + '</a></p>');
+    e.preventDefault()
   })
 }
 
