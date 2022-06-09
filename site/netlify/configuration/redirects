@@ -117,13 +117,13 @@ https://oxreki.de/*                                 {{ '/' | absolute_url }}:spl
 /a/*                      https://amau.ga/:splat                     301!
 /cd/*                     https://cd-ht.ml/:splat                    301!
 /s/*                      https://cd-ht.ml/s/:splat                  301!
-/m/*                      https://mlag.ml/s/:splat                   301!
+/m/*                      https://mlac.ml/s/:splat                   301!
 
 
 https://cd-ht.ml/s/*      {{ "/scions/" | absolute_url }}            301!
 https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
 https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
-https://mlag.ml/*         {{ "/my-life-as-a-cat/" | absolute_url }}  301!
+https://mlac.ml/*         {{ "/my-life-as-a-cat/" | absolute_url }}  301!
 
 ## Protective Redirects; remove these in mid-2023 
 
