@@ -17,8 +17,6 @@ shorturl:
     prefix: "/cd/"
   - url: "https://cd-ht.ml/s/"
     prefix: "/s/"
-  - url: "https://mlac.ml/"
-    prefix: "/m/"
 
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
