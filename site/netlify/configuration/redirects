@@ -11,6 +11,7 @@ https://static.0xreki.de/*                          https://0xreki.de/:splat    
 ## Protective Redirects
 https://0xreki.netlify.app/*                        {{ '/' | absolute_url }}:splat                      301!
 https://oxreki.de/*                                 {{ '/' | absolute_url }}:splat                      301!
+https://sleepy-kitten.0xreki.de/*                   {{ '/crystaldown/' | absolute_url }}:splat          301!
 https://0xreki.de/*                                 {{ '/' | absolute_url }}:splat
 
 ## Proxies might be added to repository to improve speed
@@ -111,6 +112,9 @@ https://0xreki.de/*                                 {{ '/' | absolute_url }}:spl
 /s/*                      https://cd-ht.ml/s/:splat                  301!
 /m/*                      https://mlac.ml/s/:splat                   301!
 
+https://www.amau.ga/*     https://amau.ga/:splat                     301!
+https://www.cd-ht.ml/*    https://cd-ht.ml/:splat                    301!
+https://www.mlac.ml/*     https://mlac.ml/:splat                     301!
 
 https://cd-ht.ml/s/*      {{ "/scions/" | absolute_url }}            301!
 https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
