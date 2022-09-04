@@ -13,10 +13,6 @@ function clearCookies() {
   writeCookie('dyslexic', '', -1)
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
-
 async function acceptPolicy() {
   var banner = d.querySelectorAll('#policy-banner')[0];
   banner.style.opacity = 0;
@@ -34,6 +30,7 @@ async function setUpPageForUsers() {
   d.getElementsByTagName('html')[0].className = 'animated';
   $('#dark-mode').on('change', toggleTheme);
   $('#dyslexic').on('change', toggleDyslexicFont);
+  $('#vide').on('change', toggleTextVide);
   $('#tts').on('change', toggleTTS);
   $('.youtube a:last-child').on('click', loadYouTube);
   
@@ -103,6 +100,7 @@ async function createTTS() {
   $('#tts-content [aria-hidden]').remove();
   $('#tts-content button').remove();
   $('#tts-content [role=doc-noteref]').remove();
+  $('#tts-content .vide-focus').each((e,i) => {i.outerHTML = i.innerHTML});
 
   window['ttsContent'] = $('#tts-content > *').toArray()
 }

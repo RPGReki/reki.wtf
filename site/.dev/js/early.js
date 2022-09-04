@@ -2,6 +2,10 @@ var d = document,
     b = d.querySelectorAll('#body')[0],
     bc = b.classList;
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 function isHasAcceptedPolicy() {
   return (null != getCookie().match(/acceptedPolicy=true/))
 }
@@ -30,12 +34,34 @@ function toggleDyslexicFont() {
   writeCookie('dyslexic', bc.contains('dyslexic'))
 }
 
-function zoom(s) {
-  var fs = (parseInt(b.style.fontSize, 10) || 12) + s;
-  if (fs > 22) fs = 24;
-  if (fs < 10) fs = 8;
-  b.style.fontSize = fs + 'pt';
-  writeCookie('fontSize', fs)
+function toggleTextVide() {
+  bc.toggle('vide');
+  loadTextVide();
+
+  writeCookie('vide', bc.contains('vide'))
+}
+
+async function loadTextVide() {
+  var js, fjs = d.getElementsByTagName('script')[0];
+  var i = 'text-vide';
+
+  if (d.getElementById(i)) {
+    return;
+  }
+  
+  js = d.createElement('script');
+  js.id = i;
+  js.src = '/assets/2021/scripts/text-vide/text-vide.min.js';
+
+  fjs.parentNode.insertBefore(js, fjs);
+
+  while ('undefined' == typeof textVide) {
+    await sleep(100)
+  }
+  h = d.getElementById('mobile-top');
+  h.innerHTML=textVide(h.innerHTML, {sep: ['<span class="vide-focus">', '</span>']}).replaceAll(/&<span class="vide-focus">([a-zA-Z0-9]*)<\/span>([a-zA-Z0-9]*);/g, "&$1$2;");
+  m = d.getElementById('content');
+  m.innerHTML=textVide(m.innerHTML, {sep: ['<span class="vide-focus">', '</span>']}).replaceAll(/&<span class="vide-focus">([a-zA-Z0-9]*)<\/span>([a-zA-Z0-9]*);/g, "&$1$2;")
 }
 
 function restoreSettingsFromCookie() {
@@ -55,8 +81,10 @@ function restoreSettingsFromCookie() {
     d.querySelectorAll('#dyslexic').checked=true;
     toggleDyslexicFont()
   }
-  if (null != c.match(/fontSize/))
-    zoom(c.match(/(^| )fontSize=([^;]+)/)[2] - 12);
+  if (null != c.match(/vide=true/)) {
+    d.querySelectorAll('#vide').checked=true;
+    toggleTextVide()
+  }
 }
 
 restoreSettingsFromCookie()
