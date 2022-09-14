@@ -382,7 +382,7 @@ defaults:
       robots: noindex
   - # /my-life-as-a-cat/01
     scope:
-      path: "my-life-as-a-cat/01-reincarnation/"
+      path: "my-life-as-a-cat/01-working-title/"
     values:
       layout: 2021/chapter
       type: chapter
