@@ -20,6 +20,7 @@ permalink: /_headers
   X-Frame-Options: DENY
   X-XSS-Protection: 0
   Content-Type: text/html; charset=utf-8
+  Expect-CT: enforce, max-age=2592000
 
 /private/slides/*
   Content-Security-Policy: upgrade-insecure-requests; default-src 'self' reki.wtf 0xreki.de;
