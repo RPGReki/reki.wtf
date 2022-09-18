@@ -22,9 +22,6 @@ async function acceptPolicy() {
 }
 
 async function setUpPageForUsers() {
-  if (null==window.speechSynthesis)
-    $('.tts-controls').html('<span class="btn btn-lg btn-outline-primary col">Unfortunately,&#32;Text to Speech is not supported on this browser.</span>');
-
   await sleep(500);
 
   d.getElementsByTagName('html')[0].className = 'animated';
@@ -89,20 +86,20 @@ async function createTTS() {
 
   t.append(
     $('main h1')[0].outerHTML,
-    $('#talkify-metadata').html(),
+    $('#talkify-metadata')[0].outerHTML,
     $('main section').html()
   );
 
-  $('#tts-content [aria-label]').each((e,i) => {i.innerHTML = i.getAttribute('aria-label')});
+  $('#tts-content [aria-label]').each((e,i) => {i.outerHTML = i.getAttribute('aria-label')});
   $('#tts-content .navbar-collpase').remove();
   $('#tts-content script').remove();
   $('#tts-content link').remove();
   $('#tts-content [aria-hidden]').remove();
   $('#tts-content button').remove();
   $('#tts-content [role=doc-noteref]').remove();
-  $('#tts-content .vide-focus').each((e,i) => {i.outerHTML = i.innerHTML});
+  $('#tts-content .vide-focus').each((e,i) => {i.outerHTML=i.innerHTML});
 
-  window['ttsContent'] = $('#tts-content > *').toArray()
+  window['ttsContent'] = $('#tts-content').toArray()
 }
 
 async function setUpTalkify() {
@@ -115,24 +112,30 @@ async function setUpTalkify() {
   talkify.config.keyboardCommands.enabled = false;
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
+  talkify.config.remoteService.apiKey = '9a9754bc-d396-4817-96ee-9e0b04ba0048';
   talkify.messageHub.subscribe('[key]', '*', () => {true});
 
   var r=0;
-  while (0 == (window['voices'] = window.speechSynthesis.getVoices()).length){
+  var html5p=('speechSynthesis' in window);
+  while(html5p && 0 == (window['voices'] = window.speechSynthesis.getVoices()).length){
     await sleep(100);
-    if (r++>30) {
-      $('.tts-controls').html('<span class="btn btn-lg btn-outline-primary col">Text to Speech seems to be supported by this browser,&#32;but unfortunately,&#32;no voices were found.</span>');
-      return
-    }
+    if (r++>10)
+      html5p = false
   }
   
-  window['player'] = new talkify.Html5Player();
-  if (b.lang == "de-DE") {
-    player.forceVoice(voices.find(e => e.lang.match(/DE/)));
-    player.forceVoice(voices.find(e => e.name.match(/Microsoft Katja Online|Google Deutsch/)))
+  if(html5p){
+    window['player'] = new talkify.Html5Player();
+    if (b.lang == "de-DE") {
+      player.forceVoice(voices.find(e => e.lang.match(/DE/)));
+      player.forceVoice(voices.find(e => e.name.match(/Microsoft Katja Online|Google Deutsch/)))
+    } else {
+      player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
+      player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
+    }
   } else {
-    player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
-    player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
+    talkify.config.remoteService.active = true;
+    talkify.config.remoteService.apiKey = '9a9754bc-d396-4817-96ee-9e0b04ba0048';
+    window['player'] = new talkify.TtsPlayer()
   }
 
   while ('undefined' == typeof ttsContent) await sleep(10);
@@ -152,9 +155,8 @@ async function toggleTTS() {
     setUpTalkify();
     createTTS();
   
-    while ('undefined' == typeof playlist || 'undefined' == typeof ttsContent) {
-      await sleep(100)
-    }
+    while ('undefined' == typeof playlist || 'undefined' == typeof ttsContent)
+      await sleep(10);
 
     playlist.play();
     return
@@ -165,7 +167,7 @@ async function toggleTTS() {
   else
     player.play();
 
-  isReading = !isReading
+  isReading=!isReading
 }
 
 setUpPageForUsers()
