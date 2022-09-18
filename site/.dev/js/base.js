@@ -60,9 +60,8 @@ function loadTalkify() {
   var js, fjs = $('script')[0];
   var i = 'talkify';
 
-  if (d.getElementById(i)) {
+  if (d.getElementById(i))
     return;
-  }
   
   js = d.createElement('script');
   js.id = i;
@@ -90,7 +89,7 @@ async function createTTS() {
     $('main section').html()
   );
 
-  $('#tts-content [aria-label]').each((e,i) => {i.outerHTML = i.getAttribute('aria-label')});
+  $('#tts-content [aria-label]').each((e,i) => {i.outerHTML=i.getAttribute('aria-label')});
   $('#tts-content .navbar-collpase').remove();
   $('#tts-content script').remove();
   $('#tts-content link').remove();
@@ -112,7 +111,6 @@ async function setUpTalkify() {
   talkify.config.keyboardCommands.enabled = false;
   talkify.config.voiceCommands.enabled = false;
   talkify.config.ui.audioControls.enabled = false;
-  talkify.config.remoteService.apiKey = '9a9754bc-d396-4817-96ee-9e0b04ba0048';
   talkify.messageHub.subscribe('[key]', '*', () => {true});
 
   var r=0;
