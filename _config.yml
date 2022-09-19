@@ -100,7 +100,7 @@ liquid:
 
 token:
   max: 2147483647
-  mod:  899998
+  mod:  899981
   plus: 100000
 
 # Syntax

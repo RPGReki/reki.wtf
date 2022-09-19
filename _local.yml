@@ -1,4 +1,4 @@
 ## Basic Configuration
-url: ""
-static_url: ""
+url: ''
+static_url: ''
 port: 8888

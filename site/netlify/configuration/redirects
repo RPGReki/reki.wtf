@@ -4,15 +4,15 @@ sitemap: false
 permalink: /_redirects
 ---
 ## Legacy Redirects; remove these in mid-2023 
-https://static.0xreki.de/*                          https://0xreki.de/:splat                            301!
+https://static.0xreki.de/*		https://0xreki.de/:splat	301!
 
-/s/v*                                               /410.html                                           410
+/s/v*		/410.html	410
 
-## Protective Redirects
-https://0xreki.netlify.app/*                        {{ '/' | absolute_url }}:splat                      301!
-https://oxreki.de/*                                 {{ '/' | absolute_url }}:splat                      301!
-https://sleepy-kitten.0xreki.de/*                   {{ '/crystaldown/' | absolute_url }}:splat          301!
-https://0xreki.de/*                                 {{ '/' | absolute_url }}:splat
+## Protective Redirects 
+https://0xreki.netlify.app/*		{{ '/' | absolute_url }}:splat	301!
+https://oxreki.de/*		{{ '/' | absolute_url }}:splat	301!
+https://sleepy-kitten.0xreki.de/*		{{ '/crystaldown/' | absolute_url }}:splat	301!
+https://0xreki.de/*		{{ '/' | absolute_url }}:splat
 
 ## Proxies might be added to repository to improve speed
 
@@ -24,23 +24,23 @@ https://0xreki.de/*                                 {{ '/' | absolute_url }}:spl
 
 # Login Honeypot
 
-/wordpress/wp-login/* /wp-login/ 301
-/wp-login/* action=login /wp-login-error/ 200!
+/wordpress/wp-login/*		/wp-login/	301
+/wp-login/*	action=login	/wp-login-error/	200!
 
 # Latest URLs
 {% capture now -%}{{ 'now'| date: '%s' | plus: 10800 }}{%- endcapture -%}
 
 {% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down" | sort: "chapter" | reverse -%}
 {% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
-/crystaldown/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
+/crystaldown/latest/*		{{ p.url }}	302{%- break -%}{%- endunless -%}{%- endfor %}
 
 {% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Crystal Down: Scions" | sort: "chapter" | reverse %}
 {% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
-/scions/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
+/scions/latest/*		{{ p.url }}	302{%- break -%}{%- endunless -%}{%- endfor %}
 
 {% assign pages = site.pages | where: "type", "chapter" | where: "published", true | where: "book.series", "Amauga" | sort: "chapter" | reverse -%}
 {% for p in pages -%}{%- capture p_time -%}{{ p.date | date: '%s' }}{%- endcapture -%}{%- unless p_time > now -%}
-/amauga/latest/*    {{ p.url }}    302{%- break -%}{%- endunless -%}{%- endfor %}
+/amauga/latest/*		{{ p.url }}	302{%- break -%}{%- endunless -%}{%- endfor %}
 
 ## ShortURLs
 
@@ -53,34 +53,34 @@ https://0xreki.de/*                                 {{ '/' | absolute_url }}:spl
 {%- assign su = su | replace: s.prefix,  s.url -%}
 {%- endfor -%}
 
-{{ su }}*    {{ p.url | absolute_url }}{%- elsif p.published == "external" -%}
+{{ su }}*		{{ p.url | absolute_url }}{%- elsif p.published == "external" -%}
 
-{{ su }}*     p=:p    {{ p.external }}?bugfix 302!
-{{ su }}*    {{ p.external }} 302!
-{{ p.url }}*    p=:p    {{ p.external }}?bugfix 302!
-{{ p.url }}*    {{ p.external }} 302!
+{{ su }}*	p=:p	{{ p.external }}?bugfix	302!
+{{ su }}*		{{ p.external }}	302!
+{{ p.url }}*	p=:p	{{ p.external }}?bugfix	302!
+{{ p.url }}*		{{ p.external }}	302!
 
 {% elsif p.published == "private" %}
 {%- assign su = from -%}
 {%- for s in site.shorturl -%}
 {%- assign su = su | replace: s.prefix, s.url -%}
 {%- endfor -%}
-{{ su }}*    p={{ p.token }}    {{ p.url | absolute_url }}    200
-{{ su }}*    /401.html    401
+{{ su }}*	p={{ p.token }}	{{ p.url | absolute_url }}	200
+{{ su }}*		/401.html	401
 
 {% elsif p_time > now %}
 {%- assign su = from -%}
 {%- for s in site.shorturl -%}
 {%- assign su = su | replace: s.prefix, s.url -%}
 {%- endfor -%}
-{%- if p.chapter -%}
+{%- if p.chapter > 0 -%}
 {%- assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus -%}
 {%- else -%}
 {%- assign token = '000000' -%}
 {%- endif -%}
-{{ su }}*    p={{ token }}    {{ p.url | absolute_url }}    200
-{{ su }}*    p=:p             /401.html      401
-{{ su }}*                     /402.html      402
+{{ su }}*	p={{ token }}	{{ p.url | absolute_url }}	200
+{{ su }}*	p=:p	/401.html	401
+{{ su }}*		/402.html	402
 
 {% else %}
 {%- assign su = from -%}
@@ -96,45 +96,45 @@ https://0xreki.de/*                                 {{ '/' | absolute_url }}:spl
 {% assign pages = site.pages | where_exp: "redirect_from", "redirect_from" -%}
 {%- for p in pages -%}
 {%- for f in p.redirect_from -%}
-{{ f }}*                  {{ p.url | absolute_url }}                 301
+{{ f }}*		{{ p.url | absolute_url }}	301
 {% endfor %}{% endfor %}
 
 {%- assign pages = site.posts | where_exp: "redirect_from", "redirect_from" -%}
 {%- for p in pages -%}
 {%- for f in p.redirect_from -%}
-{{ f }}*                  {{ p.url | absolute_url }}                 301
+{{ f }}*		{{ p.url | absolute_url }}	301
 {% endfor %}{% endfor %}
 
 ## Force handling of local redirects
 
-/a/*                      https://amau.ga/:splat                     301!
-/cd/*                     https://cd-ht.ml/:splat                    301!
-/s/*                      https://cd-ht.ml/s/:splat                  301!
-/m/*                      https://mlac.ml/s/:splat                   301!
+/a/*		https://amau.ga/:splat	301!
+/cd/*		https://cd-ht.ml/:splat	301!
+/s/*		https://cd-ht.ml/s/:splat	301!
+/m/*		https://mlac.ml/s/:splat	301!
 
-https://www.amau.ga/*     https://amau.ga/:splat                     301!
-https://www.cd-ht.ml/*    https://cd-ht.ml/:splat                    301!
-https://www.mlac.ml/*     https://mlac.ml/:splat                     301!
+https://www.amau.ga/*		https://amau.ga/:splat	301!
+https://www.cd-ht.ml/*		https://cd-ht.ml/:splat	301!
+https://www.mlac.ml/*		https://mlac.ml/:splat	301!
 
-https://cd-ht.ml/s/*      {{ "/scions/" | absolute_url }}            301!
-https://cd-ht.ml/*        {{ "/crystaldown/" | absolute_url }}       301!
-https://amau.ga/*         {{ "/amauga/" | absolute_url }}            301!
-https://mlac.ml/*         {{ "/my-life-as-a-cat/" | absolute_url }}  301!
+https://cd-ht.ml/s/*		{{ "/scions/" | absolute_url }}	301!
+https://cd-ht.ml/*		{{ "/crystaldown/" | absolute_url }}	301!
+https://amau.ga/*		{{ "/amauga/" | absolute_url }}	301!
+https://mlac.ml/*		{{ "/my-life-as-a-cat/" | absolute_url }}	301!
 
-## More Protective Redirects
+## Ancient Redirects, for sake of SEO
 
-/20*                                         {{ "/blog/" | absolute_url }}20:splat                                      301!
+/20*		{ "/blog/" | absolute_url }}20:splat	301!
 
-/01-life-in-avan-forest/*                    {{ '/crystaldown/01-life-in-avan-forest/' | absolute_url }}:splat          301!
-/02-vampire-aide-and-exodus/*                {{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat      301!
-/wordpress/*                                 {{ '/archive/youtube-archive/' | absolute_url }}                           301!
+/01-life-in-avan-forest/*		{{ '/crystaldown/01-life-in-avan-forest/' | absolute_url }}:splat	301!
+/02-vampire-aide-and-exodus/*		{{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat	301!
+/wordpress/*		{{ '/archive/youtube-archive/' | absolute_url }}	301!
 
-/crystaldown/01-life-in-avan-forest/         {{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest                                  301
-/crystaldown/02-vampire-aide-and-exodus/     {{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus                              301
-/scions/01-children-of-light-and-darkness/   {{ '/scions/' | absolute_url }}#volume-01-children-of-light-and-darkness                       301
-/elemental-children/*                        {{ '/scions/' | absolute_url }}:splat                 301
-/amauga/01-far-from-any-semblance-of-modern-civilization/ {{ '/amauga/' | absolute_url }}#volume01-farfromanysemblance-ofmoderncivilization 301
-/amauga/02-first-steps-of-the-pilgrimage/    {{ '/amauga/' | absolute_url }}#volume02-firststepsofthepilgrimage                             301
-/bug-fixing/*                                {{ '/' | absolute_url }}                                                                       301
+/crystaldown/01-life-in-avan-forest/		{{ '/crystaldown/'| absolute_url }}#volume01-lifeinavanforest	301
+/crystaldown/02-vampire-aide-and-exodus/		{{ '/crystaldown/'| absolute_url }}#volume02-vampireaideandexodus	301
+/scions/01-children-of-light-and-darkness/		{{ '/scions/' | absolute_url }}#volume-01-children-of-light-and-darkness	301
+/elemental-children/*		{{ '/scions/' | absolute_url }}:splat	301
+/amauga/01-far-from-any-semblance-of-modern-civilization/		{{ '/amauga/' | absolute_url }}#volume01-farfromanysemblance-ofmoderncivilization	301
+/amauga/02-first-steps-of-the-pilgrimage/		{{ '/amauga/' | absolute_url }}#volume02-firststepsofthepilgrimage	301
+/bug-fixing/*		{{ '/' | absolute_url }}	301
 
 # vim: set textwidth=0:
