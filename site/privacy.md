@@ -11,7 +11,8 @@ robots: noindex
 <!-- markdownlint-disable MD025 -->
 # Cookie & Privacy Statement
 
-Here we go. It's not text in legal English, but in my humble opinion a good cookie and privacy
+Here we go.
+It's not text in legal English, but in my opinion a good cookie and privacy
 statement should readable by non-lawyers, anyway.
 
 ## Cookies
@@ -35,8 +36,9 @@ For more information, refer to the [Privacy Policy of Netlify](https://www.netli
 
 The comment system of this site uses [Gravatar](https://gravatar.com){:target="_blank" rel="noopener nofollow"} for user icons.
 To avoid exposing your IP address to Gravatar, the images are proxied through this site.
+This might result in outdated pictures.
 To avoid exposing your IP address to social media sites, all share buttons are JavaScript-less versions that don't require communication with the social media sites.
-However, clicking on a sharing button will direct you to the associated social media page.
+However, clicking on a sharing button will direct you to the associated social media page, where your data is exposed.
 
 ## Commenting and Contact Form
 

@@ -66,10 +66,11 @@ async function loadTextVide() {
 
 function restoreSettingsFromCookie() {
   if (!isHasAcceptedPolicy()) {
-    var b = d.querySelectorAll('.policy-banner')[0];
-    b.style.display = 'block';
+    d.querySelectorAll('.policy-banner')[0].style.display = 'block';
     return;
   }
+  d.querySelectorAll('.controls')[0].style.display = 'flex';
+  
   c = getCookie();
   if (null != c.match(/darkTheme/)) {
     if ((null != c.match(/darkTheme=true/)) != bc.contains('dark-theme')) {
