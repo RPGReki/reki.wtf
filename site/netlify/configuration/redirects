@@ -123,7 +123,7 @@ https://mlac.ml/*		{{ "/my-life-as-a-cat/" | absolute_url }}	301!
 
 ## Ancient Redirects, for sake of SEO
 
-/20*		{ "/blog/" | absolute_url }}20:splat	301!
+/20*		{{ "/blog/" | absolute_url }}20:splat	301!
 
 /01-life-in-avan-forest/*		{{ '/crystaldown/01-life-in-avan-forest/' | absolute_url }}:splat	301!
 /02-vampire-aide-and-exodus/*		{{ '/crystaldown/02-vampire-aide-and-exodus/' | absolute_url }}:splat	301!
