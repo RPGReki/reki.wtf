@@ -7,7 +7,7 @@ destination: docs
 timezone: Europe/Berlin
 future: true
 
-url: ''
+url: 'https://reki.wtf'
 static_url: "https://0xreki.de"
 
 shorturl:
