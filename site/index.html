@@ -106,15 +106,15 @@ I enjoy playing JPRGs.
           type="image/jpeg">
         <source
           srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/avif">
         <source
           srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/webp">
         <source
           srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
           src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
@@ -263,15 +263,15 @@ The planet seems like any other underdeveloped planet, but something is differen
           type="image/jpeg">
         <source
           srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/avif">
         <source
           srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/webp">
         <source
           srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
-          media="(min-width: 576px)"
+          media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
           src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
