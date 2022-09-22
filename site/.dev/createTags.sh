@@ -89,15 +89,15 @@ for post in posts %}
       <picture>
         <source
           srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
-          media="(max-width: 575.96px)"
+          media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/avif">
         <source  
           srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
-          media="(max-width: 575.96px)"
+          media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/webp">
         <source
           srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
-          media="(max-width: 575.96px)"
+          media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/jpeg">
         <source
           srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
