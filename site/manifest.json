@@ -25,6 +25,7 @@
       { "src": "https://reki.wtf/mask-icon.svg",
         "sizes": "any",
         "purpose": "maskable"
+      }
     ],
     "shortcuts": []
 }
