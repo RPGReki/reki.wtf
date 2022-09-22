@@ -3,6 +3,7 @@
   unicode_icon: 📘
 - title: Archive
   unicode_icon: 🗄️
+  id: archive
   subitems:
   - title: Archived Projects
     url: /archive/
@@ -24,6 +25,7 @@
   unicode_icon: 🏷
 - title: Doman Mahjong Tournament
   unicode_icon: 🀙
+  id: doman
   subitems:
   - title: Furiten Riichi May-hem Doman Mahjong Tournament 2020
     url: /doman/2020-05-furiten-riichi-may-hem/
