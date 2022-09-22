@@ -57,7 +57,7 @@ https://0xreki.de/*
 
 /worker.js
   Content-Type: text/javascript; charset=UTF-8
-  Service-Worker-Allowed: /;
+  Service-Worker-Allowed: /
 
 /**/*.pdf
   Content-Type: application/pdf
