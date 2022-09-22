@@ -1,0 +1,30 @@
+{
+    "background_color": "#212121",
+    "description": "Welcome to the 0xReki's Misadventures. Here you can find my Creative Writing, my Blog and my other Projects.…",
+    "dir": "ltr",
+    "display": "minimal-ui",
+    "name": "0xReki's Misadventures",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "0xReki's Misadventures",
+    "start_url": "/",
+    "theme_color": "#9c2c2c",
+    "categories": [],
+    "screenshots": [],
+    "icons": [
+      {
+         "src": "https://reki.wtf/icon.svg",
+         "sizes": "any",
+         "purpose": "any"
+      },
+      {
+        "src": "http://reki.wtf/siteicon.png",
+        "sizes": "512x516",
+        "purpose": "any"
+      },
+      { "src": "https://reki.wtf/mask-icon.svg",
+        "sizes": "any",
+        "purpose": "maskable"
+    ],
+    "shortcuts": []
+}
