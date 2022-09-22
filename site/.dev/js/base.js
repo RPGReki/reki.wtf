@@ -41,11 +41,7 @@ async function setUpPageForUsers() {
     e.clipboardData.setData('text/plain', s +'\n\n' + $('#copyright p')[0].innerText + '\n' + l);
     e.clipboardData.setData('text/html', '<link rel="canonical" href="' + l + '">' + t.innerHTML + '<p style="text-align:right">' + $('#copyright p')[0].innerHTML + '<br><a href="' + l + '" rel="canonical">' + l + '</a></p>');
     e.preventDefault()
-  });
-
-  /* Only register a service worker if it's supported */
-  if ('serviceWorker' in navigator)
-    navigator.serviceWorker.register('/worker.js');
+  })
 }
 
 function toggleAccordion(e) {
