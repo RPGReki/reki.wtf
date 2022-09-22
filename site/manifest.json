@@ -14,15 +14,18 @@
     "icons": [
       {
          "src": "https://reki.wtf/icon.svg",
+         "type": "image/svg+xml",
          "sizes": "any",
          "purpose": "any"
       },
       {
         "src": "http://reki.wtf/siteicon.png",
+        "type": "image/png",
         "sizes": "512x516",
         "purpose": "any"
       },
       { "src": "https://reki.wtf/mask-icon.svg",
+        "type": "image/svg+xml",
         "sizes": "any",
         "purpose": "maskable"
       }
