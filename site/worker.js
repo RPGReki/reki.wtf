@@ -4,4 +4,4 @@ const now=new Date(Date.now());
 const refresh=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDay()+1,03,11);
 const retentionTime=refresh-now;
 const bgSync=new workbox.backgroundSync.BackgroundSyncPlugin("bg-sync-queue", {maxRetentionTime: retentionTime.valueOf()})
-workbox.routing.registerRoute(new RegExp('/*'),new workbox.strategies.StaleWhileRevalidate({cacheName:"offline-cache"}))
+workbox.routing.registerRoute(new RegExp(/^\/(?!tools\/share-toot).*/),new workbox.strategies.StaleWhileRevalidate({cacheName:"offline-cache"}))

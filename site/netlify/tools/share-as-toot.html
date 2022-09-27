@@ -1,0 +1,21 @@
+---
+title: Share on Mastodon
+layout: 2021/base
+sitemap: false
+robots: noindex
+comments: false
+permalink: /tools/toot/
+---
+<form method="get" id="toot-form">
+    <label for="server">Server*:</label>
+    <input type="url" id="server" name="server" required>
+    <label for="text" class="mt-2">Text*:</label>
+    <textarea id="text" name="text" class="mb-2" required>
+    </textarea>
+    <div>
+        <button type="sumbit" id="tootbutton" class="btn btn-primary btn-block">Submit</button>
+    </div>
+</form>
+
+<!-- hash: 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=' -->
+<script defer>document.getElementById('text').value=(new URLSearchParams(window.location.search)).get('text');document.getElementById('server').onchange = function(){document.getElementById('toot-form').action=document.getElementById('server').value}</script>
