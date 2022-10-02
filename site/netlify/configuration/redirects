@@ -79,8 +79,9 @@ https://0xreki.de/*		{{ '/' | absolute_url }}:splat
 {%- for s in site.shorturl -%}
 {%- assign su = su | replace: s.prefix, s.url -%}
 {%- endfor -%}
-{%- if p.chapter > 0 -%}
-{%- assign token = site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus -%}
+{%- if p.chapter contains 'x' -%}{%- assign chapter = chapter | plus: 69 -%}{%- else -%}{%- assign chapter = p.chapter | abs -%}{%endif%}
+{%- if chapter > 0 -%}
+{%- assign token = site.token.max | divided_by: chapter | modulo: site.token.mod | plus: site.token.plus -%}
 {%- else -%}
 {%- assign token = '000000' -%}
 {%- endif -%}

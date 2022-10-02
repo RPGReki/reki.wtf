@@ -20,7 +20,8 @@ token: 172025
     {% if p.type == "chapter" %}
       {{ p.book.series }}: {{ p.book.number }}-{{ p.chapter }}: {{ p.title }}<br>
       {% if p.chapter %}
-        {% capture url %}{{ s }}?p={% if p.chapter > 0 %}{{ site.token.max | divided_by: p.chapter | modulo: site.token.mod | plus: site.token.plus }}{% else %}000000{%endif%}{% endcapture %}
+      {%- if p.chapter contains 'x' -%}{%- assign chapter = chapter | plus: 69 -%}{%- else -%}{%- assign chapter = p.chapter | abs -%}{% endif %}
+        {% capture url %}{{ s }}?p={% if chapter > 0 %}{{ site.token.max | divided_by: chapter | modulo: site.token.mod | plus: site.token.plus }}{% else %}000000{%endif%}{% endcapture %}
       {% endif %}
     {% else %}
       {{ p.title }}<br>
