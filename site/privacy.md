@@ -35,7 +35,7 @@ For more information, refer to the [Privacy Policy of Netlify](https://www.netli
 ## Images & Social Media Links
 
 The alternate domain to this page, **0xreki.de**, is used to serve images without your browser sending unnecessary headers.
-As the alternate domain to this page, accessing those images is **not** accessing data from a third party: your data goes to the same server, you recieve the same data as you would if those images were requested over the main domain.
+As the alternate domain to this page, accessing those images is **not** accessing data from a third party: your data goes to the same server, you receive the same data as you would if those images were requested over the main domain.
 
 The comment system of this site uses [Gravatar](https://gravatar.com){:target="_blank" rel="noopener nofollow"} for user icons.
 To avoid exposing your IP address to Gravatar, the images are proxied and served via this server.
