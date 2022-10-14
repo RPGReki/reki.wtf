@@ -8,7 +8,7 @@ timezone: Europe/Berlin
 future: true
 
 url: 'https://reki.wtf'
-static_url: "https://0xreki.de"
+static_url:
 
 shorturl:
   - url: "https://amau.ga/"

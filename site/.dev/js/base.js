@@ -10,13 +10,14 @@ function clearCookies() {
   writeCookie('acceptedPolicy', '', -1);
   writeCookie('fontSize', '', -1);
   writeCookie('darkTheme', '', -1);
-  writeCookie('dyslexic', '', -1)
+  writeCookie('dyslexic', '', -1);
+  l.clear()
 }
 
 async function acceptPolicy() {
   var banner = d.querySelectorAll('#policy-banner')[0];
   banner.style.opacity = 0;
-  writeCookie('acceptedPolicy', true);
+  l.setItem('acceptedPolicy', true);
   await sleep(1000);
   banner.style = null
 }

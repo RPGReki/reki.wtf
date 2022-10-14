@@ -1,13 +1,14 @@
 var d = document,
     b = d.querySelectorAll('#body')[0],
-    bc = b.classList;
+    bc = b.classList,
+    l = localStorage;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 function isHasAcceptedPolicy() {
-  return (null != getCookie().match(/acceptedPolicy=true/))
+  return (l.getItem('acceptedPolicy'))
 }
 
 function getCookie() {
@@ -25,20 +26,20 @@ function toggleTheme() {
   bc.toggle('dark-theme');
   bc.toggle('light-theme');
 
-  writeCookie('darkTheme', bc.contains('dark-theme'))
+  l.setItem('darkTheme', bc.contains('dark-theme'))
 }
 
 function toggleDyslexicFont() {
   bc.toggle('dyslexic');
 
-  writeCookie('dyslexic', bc.contains('dyslexic'))
+  l.setItem('dyslexic', bc.contains('dyslexic'))
 }
 
 function toggleTextVide() {
   bc.toggle('vide');
   loadTextVide();
 
-  writeCookie('vide', bc.contains('vide'))
+  l.setItem('vide', bc.contains('vide'))
 }
 
 async function loadTextVide() {
@@ -72,17 +73,17 @@ function restoreSettingsFromCookie() {
   d.querySelectorAll('.controls')[0].style.display = 'flex';
   
   c = getCookie();
-  if (null != c.match(/darkTheme/)) {
-    if ((null != c.match(/darkTheme=true/)) != bc.contains('dark-theme')) {
+  if (null != l.get('darkTheme')) {
+    if ((null != l.get('darkTheme')) != bc.contains('dark-theme')) {
       d.querySelectorAll('#dark-mode').checked=true;
       toggleTheme()
     }
   };
-  if (null != c.match(/dyslexic=true/)) {
+  if (null != l.get('dyslexic')) {
     d.querySelectorAll('#dyslexic').checked=true;
     toggleDyslexicFont()
   }
-  if (null != c.match(/vide=true/)) {
+  if (null != l.get('vide')) {
     d.querySelectorAll('#vide').checked=true;
     toggleTextVide()
   }
