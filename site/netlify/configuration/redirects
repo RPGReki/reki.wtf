@@ -18,7 +18,7 @@ https://static.0xreki.de/*		https://0xreki.de/:splat	301!
 https://0xreki.netlify.app/*		{{ '/' | absolute_url }}:splat	301!
 https://oxreki.de/*		{{ '/' | absolute_url }}:splat	301!
 https://sleepy-kitten.0xreki.de/*		{{ '/crystaldown/' | absolute_url }}:splat	301!
-https://0xreki.de/*		{{ '/' | absolute_url }}:splat
+https://0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 
 ## Proxies might be added to repository to improve speed
 
