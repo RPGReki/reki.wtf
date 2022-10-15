@@ -19,7 +19,7 @@ statement should readable by non-lawyers, anyway.
 
 This page itself doesn't require cookies.
 However, since people are so adamant about convenience, Local Storage may be used to store user settings and the fact you have accepted this Cookie & Privacy Statement at all.
-(Local Storage is similar to cookies, but it's not automatically sent to the server with each request.)
+Local Storage is similar to cookies, but it's not automatically sent to the server with each request.
 If you later decide to clear all cookies and Local Storage of this page, you can use the button below.
 
 [<span>✨</span> Clear All Cookies &amp; Local Storage of this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
@@ -50,3 +50,8 @@ By commenting, you content to your name and your comment being processed by Netl
 By using the Contact Form, you consent to your name and message being processed by Netlify, being stored and being forwarded to us.
 Your email address is used to calculate your Gravatar URL.
 To combat spam, faulty submission can be silently removed or rejected by the system or a moderator.
+
+## Performance, Analysis, Delivery and Reporting
+
+I'm not collecting, how long you spend on what page of this site is not my business.
+Though, I do welcome comments on my pages.
