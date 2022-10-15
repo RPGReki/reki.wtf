@@ -19,9 +19,10 @@ statement should readable by non-lawyers, anyway.
 
 This page itself doesn't require cookies.
 However, since people are so adamant about convenience, Local Storage may be used to store user settings and the fact you have accepted this Cookie & Privacy Statement at all.
+(Local Storage is similar to cookies, but it's not automatically sent to the server with each request.)
 If you later decide to clear all cookies and Local Storage of this page, you can use the button below.
 
-[<span>✨</span> Clear All Cookies \& Local Storage of this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
+[<span>✨</span> Clear All Cookies &amp; Local Storage of this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
 
 ## Logs
 
