@@ -26,17 +26,17 @@ If you later decide to clear all cookies and Local Storage of this page, you can
 
 ## Logs
 
-This page uses Netlify.
-When you visit this site, Netlify — will process your Log Data which includes but is no limited to IP address (real or proxied), system configuration information and information about the access to this site.
+This page is hosted on Netlify.
+When you visit this site, Netlify Servers will process your Log Data which includes but is no limited to IP address (real or proxied), system configuration information and information about the access to this site.
 
-When you comment, the comment and Log Data will be processed by Netlify.
+When you comment, the comment and Log Data will be processed by Netlify Servers.
 
 For more information, refer to the [Privacy Policy of Netlify](https://www.netlify.com/privacy/){:target="_blank" rel="noopener nofollow"} respectively.
 
 ## Images
 
 The comment system of this site uses [Gravatar](https://gravatar.com){:target="_blank" rel="noopener nofollow"} for user icons.
-To avoid exposing your IP address to Gravatar, the images are proxied and served via this server.
+To avoid exposing your IP address to Gravatar, the images are proxied and served via the server this site is hosted on.
 This might result in outdated pictures.
 
 ## Social Media Links
