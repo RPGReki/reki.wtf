@@ -65,29 +65,28 @@ async function loadTextVide() {
   m.innerHTML=textVide(m.innerHTML, {sep: ['<span class="vide-focus">', '</span>']}).replaceAll(/&<span class="vide-focus">([a-zA-Z0-9]*)<\/span>([a-zA-Z0-9]*);/g, "&$1$2;")
 }
 
-function restoreSettingsFromCookie() {
+function restoreSettings() {
   if (!isHasAcceptedPolicy()) {
     d.querySelectorAll('.policy-banner')[0].style.display = 'block';
     return;
   }
   d.querySelectorAll('.controls')[0].style.display = 'flex';
   
-  c = getCookie();
-  if (null != l.get('darkTheme')) {
+  if (null != l.getItem('darkTheme')) {
     if ((null != l.get('darkTheme')) != bc.contains('dark-theme')) {
       d.querySelectorAll('#dark-mode').checked=true;
       toggleTheme()
     }
   };
-  if (null != l.get('dyslexic')) {
+  if (null != l.getItem('dyslexic')) {
     d.querySelectorAll('#dyslexic').checked=true;
     toggleDyslexicFont()
   }
-  if (null != l.get('vide')) {
+  if (null != l.getItem('vide')) {
     d.querySelectorAll('#vide').checked=true;
     toggleTextVide()
   }
 }
 
-restoreSettingsFromCookie();
+restoreSettings();
 if('serviceWorker' in navigator)navigator.serviceWorker.register('/worker.js')
