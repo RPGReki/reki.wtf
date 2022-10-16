@@ -15,6 +15,8 @@ shorturl:
     prefix: "/a/"
   - url: "https://cd-ht.ml/"
     prefix: "/cd/"
+  - url: "https://cd-ht.ml/r/"
+    prefix: "/cr/"
   - url: "https://cd-ht.ml/s/"
     prefix: "/s/"
 
@@ -235,6 +237,32 @@ defaults:
       published: true
       image: /images/-og.jpg
       permalink: /my-life-as-a-cat/blog/:year/:month-:day-:title/
+  - # /crystal-down-reboot/01-life-in-avan-forest
+    scope:
+      path: "crystal-down-reboot/01-life-in-avan-forest"
+    values:
+      layout: 2021/chapter
+      type: chapter
+      lang: "en-CA"
+      author: reki
+      publisher: reki
+      comments: true
+      commenting: open
+      published: true
+      termbase: /crystal-down-reboot
+      book:
+        number: 1
+        series: Crystal Down
+        copyrightYear: 2023-2020
+        title: "Life in Avan Forest"
+        url: "/crystal-down-reboot/#volume01-lifeinavanforest"
+        genres:
+          - Comedy
+          - Fantasy
+          - Isekai
+          - LitRPG
+          - Slice of Life
+      image: /crystal-down-reboot/-og.jpg
   - # /crystaldown/01-life-in-avan-forest
     scope:
       path: "crystaldown/01-life-in-avan-forest"

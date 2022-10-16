@@ -18,6 +18,11 @@
 	url = git@gitlab.com:0xReki.WN/crystaldown.git
 	branch = main
 
+[submodule "crystal-down-reboot"]
+	path = crystal-down-reboot
+	url = git@gitlab.com:0xReki.WN/crystal-down-reboot.git
+	branch = main
+
 [submodule "scions"]
 	path = scions
 	url = git@gitlab.com:0xReki.WN/scions.git
