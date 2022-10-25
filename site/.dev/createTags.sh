@@ -69,7 +69,7 @@ for post in posts %}
     <div class="clearfix"></div>
     {% if post.image contains "-og." %}  
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
+      <meta itemprop="url" content="{{ post.image | absolute_url }}">
     </div>
     {% else %}
     <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
@@ -88,31 +88,31 @@ for post in posts %}
       {% endif %}
       <picture>
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/avif">
         <source  
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.webp' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.avif', '.jpg' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/jpeg">
         <source
-          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | absolute_url }}"
           media="(min-width: 576px)"
           type="image/avif">
         <source
-          srcset="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.avif', '.webp' | absolute_url }}"
           media="(min-width: 576px)"
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '.avif', '.jpg' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.avif', '.jpg' | absolute_url }}"
           media="(min-width: 576px)"
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
-          src="{{ post.image | replace: '.avif', '.webp' | prepend: site.static_url | absolute_url }}" 
+          src="{{ post.image | replace: '.avif', '.webp' | absolute_url }}" 
           alt="{{ post.title }}">
       </picture>
       {% if post.long %}

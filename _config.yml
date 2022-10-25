@@ -8,7 +8,6 @@ timezone: Europe/Berlin
 future: true
 
 url: 'https://reki.wtf'
-static_url:
 
 shorturl:
   - url: "https://amau.ga/"

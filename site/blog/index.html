@@ -17,7 +17,7 @@ redirect_from:
   <a rel="alternate" type="application/atom+xml"
    href="{{ page.feed | absolute_url }}"
    title="{{ site.title }} Personal Blog Atom Feed">
-    <img loading="lazy" src="{{ '/proxy/shields/-/rss/shield.svg' | prepend: site.static_url | absolute_url }}" alt="Atom Feed" width="64" height="64">
+    <img loading="lazy" src="{{ '/proxy/shields/-/rss/shield.svg' | absolute_url }}" alt="Atom Feed" width="64" height="64">
   </a>
   {% endif %}
 </p>
@@ -53,7 +53,7 @@ redirect_from:
     <div class="clearfix"></div>
     {% if post.image contains "-og." %}  
     <div class="my-0" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-      <meta itemprop="url" content="{{ post.image | prepend: site.static_url | absolute_url }}">
+      <meta itemprop="url" content="{{ post.image | absolute_url }}">
     </div>
     {% else %}
     <figure class="post-image mx-3 mb-4" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
@@ -72,31 +72,31 @@ redirect_from:
       {% endif %}
       <picture>
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | replace: '.jpg', '.avif' | replace: '.png', '.avif' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/avif">
         <source  
-          srcset="{{ post.image | replace: '/images/', '/images/xs/'  | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/'  | replace: '.jpg', '.webp' | replace: '.png', '.webp' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/webp">
         <source
-          srcset="{{ post.image | replace: '/images/', '/images/xs/' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '/images/', '/images/xs/' | absolute_url }}"
           media="(max-width: 575.96px)" {% if post.image_size_xs %} width="{{ post.image_size_xs[0]}}" height="{{ post.image_size_xs[1]}}"{% endif %}
           type="image/jpeg">
         <source
-          srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.avif' | replace: '.png', '.avif' | absolute_url }}"
           media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/avif">
         <source
-          srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp' | absolute_url }}"
           media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/webp">
         <source
-          srcset="{{ post.image | prepend: site.static_url | absolute_url }}"
+          srcset="{{ post.image | absolute_url }}"
           media="(min-width: 576px)" {% if post.image_size %} width="{{ post.image_size[0]}}" height="{{ post.image_size[1]}}"{% endif %}
           type="image/jpeg">
         <img loading="lazy" itemprop="url"
-          src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | prepend: site.static_url | absolute_url }}" 
+          src="{{ post.image | replace: '.jpg', '.webp' | replace: '.png', '.webp'  | absolute_url }}" 
           alt="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}" title="{% if post.image_alt %}{{ post.image_alt }}{% else %}{{ post.title }}{% endif %}">
       </picture>
       {% if post.long %}
