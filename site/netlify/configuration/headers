@@ -35,7 +35,7 @@ permalink: /_headers
   {{- }} form-action *;
   {{- }} connect-src 'self' reki.wtf 0xreki.de *.netlify.app amau.ga cd-ht.ml mlac.ml talkify.net;
 
-/private/slides/*{% if site.static_url %}
+/private/slides/*
   Content-Security-Policy: upgrade-insecure-requests; default-src 'self' reki.wtf 0xreki.de;
   {{- }} media-src 'self' reki.wtf 0xreki.de amauga.s3.us-east-2.amazonaws.com reki-adventures.s3.eu-central-1.amazonaws.com;
   {{- }} script-src 'self' 'unsafe-inline' 'unsafe-eval' 0xreki.de *.netlify.app;
@@ -43,12 +43,10 @@ permalink: /_headers
   {{- }} font-src 'self' reki.wtf 0xreki.de;
   {{- }} img-src 'self' data: reki.wtf 0xreki.de img.youtube.com;
   {{- }} frame-src 'self' *.youtube-nocookie.com;
-  {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml;
-  {{- }} connect-src talkify.net;{% endif %}
+  {{- }} connect-src talkify.net;
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Content-Type: text/html; charset=utf-8
-  Expect-CT: enforce, max-age=2592000
 
 https://amau.ga/*
   Cache-Control: max-age=60, must-revalidate
@@ -117,21 +115,26 @@ https://0xreki.de/*
 
 /**/*.avif
   Content-Type: image/avif
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/*.webp
   Content-Type: image/webp
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/*.png
   Content-Type: image/png
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/*.jpg
   Content-Type: image/jpeg
 
 /**/*.svg
   Content-Type: image/svg+xml
-  
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
+
 /*.svg
   Content-Type: image/svg+xml
+  Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
 /**/chapters.xml
   Content-Type: application/atom+xml
