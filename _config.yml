@@ -94,7 +94,6 @@ compress_html:
 preload:
   fonts:
   - /assets/fonts/Cardo-Regular.woff2
-  - /assets/fonts/Cardo-Bold.woff2
   - /assets/fonts/SourceSans3-Regular.woff2
   - /assets/fonts/SourceSans3-Bold.woff2
 
