@@ -27,7 +27,7 @@ https://0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 /proxy/shields/:t/:l/shield.svg                     https://img.shields.io/badge/:t-informational?style=for-the-badge&logo=:l&logoColor=white&color=9c2c2c 200
 
 ## Redirects to avoid duplicates
-/tags/立直麻将/*		{{ '/tags/riichi-mahjong/' | absolute_url }}:splat	301!
+/tags/立直麻雀/*		{{ '/tags/riichi-mahjong/' | absolute_url }}:splat	301!
 /tags/麻雀/*		{{ '/tags/mahjong/' | absolute_url }}:splat	301!
 /tags/ドマ式麻雀/*		{{ '/tags/doman-mahjong/' | absolute_url }}:splat	301!
 
