@@ -151,7 +151,7 @@ defaults:
       image: /images/-og.jpg
       permalink: /blog/:year/:month-:day-:title/
       audio_mirror: 
-        - https://0xreki.de/blog/audio/
+        - https://reki.wtf/blog/audio/
         - https://reki-adventures.s3.eu-central-1.amazonaws.com/
   - # /_posts/amauga
     scope:
