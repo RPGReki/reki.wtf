@@ -132,9 +132,7 @@ async function setUpTalkify() {
       player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
     }
   } else {
-    talkify.config.remoteService.active = true;
-    talkify.config.remoteService.apiKey = '9a9754bc-d396-4817-96ee-9e0b04ba0048';
-    window['player'] = new talkify.TtsPlayer()
+    break
   }
 
   while ('undefined' == typeof ttsContent) await sleep(10);
