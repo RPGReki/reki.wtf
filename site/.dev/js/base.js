@@ -131,9 +131,8 @@ async function setUpTalkify() {
       player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
       player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
     }
-  } else {
-    break
-  }
+  } else 
+    return;
 
   while ('undefined' == typeof ttsContent) await sleep(10);
 
