@@ -27,7 +27,7 @@ title: Social Media Helper
     {{ page.link.series }} {{ page.link.volume_number }}-{{ chapter.chapter }}: {{ chapter.title }}<br>
     Date: {{ page.date }}<br>
     Text: {{ description }}
-    {% capture twitter_text %}The latest public chapter of my #Fantasy #Webnovel {{ page.link.series }}, chapter {{ chapter.chapter }}, is now available on my homepage.{% endcapture %}
+    {% capture twitter_text %}The latest public chapter of my {% if page.link.series == "Amauga" %}#SciFi {% endif %}#Fantasy #Webnovel {{ page.link.series }}, chapter {{ chapter.chapter }}, is now available on my homepage.{% endcapture %}
     {% capture share_title %}{{ page.link.series }} {{ page.link.volume_number }}-{{ chapter.chapter }}: {{ chapter.title }}{% endcapture %}
 {% capture series_camelcase %}{% assign ws = page.book.series | split: ' ' %}{% for w in ws %}{{w | capitalize}}{% endfor %}{% endcapture %}
     <ul>
