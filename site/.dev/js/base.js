@@ -131,9 +131,10 @@ async function setUpTalkify() {
       player.forceVoice(voices.find(e => e.lang.match(/CA|US/)));
       player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
     }
-  } else 
-    return;
-
+  } else {
+    $('.tts-controls').html('<div class="btn btn-block btn-lg btn-danger">Text to Speech could not be initialized.</div>');
+    return
+  }
   while ('undefined' == typeof ttsContent) await sleep(10);
 
   window['playlist'] = new talkify.playlist()
