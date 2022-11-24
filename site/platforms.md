@@ -1,8 +1,8 @@
 {:.icons.shields.justify-content-start.no-print}
-[![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/bePatron?u=27792463){:.no-print rel="me"}
-[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc){:.no-print rel="me"}
 [![Mastodon]({{ "/proxy/shields/-/mastodon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://gamingjp.org/@0xReki){:rel="me"}
-[![twitter]({{ "/proxy/shields/-/twitter/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/0xReki){:rel="me"}
+[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc){:.no-print rel="me"}
+[![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/bePatron?u=27792463){:.no-print rel="me"}
+[![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.me/u/0xreki){:rel="me"}
 [![pixiv]({{ "/proxy/shields/-/pixiv/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.pixiv.net/en/users/56643910){:.no-print rel="me"}
 [![RoyalRoad]({{ "/proxy/shields/-/royalroad/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.royalroad.com/profile/172658){:.no-print rel="me"}
 [![ScribbleHub]({{ "/proxy/shields/-/scribblehub/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.scribblehub.com/profile/19792/0xreki/){:.no-print rel="me"}
