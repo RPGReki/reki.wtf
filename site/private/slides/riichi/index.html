@@ -1,0 +1,200 @@
+---
+layout: compress
+---
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Riichi Mahjong: A Brief Introduction</title>
+
+		<link rel="stylesheet" href="../common/css/reveal.css">
+		<link rel="stylesheet" href="../common/css/theme/solarized.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../common/css/print/pdf.css' : '../common/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+        <style>
+        * {
+            font: "Source Sans 3", "Source Sans Pro";
+        }
+        </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<s class="slides" lang="en">
+				<section>
+					<h1>Riichi Mahjong</h1>
+                    <h2>A Brief Introduction</h2>
+				</section><!-- Titelfolie -->
+
+                <section>
+                    <h3>About Us</h3>
+                    <img src="./img/rishan-kaihou.avif" height="650px">
+                    <aside class="notes">
+                        <ul>
+                            <li>Rishan Kaihou Cologne</li>
+                        </ul>
+                    </aside>
+                </section>    
+
+                <section>
+                    <h3>Mahjong</h3>
+                    <section>
+                        <aside class="notes">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Deutschsprachiger Titel: Micronauts</li>
+                                <li>Erstausstrahlung (Weltweit): 1986-04-16 auf TBS (Japan)</li>
+                                <li>Erstausstrahlung (Deutschland): 1999-08-14 auf ARD</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+                
+                <section>
+                    <h3>Basics: Suits and Shapes</h3>
+                    <p>&nbsp;</p>
+                    
+                    <section>
+                        <p class="fragment fade-up">{% for i in (1..9) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}</p>
+                        <p class="fragment fade-up">{% for i in (1..9) %}<img src="./img/tiles/sou{{i}}.png" width="70px"> {% endfor %}</p>
+                        <p class="fragment fade-up">{% for i in (1..9) %}<img src="./img/tiles/man{{i}}.png" width="70px"> {% endfor %}</p>
+                        <p class="fragment fade-up">
+                            <img src="./img/tiles/ton.png" width="70px">
+                            <img src="./img/tiles/nan.png" width="70px">
+                            <img src="./img/tiles/shaa.png" width="70px">
+                            <img src="./img/tiles/pei.png" width="70px">
+                            <img src="./img/tiles/hatsu.png" width="70px">
+                            <img src="./img/tiles/chun.png" width="70px">
+                            <img src="./img/tiles/haku.png" width="70px">
+                        </p>
+            
+                        <aside class="notes">
+                            <ul>
+                                <li>Pinzu, American: Dots, Coins</li>
+                                <li>Souzu, American: Bams, Strings of 100 Coins</li>
+                                <li>Manzu, American: Cracks, Bills of 10.000 Coins</li>
+                                <li></li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section>
+                        <p class="fragment fade-up">
+                            <img src="./img/tiles/ton.png" width="70px">
+                            <img src="./img/tiles/ton.png" width="70px">
+                            <img src="./img/tiles/ton.png" width="70px">
+                        </p>
+                        <p class="fragment fade-up">
+                            {% for i in (2..4) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
+                        </p>
+                        <aside class="notes">
+                            2 types of mentsu, groups:
+                            <ul>
+                                <li>koutsu, triplet</li>
+                                <li>shuntsu, sequence</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <h3>Goal</h3>
+                    <p>
+                    <span class="fragment fade-up">
+                        <img src="./img/tiles/ton.png" width="70px">
+                        <img src="./img/tiles/ton.png" width="70px">
+                        <img src="./img/tiles/ton.png" width="70px">
+                    </span>
+                    <span class="fragment fade-up">
+                        {% for i in (2..4) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
+                    </span>
+                    <span class="fragment fade-up">
+                        {% for i in (3..5) %}<img src="./img/tiles/sou{{i}}.png" width="70px"> {% endfor %}
+                    </span>
+                    <span class="fragment fade-up">
+                        {% for i in (4..6) %}<img src="./img/tiles/man{{i}}.png" width="70px"> {% endfor %}
+                    </span>
+                    <span class="fragment fade-up">
+                        <img src="./img/tiles/hatsu.png" width="70px"> 
+                        <img src="./img/tiles/hatsu.png" width="70px"> 
+                    </span>
+                </p>
+                <p class="fragment fade-up">
+                    <img src="./img/tiles/ton.png" width="70px">
+                    <img src="./img/tiles/ton.png" width="70px">
+                    <img src="./img/tiles/ton.png" width="70px">
+
+                    <img src="./img/tiles/nan.png" width="70px">
+                    <img src="./img/tiles/nan.png" width="70px">
+                    <img src="./img/tiles/nan.png" width="70px">
+
+                    <img src="./img/tiles/shaa.png" width="70px">
+                    <img src="./img/tiles/shaa.png" width="70px">
+                    <img src="./img/tiles/shaa.png" width="70px">
+
+                    <img src="./img/tiles/pei.png" width="70px">
+                    <img src="./img/tiles/pei.png" width="70px">
+                    <img src="./img/tiles/pei.png" width="70px">
+
+                    <img src="./img/tiles/chun.png" width="70px">
+                    <img src="./img/tiles/chun.png" width="70px">
+                </p>
+
+                <p class="fragment fade-up"> 
+                <span>
+                    {% for i in (2..4) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
+                </span>
+                <span>
+                    {% for i in (3..5) %}<img src="./img/tiles/sou{{i}}.png" width="70px"> {% endfor %}
+                </span>
+                <span>
+                    {% for i in (4..6) %}<img src="./img/tiles/man{{i}}.png" width="70px"> {% endfor %}
+                </span>
+                <span>
+                    {% for i in (5..7) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
+                </span>
+                <span>
+                    <img src="./img/tiles/sou8.png" width="70px"> 
+                    <img src="./img/tiles/sou8.png" width="70px"> 
+                </span>
+                </p>
+                    <aside class="notes">
+                        <ul>
+                            <li>4 mentsu, pair</li>
+                            <li>shuntsu, sequence</li>
+                        </ul>
+                    </aside>
+                </section>
+                </section>
+            </div>
+		</div>
+
+		<script src="../common/lib/js/head.min.js"></script>
+		<script src="../common/js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				width: 1280,
+                height: 720,
+                history: true,
+				dependencies: [
+					{ src: '../common/plugin/notes/notes.js', async: true }
+				],
+				transition: 'zoom'
+			});
+		</script>
+	</body>
+</html>

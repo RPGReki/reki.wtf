@@ -44,9 +44,12 @@ permalink: /_headers
   {{- }} img-src 'self' data: reki.wtf img.youtube.com;
   {{- }} frame-src 'self' *.youtube-nocookie.com;
   {{- }} connect-src talkify.net;
-  X-Frame-Options: DENY
+  X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
   Content-Type: text/html; charset=utf-8
+
+/private/slides/**/*.js
+  Content-Type: text/javascript; charset=utf-8
 
 https://amau.ga/*
   Cache-Control: max-age=60, must-revalidate
