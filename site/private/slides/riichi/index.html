@@ -22,13 +22,13 @@ layout: compress
 		</script>
         <style>
         * {
-            font: "Source Sans 3", "Source Sans Pro";
+            font: "Source Sans 3", "Source Sans Pro", sans-serif;
         }
         </style>
 	</head>
 	<body>
 		<div class="reveal">
-			<s class="slides" lang="en">
+			<section class="slides" lang="en">
 				<section>
 					<h1>Riichi Mahjong</h1>
                     <h2>A Brief Introduction</h2>
@@ -57,9 +57,9 @@ layout: compress
 
                         <aside class="notes">
                             <ul>
-                                <li>Deutschsprachiger Titel: Micronauts</li>
-                                <li>Erstausstrahlung (Weltweit): 1986-04-16 auf TBS (Japan)</li>
-                                <li>Erstausstrahlung (Deutschland): 1999-08-14 auf ARD</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </aside>
                     </section>
@@ -112,47 +112,93 @@ layout: compress
                 </section>
                 <section>
                     <h3>Goal</h3>
-                    <p>
-                    <span class="fragment fade-up">
+
+                    <style>
+                        .mentsu::before {
+                            content: "";
+                            position: fixed;
+                            width: 252px;
+                            top: 12ex;
+                            height: 0.5em;
+                            border-bottom: 1px solid #aaa;
+                            border-left: 1px solid #aaa;
+                            border-right: 1px solid #aaa;
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            z-index: 10;
+                        }
+                        .jantou::before {
+                            content: "";
+                            position: fixed;
+                            width: 164px;
+                            top: 12ex;
+                            height: 0.5em;
+                            border-bottom: 1px solid #aaa;
+                            border-left: 1px solid #aaa;
+                            border-right: 1px solid #aaa;
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            z-index: 10;
+                        }
+
+                    </style>
+                <p>
+                    <span class="fragment fade-up mentsu">
                         <img src="./img/tiles/ton.png" width="70px">
                         <img src="./img/tiles/ton.png" width="70px">
                         <img src="./img/tiles/ton.png" width="70px">
                     </span>
-                    <span class="fragment fade-up">
+                    <span class="fragment fade-up mentsu">
                         {% for i in (2..4) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
                     </span>
-                    <span class="fragment fade-up">
+                    <span class="fragment fade-up mentsu">
                         {% for i in (3..5) %}<img src="./img/tiles/sou{{i}}.png" width="70px"> {% endfor %}
                     </span>
-                    <span class="fragment fade-up">
+                    <span class="fragment fade-up mentsu">
                         {% for i in (4..6) %}<img src="./img/tiles/man{{i}}.png" width="70px"> {% endfor %}
                     </span>
-                    <span class="fragment fade-up">
+                    <span class="fragment fade-up jantou">
                         <img src="./img/tiles/hatsu.png" width="70px"> 
                         <img src="./img/tiles/hatsu.png" width="70px"> 
                     </span>
                 </p>
-                <p class="fragment fade-up">
-                    <img src="./img/tiles/ton.png" width="70px">
-                    <img src="./img/tiles/ton.png" width="70px">
-                    <img src="./img/tiles/ton.png" width="70px">
-
-                    <img src="./img/tiles/nan.png" width="70px">
-                    <img src="./img/tiles/nan.png" width="70px">
-                    <img src="./img/tiles/nan.png" width="70px">
-
-                    <img src="./img/tiles/shaa.png" width="70px">
-                    <img src="./img/tiles/shaa.png" width="70px">
-                    <img src="./img/tiles/shaa.png" width="70px">
-
-                    <img src="./img/tiles/pei.png" width="70px">
-                    <img src="./img/tiles/pei.png" width="70px">
-                    <img src="./img/tiles/pei.png" width="70px">
-
-                    <img src="./img/tiles/chun.png" width="70px">
-                    <img src="./img/tiles/chun.png" width="70px">
+                <p>
+                    <span style="width: 252px; display: inline-block">mentsu</span>
+                    <span style="width: 252px; display: inline-block">mentsu</span>
+                    <span style="width: 252px; display: inline-block">mentsu</span>
+                    <span style="width: 252px; display: inline-block">mentsu</span>
+                    <span style="width: 164px; display: inline-block">jantou</span>
                 </p>
 
+                <p class="fragment fade-up">
+                    <span style="width: 252px; display: inline-block">koutsu</span>
+                    <span style="width: 252px; display: inline-block">shuntsu</span>
+                    <span style="width: 252px; display: inline-block">shuntsu</span>
+                    <span style="width: 252px; display: inline-block">shuntsu</span>
+                    <span style="width: 164px; display: inline-block">toitsu</span>
+                </p>
+                <p class="fragment fade-up">
+                    <span>
+                        <img src="./img/tiles/ton.png" width="70px">
+                        <img src="./img/tiles/ton.png" width="70px">
+                        <img src="./img/tiles/ton.png" width="70px">
+                    </span><span>
+                        <img src="./img/tiles/nan.png" width="70px">
+                        <img src="./img/tiles/nan.png" width="70px">
+                        <img src="./img/tiles/nan.png" width="70px">
+                    </span><span>
+                        <img src="./img/tiles/shaa.png" width="70px">
+                        <img src="./img/tiles/shaa.png" width="70px">
+                        <img src="./img/tiles/shaa.png" width="70px">
+                    </span><span>
+                        <img src="./img/tiles/pei.png" width="70px">
+                        <img src="./img/tiles/pei.png" width="70px">
+                        <img src="./img/tiles/pei.png" width="70px">
+                    </span><span>
+                        <img src="./img/tiles/chun.png" width="70px">
+                        <img src="./img/tiles/chun.png" width="70px">
+                    </span>
+                </p>
                 <p class="fragment fade-up"> 
                 <span>
                     {% for i in (2..4) %}<img src="./img/tiles/pin{{i}}.png" width="70px"> {% endfor %}
@@ -171,6 +217,7 @@ layout: compress
                     <img src="./img/tiles/sou8.png" width="70px"> 
                 </span>
                 </p>
+
                     <aside class="notes">
                         <ul>
                             <li>4 mentsu, pair</li>
@@ -178,7 +225,56 @@ layout: compress
                         </ul>
                     </aside>
                 </section>
+                <section>
+                    <h3>Riichi Mahjong</h3>
+                    <p class="fragment fade-up">
+                        Furiten
+                    </p>
+                    <p class="fragment fade-up">
+                        Yaku
+                    </p>
+                    
+                    <aside class="notes">
+                        <ul>
+                            <li>4 mentsu, pair</li>
+                            <li>shuntsu, sequence</li>
+                        </ul>
+                    </aside>
                 </section>
+                <section>
+                    <h3>Yaku</h3>
+                    <p class="fragment fade-up">
+                        Riichi
+                    </p>
+                    <p class="fragment fade-up">
+                        Menzen Tsumo
+                    </p>
+                    <p class="fragment fade-up">
+                        Tanyao
+                    </p>
+                    <p class="fragment fade-up">
+                        Pinfu
+                    </p>
+                    <p class="fragment fade-up">
+                        Iipeikou
+                    </p>
+
+                    <p class="fragment fade-up">
+                        Sanshoku Doujun
+                    </p>
+                    <p class="fragment fade-up">
+                        Sanshoku Doukou
+                    </p>
+                    <p class="fragment fade-up">
+                        Toitoi
+                    </p>
+                    <p class="fragment fade-up">
+                        <a href="./cheat-sheet.pdf">Cheat Sheet</a>
+                    </p>
+                    <aside class="notes">
+                        </aside>
+                </section>
+            </section>
             </div>
 		</div>
 

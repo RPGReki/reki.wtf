@@ -97,7 +97,7 @@ $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
 ## Build Tasks: Get Remote Data
 
 site/_data/comments.json:
-	gulp get-comments --silent
+	-gulp get-comments --silent
 
 site/_data/polls/%: | site/_data/polls
 	gulp get-poll-$(*:.json=) --silent
