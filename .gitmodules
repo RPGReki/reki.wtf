@@ -1,34 +1,34 @@
 	
 [submodule "personal-blog"]
 	path = personal-blog
-	url = git@gitlab.com:0xReki/personal-blog.git
+	url = git@gitlab.com:RPGReki/personal-blog.git
 
 [submodule "theme"]
 	path = theme
-	url = git@gitlab.com:0xReki/crystaldown-theme.git
+	url = git@gitlab.com:RPGReki/crystaldown-theme.git
 	branch = main
 
 [submodule "amauga"]
 	path = amauga
-	url = git@gitlab.com:0xReki.WN/amauga.git
+	url = git@gitlab.com:RPGReki-WN/amauga.git
 	branch = main
 	
 [submodule "crystaldown"]
 	path = crystaldown
-	url = git@gitlab.com:0xReki.WN/crystaldown.git
+	url = git@gitlab.com:RPGReki-WN/crystaldown.git
 	branch = main
 
-[submodule "crystal-down-reboot"]
-	path = crystal-down-reboot
-	url = git@gitlab.com:0xReki.WN/crystal-down-reboot.git
+[submodule "crystaldown-reboot"]
+	path = crystaldown-reboot
+	url = git@gitlab.com:RPGReki-WN/crystaldown-reboot.git
 	branch = main
 
 [submodule "scions"]
 	path = scions
-	url = git@gitlab.com:0xReki.WN/scions.git
+	url = git@gitlab.com:RPGReki-WN/scions.git
 	branch = main
 
 [submodule "my-life-as-a-cat"]
 	path = my-life-as-a-cat
-	url = git@gitlab.com:0xReki.WN/my-life-as-a-cat.git
+	url = git@gitlab.com:RPGReki-WN/my-life-as-a-cat.git
 	branch = main
