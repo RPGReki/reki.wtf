@@ -26,20 +26,20 @@ function toggleTheme() {
   bc.toggle('dark-theme');
   bc.toggle('light-theme');
 
-  l.setItem('darkTheme', bc.contains('dark-theme'))
+  bc.contains('light-theme')?l.setItem('lightTheme', 1):l.removeItem('lightTheme')
 }
 
 function toggleDyslexicFont() {
   bc.toggle('dyslexic');
 
-  l.setItem('dyslexic', bc.contains('dyslexic'))
+  bc.contains('dyslexic')?l.setItem('dyslexic', 1):l.removeItem('dyslexic')
 }
 
 function toggleTextVide() {
   bc.toggle('vide');
   loadTextVide();
 
-  l.setItem('vide', bc.contains('vide'))
+  bc.contains('vide')?l.setItem('vide', 1):l.removeItem('vide')
 }
 
 async function loadTextVide() {
@@ -72,18 +72,16 @@ function restoreSettings() {
   }
   d.querySelectorAll('.controls')[0].style.display = 'flex';
   
-  if (null != l.getItem('darkTheme')) {
-    if ((null != l.get('darkTheme')) != bc.contains('dark-theme')) {
-      d.querySelectorAll('#dark-mode').checked=true;
-      toggleTheme()
-    }
+  if (l.getItem('lightTheme')) {
+    d.querySelectorAll('#dark-mode')[0].checked=true;
+    toggleTheme()
   };
-  if (null != l.getItem('dyslexic')) {
-    d.querySelectorAll('#dyslexic').checked=true;
+  if (l.getItem('dyslexic')) {
+    d.querySelectorAll('#dyslexic')[0].checked=true;
     toggleDyslexicFont()
   }
-  if (null != l.getItem('vide')) {
-    d.querySelectorAll('#vide').checked=true;
+  if (l.getItem('vide')) {
+    d.querySelectorAll('#vide')[0].checked=true;
     toggleTextVide()
   }
 }

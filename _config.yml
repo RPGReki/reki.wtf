@@ -1,5 +1,5 @@
 ## Basic Configuration
-title: "0xReki's Misadventures"
+title: "RPGReki's Misadventures"
 description: "Creative Writing, Mahjong and more!"
 source: site
 destination: docs
@@ -14,10 +14,6 @@ shorturl:
     prefix: "/a/"
   - url: "https://cd-ht.ml/"
     prefix: "/cd/"
-  - url: "https://cd-ht.ml/r/"
-    prefix: "/cr/"
-  - url: "https://cd-ht.ml/s/"
-    prefix: "/s/"
 
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
@@ -30,7 +26,7 @@ permalink: pretty
 ### Copyright
 copyright:
   license: <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
-  name: quốc Thái “0xReki” Chung
+  name: quốc Thái “RPGReki” Chung
   url: /about-me/
 
 

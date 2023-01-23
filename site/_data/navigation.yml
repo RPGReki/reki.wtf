@@ -1,6 +1,9 @@
 - title: Amauga
   url: /amauga/
   unicode_icon: 📘
+- title: Crystal Down
+  url: /crystaldown/
+  unicode_icon: 📕
 - title: Archive
   unicode_icon: 🗄️
   id: archive
@@ -8,12 +11,6 @@
   - title: Archived Projects
     url: /archive/
     unicode_icon: 📁
-  - title: Crystal Down
-    url: /crystaldown/
-    unicode_icon: 📕
-  - title: 'Crystal Down: Scions'
-    url: /scions/
-    unicode_icon: 📗
   - title: YouTube Archive
     url: /archive/youtube-archive/
     unicode_icon: 🎥
