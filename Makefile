@@ -3,7 +3,7 @@ SHELL = /bin/bash
 # user configuration
 
 URL = https://reki.wtf
-STORIES = amauga crystaldown scions my-life-as-cat scions-reboot
+STORIES = amauga crystaldown-reboot
 POLLS = 
 STORY_FEEDS = blog.xml chapters.xml
 
