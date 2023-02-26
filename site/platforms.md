@@ -1,6 +1,9 @@
 {:.icons.shields.justify-content-start.no-print}
 [![Mastodon]({{ "/proxy/shields/-/mastodon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://gamingjp.org/@RPGReki){:rel="me"}
-[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/8DCZWGc){:.no-print rel="me"}
+[![Mastodon]({{ "/proxy/shields/-/mastodon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://vt.social/@RPGReki){:rel="me"}
+[![Mastodon]({{ "/proxy/shields/-/twitter/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/RPGReki){:rel="me"}
+[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://
+discord.gg/8DCZWGc){:.no-print rel="me"}
 [![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/bePatron?u=27792463){:.no-print rel="me"}
 [![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.me/u/0xreki){:rel="me"}
 [![pixiv]({{ "/proxy/shields/-/pixiv/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.pixiv.net/en/users/56643910){:.no-print rel="me"}
