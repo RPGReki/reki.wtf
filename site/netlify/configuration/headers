@@ -17,7 +17,7 @@ permalink: /_headers
   {{- }} frame-src 'self' www.youtube-nocookie.com www.google.com *.reki.wtf;
   {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml;
   {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml talkify.net;
-  Permissions-Policy:
+  Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   X-XSS-Protection: 0
@@ -36,7 +36,7 @@ permalink: /_headers
   {{- }} frame-src 'self' www.youtube-nocookie.com www.google.com *.reki.wtf;
   {{- }} form-action *;
   {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml talkify.net;
-  Permissions-Policy:
+  Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
 
 /private/slides/*
@@ -48,7 +48,7 @@ permalink: /_headers
   {{- }} img-src 'self' data: reki.wtf img.youtube.com;
   {{- }} frame-src 'self' *.youtube-nocookie.com;
   {{- }} connect-src talkify.net;
-  Permissions-Policy:
+  Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
