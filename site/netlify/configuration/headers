@@ -59,22 +59,18 @@ permalink: /_headers
 
 https://amau.ga/*
   Cache-Control: max-age=60, must-revalidate
-  Permissions-Policy:
   Referrer-Policy: strict-origin-when-cross-origin
 
 https://cd-ht.ml/*
   Cache-Control: max-age=60, must-revalidate
-  Permissions-Policy:
   Referrer-Policy: strict-origin-when-cross-origin
 
 https://mlac.ml/*
   Cache-Control: max-age=60, must-revalidate
-  Permissions-Policy:
   Referrer-Policy: strict-origin-when-cross-origin
 
 https://0xreki.de/*
   Cache-Control: public, max-age=1576800, immutable
-  Permissions-Policy:
   Referrer-Policy: strict-origin-when-cross-origin
 
 /**/*.css
