@@ -46,14 +46,14 @@ plugins:
 
 ## SEO
 twitter:
-  username: 0xReki
+  username: RPGReki
   card: summary
 facebook:
   app_id: 656032504831426
 tumblr:
-  url: 0xreki.tumblr.com
+  url: RPGReki.tumblr.com
 mastodon:
-  username: 0xReki@gamingjp.org
+  username: RPGReki@gamingjp.org
 google_analytics: UA-143950814-4
 patreon:
   title: Become a Patron to read early access chapters

@@ -2,7 +2,7 @@
 layout: 2021/base
 title: "Cookie & Privacy Statement"
 excerpt: "This page itself doesn't require cookies. However, since people are so adamant about convenience some cookies may used…"
-author: 0xReki
+author: RPGReki
 date: 2021-07-04
 comments: false
 sitemap: false

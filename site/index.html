@@ -32,7 +32,7 @@ I enjoy playing JPRGs.
 {% capture platforms %}{% include_relative platforms.md %}{% endcapture %}
 {{ platforms | markdownify }}
 
-<h2>Latest Personal Blog Post on 0xReki's Misadventures</h2>
+<h2>Latest Personal Blog Post on RPGReki's Misadventures</h2>
 {% assign ps = site.posts | where: 'category', 'personal' %}
 {% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% for post in ps %}

@@ -5,14 +5,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/0xReki/0xreki.de.git"
+    "url": "git+ssh://git@gitlab.com/RPGReki/reki.wtf.git"
   },
-  "author": "Thai “0xReki” Chung",
+  "author": "Thai “RPGReki” Chung",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/0xReki/0xreki.de/issues"
+    "url": "https://gitlab.com/RPGReki/reki.wtf/issues"
   },
-  "homepage": "https://gitlab.com/0xReki/0xreki.de#readme",
+  "homepage": "https://gitlab.com/RPGReki/reki.wtf#readme",
   "devDependencies": {
     "dotenv": "^8.6.0",
     "gulp": "^4.0.2",

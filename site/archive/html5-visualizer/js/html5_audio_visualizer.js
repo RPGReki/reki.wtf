@@ -1,6 +1,6 @@
 /**
  * An audio spectrum visualizer built with HTML5 Audio API
- * Author: 0xReki
+ * Author: RPGReki
  * Author: Wayou
  * License: MIT
  * 2016-12-08
