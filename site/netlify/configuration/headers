@@ -70,6 +70,7 @@ permalink: /_headers
   {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml talkify.net;
   Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: ALLOW *
   X-XSS-Protection: 0
   Content-Type: text/html; charset=utf-8
   Expect-CT: enforce, max-age=2592000
