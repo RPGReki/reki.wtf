@@ -56,7 +56,7 @@ permalink: /_headers
   Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
   X-XSS-Protection: 0
-  X-Frame-Options:
+  X-Frame-Options: ALLOW-FROM vector
   Content-Type: text/html; charset=utf-8
   Expect-CT: enforce, max-age=2592000
 
