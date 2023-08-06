@@ -1,6 +1,7 @@
 {
   "packs": [
-    "MJS.json"
+    "MJS.json",
+    "RPGReki.json"
   ],
   "homeserver_url": "https://matrix.org"
 }
