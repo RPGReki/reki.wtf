@@ -9,15 +9,9 @@ future: true
 
 url: 'https://reki.wtf'
 
-shorturl:
-  - url: "https://amau.ga/"
-    prefix: "/a/"
-  - url: "https://cd-ht.ml/"
-    prefix: "/cd/"
-
 excerpt_separator: "<!--more-->"
 feed: /feeds/chapters.xml
-  
+
 include:
   - ".dev"
 
