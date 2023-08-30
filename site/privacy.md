@@ -1,6 +1,6 @@
 ---
 layout: 2021/base
-title: "Cookie & Privacy Statement"
+title: "Cookie & Privacy Statement, other Legal Stuff"
 excerpt: "This page itself doesn't require cookies. However, since people are so adamant about convenience some cookies may used…"
 author: RPGReki
 date: 2021-07-04
@@ -31,7 +31,7 @@ When you visit this site, Netlify Servers will process your Log Data which inclu
 
 When you comment, the comment and Log Data will be processed by Netlify Servers.
 
-For more information, refer to the [Privacy Policy of Netlify](https://www.netlify.com/privacy/){:target="_blank" rel="noopener nofollow"} respectively.
+For more information, refer to the [Privacy Policy of Netlify](https://www.netlify.com/privacy/){:target="_blank" rel="noopener nofollow"}.
 
 ## Images
 
@@ -53,7 +53,8 @@ To combat spam, faulty submission can be silently removed or rejected by the sys
 
 ## Performance, Analysis, Delivery and Reporting
 
-I'm not collecting, how long you spend on what page of this site is not my business.
+I'm not collecting how long you spend on what page of this site.
+It is not my business.
 Though, I do welcome comments on my pages.
 
 ## Liability for Links
