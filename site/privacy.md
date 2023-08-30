@@ -9,7 +9,7 @@ sitemap: false
 robots: noindex
 ---
 <!-- markdownlint-disable MD025 -->
-# Cookie & Privacy Statement
+# Cookie & Privacy Statement, other Legal Stuff
 
 Here we go.
 It's not text in legal English, but in my opinion a good cookie and privacy
@@ -55,3 +55,30 @@ To combat spam, faulty submission can be silently removed or rejected by the sys
 
 I'm not collecting, how long you spend on what page of this site is not my business.
 Though, I do welcome comments on my pages.
+
+## Liability for Links
+
+The website contains links to external websites, over whose contents I have no control.
+Therefore, I cannot accept any liability for these external contents.
+The respective provider or operator of the websites is always responsible for the contents of the linked pages.
+The linked pages were checked for possible legal violations at the time of linking.
+Illegal contents were not identified at the time of linking.
+However, permanent monitoring of the contents of the linked pages is not reasonable without specific indications of a violation.
+Upon notification of violations, I will remove such links immediately.
+
+## Copyright
+
+If not state otherwise, the content and works on these pages are published under [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+**You are free to:**\\
+**Share** — copy and redistribute the material in any medium or format\\
+**Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+**Under the following terms:**\\
+**Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
