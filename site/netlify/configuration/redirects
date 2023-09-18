@@ -38,6 +38,10 @@ https://0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 /wordpress/wp-login/*		/wp-login/	301
 /wp-login/*	action=login	/wp-login-error/	200!
 
+# Historic Redirects
+
+/blog/:y/:m/:d/:t /blog/:y/:m-:d-:t 301
+
 # Latest URLs
 {% capture now -%}{{ 'now'| date: '%s' | plus: 10800 }}{%- endcapture -%}
 
