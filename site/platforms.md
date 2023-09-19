@@ -2,8 +2,9 @@
 [![Linktree]({{ "/proxy/shields/-/linktree/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://linktr.ee/RPGReki){:.no-print rel="me"}
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki){:.no-print rel="me"}
 [![Mastodon]({{ "/proxy/shields/-/mastodon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://vt.social/@RPGReki){:rel="me"}
+[![BlueSky]({{ "/proxy/shields/-/bluesky/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://bsky.app/profile/rpgreki.bsky.social){:rel="me"}
 [![Twitter]({{ "/proxy/shields/-/twitter/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitter.com/RPGReki){:rel="me"}
-[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/ytfbundTwG){:.no-print rel="me"}
+[![Discord]({{ "/proxy/shields/-/discord/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://discord.gg/fbWpHXu4pC){:.no-print rel="me"}
 [![Matrix]({{ "/proxy/shields/-/matrix/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://matrix.to/#/#rpgreki-misadventures:matrix.org){:.no-print rel="me"}
 [![pixiv]({{ "/proxy/shields/-/pixiv/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.pixiv.net/en/users/56643910){:.no-print rel="me"}
 [![RoyalRoad]({{ "/proxy/shields/-/royalroad/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.royalroad.com/profile/172658){:.no-print rel="me"}
