@@ -1,5 +1,4 @@
 {:.icons.shields.justify-content-start.no-print}
-[![Linktree]({{ "/proxy/shields/-/linktree/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://linktr.ee/RPGReki){:.no-print rel="me"}
 [![Twitch]({{ "/proxy/shields/-/twitch/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://twitch.tv/RPGReki){:.no-print rel="me"}
 [![YouTube]({{ "/proxy/shields/-/youtube/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://youtube.com/@RPGReki){:.no-print rel="me"}
 [![YouTube]({{ "/proxy/shields/-/youtube/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://youtube.com/@RPGRekiMusic){:.no-print rel="me"}
