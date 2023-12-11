@@ -30,6 +30,7 @@ gulp.task("get-comments", function (done) {
                 var comment = {
                     name: data.name,
                     url: data.url,
+                    email: data.email,
                     gravatar: md5(data.email),
                     message: data.message,
                     slug: data.slug,
