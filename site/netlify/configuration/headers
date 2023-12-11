@@ -13,10 +13,10 @@ permalink: /_headers
   {{- }} script-src-attr 'self' reki.wtf 'unsafe-hashes' 'sha256-MQU1BH4wD3u64AS6Cy/nWfH/f02mnGU0CkcWkax+FLo=' 'sha256-6EslD/JK6DRtZhCSSJeYErR4KqZrUh9v2JDxUbYRE9s=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-fSqLOr3szT8xi3iYGmDBfK9fVPTqCKDrB+wtoUs/3rs=' 'sha256-FIbEe8NyuozKHmqjyymJtVB+RlgJHrq5bEHfUaeSVks=' 'sha256-mKENJbUttTA1eG1zHsOaKvsqA+eWGYqqtGyLB+2ooMs=' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM=' 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=';
   {{- }} style-src 'self' 'unsafe-inline' reki.wtf;
   {{- }} font-src 'self' reki.wtf;
-  {{- }} img-src 'self' data: reki.wtf img.youtube.com;
+  {{- }} img-src 'self' data: reki.wtf img.youtube.com i.yting.com;
   {{- }} frame-src 'self' www.youtube-nocookie.com www.google.com *.reki.wtf;
-  {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml;
-  {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga cd-ht.ml mlac.ml talkify.net;
+  {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga ;
+  {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga talkify.net;
   Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY

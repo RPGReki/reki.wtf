@@ -2,7 +2,8 @@ var x, y = null;
 
 function loadYouTube(e = null) {
   if (e == null) return;
-  var i = e.target.getAttribute('data-videoid');
+  var i = e.target.getAttribute('data-videoid') || e.currentTarget.getAttribute('data-videoid');
+  console.log(i);
   d.getElementById(i).innerHTML = d.getElementById('yt-' + i).innerHTML
 }
 
@@ -30,7 +31,8 @@ async function setUpPageForUsers() {
   $('#dyslexic').on('change', toggleDyslexicFont);
   $('#vide').on('change', toggleTextVide);
   $('#tts').on('change', toggleTTS);
-  $('.youtube a:last-child').on('click', loadYouTube);
+  $('.youtube a:first-child').on('click', loadYouTube);
+  $('.youtube a:nth-child(2)').on('click', loadYouTube);
   
   d.addEventListener('beforeprint', ()=>{
     $('img').prop('loading','eager')
