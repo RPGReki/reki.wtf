@@ -1,9 +1,9 @@
 GIT
   remote: https://gitlab.com/RPGReki/jekyll-wns.git
-  revision: 7375fa890bc8e8d5d11e4b8f90bbe83146243244
+  revision: 09f9f405f0d781d1d3448addc789d07348b1bac4
   branch: main
   specs:
-    jekyll-wns (5.0.4)
+    jekyll-wns (5.0.5)
       ruby-mp3info (~> 0.8.10)
 
 GEM
