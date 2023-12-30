@@ -10,7 +10,7 @@ permalink: /wp-login-error/
 
 {:.interface}
 > Error
-> {:style="background: var(--danger)"}
+> {:style="background: var(--bs-danger)"}
 >
 > {:.mb-3}
 > You did not sign in correctly, or your account is temporarily disabled.
