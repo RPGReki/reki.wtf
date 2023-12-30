@@ -22,7 +22,8 @@ However, since people are so adamant about convenience, Local Storage may be use
 Local Storage is similar to cookies, but it's not automatically sent to the server with each request.
 If you later decide to clear all cookies and Local Storage of this page, you can use the button below.
 
-[<span>✨</span> Clear All Cookies &amp; Local Storage of this Page](#clear-cookies){:.btn .btn-primary .btn-block onclick="clearCookies(); false;"}
+{:.d-grid.gap-2}
+[<span>✨</span> Clear All Cookies &amp; Local Storage of this Page](#clear-cookies){:.btn .btn-primary onclick="clearCookies(); false;"}
 
 ## Logs
 

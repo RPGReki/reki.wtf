@@ -134,7 +134,7 @@ async function setUpTalkify() {
       player.forceVoice(voices.find(e => e.name.match(/Microsoft Guy Online|Google US/)))
     }
   } else {
-    $('.tts-controls').html('<div class="btn btn-block btn-lg btn-danger">Text to Speech could not be initialized.</div>');
+    $('.tts-controls').html('<div class="btn btn-lg btn-danger">Text to Speech could not be initialized.</div>');
     return
   }
   while ('undefined' == typeof ttsContent) await sleep(10);

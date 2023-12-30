@@ -138,17 +138,17 @@ I enjoy playing JPRGs.
       {{ post.content | markdownify }}
     {% else %}
       <p>{{ post.excerpt | quads |markdownify | strip_html | truncatewords: 50, "…" }}</p>
-      <p><a href="{{ post.url | absolute_url }}" class="btn btn-block btn-primary btn-lg">{{ post.title }}</a>
+      <p class="d-grid gap-2"><a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-lg">{{ post.title }}</a>
     {% endunless %}
     </div>
   </div>
 {% break %}
 {% endfor %}
 
-<p>
+<p class="d-grid gap-2">
   <a
     href="{{ "/blog/" | absolute_url }}"
-    class="btn btn-block btn-primary btn-lg">
+    class="btn btn-primary btn-lg">
     See all Personal Blog Posts
   </a>
 </p>
@@ -300,10 +300,10 @@ The planet seems like any other underdeveloped planet, but something is differen
 {% break %}
 {% endfor %}
 
-<p>
+<p class="d-grid gap-2">
   <a
     href="{{ "/amauga/blog/" | absolute_url }}"
-    class="btn btn-block btn-primary btn-lg">
+    class="btn btn-primary btn-lg">
     See all Amauga Posts
   </a>
 </p>

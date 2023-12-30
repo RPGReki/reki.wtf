@@ -134,15 +134,15 @@ for post in posts %}
     {% else %}
     <div class="entry-summary">
       <p data-nosnippet>{{ post.excerpt | quads | markdownify | strip_html | truncatewords: 50, "…" }}</p>
-      <p><a href="{{ post.url | absolute_url }}" class="btn btn-block btn-primary btn-lg">{{ post.title }}</a></p>
+      <p class="d-grid gap-2"><a href="{{ post.url | absolute_url }}" class="btn btn-primary btn-lg">{{ post.title }}</a></p>
     </div>
     {% endunless %}
   </article>
 {% endfor %}
-<p>
+<p class="d-grid gap-2">
   <a
     href="{{ "/tags/" | absolute_url }}"
-    class="btn btn-block btn-primary btn-lg">
+    class="btn btn-primary btn-lg">
     To the List of All Tags
   </a>
 </p>
