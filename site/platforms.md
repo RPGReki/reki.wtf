@@ -16,4 +16,3 @@
 [![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/RPGReki){:.no-print rel="me payment"}
 [![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.me/RPGReki){:rel="me payment"}
 [![ko-fi]({{ "/proxy/shields/-/kofi/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://ko-fi.com/RPGReki){:rel="me payment"}
-[![StreamElements]({{ "/proxy/shields/-/streamelements/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://streamelements.com/rpgreki/tip){:rel="me payment"}
