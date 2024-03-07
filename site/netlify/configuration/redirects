@@ -48,6 +48,8 @@ https://0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 
 /blog/:y/:m/:d/:t /blog/:y/:m-:d-:t 301
 
+/crystaldown/01-life-is-avan-forest/* /crystaldown/
+
 # Latest URLs
 {% capture now -%}{{ 'now'| date: '%s' | plus: 10800 }}{%- endcapture -%}
 
