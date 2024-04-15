@@ -8,16 +8,16 @@ permalink: /_headers
   X-Content-Type-Options: nosniff
   Content-Security-Policy: upgrade-insecure-requests; default-src 'self' reki.wtf;
   {{- }} media-src 'self' reki.wtf amauga.s3.us-east-2.amazonaws.com reki-adventures.s3.eu-central-1.amazonaws.com talkify.net;
-  {{- }} script-src 'self' blob: reki.wtf 'unsafe-inline' 'unsafe-eval' *.netlify.app;
+  {{- }} script-src 'self' 'blob:' reki.wtf 'unsafe-inline' 'unsafe-eval' *.netlify.app;
   {{- }} script-src-elem 'self' reki.wtf 'sha256-0x8+KctX5w3DwyXg14J1w5wIgB1Asxhd0pasYrI9TKg=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' 'sha256-XTQGBEvsZC6c6kRyIXY9+oXg1Inv41JnlOnSbdA4dpk=' 'sha256-A4JZnFCGjbho2ITgxvzKTBse/cJesrRa3yg9S8aEKEc=' 'sha256-B75kuj4XBwqTynjEBPY0crnnQrCH3Uckwy8CeNtR5Mg=' 'sha256-h/VhtJ/dejlggs4c099UMIOFXHbY7GShgW9ib/S3fYY=' 'sha256-jt0fluv+2kfDRP7lqettjyHx8MocFVb7Knqy4uxo7Ps=' 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=' *.netlify.app;
   {{- }} script-src-attr 'self' reki.wtf 'unsafe-hashes' 'sha256-MQU1BH4wD3u64AS6Cy/nWfH/f02mnGU0CkcWkax+FLo=' 'sha256-6EslD/JK6DRtZhCSSJeYErR4KqZrUh9v2JDxUbYRE9s=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-fSqLOr3szT8xi3iYGmDBfK9fVPTqCKDrB+wtoUs/3rs=' 'sha256-FIbEe8NyuozKHmqjyymJtVB+RlgJHrq5bEHfUaeSVks=' 'sha256-mKENJbUttTA1eG1zHsOaKvsqA+eWGYqqtGyLB+2ooMs=' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM=' 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=';
-  {{- }} worker-src 'self' blob: reki.wtf 'unsafe-inline' 'unsafe-eval';
+  {{- }} worker-src 'self' 'blob:' reki.wtf 'unsafe-inline' 'unsafe-eval';
   {{- }} style-src 'self' 'unsafe-inline' reki.wtf;
   {{- }} font-src 'self' reki.wtf;
-  {{- }} img-src 'self' data: reki.wtf img.youtube.com i.yting.com;
+  {{- }} img-src 'self' 'data:' reki.wtf img.youtube.com i.yting.com;
   {{- }} frame-src 'self' www.youtube-nocookie.com www.google.com *.reki.wtf;
-  {{- }} form-action 'self' reki.wtf *.netlify.app amau.ga ;
-  {{- }} connect-src 'self' reki.wtf *.netlify.app amau.ga talkify.net;
+  {{- }} form-action 'self' reki.wtf *.netlify.app ;
+  {{- }} connect-src 'self' reki.wtf *.netlify.app talkify.net;
   Permissions-Policy: none
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
@@ -31,7 +31,7 @@ permalink: /_headers
   {{- }} script-src 'self' 'unsafe-inline' 'unsafe-eval' *.netlify.app;
   {{- }} style-src 'self' 'unsafe-inline' reki.wtf;
   {{- }} font-src 'self' reki.wtf;
-  {{- }} img-src 'self' data: reki.wtf img.youtube.com;
+  {{- }} img-src 'self' 'data:' reki.wtf img.youtube.com;
   {{- }} frame-src 'self' *.youtube-nocookie.com;
   {{- }} connect-src talkify.net;
   Permissions-Policy: none
@@ -45,13 +45,13 @@ permalink: /_headers
   X-Content-Type-Options: nosniff
   Content-Security-Policy: upgrade-insecure-requests; default-src 'self' reki.wtf;
   {{- }} media-src 'self' reki.wtf amauga.s3.us-east-2.amazonaws.com reki-adventures.s3.eu-central-1.amazonaws.com talkify.net;
-  {{- }} script-src 'self' blob: reki.wtf 'unsafe-inline' 'unsafe-eval' *.netlify.app;
+  {{- }} script-src 'self' 'blob:' reki.wtf 'unsafe-inline' 'unsafe-eval' *.netlify.app;
   {{- }} script-src-elem 'self' reki.wtf 'sha256-0x8+KctX5w3DwyXg14J1w5wIgB1Asxhd0pasYrI9TKg=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-A/6tayyJsMPqwtgAhK04WODhXkp9eACr3P/J3fXItRY=' 'sha256-XTQGBEvsZC6c6kRyIXY9+oXg1Inv41JnlOnSbdA4dpk=' 'sha256-A4JZnFCGjbho2ITgxvzKTBse/cJesrRa3yg9S8aEKEc=' 'sha256-B75kuj4XBwqTynjEBPY0crnnQrCH3Uckwy8CeNtR5Mg=' 'sha256-h/VhtJ/dejlggs4c099UMIOFXHbY7GShgW9ib/S3fYY=' 'sha256-jt0fluv+2kfDRP7lqettjyHx8MocFVb7Knqy4uxo7Ps=' 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=' *.netlify.app;
   {{- }} script-src-attr 'self' reki.wtf 'unsafe-hashes' 'sha256-MQU1BH4wD3u64AS6Cy/nWfH/f02mnGU0CkcWkax+FLo=' 'sha256-6EslD/JK6DRtZhCSSJeYErR4KqZrUh9v2JDxUbYRE9s=' 'sha256-aN2Ak1hWEEhfLXENaIBw8A4Z5HACswCC5eAS/YWgn6M=' 'sha256-fSqLOr3szT8xi3iYGmDBfK9fVPTqCKDrB+wtoUs/3rs=' 'sha256-FIbEe8NyuozKHmqjyymJtVB+RlgJHrq5bEHfUaeSVks=' 'sha256-mKENJbUttTA1eG1zHsOaKvsqA+eWGYqqtGyLB+2ooMs=' 'sha256-1jAmyYXcRq6zFldLe/GCgIDJBiOONdXjTLgEFMDnDSM=' 'sha256-Yot1rA9h4zhJja4QyT8EidXO8cUmV3qXM0NvoCSsTmM=';
-  {{- }} worker-src 'self' blob: reki.wtf 'unsafe-inline' 'unsafe-eval';
+  {{- }} worker-src 'self' 'blob:' reki.wtf 'unsafe-inline' 'unsafe-eval';
   {{- }} style-src 'self' 'unsafe-inline' reki.wtf;
   {{- }} font-src 'self' reki.wtf;
-  {{- }} img-src 'self' data: reki.wtf matrix.org img.youtube.com;
+  {{- }} img-src 'self' 'data:' reki.wtf matrix.org img.youtube.com;
   {{- }} frame-src 'self' www.youtube-nocookie.com www.google.com *.reki.wtf;
   {{- }} form-action 'self' reki.wtf *.netlify.app;
   {{- }} connect-src 'self' reki.wtf *.netlify.app talkify.net;
