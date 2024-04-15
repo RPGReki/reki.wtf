@@ -33,7 +33,6 @@ redirect_from:
   - /blog/2023/04-30-rpgreki-lore
   - /rpgreki-lore
   - /0-impressum
-  - /impressum
 
 excerpt: |
   About me, my universe and everything else: my credentials and hobbies
@@ -79,8 +78,12 @@ excerpt: |
 <p class="print-text-center">
 <address class="lr">RPGReki, c/o autorenglück.de, Franz-Mehring-Str. 15, 01237 Dresden<span class="print-only">  •  ☎ +<span class="rl">94</span> <span class="rl">61</span>2/<span class="rl">63</span> 76 245</span></address>
 </p>
+
+{% capture md %}{% include_relative platforms.md %}{% endcapture %}
+{{ md | markdownify }}
+
 <div class="row">
-  <figure class="col-12 order-1 order-md-2">
+  <figure class="col-12 col-md-6 order-1 order-md-2">
     <picture>
       <source
         srcset="{{ "/images/rpgreki.avif" | absolute_url }}"
@@ -103,9 +106,6 @@ excerpt: |
   </figure>
 
   <div class="col-12 col-md-6 order-2 order-md-1">
-    {% capture md %}{% include_relative platforms.md %}{% endcapture %}
-    {{ md | markdownify }}
-
     <p class="no-print mt-2">
       Hello! I'm RPGReki or simply Reki.
       I'm a Bunny Boy who grew up in Haitei City — at least I used to think I'm from there — it seems I'm a forgotten incarnation of River Song.
