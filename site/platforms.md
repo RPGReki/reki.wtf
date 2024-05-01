@@ -11,8 +11,6 @@
 [![RoyalRoad]({{ "/proxy/shields/-/royalroad/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.royalroad.com/profile/172658){:.no-print rel="me"}
 [![GitLab]({{ "/proxy/shields/-/gitlab/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://gitlab.com/RPGReki){:rel="me"}
 [![GitHub]({{ "/proxy/shields/-/github/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://github.com/RPGReki){:rel="me"}
-[![LinkedIn]({{ "/proxy/shields/-/linkedin/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://linkedin.com/in/q-thai-chung){:rel="me"}
-[![XING]({{ "/proxy/shields/-/xing/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.xing.com/profile/Thai_Chung){:rel="me"}
 [![Patreon]({{ "/proxy/shields/-/patreon/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://www.patreon.com/RPGReki){:.no-print rel="me payment"}
 [![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.me/RPGReki){:rel="me payment"}
 [![ko-fi]({{ "/proxy/shields/-/kofi/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://ko-fi.com/RPGReki){:rel="me payment"}
