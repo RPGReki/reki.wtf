@@ -1,0 +1,125 @@
+---
+layout: compress
+---
+body,
+.channel-root,
+.channel-info-content,
+.home-header-sticky,
+.stream-schedule__header,
+.stream-schedule-day {
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin: 0px auto;
+}
+
+.home-header-sticky a h1,
+.home-header-sticky p {
+    color: white !important;
+}
+
+.home-header-sticky button,
+.consent-banner,
+.side-nav,
+.top-nav,
+.persistent-player,
+.channel-root__player,
+.stream-schedule__header button,
+h2,
+.home-header-sticky ul {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important
+}
+
+.tw-halo {
+    height: 14rem !important;
+    width: 14rem !important
+}
+
+.home-header-sticky a h1 {
+    font-size: 5rem !important
+}
+
+.home-header-sticky p {
+    font-size: 3rem !important
+}
+
+.stream-schedule-times {
+    margin-top: -9rem !important
+}
+
+.stream-schedule__header>div:nth-child(2) div {
+    margin-left: 1.45rem !important;
+    margin-top: -40rem !important
+}
+
+.stream-schedule__header>div:nth-child(2) p {
+    font-weight: 800;
+    color: white;
+    font-size: 5rem !important;
+}
+
+.stream-schedule__header>div:nth-child(2) p::before {
+    content: "RPGReki's Schedule for "
+}
+
+.stream-schedule-day-name,
+.stream-schedule-day {
+    height: 12rem;
+}
+
+.stream-schedule-day>div div {
+    background: white
+}
+
+.stream-schedule-day>div[title*=Discord] div {
+    background: rgb(88, 101, 242) !important;
+    color: white;
+}
+
+.stream-schedule-day>div[title*=Discord] .stream-schedule-segment--text p {
+    color: rgb(173, 173, 184) !important;
+}
+
+.stream-schedule-day>div[title*=Discord] .stream-schedule-segment--text a:link,
+.stream-schedule-day>div[title*=offline] .stream-schedule-segment--text a {
+    color: #fe6b6b !important;
+}
+
+.stream-schedule-day>div[title*=Discord] .stream-schedule-segment--fade::after {
+    background: linear-gradient(to left, rgb(24, 24, 27) 10%, transparent 30%) !important;
+}
+
+.stream-schedule-day>div[title*=💙] div {
+    background: rgb(38, 153, 236) !important;
+    color: white;
+}
+
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--text p {
+    color: rgb(173, 173, 184) !important;
+}
+
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--text[data-test-selector=segment-title] {
+    width: 1.5em !important;
+    color: rgb(38, 153, 236) !important;
+}
+
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--text[data-test-selector=segment-title]::after {
+    content: "AO Game on Fansly";
+    color: white !important;
+    left: -7.8em;
+    position: relative;
+    overflow: visible;
+}
+
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--text a:link,
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--text a {
+    color: #fe6b6b !important;
+}
+
+.stream-schedule-day>div[title*=💙] .stream-schedule-segment--fade::after {
+    background: linear-gradient(to left, rgb(24, 24, 27) 10%, transparent 30%) !important;
+}
+
+.stream-schedule-day>div:has(.stream-schedule-segment--text--warning) * {
+    display: none !important;
+}
