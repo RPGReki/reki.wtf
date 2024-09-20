@@ -321,6 +321,39 @@ excerpt: |
   <address>Thai Chung, c/o LEADERLY UG, Carl-Zeiss-Str. 4, 14727 Premnitz OT Mögelin</address>
 </p>
 
+<h3 class="mt-4">Contact</h3>
+
+<form name="Contact" method="POST" action="/thanks-for-the-message/" id="contactform" class="form-horizontal" data-netlify="true" netlify-honeypot="captcha">
+  <fieldset id="contact">
+    <div>
+      <label for="name">Name*</label>
+      <input type="text" name="name" id="name" placeholder="Name" aria-required="true" required="true" />
+      <label for="email">Email*</span></label>
+      <input type="email" name="email" id="email" placeholder="name@domain.tld" aria-required="true" required="true" />
+      <label for="url">Website</label>
+      <input type="URL" name="url" id="url" placeholder="https://domain.tld" />
+    </div>
+    <div>
+      <label for="message">Message*</label>
+      <textarea name="message" id="message" placeholder="Leave a message." aria-required="true" required="true"></textarea>
+    </div>
+    <div class="row mx-2">
+      <input type="checkbox" name="accept-policy" id="accept-policy" aria-required="true" required="true" class="col-auto mt-2">
+      <label for="accept-policy" class="col">
+        I consent to my data associated with this message to be processed by Netlify, to stored and forwarded to the owner of this site.
+      </label>
+    </div>
+    <div class="d-none">
+      <input name="lang" type="hidden" value="{{ page.lang }}">
+      <label for="captcha">Captcha*</label>
+      <input name="captcha" type="text" tabindex="-1">
+    </div>
+    <div class="d-grid gap-2">
+      <button type="sumbit" id="messagebutton" class="btn btn-primary">Submit</button>
+    </div>
+  </fieldset>
+</form>
+
 <style>
 @media print {
   .print-text-center {
