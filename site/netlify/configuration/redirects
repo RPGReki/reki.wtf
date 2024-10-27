@@ -11,6 +11,9 @@ permalink: /_redirects
 /s/discord*		https://discord.gg/8DCZWGc	301!
 /s/patreon*		https://www.patreon.com/bePatron?u=27792463	301!
 
+/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta:splat 302
+/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger 302
+
 ## Protective Redirects
 https://static.0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 https://www.reki.wtf/*		{{ '/' | absolute_url }}:splat	301!
