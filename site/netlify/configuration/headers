@@ -58,6 +58,9 @@ permalink: /_headers
   Content-Type: text/html; charset=utf-8
   Expect-CT: enforce, max-age=2592000
 
+/favicon.ico
+  Access-Control-Allow-Origin: *
+
 /private/slides/**/*.js
   Content-Type: text/javascript; charset=utf-8
 
