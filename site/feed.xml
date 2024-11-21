@@ -24,7 +24,7 @@ layout: xml
       <id>{{ page.category | first | prepend: '/' | absolute_url }}blog/#{{ page.title | slugify }}</id>
       <link href="{{ page.category | first | prepend: '/' | absolute_url }}blog/#{{ page.title | slugify }}" rel="alternate" type="text/html" title="{{ page.title }}" />
     {% endif %}
-    <link href="https://fed.brid.gy/" rel="webmention">
+    <link href="https://fed.brid.gy/" rel="webmention" />
     <published>{{ page.date | date_to_xmlschema }}</published>
     <updated>{{ page.last_modified_at | date_to_xmlschema }}</updated>
     <author>{% assign author = site.data.staff | where: 'id', page.author | last%}
