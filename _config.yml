@@ -46,6 +46,8 @@ facebook:
   app_id: 656032504831426
 tumblr:
   url: RPGReki.tumblr.com
+bluesky:
+  username: "@reki.wtf"
 mastodon:
   username: RPGReki@vt.social
 google_analytics: UA-143950814-4
