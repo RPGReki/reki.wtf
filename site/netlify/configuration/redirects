@@ -23,6 +23,8 @@ https://0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 https://www.0xreki.de/*		{{ '/' | absolute_url }}:splat	301!
 https://rpgreki.de/*		{{ '/' | absolute_url }}:splat	301!
 https://www.rpgreki.de/*		{{ '/' | absolute_url }}:splat	301!
+https://rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
+https://www.rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
 
 ## Proxies might be added to repository to improve speed
 
