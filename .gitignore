@@ -31,7 +31,6 @@ Session.vim
 /site/_data/amauga/
 /site/_data/cd/
 /site/plugins/
-/site/proxy/
 /site/tags/
 .make-state-env-*
 .sass-cache
