@@ -1,56 +1,60 @@
-- title: Amauga
-  url: /amauga/
-  unicode_icon: 📘
-- title: Crystal Down
-  url: /crystaldown/
-  unicode_icon: 📕
+- title: WebNovels
+  unicode_icon: 📙
+  id: novels
+  subitems:
+    - title: Amauga
+      url: /amauga/
+      unicode_icon: 📘
+    - title: Crystal Down
+      url: /crystaldown/
+      unicode_icon: 📗
 - title: Archive
   unicode_icon: 🗄️
   id: archive
   subitems:
-  - title: Archived Projects
-    url: /archive/
-    unicode_icon: 📁
-  - title: YouTube Archive
-    url: /archive/youtube-archive/
-    unicode_icon: 🎥
+    - title: Archived Projects
+      url: /archive/
+      unicode_icon: 📁
+    - title: YouTube Archive
+      url: /archive/youtube-archive/
+      unicode_icon: 🎥
 - title: Blog
   url: /blog/
   unicode_icon: 🗞️
 - title: Tags
   url: /tags/
   unicode_icon: 🏷
-- title: Doman Mahjong Tournament
-  unicode_icon: 🀙
+- title: Mahjong Tournaments
+  unicode_icon: 🀄
   id: doman
   subitems:
-  - title: "Mahjong of ̶L̶i̶g̶h̶t̶ Materia: Tenbou Collide"
-    url: /doman/2024-05-materia-tenbou-collide/
-    unicode_icon: 💥
-  - title: 5th Light Doman Open 2023
-    url: /doman/2023-12-5th-light-doman-open/
-    unicode_icon: 📖
-  - title: 4th Light Doman Open 2022
-    url: /doman/2022-09-4th-light-doman-open/
-    unicode_icon: 📖
-  - title: Metal Ox Doman Mahjong Tournament 2021
-    url: /doman/2021-02-metal-ox/
-    unicode_icon: 🐂
-  - title: 2nd Light Doman Open 2020
-    url: /doman/2020-09-2nd-light-doman-open/
-    unicode_icon: 📖
-  - title: Water Tiger Doman Mahjong Tournament 2022
-    url: /doman/2022-02-water-tiger-new-years-tournament/
-    unicode_icon: 🐅
-  - title: 3rd Light Doman Open 2021
-    url: /doman/2021-09-3rd-light-doman-open/
-    unicode_icon: 📖
-  - title: 2nd Light Doman Open 2020
-    url: /doman/2020-09-2nd-light-doman-open/
-    unicode_icon: 📖
-  - title: Furiten Riichi May-hem Doman Mahjong Tournament 2020
-    url: /doman/2020-05-furiten-riichi-may-hem/
-    unicode_icon: 🤪
+    - title: "Mahjong of ̶L̶i̶g̶h̶t̶ Materia: Tenbou Collide"
+      url: /doman/2024-05-materia-tenbou-collide/
+      unicode_icon: 💥
+    - title: 5th Light Doman Open 2023
+      url: /doman/2023-12-5th-light-doman-open/
+      unicode_icon: 📖
+    - title: 4th Light Doman Open 2022
+      url: /doman/2022-09-4th-light-doman-open/
+      unicode_icon: 📖
+    - title: Metal Ox Doman Mahjong Tournament 2021
+      url: /doman/2021-02-metal-ox/
+      unicode_icon: 🐂
+    - title: 2nd Light Doman Open 2020
+      url: /doman/2020-09-2nd-light-doman-open/
+      unicode_icon: 📖
+    - title: Water Tiger Doman Mahjong Tournament 2022
+      url: /doman/2022-02-water-tiger-new-years-tournament/
+      unicode_icon: 🐅
+    - title: 3rd Light Doman Open 2021
+      url: /doman/2021-09-3rd-light-doman-open/
+      unicode_icon: 📖
+    - title: 2nd Light Doman Open 2020
+      url: /doman/2020-09-2nd-light-doman-open/
+      unicode_icon: 📖
+    - title: Furiten Riichi May-hem Doman Mahjong Tournament 2020
+      url: /doman/2020-05-furiten-riichi-may-hem/
+      unicode_icon: 🤪
 
 - title: FAQ
   url: /q-and-a/
