@@ -13,15 +13,17 @@ extra_meta:
 about:
   type: Person
   links:
-  - https://bsky.app/profile/rpgreki.vtubers.social
   - https://twitch.tv/RPGReki
-  - https://youtube.com/RPGReki
-  - https://youtube.com/RPGRekiMusic
+  - https://youtube.com/@RPGReki
+  - https://youtube.com/@RPGRekiMusic
+  - https://bsky.app/profile/rpgreki.vtubers.social
+  - https://vt.social/@RPGReki
   - https://twitter.com/RPGReki
   - https://facebook.com/RPGReki
   - https://github.com/RPGReki
   - https://gitlab.com/RPGReki
   - https://www.patreon.com/RPGReki
+  - https://ko-fi.com/RPGReki
   - https://flattr.com/@RPGReki
 
 redirect_from:
@@ -43,32 +45,7 @@ excerpt: |
     "@type": "{{ page.about.type }}",
     "name": "Thai “RPGReki Chung”",
     "url": "{{ page.url | absolute_url }}"{% if page.about.links %},
-    "sameAs": {{ page.about.links | jsonify }}{% endif %},
-    "alumniOf": {
-      "@id": "#uulm"
-    },
-    "hasOccupation": [{
-      "@id": "#it-nrw"
-    },{
-      "@id": "#plusserver"
-    },{
-      "@id": "#clubfamily"
-    },{
-      "@id": "#schuelernachhilfe1"
-    },{
-      "@id": "#teaching-assistant"
-    },{
-      "@id": "#sgi"
-    },{
-      "@id": "#devradio"
-    },{
-      "@id": "#sk"
-    },{
-      "@id": "#fin"
-    }],
-    "hasCredential": {
-      "@id": "#bc"
-    }
+    "sameAs": {{ page.about.links | jsonify }}{% endif %}
   }
 </script>
 
