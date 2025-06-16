@@ -4,11 +4,9 @@ title: "Bar Desire Sanctuary Mystique Menu"
 author: RPGReki
 date: 2025-06-16
 comments: false
-sitemap: false
-robots: noindex
 intermediate_breadcrumbs:
-  - title: Archived Projects
-    url: /archive/
+  - title: Bar Desire Sanctuary Mystique Menu
+    url: /bdsm/
 ---
 - 100% Orange Juice
 
