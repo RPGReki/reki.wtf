@@ -6,6 +6,9 @@ date: 2025-06-16
 comments: false
 sitemap: false
 robots: noindex
+intermediate_breadcrumbs:
+  - title: Archived Projects
+    url: /archive/
 ---
 - 100% Orange Juice
 
