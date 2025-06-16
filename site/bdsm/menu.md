@@ -8,13 +8,17 @@ intermediate_breadcrumbs:
   - title: Bar Desire Sanctuary Mystique Menu
     url: /bdsm/
 ---
+# Bar Desire Sanctuary Mystique Menu
+
 - 100% Orange Juice
+
 
 - [Rising Sun](https://www.diffordsguide.com/cocktails/recipe/16369/rising-sun)
 - Big 3 Dragons:
   - [White Dragon](https://www.diffordsguide.com/cocktails/recipe/24886/white-dragon)
   - [Green Dragon](https://www.diffordsguide.com/cocktails/recipe/2675/green-dragon)
   - [Red Dragon](https://www.diffordsguide.com/cocktails/recipe/8968/red-dragon)
+
 
 - [Kiss](https://www.diffordsguide.com/cocktails/recipe/12051/kiss)
 - [Safe Word](https://www.diffordsguide.com/cocktails/recipe/15794/safe-word)
@@ -28,6 +32,7 @@ intermediate_breadcrumbs:
 - [Threesome](https://www.diffordsguide.com/cocktails/recipe/1948/threesome)
 - [S&M](https://www.diffordsguide.com/cocktails/recipe/30319/s-and-m)
 - [BDSM](https://www.diffordsguide.com/cocktails/recipe/11551/bdsm)
+
 
 - [True Desire](https://www.diffordsguide.com/cocktails/recipe/4031/true-desire)
 - [Pursuit of Happiness](https://www.diffordsguide.com/cocktails/recipe/4719/pursuit-of-happiness)
