@@ -1,0 +1,387 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "quốc Thái Chung",
+    "label": "Network Administrator at Information und Technik Nordrhein-Westfalen (IT.NRW)",
+    "image": "",
+    "email": "thai.chung@reki.wtf",
+    "phone": "+49 162 3676 345",
+    "url": "https://gitlab.com/RPGReki",
+    "summary": "E",
+    "location": {
+      "countryCode": "DE",
+      "address": "Roßstraße 140, 47798 Krefeld"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "q-thai-chung",
+        "url": "https://www.linkedin.com/in/q-thai-chung/"
+      },
+      {
+        "network": "Twitter/X",
+        "username": "RPGReki",
+        "url": "https://twitter.com/RPGReki"
+      },
+      {
+        "network": "BlueSky",
+        "username": "rpgreki.vtubers.social",
+        "url": "https://bsky.app/profile/rpgreki.vtubers.social"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Information und Technik Nordrhein-Westfalen (IT.NRW)",
+      "position": "Network Administrator",
+      "startDate": "2020-07-01",
+      "endDate": "",
+      "highlights": [],
+      "summary": "IT.NRW developes and provides IT infrastructure for state administration of North Rhine-Westphalia",
+      "url": "https://www.linkedin.com/company/information-und-technik-nordrhein-westfalen-it.nrw-/",
+      "location": "Düsseldorf, North Rhine-Westphalia, Germany"
+    },
+    {
+      "name": "PlusServer",
+      "position": "System Administrator",
+      "startDate": "2018",
+      "endDate": "2019",
+      "highlights": [],
+      "summary": "PlusServer helps organizations realise the full potential of their cloud strategy. \n\nTasks at this position included:\n• Administration of Linux and Windows Server for Internal IT",
+      "url": "https://www.linkedin.com/company/plusserver/",
+      "location": "Cologne Area, Germany"
+    },
+    {
+      "name": "SD Inspiring Travel GmbH",
+      "position": "Web Developer",
+      "startDate": "2017",
+      "endDate": "2018",
+      "highlights": [],
+      "summary": "SD Inspiring Travel GmbH is an online travel agency that specializes in family vacations.\n\nTasks at this position included:\n• PHP Developement: Drupal, Symphony\n• Administration of Linux & macOS",
+      "url": "https://www.linkedin.com/company/sd-inspiring-travel-gmbh/",
+      "location": "Cologne Area, Germany"
+    },
+    {
+      "name": "SchülerNachhilfe1",
+      "position": "Private Tutor",
+      "startDate": "2017",
+      "endDate": "2017",
+      "highlights": [],
+      "summary": "Private Tutor for English, Mathematics, Chemistry and Physics",
+      "url": "",
+      "location": "Ulm Area, Germany"
+    },
+    {
+      "name": "Ulm University",
+      "position": "Teaching Assistant",
+      "startDate": "2010",
+      "endDate": "2016",
+      "highlights": [],
+      "summary": "Undergraduate Teaching Assitant for several different lectures:\ni. a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms",
+      "url": "https://www.linkedin.com/school/ulm-university/",
+      "location": "Ulm Area, Germany"
+    },
+    {
+      "name": "Ulm University",
+      "position": "Linux System Administrator",
+      "startDate": "2013",
+      "endDate": "2014",
+      "highlights": [],
+      "summary": "Administration of student Linux computer pool",
+      "url": "https://www.linkedin.com/school/ulm-university/",
+      "location": "Ulm Area, Germany"
+    },
+    {
+      "name": "Bernhard-Strigel-Gymnasium",
+      "position": "Private Tutor",
+      "startDate": "2005",
+      "endDate": "2009",
+      "highlights": [],
+      "summary": "Private Tutor for Mathematics, Chemistry and Physics",
+      "url": "",
+      "location": " Memmingen"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Ulm University",
+      "position": "Chairman of Computer Science Student Representation",
+      "startDate": "2012",
+      "endDate": "2013",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "Ulm University",
+      "position": "Computer Science Study Commission Member",
+      "startDate": "2010",
+      "endDate": "2014",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "/dev/radio",
+      "position": "Radio Show Host",
+      "startDate": "2010",
+      "endDate": "2016",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "Ulm University",
+      "position": "Chief Editor",
+      "startDate": "2011-12-31",
+      "endDate": "2017-12-31",
+      "summary": "Chief Editor of the newspaper of the computer science division student representation at Ulm University",
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "organization": "Ulm University",
+      "position": "Treasurer",
+      "startDate": "2012-12-31",
+      "endDate": "",
+      "summary": "Treasurer of the 40.0th KIF, the “Konferenz der Informatikfachschaften”, the conference of all student representations of Computer Science programs in German speaking countries\n",
+      "highlights": [],
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Ulm University",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science (B.Sc.)",
+      "startDate": "2009-12-31",
+      "endDate": "2016-12-31",
+      "score": "1.9",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "60th Place in NWERC (North Western European Regional Contest)",
+      "date": "2010-11-30",
+      "awarder": "Association for Computing Machinery",
+      "summary": "ACM hosts a year computer programming contest. The contest requires choosing appropriate algorithms to the problems presented and implementing them efficiently in C, C++ or Java.\n\nReached 60th Place with team ExposedToSunlightException at the regional stage at NWERC (North Western European Regional Contest)"
+    },
+    {
+      "title": "21st Place at GCPC (German Collegiate Programming Contest)",
+      "date": "2010-06-30",
+      "awarder": "Association for Computing Machinery",
+      "summary": "ACM hosts a year computer programming contest. The contest requires choosing appropriate algorithms to the problems presented and implementing them efficiently in C, C++ or Java.\n\nReached 21th Place with team ExposedToSunlightException at the local stage GCPC (German Collegiate Programming Contest) and quailfied for the regionals stage."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "EFSET English Certificate - Proficient (CEFR C2)",
+      "issuer": "EF Education First",
+      "url": "https://www.efset.org/"
+    },
+    {
+      "name": "Python",
+      "issuer": "TestDome",
+      "url": "https://www.testdome.com/cert/3uyetdbeqd"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Linux System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Coordination",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teaching",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Social Media",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Lecturing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Debian",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Science",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Typography",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Radio",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Haskell",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LaTeX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teamwork",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Audio Mixing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python 3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Word",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ruby",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XHTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GNU/Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Audio Editing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Account Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SASS",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Professional Working",
+      "language": "English"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "French"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "German"
+    },
+    {
+      "fluency": "Native Speaker",
+      "language": "Vietnamese"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
