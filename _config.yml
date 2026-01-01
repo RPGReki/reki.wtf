@@ -126,6 +126,16 @@ defaults:
       publisher: reki
       comments: false
       image: /images/-og.jpg
+  - # /de
+    scope:
+      path: "de"
+    values:
+      lang: "de-DE"
+      author: reki
+      publisher: reki
+      comments: false
+      image: /images/-og.jpg
+      sitemap: false
   - # /_posts/personal
     scope:
       path: "_posts/personal"
