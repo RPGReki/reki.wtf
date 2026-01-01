@@ -13,8 +13,3 @@
 	url = git@gitlab.com:RPGReki-WN/amauga.git
 	branch = main
 	
-[submodule "crystaldown"]
-	path = crystaldown
-	url = git@gitlab.com:RPGReki-WN/crystaldown.git
-	branch = main
-
