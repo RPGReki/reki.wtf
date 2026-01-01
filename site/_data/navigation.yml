@@ -1,13 +1,6 @@
-- title: WebNovels
-  unicode_icon: 📙
-  id: novels
-  subitems:
-    - title: Amauga
-      url: /amauga/
-      unicode_icon: 📘
-    - title: Crystal Down
-      url: /crystaldown/
-      unicode_icon: 📗
+- title: "WebNovel: Amauga"
+  url: /amauga/
+  unicode_icon: 📘
 - title: Archive
   unicode_icon: 🗄️
   id: archive
@@ -21,9 +14,6 @@
 - title: Blog
   url: /blog/
   unicode_icon: 🗞️
-- title: Tags
-  url: /tags/
-  unicode_icon: 🏷
 - title: Mahjong Tournaments
   unicode_icon: 🀄
   id: doman
