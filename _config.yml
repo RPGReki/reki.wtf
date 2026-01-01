@@ -206,7 +206,7 @@ defaults:
         series: Amauga
         copyrightYear: 2026
         title: "Weit, weit weg von moderner Zivilisation"
-        url: "/amauga/#band01-weitweitweg-von-modernerzivilisation"
+        url: "/amauga/#band01"
         genres:
           - Science Fantasy
           - Fantasy
@@ -231,7 +231,7 @@ defaults:
         series: Amauga
         copyrightYear: 2021
         title: First Steps of the Pilgrimage
-        url: "/amauga/#volume02-firststepsofthepilgrimage"
+        url: "/amauga/#band02"
         genres:
           - Adventure
           - Fantasy
