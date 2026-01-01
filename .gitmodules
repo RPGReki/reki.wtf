@@ -18,8 +18,3 @@
 	url = git@gitlab.com:RPGReki-WN/crystaldown.git
 	branch = main
 
-[submodule "crystaldown-reboot"]
-	path = crystaldown-reboot
-	url = git@gitlab.com:RPGReki-WN/crystaldown-reboot.git
-	branch = main
-
