@@ -12,3 +12,5 @@ group :jekyll_plugins do
     gem "jekyll-wns", git: "https://gitlab.com/RPGReki/jekyll-wns.git", branch: "main"
     gem "jekyll-last-modified-at"
 end
+
+gem "logger", "~> 1.7"
