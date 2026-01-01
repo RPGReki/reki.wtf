@@ -47,7 +47,7 @@ facebook:
 tumblr:
   url: RPGReki.tumblr.com
 bluesky:
-  username: "@reki.wtf"
+  username: "@rpgreki.vtubers.social"
 mastodon:
   username: RPGReki@vt.social
 google_analytics: UA-143950814-4
@@ -121,7 +121,7 @@ defaults:
     scope:
       path: ""
     values:
-      lang: "en-CA"
+      lang: "en-AU"
       author: reki
       publisher: reki
       comments: false
@@ -133,7 +133,7 @@ defaults:
       category: personal
       layout: 2021/post
       type: post
-      lang: "en-CA"
+      lang: "en-AU"
       author: reki
       publisher: reki
       comments: true
@@ -151,7 +151,7 @@ defaults:
       category: amauga
       layout: 2021/post
       type: post
-      lang: "en-CA"
+      lang: "de-DE"
       author: reki
       publisher: reki
       comments: true
@@ -166,7 +166,7 @@ defaults:
       category: crystaldown
       layout: 2021/post
       type: post
-      lang: "en-CA"
+      lang: "en-AU"
       author: reki
       publisher: reki
       comments: true
@@ -178,177 +178,13 @@ defaults:
         -
           title: Archived Projects
           url: /archive/
-  - # /_posts/scions
-    scope:
-      path: "_posts/scions"
-    values:
-      category: scions
-      layout: 2021/post
-      type: post
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      image: /crystaldown/-og.jpg
-      permalink: /scions/blog/:year/:month-:day-:title/
-      intermediate_breadcrumbs:
-        -
-          title: Archived Projects
-          url: /archive/
-  - # /_posts/scions-reboot
-    scope:
-      path: "_posts/scions-reboot"
-    values:
-      category: scions-reboot
-      layout: 2021/post
-      type: post
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      image: /images/-og.jpg
-      permalink: /scions-reboot/blog/:year/:month-:day-:title/
-  - # /_posts/my-life-as-a-cat
-    scope:
-      path: "_posts/my-life-as-a-cat"
-    values:
-      category: my-life-as-a-cat
-      layout: 2021/post
-      type: post
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      image: /images/-og.jpg
-      permalink: /my-life-as-a-cat/blog/:year/:month-:day-:title/
-  - # /crystal-down-reboot/01-life-in-avan-forest
-    scope:
-      path: "crystal-down-reboot/01-life-in-avan-forest"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      termbase: /crystal-down-reboot
-      book:
-        number: 1
-        series: Crystal Down
-        copyrightYear: 2023-2020
-        title: "Life in Avan Forest"
-        url: "/crystal-down-reboot/#volume01-lifeinavanforest"
-        genres:
-          - Comedy
-          - Fantasy
-          - Isekai
-          - LitRPG
-          - Slice of Life
-      image: /crystal-down-reboot/-og.jpg
-  - # /crystaldown/01-life-in-avan-forest
-    scope:
-      path: "crystaldown/01-life-in-avan-forest"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      termbase: /crystaldown
-      book:
-        number: 1
-        series: Crystal Down
-        copyrightYear: 2019-2020
-        title: "Life in Avan Forest"
-        url: "/crystaldown/#volume01-lifeinavanforest"
-        genres:
-          - Comedy
-          - Fantasy
-          - Isekai
-          - LitRPG
-          - Slice of Life
-      image: /crystaldown/-og.jpg
-      intermediate_breadcrumbs:
-        -
-          title: Archived Projects
-          url: /archive/
-  - # /crystaldown/02-vampire-aide-and-exodus
-    scope:
-      path: "crystaldown/02-vampire-aide-and-exodus"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      termbase: /crystaldown
-      book:
-        number: 2
-        series: Crystal Down
-        copyrightYear: 2020-2021
-        title: "Vampire Aide and Exodus"
-        url: "/crystaldown/#volume02-vampireaideandexodus"
-        genres:
-          - Comedy
-          - Fantasy
-          - Isekai
-          - LitRPG
-          - Slice of Life
-      image: /crystaldown/-og.jpg
-      intermediate_breadcrumbs:
-        -
-          title: Archived Projects
-          url: /archive/
-  - # /scions/01-children-of-light-and-darkness
-    scope:
-      path: "scions/01-children-of-light-and-darkness"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      termbase: /crystaldown
-      book:
-        number: 1
-        series: "Crystal Down: Scions"
-        copyrightYear: 2020
-        title: "Children of Light and Darkness"
-        url: "/scions/#volume-01-children-of-light-and-darkness"
-        genres:
-          - Adventure
-          - Fantasy
-          - LitRPG
-          - Slice of Life
-      image: /crystaldown/-og.jpg
-      intermediate_breadcrumbs:
-        -
-          title: Archived Projects
-          url: /archive/
   - # /amauga/01-far-from-any-semblance-of-modern-civilization
     scope:
       path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
     values:
       layout: 2021/chapter
       type: chapter
-      lang: "en-CA"
+      lang: "de-DE"
       author: reki
       publisher: reki
       comments: true
@@ -374,7 +210,7 @@ defaults:
     values:
       layout: 2021/chapter
       type: chapter
-      lang: "en-CA"
+      lang: "en-AU"
       author: reki
       publisher: reki
       comments: true
@@ -394,38 +230,6 @@ defaults:
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.jpg
-  - # /my-life-as-a-cat/
-    scope:
-      path: "my-life-as-a-cat/"
-    values:
-      sitemap: false
-      robots: noindex
-  - # /my-life-as-a-cat/01
-    scope:
-      path: "my-life-as-a-cat/01-working-title/"
-    values:
-      layout: 2021/chapter
-      type: chapter
-      lang: "en-CA"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      termbase: /my-life-as-a-cat
-      book:
-        number: 1
-        series: My Life As A Cat
-        copyrightYear: 2022
-        title: Reincarnation
-        url: "/my-life-as-a-cat/#volume01-reincarnation"
-        genres:
-          - Fantasy
-          - Slice of Life
-          - Comedy
-          - LitRPG
-          - Isekai
-      image: /images/-og.jpg
   - # /private
     scope:
       path: "private"

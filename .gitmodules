@@ -23,8 +23,3 @@
 	url = git@gitlab.com:RPGReki-WN/crystaldown-reboot.git
 	branch = main
 
-[submodule "scions"]
-	path = scions
-	url = git@gitlab.com:RPGReki-WN/scions.git
-	branch = main
-

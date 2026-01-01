@@ -15,7 +15,7 @@ layout: xml
   {% capture post_time %}{{ page.date | date: '%s' }}{% endcapture %}
   {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
 {% unless page.long %}{% continue %}{% endunless %}
-  <entry xml:lang="en-CA">
+  <entry xml:lang="en-AU">
     <title type="html">{{ page.title }}</title>
     {% if page.long %}
       <id>{{ page.url | absolute_url }}</id>
