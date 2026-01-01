@@ -188,9 +188,9 @@ defaults:
         -
           title: Archived Projects
           url: /archive/
-  - # /amauga/01-far-from-any-semblance-of-modern-civilization
+  - # /amauga/01-weit-weit-weg-von-monderner-zivilization
     scope:
-      path: "amauga/01-far-from-any-semblance-of-modern-civilization/"
+      path: "amauga/01-weit-weit-weg-von-monderner-zivilization"
     values:
       layout: 2021/chapter
       type: chapter
@@ -204,15 +204,14 @@ defaults:
       book:
         number: 1
         series: Amauga
-        copyrightYear: 2021
-        title: "Far From Any Semblance of Modern Civilization"
-        url: "/amauga/#volume01-farfromanysemblance-ofmoderncivilization"
+        copyrightYear: 2026
+        title: "Weit, weit weg von moderner Zivilisation"
+        url: "/amauga/#band01-weitweitweg-von-modernerzivilisation"
         genres:
-          - Adventure
+          - Science Fantasy
           - Fantasy
+          - Action & Adventure
           - Slice of Life
-      audio_mirror:
-        - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.jpg
   - # /amauga/02-first-steps-of-the-pilgrimage
     scope:
