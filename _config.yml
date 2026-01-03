@@ -68,6 +68,12 @@ webmention:
       max_retries: 5
     whitelist:
       - "^https://brid.gy/publish/"
+    blacklist:
+      - "^https://music.apple.com/"
+      - "^https://www.youtube.com/"
+      - "^https://www.amazon"
+      - "^https://s3.amazonaws.com/"
+      - "^https://paypal.me/"
   syndication:
     bluesky: 
       endpoint: https://brid.gy/publish/bluesky
