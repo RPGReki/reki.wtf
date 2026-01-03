@@ -31,7 +31,7 @@ COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 # imported files are phony to force re-importing
 .PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap 
 
-default: production webmention .jekyll-cache/webmention_io_received.yml
+default: production
 
 ## Build Tasks
 testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
