@@ -54,7 +54,7 @@ deploy install: production
 	netlify deploy --production --message="$(shell git log --oneline -1)"
 
 .jekyll-cache/webmention_io_%.yml:
-	JEKYLL_ENV=production bundle exec jekyll b
+	[ "$(@F)" = "webmention_io_received.yml" ] && JEKYLL_ENV=production bundle exec jekyll b || true
 
 ## Build Tasks: Tags
 
