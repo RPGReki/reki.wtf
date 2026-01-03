@@ -89,6 +89,7 @@ webmentions:
       - "^https://prowritingaid.com/"
       - "^https://schema.org/"
       - "^https://open.spotify.com/"
+      - "^https://reki.wtf/"
       - "square-enix-games.com/"
       - "^https://www.ublock.org/"
       - "^https://vgen.co/"
