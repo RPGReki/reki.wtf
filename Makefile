@@ -42,7 +42,7 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --config _config.yml,_local.yml -q
 	gulp purgecss
 
-production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
+production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) .jekyll-cache/webmention_io_received.yml
 	JEKYLL_ENV=production bundle exec jekyll b -q --incremental
 	gulp purgecss
 
@@ -53,7 +53,7 @@ deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
 	netlify deploy --production --message="$(shell git log --oneline -1)"
 
-.jekyll-cache/webmention_io_outgoing.yml:
+.jekyll-cache/webmention_io_received.yml:
 	JEKYLL_ENV=production bundle exec jekyll b -q
 
 ## Build Tasks: Tags
