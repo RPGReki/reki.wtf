@@ -156,6 +156,7 @@ defaults:
       publisher: reki
       comments: false
       image: /images/-og.jpg
+      syndicate_to: [ bluesky ]
   - # /de
     scope:
       path: "de"
@@ -166,6 +167,7 @@ defaults:
       comments: false
       image: /images/-og.jpg
       sitemap: false
+      syndicate_to: [ bluesky ]
   - # /_posts/personal
     scope:
       path: "_posts/personal"
@@ -184,6 +186,7 @@ defaults:
       audio_mirror: 
         - https://reki.wtf/blog/audio/
         - https://reki-adventures.s3.eu-central-1.amazonaws.com/
+      syndicate_to: [ bluesky ]
   - # /_posts/amauga
     scope:
       path: "_posts/amauga"
@@ -199,6 +202,7 @@ defaults:
       published: true
       image: /amauga/-og.jpg
       permalink: /amauga/blog/:year/:month-:day-:title/
+      syndicate_to: [ bluesky ]
   - # /amauga/01-weit-weit-weg-von-moderner-zivilization
     scope:
       path: "amauga/01-weit-weit-weg-von-moderner-zivilization"
@@ -224,6 +228,7 @@ defaults:
           - Action & Adventure
           - Slice of Life
       image: /amauga/-og.jpg
+      syndicate_to: [ bluesky ]
   - # /amauga/02-first-steps-of-the-pilgrimage
     scope:
       path: "amauga/02-first-steps-of-the-pilgrimage/"
@@ -250,6 +255,7 @@ defaults:
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.jpg
+      syndicate_to: [ bluesky ]
   - # /private
     scope:
       path: "private"
