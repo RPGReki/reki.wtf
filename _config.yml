@@ -225,7 +225,7 @@ defaults:
       published: true
       image: /amauga/-og.jpg
       permalink: /amauga/blog/:year/:month-:day-:title/
-      syndicate_to: [ bluesky ]
+      syndicate_to: []
   - # /amauga/01-weit-weit-weg-von-moderner-zivilization
     scope:
       path: "amauga/01-weit-weit-weg-von-moderner-zivilization"
