@@ -69,16 +69,40 @@ webmentions:
     whitelist:
       - "^https://brid.gy/publish/"
     blacklist:
-      - "^https://music.apple.com/"
-      - "^https://www.youtube.com/"
+      - "^https://allegro.pl/"
       - "^https://www.amazon"
       - "^https://s3.amazonaws.com/"
+      - "^https://music.apple.com/" 
+      - "^https://archive.org/"
+      - "^https://calibre-ebook.com"
+      - "^https://www.deezer.com/"
+      - "^https://discord.gg/"
+      - "finalfantasy.com/"
+      - "^https://www.iheart.com/"
+      - "^https://jekyllrb.com/"
+      - "^https://www.lenovo.com/"
+      - "^http://mahjong-europe.org/"
+      - "^https://www.netlify.com/"
+      - "^https://www.npmjs.com/"
+      - "^https://pandoc.org/"
       - "^https://paypal.me/"
+      - "^https://prowritingaid.com/"
+      - "^https://schema.org/"
+      - "^https://open.spotify.com/"
+      - "square-enix-games.com/"
+      - "^https://www.ublock.org/"
+      - "^https://vgen.co/"
+      - "^https://www.youtube.com/"
   syndication:
     bluesky: 
       endpoint: https://brid.gy/publish/bluesky
     mastodon: 
       endpoint: https://brid.gy/publish/mastodon
+  throttle_lookups:
+    last_week: daily
+    last_month: weekly
+    last_year: every 2 weeks
+    older: monthly
 
 webmaster_verifications:
   - name: seobility
