@@ -57,7 +57,7 @@ patreon:
 
 webmention:
   username: "@rpgreki.vtubers.social"
-  pages: true
+  js: false
   bad_uri_policy:
     unsupported:
       policy: ban
@@ -65,7 +65,6 @@ webmention:
       policy: ignore
     failure:
       policy: retry
-      retry_delay: [ 1, 12, 48, 120 ]
       max_retries: 5
     whitelist:
       - "^https://brid.gy/publish/"
@@ -73,19 +72,17 @@ webmention:
     bluesky: 
       endpoint: https://brid.gy/publish/bluesky
       response_mapping:
-        syndication: $.url
         username: "$.user.screen_name:"
     mastodon: 
       endpoint: https://brid.gy/publish/mastodon
       response_mapping:
-        syndication: $.url
         username: "$.user.screen_name:"
-  collections:
-    posts:
-      syndicate_to: [ bluesky ]
-    pages:
-      syndicate_to: [ bluesky ]
-  js: false
+
+collections:
+  posts:
+    syndicate_to: [ bluesky ]
+  pages:
+    syndicate_to: [ bluesky ]
 
 webmaster_verifications:
   - name: seobility
