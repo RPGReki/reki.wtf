@@ -215,7 +215,7 @@ defaults:
       audio_mirror: 
         - https://reki.wtf/blog/audio/
         - https://reki-adventures.s3.eu-central-1.amazonaws.com/
-      syndicate_to: [ bluesky ]
+      syndicate_to: [ bluesky, mastodon ]
   - # /_posts/amauga
     scope:
       path: "_posts/amauga"
@@ -257,7 +257,7 @@ defaults:
           - Action & Adventure
           - Slice of Life
       image: /amauga/-og.jpg
-      syndicate_to: [ bluesky ]
+      syndicate_to: [ bluesky, mastodon ]
   - # /amauga/02-first-steps-of-the-pilgrimage
     scope:
       path: "amauga/02-first-steps-of-the-pilgrimage/"
@@ -284,7 +284,7 @@ defaults:
       audio_mirror:
         - "https://amauga.s3.us-east-2.amazonaws.com/"
       image: /amauga/-og.jpg
-      syndicate_to: [ bluesky ]
+      syndicate_to: [ bluesky, mastodon ]
   - # /private
     scope:
       path: "private"
