@@ -88,6 +88,7 @@ webmentions:
       - "^https://paypal.me/"
       - "^https://prowritingaid.com/"
       - "^https://schema.org/"
+      - "sonyinsider.com/"
       - "^https://open.spotify.com/"
       - "^https://reki.wtf/"
       - "square-enix-games.com/"
