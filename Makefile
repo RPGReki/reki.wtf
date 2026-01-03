@@ -51,7 +51,7 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
 	gulp purgecss
-	jekyll webmention
+	bundle exec jekyll webmention
 
 deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi

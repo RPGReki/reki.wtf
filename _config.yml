@@ -55,8 +55,8 @@ patreon:
   title: Become a Patron to read early access chapters
   url: https://www.patreon.com/bePatron?u=27792463
 
-webmention:
-  username: "@rpgreki.vtubers.social"
+webmentions:
+  username: "reki.wtf"
   js: false
   bad_uri_policy:
     unsupported:
@@ -77,18 +77,8 @@ webmention:
   syndication:
     bluesky: 
       endpoint: https://brid.gy/publish/bluesky
-      response_mapping:
-        username: "$.user.screen_name:"
     mastodon: 
       endpoint: https://brid.gy/publish/mastodon
-      response_mapping:
-        username: "$.user.screen_name:"
-
-collections:
-  posts:
-    syndicate_to: [ bluesky ]
-  pages:
-    syndicate_to: [ bluesky ]
 
 webmaster_verifications:
   - name: seobility
@@ -162,7 +152,6 @@ defaults:
       publisher: reki
       comments: false
       image: /images/-og.jpg
-      syndicate_to: [ bluesky ]
   - # /de
     scope:
       path: "de"
@@ -173,7 +162,6 @@ defaults:
       comments: false
       image: /images/-og.jpg
       sitemap: false
-      syndicate_to: [ bluesky ]
   - # /_posts/personal
     scope:
       path: "_posts/personal"
