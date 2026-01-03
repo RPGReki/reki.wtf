@@ -31,7 +31,7 @@ COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 # imported files are phony to force re-importing
 .PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap 
 
-default: production
+default: production webmention
 
 ## Build Tasks
 testing: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
@@ -43,13 +43,18 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	gulp purgecss
 
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
-	JEKYLL_ENV=production bundle exec jekyll b -q
+	JEKYLL_ENV=production bundle exec jekyll b -q --incremental
 	gulp purgecss
+
+webmention: .jekyll-cache/webmention_io_outgoing.yml
 	-bundle exec jekyll webmention
 
 deploy install: production
 	@if [[ ! -z "$$(git status --porcelain)" ]]; then echo Repository is not clean. Please commit your changes.; exit 1; fi
 	netlify deploy --production --message="$(shell git log --oneline -1)"
+
+.jekyll-cache/webmention_io_outgoing.yml:
+	JEKYLL_ENV=production bundle exec jekyll b -q
 
 ## Build Tasks: Tags
 
