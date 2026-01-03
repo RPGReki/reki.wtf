@@ -34,9 +34,9 @@ plugins:
   - jekyll-regex-replace
   - jekyll-include-cache
   - jekyll-liquify
-  - jekyll-criticmarkup
   - jekyll-wns
   - jekyll-last-modified-at
+#  - jekyll-webmention
 
 ## SEO
 twitter:
@@ -54,6 +54,22 @@ google_analytics: UA-143950814-4
 patreon:
   title: Become a Patron to read early access chapters
   url: https://www.patreon.com/bePatron?u=27792463
+
+webmention:
+  username: "@rpgreki.vtubers.social"
+  syndication:
+    bluesky: 
+      endpoint: https://brid.gy/publish/bluesky
+      response_mapping:
+        syndication: $.url
+        username: "$.user.screen_name:"
+#    mastodon: 
+#      endpoint: https://brid.gy/publish/mastodon
+
+collections:
+  posts:
+    syndicate_to: [ bluesky ]
+
 webmaster_verifications:
   - name: seobility
     key: efc87fbbcdcf8f61c070bbcc23dab8b1
