@@ -75,14 +75,17 @@ webmention:
       response_mapping:
         syndication: $.url
         username: "$.user.screen_name:"
-#    mastodon: 
-#      endpoint: https://brid.gy/publish/mastodon
-collections:
-  posts:
-    syndicate_to: [ bluesky ]
-  pages:
-    syndicate_to: [ bluesky ]
-
+    mastodon: 
+      endpoint: https://brid.gy/publish/mastodon
+      response_mapping:
+        syndication: $.url
+        username: "$.user.screen_name:"
+  collections:
+    posts:
+      syndicate_to: [ bluesky ]
+    pages:
+      syndicate_to: [ bluesky ]
+  js: false
 
 webmaster_verifications:
   - name: seobility
