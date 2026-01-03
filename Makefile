@@ -46,7 +46,7 @@ production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES) 
 	JEKYLL_ENV=production bundle exec jekyll b -q --incremental
 	gulp purgecss
 
-webmention: .jekyll-cache/webmention_io_outgoing.yml
+webmention: .jekyll-cache/webmention_io_outgoing.yml production
 	-bundle exec jekyll webmention
 
 deploy install: production
@@ -54,7 +54,7 @@ deploy install: production
 	netlify deploy --production --message="$(shell git log --oneline -1)"
 
 .jekyll-cache/webmention_io_%.yml:
-	JEKYLL_ENV=production bundle exec jekyll b -q
+	JEKYLL_ENV=production bundle exec jekyll b
 
 ## Build Tasks: Tags
 
