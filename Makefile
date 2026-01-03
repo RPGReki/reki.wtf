@@ -4,7 +4,6 @@ SHELL = /bin/bash
 
 URL = https://reki.wtf
 STORIES = amauga
-POLLS = 
 STORY_FEEDS = blog.xml chapters.xml
 
 # automation begins here
@@ -18,15 +17,13 @@ PERSONAL_POSTS_IMPORT_DEST = $(subst personal-blog/_posts/,site/_posts/personal/
 STORY_XML = $(foreach story,$(STORIES),$(foreach feed,$(STORY_FEEDS),/$(story)/$(feed)))
 GLOBAL_XML = /sitemap.xml /blog.xml $(STORY_XML)
 
-POLL_FILES = $(addprefix site/_data/polls/,$(addsuffix .json,$(POLLS)))
-
 CSS_SCSS = $(wildcard theme/assets/2021/css/pre-purge/*.scss)
 CSS_PREPURGE = $(subst .scss,.css,$(subst theme,docs,$(CSS_SCSS)))
 CSS_DEST = $(subst /pre-purge,,$(CSS_PREPURGE))
 
-COMMON_NORMAL_PREREQUESITES = site/tags site/_data/comments.json $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
+COMMON_NORMAL_PREREQUESITES = site/tags $(STORY_POSTS_IMPORT_DEST) $(PERSONAL_POSTS_IMPORT_DEST)
 
-COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
+COMMON_ORDER_ONLY_PREREQUESITES = $(POLL_FILES)
 
 # imported files are phony to force re-importing
 .PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap 
@@ -93,19 +90,6 @@ site/_posts/$(1)/%: $(1)/_posts/% | restore-mtime
 endef
 
 $(foreach story,$(STORIES),$(eval $(call STORY_POSTS_RULE,$(story),$(year))))
-
-## Build Tasks: Get Remote Data
-
-site/_data/comments.json:
-	-gulp get-comments --silent
-
-site/_data/polls/%: | site/_data/polls
-	gulp get-poll-$(*:.json=) --silent
-
-site/_data/polls:
-	mkdir "$(@)"
-
-##
 
 purgecss: $(CSS_PREPURGE) docs
 	gulp purgecss
