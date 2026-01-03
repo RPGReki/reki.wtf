@@ -29,7 +29,7 @@ COMMON_NORMAL_PREREQUESITES = site/tags site/_data/comments.json $(STORY_POSTS_I
 COMMON_ORDER_ONLY_PREREQUESITES = site/_data/comments.json $(POLL_FILES)
 
 # imported files are phony to force re-importing
-.PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap
+.PHONY: clean diff-tables $(STORY_POSTS_IMPORT_SRC) $(PERSONAL_POSTS_IMPORT_SRC) submit-sitemap 
 
 default: production
 
@@ -43,7 +43,7 @@ staging: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
 	gulp purgecss
 
 production: $(COMMON_NORMAL_PREREQUESITES) | $(COMMON_ORDER_ONLY_PREREQUESITES)
-	JEKYLL_ENV=production bundle exec jekyll b --incremental -q
+	JEKYLL_ENV=production bundle exec jekyll b -q
 	gulp purgecss
 	-bundle exec jekyll webmention
 
@@ -58,7 +58,7 @@ site/tags: $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST) | docs/.dev/
 	bash docs/.dev/createTags.sh
 
 docs/.dev/createTags.sh: | $(PERSONAL_POSTS_IMPORT_DEST) $(STORY_POSTS_IMPORT_DEST)
-	bundle exec jekyll b -q
+	bundle exec jekyll b -q --incremental
 
 ## Build Tasks: 
 
