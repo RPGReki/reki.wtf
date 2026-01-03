@@ -13,16 +13,23 @@ layout: xml
 {% capture now %}{{ 'now' | date: '%s' | plus: 10800 }}{% endcapture %}
 {% for page in pages %}
   {% capture post_time %}{{ page.date | date: '%s' }}{% endcapture %}
-  {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}{% capture description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}{% endif %}{% endcapture %}
-{% unless page.long %}{% continue %}{% endunless %}
-  <entry xml:lang="en-AU">
+  {% if jekyll.environment != "unpublished" %}{% if post_time > now %}{% continue %}{% endif %}{% endif %}
+  {% capture description %}
+  {% if page.microblog %}{{ page.microblog | markdownify | strip_html | replace: "&thinsp;", " " }}
+  {% elsif page.excerpt %}{{ page.excerpt | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}
+  {% else %}{{ page.content | markdownify | strip_html | truncatewords: 50, "…" | replace: "&thinsp;", " " }}
+  {% endif %}{% endcapture %}
+  <entry xml:lang="{{ page.lang }}">
     <title type="html">{{ page.title }}</title>
     {% if page.long %}
       <id>{{ page.url | absolute_url }}</id>
       <link href="{{ page.url | absolute_url }}" rel="alternate" type="text/html" title="{{ page.title }}" />
+    {% elsif page.category == "personal" %}
+      <id>{{ '/blog' | absolute_url }}/#{{ page.title | slugify }}</id>
+      <link href="{{ '/blog' | absolute_url }}/#{{ page.title | slugify }}" rel="alternate" type="text/html" title="{{ page.title }}" />
     {% else %}
-      <id>{{ page.category | first | prepend: '/' | absolute_url }}blog/#{{ page.title | slugify }}</id>
-      <link href="{{ page.category | first | prepend: '/' | absolute_url }}blog/#{{ page.title | slugify }}" rel="alternate" type="text/html" title="{{ page.title }}" />
+      <id>{{ page.category | prepend: '/' | absolute_url }}/blog/#{{ page.title | slugify }}</id>
+      <link href="{{ page.category | prepend: '/' | absolute_url }}/blog/#{{ page.title | slugify }}" rel="alternate" type="text/html" title="{{ page.title }}" />
     {% endif %}
     <link href="https://brid.gy/publish/bluesky" rel="webmention" />
     <published>{{ page.date | date_to_xmlschema }}</published>

@@ -1,3 +1,7 @@
 ## Basic Configuration
 url: ''
 port: 8888
+
+compress_xml:
+  ignore:
+    envs: all

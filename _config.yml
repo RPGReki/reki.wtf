@@ -169,25 +169,6 @@ defaults:
       published: true
       image: /amauga/-og.jpg
       permalink: /amauga/blog/:year/:month-:day-:title/
-  - # /_posts/crystaldown
-    scope:
-      path: "_posts/crystaldown"
-    values:
-      category: crystaldown
-      layout: 2021/post
-      type: post
-      lang: "en-AU"
-      author: reki
-      publisher: reki
-      comments: true
-      commenting: open
-      published: true
-      image: /crystaldown/-og.jpg
-      permalink: /crystaldown/blog/:year/:month-:day-:title/
-      intermediate_breadcrumbs:
-        -
-          title: Archived Projects
-          url: /archive/
   - # /amauga/01-weit-weit-weg-von-moderner-zivilization
     scope:
       path: "amauga/01-weit-weit-weg-von-moderner-zivilization"
