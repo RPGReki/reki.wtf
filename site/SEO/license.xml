@@ -1,0 +1,16 @@
+---
+layout: compress_xml
+permalink: /license.xml
+---
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="/">
+    <license>
+      <permits type="usage">all</permits>
+      <prohibits type="usage">ai-train</prohibits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+    <copyright type="person" contactUrl="{{ '/contact/' | absolute_url }}">q. Thai “RPGReki” Chung</copyright>
+  </content>
+</rsl>

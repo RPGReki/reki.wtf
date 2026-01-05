@@ -169,8 +169,8 @@ https://0xreki.de/*
 /blog.xml
   Content-Type: application/atom+xml
 
-/feed.xml
-  Content-Type: application/atom+xml
+/license.xml
+  Content-Type: application/rsl+xml
 
 /sitemap.xml
   Content-Type: text/xml; charset=utf-8
