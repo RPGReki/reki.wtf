@@ -88,4 +88,3 @@ function restoreSettings() {
 
 restoreSettings();
 if('serviceWorker' in navigator)navigator.serviceWorker.register('/worker.js');
-if(navigator.getEnvironmentIntegrity)d.querySelectorAll('.wei-banner')[0].style.display = 'block'
