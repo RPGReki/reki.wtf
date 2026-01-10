@@ -13,4 +13,34 @@ permalink: /license.xml
     </license>
     <copyright type="person" contactUrl="{{ '/contact/' | absolute_url }}">q. Thai “RPGReki” Chung</copyright>
   </content>
+  <content url="/images/">
+    <license>
+      <permits type="usage">all</permits>
+      <prohibits type="usage">ai-train ai-input</prohibits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+    <copyright type="person" contactUrl="{{ '/contact/' | absolute_url }}">q. Thai “RPGReki” Chung</copyright>
+  </content>
+  <content url="/blog/images/">
+    <license>
+      <permits type="usage">all</permits>
+      <prohibits type="usage">ai-train ai-input</prohibits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+    <copyright type="person" contactUrl="{{ '/contact/' | absolute_url }}">q. Thai “RPGReki” Chung</copyright>
+  </content>
+  <content url="/amauga/images/">
+    <license>
+      <permits type="usage">all</permits>
+      <prohibits type="usage">ai-train ai-input</prohibits>
+      <payment type="attribution">
+        <standard>https://creativecommons.org/licenses/by/4.0/</standard>
+      </payment>
+    </license>
+    <copyright type="person" contactUrl="{{ '/contact/' | absolute_url }}">q. Thai “RPGReki” Chung</copyright>
+  </content>
 </rsl>
