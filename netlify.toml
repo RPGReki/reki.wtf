@@ -1,7 +1,7 @@
 [build]
 base = ""
 publish = "docs"
-command = "make -j 4 production webmention"
+command = "bundle install && make -j 3 production webmention"
 
 [dev]
 framework = "#static"
