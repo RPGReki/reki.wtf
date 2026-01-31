@@ -234,4 +234,3 @@ locale:
 settings:
   render_command:
     pdf_path: site/resume.pdf
-    html_path: site/resume.html
