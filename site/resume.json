@@ -89,7 +89,7 @@
         "Docker",
         "CI/CD"
       ]
-    }
+    },
     {
       "name": "Programmierung",
       "keywords": [
@@ -99,7 +99,7 @@
         "Python",
         "Ruby"
       ]
-    },
+    }
   ],
   "awards": [
     {
