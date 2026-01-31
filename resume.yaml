@@ -1,0 +1,242 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+
+cv:
+  name: Thai Chung
+  location: Roßstraße 140, 47798 Krefeld
+  email: thai.chung@reki.wtf
+  phone: '+491623676245'
+  website: https://reki.wtf
+  social_networks:
+    - username: q-thai-chung
+      network: LinkedIn
+    - username: RPGReki
+      network: GitHub
+    - username: RPGReki
+      network: GitLab
+    - username: rpgreki.vtubers.social
+      network: Bluesky
+  sections:
+    berufserfahrung:
+      - company: Information und Technik Nordrhein-Westfalen (IT.NRW)
+        position: Netzwerk-Administrator
+        location: Düsseldorf
+        start_date: 2020-07-01
+        summary: Bereitsstellung und Administration von Application Layer Gateways (ALG)
+        highlights:
+          - Red Hat Enterprise Linux / Apache / ModSecurity / HAProxy / Keepalived
+          - Automatisierung der Bereitsstellung mit Ansible
+          - Debugging und Netzwerkanalysen mit tcpdump und Wireshark
+          - Migration der ALG auf NSX Advanced Loadbalancer
+      - company: PlusServer GmbH
+        position: Linux-Systemadministrator
+        location: Köln
+        start_date: 2018-11-01
+        end_date: 2019-04-30
+        summary: Bereitsstellung und Administration von Linux-Servern
+        highlights:
+          - Automatisierung mit Salkstack
+          - Red Hat Enterprise Linux
+      - company: SD Inspiring Travel GmbH
+        position: Web-Entwickler
+        location: Köln
+        start_date: 2017-04-01
+        end_date: 2018-09-01
+        summary: Web-Entwicklung mit Anteil an Linux-Administration
+        highlights:
+          - HTML5 / JavaScript / CSS3 / SCSS
+          - PHP7 / Drupal / Symphony
+          - Ubuntu Linux
+#      - company: SchülerNachhilfe1
+#        position: Nachhilfelehrer
+#        location: Ulm
+#        start_date: 2017-01-01
+#        end_date: 2017-06-30
+#        summary: Nachhilfelehrer für verschiende Fächer, u. a.
+#        highlights:
+#          - Englisch
+#          - Mathematik
+#          - Chemie
+#          - Physik
+      - company: Universität Ulm
+        position: Linux-Systemadministrator
+        location: Ulm
+        start_date: 2013-04-01
+        end_date: 2014-03-31
+        summary: Administration des Linux-Pool mit 1st Level Support
+        highlights:
+          - Ubuntu Linux
+      - company: Universität Ulm
+        position: Studentische Hilfskraft
+        location: Ulm
+        start_date: 2010-04-01
+        end_date: 2016-07-31
+        summary: Durchführung von Übungen für verschiedene Vorlesungen, u. a.
+        highlights:
+          - Formale Grundlagen der Informatik
+          - Logik für Informatiker
+          - Paradigmen der Programmierung
+    ehrenamtliches_engagement:
+      - company: Chaos Computer Club Ulm
+        position: Radio-Moderator bei /dev/radio
+        location: Ulm
+        start_date: 2013-06
+        end_date: 2017-05
+        summary: | 
+          /dev/radio war eine Sendung des Chaos Computer Clubs in Ulm,
+          die früher auf einem nichtkommerziellen Radiosender ausgestrahlt wurde.
+          Themen der Sendung waren Technologie und alles, was mit Geeks zu tun hat.
+      - company: Fakultät für Ingenieurswissenschaften, Informatik & Phychologie, Universität Ulm
+        position: Studentisches Mitglied der Studienkommission
+        location: Ulm
+        start_date: 2010-10
+        end_date: 2014-09
+        summary: Vertretung der Belange der Studierenden und Akkreditierung der Studiengänge 
+        highlights:
+          - B. Sc. Informatik und M. Sc. Informatik 
+          - B. Sc. Medieninformatik und M. Sc. Medieninformatik
+      - company: Fachschaft Informatik, Universität Ulm
+        position: Vorsitzender
+        location: Ulm
+        start_date: 2012-07
+        end_date: 2013-07
+        highlights:
+          - Angewandtes Krisenmanagement
+    ausbildung:
+      - degree: "M. Sc."
+        area: "Informatik"
+        institution: "Universtät Ulm"
+        location: Ulm
+        start_date: 2016-11
+        end_date: 2017-01
+        summary: "ohne Abschluss"
+      - degree: "B. Sc."
+        area: "Informatik"
+        institution: "Universtät Ulm"
+        location: Ulm
+        start_date: 2009-10
+        end_date: 2016-11
+        summary: "Abschlussnote: 1,9"
+      - degree: "Abitur"
+        area: "Chemie & Physik"
+        institution: "Bernhard-Strigel-Gymnasium"
+        location: Memmingen
+        start_date: 2000-09
+        end_date: 2009-04
+        summary: "Abschlussnote: 2,3"
+#    preise:
+#      - name: Platz 1 beim Sou no Tori Open 2019
+#        summary: "Deutscher Meister im Riichi Mahjong 2019"
+#        date: 2019-08-11
+#      - name: "Platz 60 beim NWERC 2010 (North Western European Regional Contest)"
+#        summary: "ICPC International Collegiate Programming Contest"
+#        date: 2010-11-21
+#      - name: "Platz 21 beim GCPC 2010 (German Collegiate Programming Contest)"
+#        summary: "ICPC International Collegiate Programming Contest"
+#        date: 2010-06-12
+    kenntisse:
+      - name: Sprachen
+        highlights:
+          - Deutsch (Muttersprache)
+          - Vietnamesisch (Muttersprache)
+          - English (verhandlungssicher, etwa CEFR C2)
+          - Französisch (einfache Kenntnisse)
+      - name: Web-Entwicklung
+        highlights:
+          - HTML5 / JavaScript / CSS3 / SCSS
+          - PHP7 / Drupal / Symphony
+      - name: Automatisierung
+        highlights:
+          - Ansible / Jinja2 / Python
+          - Saltstack / Liquid / Ruby
+      - name: System-Administration
+        highlights:
+          - Archlinux
+          - Red Hat Enterprise Linux
+          - Ubuntu Linux
+      - name: Versionskontrolle
+        highlights:
+          - Git
+          - GitHub /GitLab
+      - name: Containerisierung
+        highlights: 
+          - Docker
+          - CI/CD
+      - name: Programmierung
+        highlights:
+          - C
+          - Java
+          - Haskell
+          - Python
+          - Ruby
+    hobbys:
+      - name: Brett- & Kartenspiele
+        highlights:
+          - Riichi Mahjong
+      - name: Romane
+        highlights:
+          - Lesen
+          - Schreiben
+      - name: Videospiele
+        highlights:
+          - JRPGs
+          - Livestyle Games
+          - Livestreaming
+
+design:
+  theme: classic
+  page:
+    size: a4
+    show_top_note: false
+    show_footer: false
+  colors:
+    name: '#9c2c2c'
+    section_titles: '#9c2c2c'
+  section_titles:
+    type: with_full_line
+  sections:
+    allow_page_break: false
+  templates:
+    single_date: YEAR-MONTH_ABBREVIATION
+    date_range: START_DATE – END_DATE
+    education_entry:
+      main_column: |-
+        **AREA, INSTITUTION**
+        SUMMARY
+        HIGHLIGHTS
+      degree_column: '**DEGREE**'
+      date_and_location_column: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**
+        **POSITION** 
+        SUMMARY
+        HIGHLIGHTS
+
+locale:
+  language: german
+  present: heute
+  month_abbreviations:
+    - '01'
+    - '02'
+    - '03'
+    - '04'
+    - '05'
+    - '06'
+    - '07'
+    - '08'
+    - '09'
+    - '10'
+    - '11'
+    - '12'
+
+settings:
+  render_command:
+    pdf_path: site/resume.pdf
+    markdown_path: site/resume.md
+    dont_generate_markdown: false
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
