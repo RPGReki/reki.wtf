@@ -1,12 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "meta": {
-    "theme": "developer-mono",
+    "theme": "flat",
     "lastModified": "2026-01-31"
   },
   "basics": {
     "name": "Thai Chung",
-    "phone": "01623676245",
+    "pronouns": "er/ihm",
+    "phone": "+49 162/36 76 245",
     "label": "Netzwerk Administrator",
     "website": "https://reki.wtf",
     "url": "https://reki.wtf",
@@ -15,38 +16,40 @@
       "city": "Krefeld",
       "address": "Roßstraße 140",
       "postalCode": "47798",
+      "region": "NRW",
       "countryCode": "DE"
     },
     "profiles": [
       {
         "url": "https://www.linkedin.com/in/q-thai-chung/",
         "username": "q-thai-chung",
-        "network": "linkedin"
+        "network": "LinkedIn"
       },
       {
         "url": "https://github.com/RPGReki",
         "username": "RPGReki",
-        "network": "github"
+        "network": "GitHub"
       },
       {
         "url": "https://gitlab.com/RPGReki",
         "username": "RPGReki",
-        "network": "gitlab"
+        "network": "GitLab"
       },
       {
         "username": "rpgreki.vtubers.social",
         "url": "https://bsky.app/profile/rpgreki.vtubers.social",
-        "network": "bluesky"
+        "network": "BlueSky"
       }
     ]
   },
   "education": [
     {
-      "endDate": "2016-01-13",
-      "startDate": "2009-10-01",
+      "endDate": "2016-11",
+      "startDate": "2009-10",
       "area": "Informatik",
       "studyType": "Bachelor of Science",
-      "institution": "Universtät Ulm"
+      "institution": "Universtät Ulm",
+      "score": "1.9"
     }
   ],
   "skills": [
@@ -103,6 +106,14 @@
   ],
   "awards": [
     {
+      "title": "Platz 1 beim Sou no Tori Open 2019",
+      "awarder": "Deutsche MahJong Liga e.V.",
+      "url": "http://mahjong-europe.org/ranking/Tournament/TR_RCR_243.html",
+      "date": "2019-08-11",
+      "summary": "Deutscher Meister im Riichi Mahjong 2019",
+      "image": "https://dmjl.de/wp-content/uploads/2023/11/cropped-DMJL-Logo-White-Background-192x192.jpg"
+    },
+    {
       "title": "Platz 60 beim NWERC (North Western European Regional Contest)",
       "awarder": "ICPC International Collegiate Programming Contest",
       "url": "https://icpc.global/regionals/finder/northwestern-europe-2011",
@@ -124,8 +135,8 @@
       "organization": "Fachschaft Informatik, Universtät Ulm",
       "position": "Vorsitzender",
       "url": "https://stuve.de/fin/aktuelles",
-      "startDate": "2012-01-01",
-      "endDate": "2013-12-21",
+      "startDate": "2012",
+      "endDate": "2013",
       "highlights": [
         "Angewandtes Krisenmanagement"
       ],
@@ -135,8 +146,8 @@
       "organization": "Studienkommision, Fakultät Ingenieurwissenschaften, Informatik und Psychologie, Universtät Ulm",
       "position": "Studentisches Mitglied",
       "url": "https://www.uni-ulm.de/in/fakultaet/",
-      "startDate": "2010-01-01",
-      "endDate": "2014-12-31",
+      "startDate": "2010",
+      "endDate": "2014",
       "summary": "Contributing to open source projects to improve software quality.",
       "highlights": [
         "Mitwirkung bei der Akkreditierurng des Studiengangs"
@@ -164,8 +175,8 @@
       "website": "https://plusserver.com/",
       "location": "Köln",
       "position": "System-Administrator",
-      "startDate": "2018-11-01",
-      "endDate": "2019-04-30",
+      "startDate": "2018",
+      "endDate": "2019",
       "highlights": [
         "Automatisierung mit Salkstack",
         "Red Hat Enterprise Linux"
@@ -175,10 +186,9 @@
     {
       "name": "SD Inspiring Travel GmbH",
       "position": "Web-Entwickler",
-      "website": "https://platform.blockbid.io",
       "location": "Köln",
-      "startDate": "2017-03-01",
-      "endDate": "2018-09-30",
+      "startDate": "2017",
+      "endDate": "2018",
       "highlights": [
         "HTML5 / JS / CSS3 / SCSS",
         "PHP7 / Drupal /Symphony"
@@ -188,16 +198,16 @@
     {
       "name": "SchülerNachhilfe1",
       "position": "Nachhilfe-Lehrer",
-      "startDate": "2017-02-01",
-      "endDate": "2017-06-30",
+      "startDate": "2017-02",
+      "endDate": "2017-06",
       "location": "Ulm Area, Germany"
     },
     {
       "name": "Universität Ulm",
       "position": "Linux-Administrator",
       "website": "http://uni-ulm.de/in/sgi",
-      "startDate": "2013-03-01",
-      "endDate": "2014-02-28",
+      "startDate": "2013",
+      "endDate": "2014",
       "image": "https://reki.wtf/images/resume/uulm.webp"
     }
   ],
@@ -236,9 +246,17 @@
       ]
     },
     {
+      "name": "Karten & Brettspiele",
+      "keywords": [
+        "Riichi Mahjong",
+        "Rommé"
+      ]
+    },
+    {
       "name": "Gaming",
       "keywords": [
         "JRPG",
+        "Lifestyle-Games",
         "Livestreamen"
       ]
     }
