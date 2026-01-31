@@ -1,387 +1,246 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "theme": "developer-mono",
+    "lastModified": "2026-01-31"
+  },
   "basics": {
-    "name": "quốc Thái Chung",
-    "label": "Network Administrator at Information und Technik Nordrhein-Westfalen (IT.NRW)",
-    "image": "",
+    "name": "Thai Chung",
+    "phone": "01623676245",
+    "label": "Netzwerk Administrator",
+    "website": "https://reki.wtf",
+    "url": "https://reki.wtf",
     "email": "thai.chung@reki.wtf",
-    "phone": "+49 162 3676 345",
-    "url": "https://gitlab.com/RPGReki",
-    "summary": "E",
     "location": {
-      "countryCode": "DE",
-      "address": "Roßstraße 140, 47798 Krefeld"
+      "city": "Krefeld",
+      "address": "Roßstraße 140",
+      "postalCode": "47798",
+      "countryCode": "DE"
     },
     "profiles": [
       {
-        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/q-thai-chung/",
         "username": "q-thai-chung",
-        "url": "https://www.linkedin.com/in/q-thai-chung/"
+        "network": "linkedin"
       },
       {
-        "network": "Twitter/X",
+        "url": "https://github.com/RPGReki",
         "username": "RPGReki",
-        "url": "https://twitter.com/RPGReki"
+        "network": "github"
       },
       {
-        "network": "BlueSky",
+        "url": "https://gitlab.com/RPGReki",
+        "username": "RPGReki",
+        "network": "gitlab"
+      },
+      {
         "username": "rpgreki.vtubers.social",
-        "url": "https://bsky.app/profile/rpgreki.vtubers.social"
+        "url": "https://bsky.app/profile/rpgreki.vtubers.social",
+        "network": "bluesky"
       }
     ]
   },
-  "work": [
+  "education": [
     {
-      "name": "Information und Technik Nordrhein-Westfalen (IT.NRW)",
-      "position": "Network Administrator",
-      "startDate": "2020-07-01",
-      "endDate": "",
-      "highlights": [],
-      "summary": "IT.NRW developes and provides IT infrastructure for state administration of North Rhine-Westphalia",
-      "url": "https://www.linkedin.com/company/information-und-technik-nordrhein-westfalen-it.nrw-/",
-      "location": "Düsseldorf, North Rhine-Westphalia, Germany"
+      "endDate": "2016-01-13",
+      "startDate": "2009-10-01",
+      "area": "Informatik",
+      "studyType": "Bachelor of Science",
+      "institution": "Universtät Ulm"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web-Entwicklung",
+      "keywords": [
+        "HTML / PHP / Javascript",
+        "SCSS / CSS"
+      ]
     },
     {
-      "name": "PlusServer",
-      "position": "System Administrator",
-      "startDate": "2018",
-      "endDate": "2019",
-      "highlights": [],
-      "summary": "PlusServer helps organizations realise the full potential of their cloud strategy. \n\nTasks at this position included:\n• Administration of Linux and Windows Server for Internal IT",
-      "url": "https://www.linkedin.com/company/plusserver/",
-      "location": "Cologne Area, Germany"
+      "name": "Automatisierung",
+      "keywords": [
+        "Ansible",
+        "Saltstack",
+        "Liquid",
+        "Ruby",
+        "Python"
+      ]
     },
     {
-      "name": "SD Inspiring Travel GmbH",
-      "position": "Web Developer",
-      "startDate": "2017",
-      "endDate": "2018",
-      "highlights": [],
-      "summary": "SD Inspiring Travel GmbH is an online travel agency that specializes in family vacations.\n\nTasks at this position included:\n• PHP Developement: Drupal, Symphony\n• Administration of Linux & macOS",
-      "url": "https://www.linkedin.com/company/sd-inspiring-travel-gmbh/",
-      "location": "Cologne Area, Germany"
+      "name": "System-Administration",
+      "keywords": [
+        "Linux",
+        "Archlinux",
+        "Red Hat Enterprise Linux"
+      ]
     },
     {
-      "name": "SchülerNachhilfe1",
-      "position": "Private Tutor",
-      "startDate": "2017",
-      "endDate": "2017",
-      "highlights": [],
-      "summary": "Private Tutor for English, Mathematics, Chemistry and Physics",
-      "url": "",
-      "location": "Ulm Area, Germany"
+      "name": "Versionskontrolle",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "GitLab"
+      ]
     },
     {
-      "name": "Ulm University",
-      "position": "Teaching Assistant",
-      "startDate": "2010",
-      "endDate": "2016",
-      "highlights": [],
-      "summary": "Undergraduate Teaching Assitant for several different lectures:\ni. a. Formal Foundations of Computer Science, Logic for Computer Scientists, Programming Paradigms",
-      "url": "https://www.linkedin.com/school/ulm-university/",
-      "location": "Ulm Area, Germany"
+      "name": "Containerisierung",
+      "keywords": [
+        "Docker",
+        "CI/CD"
+      ]
+    }
+    {
+      "name": "Programmierung",
+      "keywords": [
+        "C",
+        "Java",
+        "Haskell",
+        "Python",
+        "Ruby"
+      ]
+    },
+  ],
+  "awards": [
+    {
+      "title": "Platz 60 beim NWERC (North Western European Regional Contest)",
+      "awarder": "ICPC International Collegiate Programming Contest",
+      "url": "https://icpc.global/regionals/finder/northwestern-europe-2011",
+      "date": "2010-11-21",
+      "summary": "Mit Team ExposedToSunlightException 1 von 10 Aufgaben gelöst",
+      "image": "https://reki.wtf/images/resume/ICPC.webp"
     },
     {
-      "name": "Ulm University",
-      "position": "Linux System Administrator",
-      "startDate": "2013",
-      "endDate": "2014",
-      "highlights": [],
-      "summary": "Administration of student Linux computer pool",
-      "url": "https://www.linkedin.com/school/ulm-university/",
-      "location": "Ulm Area, Germany"
-    },
-    {
-      "name": "Bernhard-Strigel-Gymnasium",
-      "position": "Private Tutor",
-      "startDate": "2005",
-      "endDate": "2009",
-      "highlights": [],
-      "summary": "Private Tutor for Mathematics, Chemistry and Physics",
-      "url": "",
-      "location": " Memmingen"
+      "title": "Platz 21 beim GCPC (German Collegiate Programming Contest)",
+      "awarder": "ICPC International Collegiate Programming Contest",
+      "url": "https://2010.gcpc.nwerc.eu/",
+      "date": "2010-06-12",
+      "summary": "Mit Team ExposedToSunlightException 4 von 10 Aufgaben gelöst",
+      "image": "https://reki.wtf/images/resume/ICPC.webp"
     }
   ],
   "volunteer": [
     {
-      "organization": "Ulm University",
-      "position": "Chairman of Computer Science Student Representation",
-      "startDate": "2012",
-      "endDate": "2013",
-      "summary": null,
-      "highlights": [],
-      "url": ""
+      "organization": "Fachschaft Informatik, Universtät Ulm",
+      "position": "Vorsitzender",
+      "url": "https://stuve.de/fin/aktuelles",
+      "startDate": "2012-01-01",
+      "endDate": "2013-12-21",
+      "highlights": [
+        "Angewandtes Krisenmanagement"
+      ],
+      "image": "https://reki.wtf/images/resume/FIN.webp"
     },
     {
-      "organization": "Ulm University",
-      "position": "Computer Science Study Commission Member",
-      "startDate": "2010",
-      "endDate": "2014",
-      "summary": null,
-      "highlights": [],
-      "url": ""
-    },
-    {
-      "organization": "/dev/radio",
-      "position": "Radio Show Host",
-      "startDate": "2010",
-      "endDate": "2016",
-      "summary": null,
-      "highlights": [],
-      "url": ""
-    },
-    {
-      "organization": "Ulm University",
-      "position": "Chief Editor",
-      "startDate": "2011-12-31",
-      "endDate": "2017-12-31",
-      "summary": "Chief Editor of the newspaper of the computer science division student representation at Ulm University",
-      "highlights": [],
-      "url": ""
-    },
-    {
-      "organization": "Ulm University",
-      "position": "Treasurer",
-      "startDate": "2012-12-31",
-      "endDate": "",
-      "summary": "Treasurer of the 40.0th KIF, the “Konferenz der Informatikfachschaften”, the conference of all student representations of Computer Science programs in German speaking countries\n",
-      "highlights": [],
-      "url": ""
+      "organization": "Studienkommision, Fakultät Ingenieurwissenschaften, Informatik und Psychologie, Universtät Ulm",
+      "position": "Studentisches Mitglied",
+      "url": "https://www.uni-ulm.de/in/fakultaet/",
+      "startDate": "2010-01-01",
+      "endDate": "2014-12-31",
+      "summary": "Contributing to open source projects to improve software quality.",
+      "highlights": [
+        "Mitwirkung bei der Akkreditierurng des Studiengangs"
+      ],
+      "image": "https://reki.wtf/images/resume/uulm.webp"
     }
   ],
-  "education": [
+  "work": [
     {
-      "institution": "Ulm University",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science (B.Sc.)",
-      "startDate": "2009-12-31",
-      "endDate": "2016-12-31",
-      "score": "1.9",
-      "courses": []
-    }
-  ],
-  "awards": [
-    {
-      "title": "60th Place in NWERC (North Western European Regional Contest)",
-      "date": "2010-11-30",
-      "awarder": "Association for Computing Machinery",
-      "summary": "ACM hosts a year computer programming contest. The contest requires choosing appropriate algorithms to the problems presented and implementing them efficiently in C, C++ or Java.\n\nReached 60th Place with team ExposedToSunlightException at the regional stage at NWERC (North Western European Regional Contest)"
+      "name": "Information und Technik Nordrhein-Westfalen (IT.NRW)",
+      "position": "Netwerk-Administrator",
+      "website": "https://it.nrw.de/",
+      "location": "Düsseldorf",
+      "startDate": "2020-07-01",
+      "highlights": [
+        "Automatisierung mit Ansible",
+        "Application Layer Gateways",
+        "Netzwerkanalyse",
+        "Red Hat Enterprise Linux"
+      ],
+      "image": "https://reki.wtf/images/resume/NRW.webp"
     },
     {
-      "title": "21st Place at GCPC (German Collegiate Programming Contest)",
-      "date": "2010-06-30",
-      "awarder": "Association for Computing Machinery",
-      "summary": "ACM hosts a year computer programming contest. The contest requires choosing appropriate algorithms to the problems presented and implementing them efficiently in C, C++ or Java.\n\nReached 21th Place with team ExposedToSunlightException at the local stage GCPC (German Collegiate Programming Contest) and quailfied for the regionals stage."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "EFSET English Certificate - Proficient (CEFR C2)",
-      "issuer": "EF Education First",
-      "url": "https://www.efset.org/"
+      "name": "PlusServer GmbH",
+      "website": "https://plusserver.com/",
+      "location": "Köln",
+      "position": "System-Administrator",
+      "startDate": "2018-11-01",
+      "endDate": "2019-04-30",
+      "highlights": [
+        "Automatisierung mit Salkstack",
+        "Red Hat Enterprise Linux"
+      ],
+      "image": "https://reki.wtf/images/resume/PlusServer.webp"
     },
     {
-      "name": "Python",
-      "issuer": "TestDome",
-      "url": "https://www.testdome.com/cert/3uyetdbeqd"
-    }
-  ],
-  "publications": [],
-  "skills": [
-    {
-      "name": "Linux System Administration",
-      "level": "",
-      "keywords": []
+      "name": "SD Inspiring Travel GmbH",
+      "position": "Web-Entwickler",
+      "website": "https://platform.blockbid.io",
+      "location": "Köln",
+      "startDate": "2017-03-01",
+      "endDate": "2018-09-30",
+      "highlights": [
+        "HTML5 / JS / CSS3 / SCSS",
+        "PHP7 / Drupal /Symphony"
+      ],
+      "image": "https://reki.wtf/images/resume/ClubFamily.webp"
     },
     {
-      "name": "Team Coordination",
-      "level": "",
-      "keywords": []
+      "name": "SchülerNachhilfe1",
+      "position": "Nachhilfe-Lehrer",
+      "startDate": "2017-02-01",
+      "endDate": "2017-06-30",
+      "location": "Ulm Area, Germany"
     },
     {
-      "name": "Teaching",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Social Media",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Programming",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "HTML5",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Lecturing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Windows",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Debian",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Computer Science",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "PHP",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Typography",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Radio",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Linux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Haskell",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "LaTeX",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Java",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Excel",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "CSS",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Teamwork",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Office",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Audio Mixing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Python 3",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Bash",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Word",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Ruby",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MySQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "XHTML",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "GNU/Linux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "System Administration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Audio Editing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Account Management",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "SASS",
-      "level": "",
-      "keywords": []
+      "name": "Universität Ulm",
+      "position": "Linux-Administrator",
+      "website": "http://uni-ulm.de/in/sgi",
+      "startDate": "2013-03-01",
+      "endDate": "2014-02-28",
+      "image": "https://reki.wtf/images/resume/uulm.webp"
     }
   ],
   "languages": [
     {
-      "fluency": "Professional Working",
-      "language": "English"
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
     },
     {
-      "fluency": "Elementary",
-      "language": "French"
+      "language": "Vietnamesisch",
+      "fluency": "Muttersprache"
     },
     {
-      "fluency": "Native Speaker",
-      "language": "German"
+      "language": "Englisch",
+      "fluency": "Flüssig, etwa CEFR C1/2"
     },
     {
-      "fluency": "Native Speaker",
-      "language": "Vietnamese"
+      "language": "Französisch",
+      "fluency": "Anfänger"
     }
   ],
-  "interests": [],
-  "references": [],
-  "projects": [],
-  "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
-  }
+  "interests": [
+    {
+      "name": "Musik",
+      "keywords": [
+        "Gittare",
+        "Singen",
+        "Dancing"
+      ]
+    },
+    {
+      "name": "Bücher",
+      "keywords": [
+        "Lesen",
+        "Schreiben"
+      ]
+    },
+    {
+      "name": "Gaming",
+      "keywords": [
+        "JRPG",
+        "Livestreamen"
+      ]
+    }
+  ]
 }
