@@ -2,7 +2,7 @@
 
 cv:
   name: Thai Chung
-  location: Roßstraße 140, 47798 Krefeld
+  location: Roßstraße 140, 47798 Krefeld, Germany
   email: thai.chung@reki.wtf
   phone: '+491623676245'
   website: https://reki.wtf
@@ -16,188 +16,197 @@ cv:
     - username: rpgreki.vtubers.social
       network: Bluesky
   sections:
-    berufserfahrung:
+    experience:
       - company: Information und Technik Nordrhein-Westfalen (IT.NRW)
-        position: Netzwerk-Administrator
-        location: Düsseldorf
+        position: Netzwork Administrator
+        location: Düsseldorf, Germany
         start_date: 2020-07-01
-        summary: Bereitsstellung und Administration von Application Layer Gateways (ALG)
+        summary: Deployment and Administration of Application Layer Gateways (ALG)
         highlights:
           - Red Hat Enterprise Linux / Apache / ModSecurity / HAProxy / Keepalived
-          - Automatisierung der Bereitsstellung mit Ansible
-          - Debugging und Netzwerkanalysen mit tcpdump und Wireshark
-          - Migration der ALG auf NSX Advanced Loadbalancer
+          - Automatization of Deployment using Ansible
+          - Debugging and Netzwerk Analysis using tcpdump and Wireshark
+          - Migration ALGs to NSX Advanced Loadbalancer
       - company: PlusServer GmbH
-        position: Linux-Systemadministrator
-        location: Köln
+        position: Linux System Administrator
+        location: Cologne, Germany
         start_date: 2018-11-01
         end_date: 2019-04-30
-        summary: Bereitsstellung und Administration von Linux-Servern
+        summary: Deployment and Administration of Linux Servers
         highlights:
-          - Automatisierung mit Salkstack
+          - Automation using SalkStack
           - Red Hat Enterprise Linux
       - company: SD Inspiring Travel GmbH
-        position: Web-Entwickler
-        location: Köln
+        position: Web Developer
+        location: Cologne, Germany
         start_date: 2017-04-01
         end_date: 2018-09-01
-        summary: Web-Entwicklung mit Anteil an Linux-Administration
+        summary: Focus on Backend Developement with part Linux Server Administration
         highlights:
           - HTML5 / JavaScript / CSS3 / SCSS
           - PHP7 / Drupal / Symphony
           - Ubuntu Linux
-#      - company: SchülerNachhilfe1
-#        position: Nachhilfelehrer
-#        location: Ulm
-#        start_date: 2017-01-01
-#        end_date: 2017-06-30
-#        summary: Nachhilfelehrer für verschiende Fächer, u. a.
-#        highlights:
-#          - Englisch
-#          - Mathematik
-#          - Chemie
-#          - Physik
-      - company: Universität Ulm
-        position: Linux-Systemadministrator
-        location: Ulm
+      - company: SchülerNachhilfe1
+        position: Private Tutor
+        location: Ulm, Germany
+        start_date: 2017-01-01
+        end_date: 2017-06-30
+        summary: Tutoring in small groups for various subjects, i. a.
+        highlights:
+          - English
+          - Mathematics
+          - Chemistry
+          - Physics
+      - company: Ulm University
+        position: Linux System Administrator
+        location: Ulm, Germany
         start_date: 2013-04-01
         end_date: 2014-03-31
-        summary: Administration des Linux-Pool mit 1st Level Support
+        summary: Administration of Linux Pool with 1st Level Support Function
         highlights:
           - Ubuntu Linux
-      - company: Universität Ulm
-        position: Studentische Hilfskraft
-        location: Ulm
+      - company: Ulm University
+        position: Teaching Assistant
+        location: Ulm, Germany
         start_date: 2010-04-01
         end_date: 2016-07-31
-        summary: Durchführung von Übungen für verschiedene Vorlesungen, u. a.
+        summary: Undergraduate Teaching Assistent for several different lectures i. a.
         highlights:
-          - Formale Grundlagen der Informatik
-          - Logik für Informatiker
-          - Paradigmen der Programmierung
-    ehrenamtliches_engagement:
+          - Formal Foundations of Computer Science
+          - Logic for Computer Scientists
+          - Programming Paradigms
+    volunteering:
       - company: Chaos Computer Club Ulm
-        position: Radio-Moderator bei /dev/radio
-        location: Ulm
+        position: Radio Moderator at /dev/radio
+        location: Ulm, Germany
         start_date: 2013-06
         end_date: 2017-05
-        summary: | 
-          /dev/radio war eine Sendung des Chaos Computer Clubs in Ulm,
-          die früher auf einem nichtkommerziellen Radiosender ausgestrahlt wurde.
-          Themen der Sendung waren Technologie und alles, was mit Geeks zu tun hat.
-      - company: Fakultät für Ingenieurswissenschaften, Informatik & Phychologie, Universität Ulm
-        position: Studentisches Mitglied der Studienkommission
-        location: Ulm
+        summary: > 
+          /dev/radio was a show of the local of the Chaos Computer Clubs in Ulm.
+          It was broadcasted on freeFM, a non-commercial radio station.
+          Topic were technology and anything connected to geeks.
+      - company: Faculty of Engineering, Computer Science and Psychology, Ulm University
+        position: Student Member of Study Commission
+        location: Ulm, Germany
         start_date: 2010-10
         end_date: 2014-09
-        summary: Vertretung der Belange der Studierenden und Akkreditierung der Studiengänge 
+        summary: Representation of Students and Documentation for Accreditation of study programs
         highlights:
-          - B. Sc. Informatik und M. Sc. Informatik 
-          - B. Sc. Medieninformatik und M. Sc. Medieninformatik
-      - company: Fachschaft Informatik, Universität Ulm
-        position: Vorsitzender
-        location: Ulm
+          - B. Sc. and M. Sc. Computer Science
+          - B. Sc. and M. Sc. Media Computer Science
+      - company: Student Representation Computer Science, Ulm University
+        position: Editor in Chief
+        location: Ulm, Germany
+        start_date: 2011-10
+        end_date: 2017-01
+        summary: Hauptredakteur des wöchentlichen Newsletters
+      - company: Student Representation Computer Science, Ulm University
+        position: Chairman
+        location: Ulm, Germany
         start_date: 2012-07
         end_date: 2013-07
-        highlights:
-          - Angewandtes Krisenmanagement
-    ausbildung:
-      - degree: "M. Sc."
-        area: "Informatik"
-        institution: "Universtät Ulm"
-        location: Ulm
-        start_date: 2016-11
+        summary: Applied Crisis Management
+    education:
+      - degree: M. Sc.
+        area: Computer Science
+        institution: Ulm University
+        location: Ulm, Germany
+        start_date: 2016-12
         end_date: 2017-01
-        summary: "ohne Abschluss"
-      - degree: "B. Sc."
-        area: "Informatik"
-        institution: "Universtät Ulm"
-        location: Ulm
+        summary: without diploma
+      - degree: B. Sc.
+        area: Computer Science
+        institution: Ulm University
+        location: Ulm, Germany
         start_date: 2009-10
         end_date: 2016-11
-        summary: "Abschlussnote: 1,9"
-      - degree: "Abitur"
-        area: "Chemie & Physik"
-        institution: "Bernhard-Strigel-Gymnasium"
-        location: Memmingen
-        start_date: 2000-09
-        end_date: 2009-04
-        summary: "Abschlussnote: 2,3"
-#    preise:
-#      - name: Platz 1 beim Sou no Tori Open 2019
-#        summary: "Deutscher Meister im Riichi Mahjong 2019"
-#        date: 2019-08-11
-#      - name: "Platz 60 beim NWERC 2010 (North Western European Regional Contest)"
-#        summary: "ICPC International Collegiate Programming Contest"
-#        date: 2010-11-21
-#      - name: "Platz 21 beim GCPC 2010 (German Collegiate Programming Contest)"
-#        summary: "ICPC International Collegiate Programming Contest"
-#        date: 2010-06-12
-    kenntisse:
-      - name: Sprachen
-        highlights:
-          - Deutsch (Muttersprache)
-          - Vietnamesisch (Muttersprache)
-          - English (verhandlungssicher, etwa CEFR C2)
-          - Französisch (einfache Kenntnisse)
-      - name: Web-Entwicklung
-        highlights:
-          - HTML5 / JavaScript / CSS3 / SCSS
-          - PHP7 / Drupal / Symphony
-      - name: Automatisierung
-        highlights:
-          - Ansible / Jinja2 / Python
-          - Saltstack / Liquid / Ruby
-      - name: System-Administration
-        highlights:
-          - Archlinux
-          - Red Hat Enterprise Linux
-          - Ubuntu Linux
-      - name: Versionskontrolle
-        highlights:
-          - Git
-          - GitHub /GitLab
-      - name: Containerisierung
-        highlights: 
-          - Docker
-          - CI/CD
-      - name: Programmierung
-        highlights:
-          - C
-          - Java
-          - Haskell
-          - Python
-          - Ruby
+        summary: |-
+          Final Grade: 1,9
+    preise:
+      - degree: '1st'
+        area: Sou no Tori Open 2019
+        institution: Deutsche MahJongg Liga e.V.
+        summary: German National Champion in Riichi Mahjong 2019
+        location: Aachen, Germany
+        date: 2019-08-11
+      - degree: '60th'
+        area: NWERC 2010 (North Western European Regional Contest)
+        institution: ICPC International Collegiate Programming Contest
+        summary: with Team ExposedToSunlightException
+        location: Hamburg, Germany
+        date: 2010-11-21
+      - degree: '21st'
+        area: GCPC 2010 (German Collegiate Programming Contest)
+        institution: ICPC International Collegiate Programming Contest
+        summary: with Team ExposedToSunlightException
+        location: Germany
+        date: 2010-06-12
+    skills:
+      - label: Languages
+        details: >
+          German (native),
+          Vietnamese (native),
+          English (fluent, about CEFR C2)
+      - label: Automation
+        details: >
+          Ansible, Jinja2, Python, SaltStack, Liquid, Ruby
+      - label: Linux System Administration
+        details: >
+          Archlinux, Red Hat Enterprise Linux, Ubuntu Linux
+      - label: Version Control
+        details: >
+          Git,
+          GitHub, GitLab
+      - label: Containerization
+        details: >
+          Docker, 
+          Gitlab CI/CD
+      - label: Programming
+        details: >
+          C,
+          Java,
+          Haskell,
+          Python,
+          Ruby
+      - label: Web Developement
+        details: >
+          HTML5, JavaScript, CSS3, SCSS,
+          PHP7, Drupal, Symphony
     hobbys:
-      - name: Brett- & Kartenspiele
-        highlights:
-          - Riichi Mahjong
-      - name: Romane
-        highlights:
-          - Lesen
-          - Schreiben
-      - name: Videospiele
-        highlights:
-          - JRPGs
-          - Livestyle Games
-          - Livestreaming
+      - label: Board & Card Games
+        details: >
+          Riichi Mahjong,
+          German Rummy
+      - label: Novels
+        details: >
+          Reading,
+          Writing
+      - label: Video Games
+        details: >
+          JRPGs, 
+          Lifestyle Games,
+          Livestreaming
 
 design:
   theme: classic
   page:
     size: a4
     show_top_note: false
-    show_footer: false
+    show_footer: true
   colors:
     name: '#9c2c2c'
     section_titles: '#9c2c2c'
+  header:
+    connections:
+      phone_number_format: international
   section_titles:
     type: with_full_line
   sections:
-    allow_page_break: false
+    allow_page_break: true
+    show_time_spans_in: []
   templates:
-    single_date: YEAR-MONTH_ABBREVIATION
-    date_range: START_DATE – END_DATE
+    single_date: YEAR-MONTH_IN_TWO_DIGITS
+    date_range: START_DATE — END_DATE
     education_entry:
       main_column: |-
         **AREA, INSTITUTION**
@@ -215,21 +224,7 @@ design:
         HIGHLIGHTS
 
 locale:
-  language: german
-  present: heute
-  month_abbreviations:
-    - '01'
-    - '02'
-    - '03'
-    - '04'
-    - '05'
-    - '06'
-    - '07'
-    - '08'
-    - '09'
-    - '10'
-    - '11'
-    - '12'
+  language: english
 
 settings:
   render_command:
