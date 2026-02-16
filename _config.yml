@@ -42,14 +42,10 @@ plugins:
 twitter:
   username: RPGReki
   card: summary
-facebook:
-  app_id: 656032504831426
-tumblr:
-  url: RPGReki.tumblr.com
 bluesky:
   username: "@rpgreki.vtubers.social"
 mastodon:
-  username: RPGReki@vt.social
+  username: rpgreki.vtubers.social@bsky.brid.gy
 google_analytics: UA-143950814-4
 patreon:
   title: Become a Patron to read early access chapters
