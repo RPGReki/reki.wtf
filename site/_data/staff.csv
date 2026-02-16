@@ -1,4 +1,4 @@
-id,name,url,email,icon
-reki,q. Thai “RPGReki” Chung,https://reki.wtf/about-me/,mail@reki.wtf,🏠
-pwa,ProWritingAid,https://prowritingaid.com/?afid=9599,,🛍️
-lt,LanguageTool,https://languagetool.org/,,
+id,name,url,email,icon,fediverse,
+reki,q. Thai “RPGReki” Chung,https://reki.wtf/about-me/,mail@reki.wtf,🏠,@rpgreki.vtubers.social@bsky.brid.gy">
+pwa,ProWritingAid,https://prowritingaid.com/?afid=9599,,🛍️,
+lt,LanguageTool,https://languagetool.org/,,,

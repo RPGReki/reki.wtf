@@ -16,6 +16,10 @@ cv:
       network: GitLab
     - username: rpgreki.vtubers.social
       network: Bluesky
+  # custom_connections:
+  #   - placeholder: Thai_Chung
+  #     url: https://www.xing.com/profile/Thai_Chung
+  #     fontawesome_icon: xing
   sections:
     profil: 
       - bullet:
@@ -47,7 +51,7 @@ cv:
         position: Web-Entwickler
         location: Köln
         start_date: 2017-04-01
-        end_date: 2018-09-01
+        end_date: 2018-09-30
         highlights:
           - Backend-Entwicklung für Webanwendungen
           - Mitwirkung an Betrieb und Administration von Linux-Systemen
@@ -109,7 +113,7 @@ cv:
         area: Informatik
         institution: Universtät Ulm
         location: Ulm
-        start_date: 2016-12
+        start_date: 2016-10
         end_date: 2017-01
         summary: nicht abgeschlossen
       - degree: B. Sc.
@@ -117,8 +121,9 @@ cv:
         institution: Universtät Ulm
         location: Ulm
         start_date: 2009-10
-        end_date: 2016-11
+        end_date: 2016-10
         summary: |-
+          Bachelorarbeit: Subjective Logic Operators for Fusion of Misbehavior Detection Mechanisms
           Anwendungsfach: Physik
           Abschlussnote: 1,9
       - degree: HZB
