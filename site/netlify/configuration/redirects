@@ -44,6 +44,8 @@ https://www.rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
 /proxy/youtube/:id/sddefault.jpg                    https://i.ytimg.com/vi/:id/sddefault.jpg 200
 /proxy/webmention/:host/:file                       https://avatars.webmention.io/:host/:file 200
 
+/.well-known/matrix/server                          /.well-known/matrix/server.js 200
+
 ## Redirects to avoid duplicates
 /tags/立直麻雀/*		{{ '/tags/riichi-mahjong/' | absolute_url }}:splat	301!
 /tags/麻雀/*		{{ '/tags/mahjong/' | absolute_url }}:splat	301!
