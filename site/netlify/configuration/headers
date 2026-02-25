@@ -163,6 +163,9 @@ https://0xreki.de/*
   Content-Type: image/svg+xml
   Cache-Control: public, max-age=1209600, stale-while-revalidate=2419200, immutable
 
+/.well-known/matrix/server
+  Content-Type: application/json
+
 /**/chapters.xml
   Content-Type: application/atom+xml
 
