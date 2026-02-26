@@ -165,6 +165,9 @@ https://0xreki.de/*
 
 /.well-known/matrix/server
   Content-Type: application/json
+  
+/.well-known/matrix/client
+  Content-Type: application/json
 
 /.well-known/**/*.xml
   Content-Type: application/xml
