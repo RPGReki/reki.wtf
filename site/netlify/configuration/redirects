@@ -46,6 +46,7 @@ https://www.rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
 
 /.well-known/matrix/server                          /.well-known/matrix/server.js 200
 /.well-known/matrix/client                          /.well-known/matrix/client.js 200
+_matrix/*                                           https://matrix.reki.wtf/_matrix/:splat 301
 
 ## Redirects to avoid duplicates
 /tags/立直麻雀/*		{{ '/tags/riichi-mahjong/' | absolute_url }}:splat	301!
