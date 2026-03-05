@@ -44,8 +44,7 @@ https://www.rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
 /proxy/youtube/:id/sddefault.jpg                    https://i.ytimg.com/vi/:id/sddefault.jpg 200
 /proxy/webmention/:host/:file                       https://avatars.webmention.io/:host/:file 200
 
-/.well-known/matrix/server                          /.well-known/matrix/server.js 200
-/.well-known/matrix/client                          /.well-known/matrix/client.js 200
+/.well-known/matrix/*                               http://matrix.reki.wtf/.well-known/matrix/:splat 200
 _matrix/*                                           https://matrix.reki.wtf/_matrix/:splat 301
 
 ## Redirects to avoid duplicates
