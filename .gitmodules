@@ -10,6 +10,6 @@
 
 [submodule "amauga"]
 	path = amauga
-	url = git@gitlab.com:RPGReki-WN/amauga.git
+	url = git@gitlab.com:RPGReki/amauga.git
 	branch = main
 	
