@@ -9,5 +9,5 @@
 [![Matrix]({{ "/proxy/shields/-/matrix/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://matrix.to/#/#rpgrekis-misadventures:matrix.org){:.no-print rel="me"}
 [![GitLab]({{ "/proxy/shields/-/gitlab/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://gitlab.com/RPGReki){:rel="me"}
 [![GitHub]({{ "/proxy/shields/-/github/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://github.com/RPGReki){:rel="me"}
-[![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.me/RPGReki){:rel="me payment"}
+[![Throne]({{ "/proxy/shields/-/throne/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://throne.com/RPGReki){:rel="me payment"}
 [![ko-fi]({{ "/proxy/shields/-/kofi/shield.svg" | absolute_url }}){:loading="lazy" width="64" height="64"}](https://ko-fi.com/RPGReki){:rel="me payment"}
