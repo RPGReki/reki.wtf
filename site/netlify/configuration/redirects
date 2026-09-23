@@ -43,7 +43,7 @@ https://www.rekislife.de/*		{{ '/' | absolute_url }}:splat	301!
 /proxy/youtube/:id/sddefault.webp                   https://i.ytimg.com/vi_webp/:id/sddefault.webp 200
 /proxy/youtube/:id/sddefault.jpg                    https://i.ytimg.com/vi/:id/sddefault.jpg 200
 /proxy/webmention/:host/:file                       https://avatars.webmention.io/:host/:file 200
-/proxy/citrustools/calender.txt                     https://citrustools.de/tools/streamplanner/subscribe/514f73a9-f357-4f12-93de-dc11bfef3081/ 200
+/proxy/citrustools/calendar.ics.txt                 https://citrustools.de/tools/streamplanner/subscribe/514f73a9-f357-4f12-93de-dc11bfef3081/ 200
 
 /.well-known/matrix/*                               https://matrix.reki.wtf/.well-known/matrix/:splat 200
 _matrix/*                                           https://matrix.reki.wtf/_matrix/:splat 301
