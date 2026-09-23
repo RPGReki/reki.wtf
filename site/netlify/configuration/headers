@@ -201,4 +201,7 @@ https://0xreki.de/*
 /scions/blog/
   X-Robots-Tag: Seobility: noindex, follow
 
+/proxy/citrustools/calender.txt
+  Content-Type: text/plain
+
 # vim: set textwidth=0:
